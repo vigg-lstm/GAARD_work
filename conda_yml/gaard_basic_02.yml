@@ -1,0 +1,44 @@
+name: gaard
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - h5py
+  - r-rgdal
+  - r-caret
+  - r-essentials
+  - ipython
+  - python=3.8
+  - jupyter
+  - scikit-allel
+  - r-ggmap
+  - r-base
+  - dask
+  - r-apcluster
+  - r-future.apply
+  - r-plotrix
+  - r-tidyverse
+  - r-data.table
+  - r-lme4
+  - r-osmdata
+  - r-hardyweinberg
+  - numpy
+  - r-ape
+  - biopython
+  - xarray
+  - scipy
+  - matplotlib
+  - hmmlearn
+  - r-reticulate
+  - scikit-learn
+  - r-qqman
+  - r-rgeos
+  - r-fdrtool
+  - seaborn
+  - r-ggsn
+  - r-bit64
+  - r-biocmanager
+  - zarr
+  - r-rlist
+  - pandas
+  - pysam
