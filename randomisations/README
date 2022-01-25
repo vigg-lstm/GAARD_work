@@ -1,0 +1,2 @@
+The table "phenotype_randomisations.csv" is a table containing phenotype and metadata information, along with the original phenotypes, and the outputs of 1000 randomisations where the phenotype labels are randomly permuted within a population (a population is a location x species x insecticide). I suggest using these pre-built permutations for all the permutation analyses that we want to perform, so that we always use the same permutations and we don't end up with different output if we need to rerun things, or when comparing different people's work. 
+
