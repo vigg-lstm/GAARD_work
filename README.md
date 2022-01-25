@@ -1,3 +1,11 @@
+![Code Count](https://img.shields.io/github/languages/count/vigg-lstm/GAARD_work)
+![Main Code Base](https://img.shields.io/github/languages/top/vigg-lstm/GAARD_work)
+![Version](https://img.shields.io/badge/version-1.0-red)
+![License](https://img.shields.io/badge/license-GPLv3-blue)
+![Last Commit](https://img.shields.io/github/last-commit/vigg-lstm/GAARD_work)
+![Open Issues](https://img.shields.io/github/issues-raw/vigg-lstm/GAARD_work)
+![Repo Size](https://img.shields.io/github/repo-size/vigg-lstm/GAARD_work)
+
 # GAARD_work
 Work and outputs linked to the GAARD project
 
