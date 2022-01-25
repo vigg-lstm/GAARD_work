@@ -11,5 +11,6 @@ Yaml files have name gaard_\#.yml or gaard_basic_\#.yml. Look for the largest va
 example:
 
 conda env create -f gaard_01.yml
+
 conda activate gaard
 
