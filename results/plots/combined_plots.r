@@ -188,7 +188,7 @@ plot.stats.along.genome <- function(pbs.table = NULL, h12.table = NULL, fst.tabl
 		h12.step.size <- ifelse(max.h12 > 0.6, 0.2, 0.1)
 		axis(2, at = seq(0, max.h12, h12.step.size))
 		mtext(stat12, 2, 2, cex = 0.8)
-		legend(ce[5], max.h12, c('alive', 'dead'), col = colours[c('h12.alive', 'h12.dead')], lwd = 3, xjust = 1, yjust = 1)
+		legend(ce[5], max.h12, c('alive', 'dead'), col = colours[c('h12.alive', 'h12.dead')], lwd = 3, xjust = 0, yjust = 1, bty = 'n')
 	}
 	
 	# Now plot all chromosomes with, the position of each of the four detox gene regions and Ace1
