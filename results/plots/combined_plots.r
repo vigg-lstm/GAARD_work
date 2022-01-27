@@ -1,8 +1,8 @@
 library(data.table)
 library(stringr)
-library(Biostrings)
 
-populations <- c('Aboisso_gambiae_PM', 'Avrankou_coluzzii_Delta', 
+# We don't include Aboisso since we don't have PBS or Fst data for it
+populations <- c('Avrankou_coluzzii_Delta', 
                  'Baguida_gambiae_Delta', 'Baguida_gambiae_PM', 
                  'Korle-Bu_coluzzii_Delta', 'Korle-Bu_coluzzii_PM',
                  'Madina_gambiae_Delta', 'Madina_gambiae_PM',
@@ -10,12 +10,27 @@ populations <- c('Aboisso_gambiae_PM', 'Avrankou_coluzzii_Delta',
 
 chroms <- c('2L', '2R', '3L', '3R', 'X')
 
+# Load all of the PBS results
+pbs.files <- list.files('../PBS/tsv', '*.tsv', full.names = T)
+names(pbs.files) <- sub('\\.tsv', '', sub('.*_', '', pbs.files))
+pbs.list.by.chrom <- lapply(pbs.files, fread)
+
+join.pbs.chroms <- function(population){
+	population.name.split <- strsplit(population, '_')[[1]]
+	table.names <- paste(population.name.split[2], population.name.split[1], population.name.split[3], chroms, sep = '.')
+	tables <- pbs.list.by.chrom[table.names]
+	names(tables) <- str_match(table.names, '(?<=\\.)[23]?[LRX]$')
+	do.call(rbind, c(tables, idcol = 'chrom'))
+}
+
+pbs.list <- lapply(setNames(nm = populations), join.pbs.chroms)
+
 # Load all of the G12 results
 g12.files <- list.files('../G12/tsv', '*.tsv', full.names = T)
 names(g12.files) <- sub('\\..*', '', sub('.*\\/', '', g12.files))
 g12.list.by.chrom <- lapply(g12.files, fread)
 
-join.chroms <- function(population){
+join.h12.chroms <- function(population){
 	population.name.split <- strsplit(population, '_')[[1]]
 	table.names.alive <- paste(population.name.split[1], population.name.split[2], chroms, population.name.split[3], 'alive', sep = '_')
 	table.names.dead <- paste(population.name.split[1], population.name.split[2], chroms, population.name.split[3], 'dead', sep = '_')
@@ -27,7 +42,7 @@ join.chroms <- function(population){
 	     dead = do.call(rbind, c(tables.dead, idcol = 'chrom')))
 }
 
-g12.list <- lapply(setNames(nm = populations), join.chroms)
+g12.list <- lapply(setNames(nm = populations), join.h12.chroms)
 
 # Load all of the Fst results
 fst.files <- list.files('../Fst/tsv', '*.tsv', full.names = T)
@@ -120,10 +135,13 @@ plot.stats.along.genome <- function(pbs.table = NULL, h12.table = NULL, fst.tabl
 	}
 	layout(matrix(c(rep(1,4), rep(2,4), rep(3,2)), nrow = 10, ncol = 1))
 	par(mar = c(0,4,1,4), mgp = c(2, 0.7, 0), family = 'Arial', xpd = NA) 
-	colours <- c(pbs = 'cadetblue', fst = 'darkred', h12.alive = 'purple', h12.dead = add.transparency('green2', 0.4))
+	colours <- c(pbs = 'dodgerblue3', 
+	             fst = 'darkred', 
+	             h12.alive = 'purple', 
+	             h12.dead = 'green2')
 	# Create the empty plot
-	max.y <- max(pbs.table$pbs, fst.table$moving.Fst)
-	min.y <- min(pbs.table$pbs, fst.table$moving.Fst)
+	max.y <- max(pbs.table$PBS, fst.table$moving.Fst)
+	min.y <- min(pbs.table$PBS, fst.table$moving.Fst)
 	plot(c(cs[1], ce[5]), c(min.y, max.y), xlim = c(cs[1] + gaps/2, ce[5] - gaps/2), type = 'n', bty = 'n', xaxt = 'n', yaxt = 'n', xlab = '', ylab = '', main = plot.title, cex.main = 1.5)
 	
 	# For each of the input tables, get a column that shows the position along the whole genome ,rather than just 
@@ -142,8 +160,16 @@ plot.stats.along.genome <- function(pbs.table = NULL, h12.table = NULL, fst.tabl
 	}
 	
 	if (!is.null(pbs.table)){
-		# placeholder code until we get the pbs data available
-		print('lorum.ipsum')
+		# Get plotting positions for windows
+		pbs.table$genome.pos <- pbs.table$midpoint + cs[as.character(pbs.table$chrom)]
+		max.pbs <- max(c(max(pbs.table$PBS, na.rm = T), 0.05))
+		pbs.table$normed.pbs <- max.y * pbs.table$PBS / max.pbs
+		# Add data
+		pbs.table[, lines(genome.pos, normed.pbs, col = add.transparency(colours['pbs'], 0.3), lwd = 1.5), by = chrom]
+		# Add y axis
+		pbs.step.size <- ifelse(max.pbs > 0.2, 0.1, 0.05)
+		axis(2, at = seq(0, max.y, max.y * pbs.step.size/max.pbs), labels = as.character(seq(0, max.pbs, pbs.step.size)), col = colours['pbs'], col.axis = colours['pbs'], col.ticks = colours['pbs'])
+		mtext('PBS', 2, 2, cex = 0.8, col = colours['pbs'])
 	}
 	
 	if (!is.null(h12.table)){
@@ -157,7 +183,7 @@ plot.stats.along.genome <- function(pbs.table = NULL, h12.table = NULL, fst.tabl
 		h12.table$dead$genome.pos <- h12.table$dead$midpoint + cs[as.character(h12.table$dead$chrom)]
 		# Add data to plot
 		h12.table$alive[, lines(genome.pos, get(stat12), col = colours['h12.alive'], lwd = 2.5), by = chrom]
-		h12.table$dead[, lines(genome.pos, get(stat12), col = colours['h12.dead'], lwd = 2.5), by = chrom]
+		h12.table$dead[, lines(genome.pos, get(stat12), col = add.transparency(colours['h12.dead'], 0.4), lwd = 2.5), by = chrom]
 		# Add y axis
 		h12.step.size <- ifelse(max.h12 > 0.6, 0.2, 0.1)
 		axis(2, at = seq(0, max.h12, h12.step.size))
@@ -173,5 +199,5 @@ plot.stats.along.genome <- function(pbs.table = NULL, h12.table = NULL, fst.tabl
 }
 
 # Draw all the plots
-sapply(names(fst.list), function(pop) plot.stats.along.genome(h12.table = g12.list[[pop]], fst.table = fst.list[[pop]], filename = paste(pop, '_plot.png', sep = '')))
+sapply(names(fst.list), function(pop) plot.stats.along.genome(pbs.table = pbs.list[[pop]], h12.table = g12.list[[pop]], fst.table = fst.list[[pop]], filename = paste(pop, '_plot.png', sep = '')))
 
