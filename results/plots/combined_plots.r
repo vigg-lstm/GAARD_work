@@ -177,7 +177,7 @@ plot.stats.along.genome <- function(pbs.table = NULL, h12.table = NULL, fst.tabl
 		# Check whether we have G12 or H12
 		stat12 <- colnames(h12.table$alive)[grepl('12', colnames(h12.table$alive))]
 		max.h12 <- max(c(h12.table$alive[[stat12]], h12.table$dead[[stat12]], 0.05))
-		plot(c(cs[1], ce[5]), c(0, max.h12), xlim = c(cs[1] + gaps/2, ce[5] - gaps/2), type = 'n', bty = 'n', xaxt = 'n', yaxt = 'n', xlab = '', ylab = '', main = plot.title, cex.main = 1.5)
+		plot(c(cs[1], ce[5]), c(0, max.h12), xlim = c(cs[1] + gaps/2, ce[5] - gaps/2), type = 'n', bty = 'n', xaxt = 'n', yaxt = 'n', xlab = '', ylab = '', cex.main = 1.5)
 		# Get plotting positions for windows
 		h12.table$alive$genome.pos <- h12.table$alive$midpoint + cs[as.character(h12.table$alive$chrom)]
 		h12.table$dead$genome.pos <- h12.table$dead$midpoint + cs[as.character(h12.table$dead$chrom)]
@@ -199,5 +199,5 @@ plot.stats.along.genome <- function(pbs.table = NULL, h12.table = NULL, fst.tabl
 }
 
 # Draw all the plots
-sapply(names(fst.list), function(pop) plot.stats.along.genome(pbs.table = pbs.list[[pop]], h12.table = g12.list[[pop]], fst.table = fst.list[[pop]], filename = paste(pop, '_plot.png', sep = '')))
+sapply(names(fst.list), function(pop) plot.stats.along.genome(pbs.table = pbs.list[[pop]], h12.table = g12.list[[pop]], fst.table = fst.list[[pop]], filename = paste(pop, '_plot.png', sep = ''), plot.title = pop))
 
