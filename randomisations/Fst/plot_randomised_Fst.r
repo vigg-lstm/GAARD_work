@@ -1,15 +1,9 @@
 library(data.table)
 library(stringr)
 
-populations <- c('Avrankou_coluzzii_Delta', 
-                 'Baguida_gambiae_Delta', 'Baguida_gambiae_PM', 
-                 'Korle-Bu_coluzzii_Delta', 'Korle-Bu_coluzzii_PM',
-                 'Madina_gambiae_Delta', 'Madina_gambiae_PM',
-                 'Obuasi_gambiae_Delta', 'Obuasi_gambiae_PM')
+locations <- c('Avrankou', 'Baguida', 'Korle-Bu', 'Madina', 'Obuasi')
 
-fst.filenames <- setNames(paste(populations, '_randomised_Fst.csv', sep = ''), nm = populations)
-
-fst.tables <- lapply(fst.filenames, fread, sep = '\t')
+fst.filenames <- setNames(paste('fst_randomisations_', locations, '.Rdata', sep = ''), nm = locations)
 
 # Write a function to draw the chromosomes on an existing plotting device
 add.chromosomes <- function(gaps, cs, ce, gene.cex = 0.9, gene.col = 'grey20', point.cex = 1.2, point.col = 'grey30', chrom.col = NULL, chrom.cex = 1.4, chrom.offset = 0){
@@ -68,8 +62,9 @@ add.chromosomes <- function(gaps, cs, ce, gene.cex = 0.9, gene.col = 'grey20', p
 
 
 # Function to plot Fst and all its randomisations
-plot.randomised.fst <- function(fst.table, filename = NULL, plot.title = '', gaps = 5000000){
+plot.randomised.fst <- function(fst.table, pos.table, filename = NULL, plot.title = '', gaps = 5000000){
 	# get vectors of start and end points for each chromosome (ie: cumulative sizes + gaps)
+	fst.table <- cbind(pos.table, fst.table[, 1:1001])
 	chrom.sizes <- c('2R' = 61545105, '2L' = 49364325, '3R' = 53200684, '3L' = 41963435, 'X' = 24393108)
 	ce <- cumsum(chrom.sizes + c(0, 0, gaps, 0, gaps))
 	cs <- ce - chrom.sizes
@@ -112,6 +107,11 @@ plot.randomised.fst <- function(fst.table, filename = NULL, plot.title = '', gap
 }
 
 # Draw all the plots
-sapply(names(fst.tables), function(pop) plot.randomised.fst(fst.tables[[pop]], filename = paste(pop, '_plot.png', sep = '')))
+for (loc in locations){
+	load(fst.filenames[loc])
+	sapply(names(fst.table), function(pop) plot.randomised.fst(fst.table[[pop]], window.pos[[pop]], filename = paste(pop, '_plot.png', sep = '')))
+}
+
+
 
 
