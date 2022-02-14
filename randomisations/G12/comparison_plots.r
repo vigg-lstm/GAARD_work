@@ -31,16 +31,26 @@ find.nearest.windows <- function(pos.1, pos.2){
 
 # Now a function that applies that to take the difference between nearest windows
 get.g12.difference <- function(alive.table, dead.table){
-	if (nrow(alive.table) < nrow(dead.table)){
-		nearest.window.dead.g12 <- dead.table[find.nearest.windows(alive.table$midpoint, dead.table$midpoint), G12]
-		diff.table <- alive.table[, .(chromosome = chromosome, midpoint = midpoint, G12.difference = G12 - ..nearest.window.dead.g12)]
-	}
-	else {
-		nearest.window.alive.g12 <- alive.table[find.nearest.windows(dead.table$midpoint, alive.table$midpoint), G12]
-		diff.table <- dead.table[, .(chromosome = chromosome, midpoint = midpoint, G12.difference = ..nearest.window.alive.g12 - G12)]
-	}
+	nearest.window.dead.g12 <- dead.table[find.nearest.windows(alive.table$midpoint, dead.table$midpoint), G12]
+	diff.table <- alive.table[, .(chromosome = chromosome, midpoint = midpoint, G12.difference = G12 - ..nearest.window.dead.g12)]
 	diff.table
 }
+
+# Here is an alternative verison of the function that always uses the windows from whichever phenotype group
+# has the most windows, instead of always using the alive group to determine the windows to keep. I think 
+# this version of the function is probably slightly better, but it's also much more complicated to explin in
+# methods, and doesn't make much difference in the end, and I think there is value in simplicity. 
+#get.g12.difference <- function(alive.table, dead.table){
+#	if (nrow(alive.table) > nrow(dead.table)){
+#		nearest.window.dead.g12 <- dead.table[find.nearest.windows(alive.table$midpoint, dead.table$midpoint), G12]
+#		diff.table <- alive.table[, .(chromosome = chromosome, midpoint = midpoint, G12.difference = G12 - ..nearest.window.dead.g12)]
+#	}
+#	else {
+#		nearest.window.alive.g12 <- alive.table[find.nearest.windows(dead.table$midpoint, alive.table$midpoint), G12]
+#		diff.table <- dead.table[, .(chromosome = chromosome, midpoint = midpoint, G12.difference = ..nearest.window.alive.g12 - G12)]
+#	}
+#	diff.table
+#}
 
 # Write a function to load and combine all data for a given randomisation id
 load.and.combine.data <- function(rand.id){
