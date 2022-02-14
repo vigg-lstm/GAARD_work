@@ -1,6 +1,7 @@
 library(data.table)
 library(stringr)
 library(fdrtool)
+library(magrittr)
 
 # Load the data
 locations <- c('Avrankou', 'Baguida', 'Korle-Bu', 'Madina', 'Obuasi')
@@ -33,6 +34,8 @@ add.transparency <- function(col, prop.alpha){
 	new.rgb
 }
 
+
+chrom.sizes <- c('2R' = 61545105, '2L' = 49364325, '3R' = 53200684, '3L' = 41963435, 'X' = 24393108)
 
 # Write a function to draw the chromosomes on an existing plotting device
 add.chromosomes <- function(gaps, cs, ce, gene.cex = 0.9, gene.col = 'grey20', point.cex = 1.2, point.col = 'grey30', chrom.col = NULL, chrom.cex = 1.4, chrom.offset = 0){
@@ -93,11 +96,10 @@ add.chromosomes <- function(gaps, cs, ce, gene.cex = 0.9, gene.col = 'grey20', p
 # Function to plot windowed Fst P values 
 plot.randomised.fst <- function(fst.table, filename = NULL, num.randomisations = NULL, fdr.cutoff = 0.01, plot.title = '', gaps = 5000000){
 	# get vectors of start and end points for each chromosome (ie: cumulative sizes + gaps)
-	chrom.sizes <- c('2R' = 61545105, '2L' = 49364325, '3R' = 53200684, '3L' = 41963435, 'X' = 24393108)
 	ce <- cumsum(chrom.sizes + c(0, 0, gaps, 0, gaps))
 	cs <- ce - chrom.sizes
 	# Create the plot
-	if (!is.null(filename)){
+	if (!missing(filename)){
 		file.width = 6.5
 		file.height = 3.5
 		if (grepl('\\.eps', filename))
@@ -195,10 +197,59 @@ first.pass.peaks <- function(fst.vector, return.thresh = F){
 for (pop in names(fst.tables))
 	fst.tables[[pop]][, filter := first.pass.peaks(phenotype.moving.Fst)]
 
+# Create filters that join all the filter-passing windows for all insecticidies. Since the different populations
+# have different window positions, we need to find a way to get around this. We might need to do nearest windows.
+
+find.nearest.windows <- function(pos.1, pos.2){
+	distances <- abs(outer(pos.1, pos.2, '-'))
+	nearest.windows <- apply(distances, 1, which.min)
+	nearest.windows
+}
+
+# First, get a combined list of all filter passing windows
+delta.pops <- grep('Delta', names(fst.tables), value = T)
+delta.all.filtered.windows <- fst.tables[delta.pops] %>%
+                              lapply(function(D) D[filter == T, .(window.chrom, window.pos)]) %>%
+                              rbindlist %>%
+                              split(.$window.chrom)
+for (pop in delta.pops){
+	# Create a new filter called joined.filter, which is true for every window that is the nearest window to one
+	# of the filter-passing windows from any of the deltamethrin datasets. 
+	fst.tables[[pop]][, joined.filter := ..delta.all.filtered.windows[[unique(window.chrom)]]$window.pos %>%
+	                                     find.nearest.windows(window.pos) %>%
+	                                     replace(logical(nrow(.SD)), ., T), 
+	                    by = window.chrom]
+}
+
+# Do the same for PM
+pm.pops <- grep('PM', names(fst.tables), value = T)
+pm.all.filtered.windows <- fst.tables[pm.pops] %>%
+                              lapply(function(D) D[filter == T, .(window.chrom, window.pos)]) %>%
+                              rbindlist %>%
+                              split(.$window.chrom)
+for (pop in pm.pops){
+	# Create a new filter called joined.filter, which is true for every window that is the nearest window to one
+	# of the filter-passing windows from any of the pmmethrin datasets. 
+	fst.tables[[pop]][, joined.filter := ..pm.all.filtered.windows[[unique(window.chrom)]]$window.pos %>%
+	                                     find.nearest.windows(window.pos) %>%
+	                                     replace(logical(nrow(.SD)), ., T), 
+	                    by = window.chrom]
+}
+
 # Show how these filters affect the peaks
-plot.fst.filters <- function(fst.table, plot.title = '', gaps = 5000000){
-	# get vectors of start and end points for each chromosome (ie: cumulative sizes + gaps)
-	chrom.sizes <- c('2R' = 61545105, '2L' = 49364325, '3R' = 53200684, '3L' = 41963435, 'X' = 24393108)
+plot.fst.filters <- function(fst.table, filename = NULL, plot.title = '', gaps = 5000000, p.thresh = c(0.01, 0.001), filter.name = 'filter'){
+	# Create the plot
+	if (!missing(filename)){
+		file.width = 6.5
+		file.height = 3.5
+		if (grepl('\\.eps', filename))
+			postscript(filename, width = file.width, height = file.height, horizontal = F, onefile = FALSE, paper = "special")
+		else if (grepl('\\.png', filename))
+			png(filename, width = file.width, height = file.height, units = 'in', res = 600)
+		else if (grepl('\\.tif', filename))
+			tiff(filename, width = file.width, height = file.height, units = 'in', res = 600)
+	}
+	# Get vectors of start and end points for each chromosome (ie: cumulative sizes + gaps)
 	ce <- cumsum(chrom.sizes + c(0, 0, gaps, 0, gaps))
 	cs <- ce - chrom.sizes
 	layout(matrix(c(rep(1,4),rep(2,1)), nrow = 5, ncol = 1))
@@ -222,18 +273,39 @@ plot.fst.filters <- function(fst.table, plot.title = '', gaps = 5000000){
 	fst.step.size <- ifelse(max.y > 0.2, 0.1, 0.05)
 	axis(2, at = seq(0, max.y, fst.step.size))
 	mtext('Fst', 2, 2, cex = 0.8)
-	# Add significant points
-	fst.table[(filter), points(genome.pos, phenotype.moving.Fst, col = 'blue', pch = 19, cex = 0.8)]
+	# Add peaks that pass filtering. Colour according to whether they have significant p-value
+	if (length(p.thresh) == 1)
+		p.thresh <- c(p.thresh, -1)
+	p.colours <- c('green', 'orchid3', 'blue')
+	filter.pass <- fst.table[[filter.name]]
+	fst.table[filter.pass, points(genome.pos, phenotype.moving.Fst, 
+	                              pch = 21,
+	                              bg = p.colours[(window.p < p.thresh[1]) + (window.p < p.thresh[2]) + 1], 
+	                              col = 'grey40', cex = 1.1, lwd = .5)
+	         ]
+	# For the abline, we always use the population's own filter. 
 	abline(h = min(fst.table[(filter), phenotype.moving.Fst]), col = 'blue', xpd = F)
 	
 	# Now plot all chromosomes with, the position of each of the four detox gene regions and Ace1
 	par(mar = c(1,4,0,2), mgp = c(2, 0.7, 0)) 
 	add.chromosomes(gaps = gaps, cs = cs, ce = ce, gene.cex = 0.7, point.cex = 1, chrom.offset = -1.2, chrom.cex = 1.2)
+	
+	if (!missing(filename))
+		dev.off()
 }
 
+# Having explored The possibility of using joint filters, it doesn't do all that much good. Just a couple of 
+# "sensible" new windows picked up, but only with p < 0.01 (rather than p < 0.001), in which case we also get
+# some "non-sensible" new windows alongside. So we stick to within-population filters. 
 for (pop in names(fst.tables)){
-	x11()
-	plot.fst.filters(fst.tables[[pop]], plot.title = pop)
+	plot.fst.filters(fst.tables[[pop]], filename = paste(pop, 'peak_filter_plot.png', sep = '_'), plot.title = pop)
+	#plot.fst.filters(fst.tables[[pop]], plot.title = pop, filter.name = 'joined.filter')
 }
 
 # Next we want to use the randomised data to find which of those peaks we believe. 
+# For each population, pull out the peaks. 
+filtered.tables <- lapply(fst.tables, function(D) D[filter == T & window.p < 0.001, ])
+
+save.image('fst_filtered_windows.Rdata')
+
+
