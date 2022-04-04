@@ -1,19 +1,26 @@
 library(data.table)
 library(magrittr)
 
+# Load meta data
+meta <- fread('gaard_metadata.tsv', sep = '\t')
+
+# Load the karyotype data
+kary.2La <- fread('../karyotypes/gaard_karyotypes.tsv', sep = '\t') %>%
+            .[inversion == '2La', ] %>%
+            .[, .(partner_sample_id, karyotype = round(mean_genotype))] %>%
+            setkey(partner_sample_id)
+
 # Load relatedness results
 ngs.relate.output.fn <- 'king.csv'
 ngs.relate <- fread(ngs.relate.output.fn, sep = '\t')
 # Change the name of the king column for easier typing
 colnames(ngs.relate)[3] <- tolower(colnames(ngs.relate)[3])
 
-# Load meta data
-meta <- fread('gaard_metadata.tsv', sep = '\t')
-
 # Change numerical indices to sample names. Indices are 0-indexed, so add +1
 ngs.relate$a <- meta[ngs.relate$a + 1, 'partner_sample_id']
 ngs.relate$b <- meta[ngs.relate$b + 1, 'partner_sample_id']
 
+# Now set the metadata table key to be the GAARD sample name. 
 setkey(meta, 'partner_sample_id')
 
 ngs.relate$species.a <- meta[ngs.relate$a, species_gambiae_coluzzii]
@@ -22,6 +29,8 @@ ngs.relate$location.a <- meta[ngs.relate$a, location]
 ngs.relate$location.b <- meta[ngs.relate$b, location]
 ngs.relate$phenotype.a <- meta[ngs.relate$a, phenotype]
 ngs.relate$phenotype.b <- meta[ngs.relate$b, phenotype]
+ngs.relate$karyotype.a <- kary.2La[ngs.relate$a, karyotype]
+ngs.relate$karyotype.b <- kary.2La[ngs.relate$b, karyotype]
 
 gamgam <- ngs.relate[species.a == 'gambiae' & species.b == 'gambiae', ]
 colcol <- ngs.relate[species.a == 'coluzzii' & species.b == 'coluzzii', ]
@@ -42,6 +51,21 @@ with(gamgam[location.a == location.b], hist(king, col = rgb(0.6,0.6,1), add = T,
 hist(colcol$king, col = rgb(0.8,0,0), breaks = 100, main = 'coluzzii pairs', xlab = 'King', ylab = '')
 with(colcol[location.a == location.b], hist(king, col = rgb(1,0.6,0.6), add = T, breaks = 100))
 dev.off()
+
+# Let's draw the overall histogram, separately for each species pair type, colour-coded by karyotype
+png('king_histograms_karyotype.png', width = 6, height = 2.2, units = 'in', res = 300)
+par(mfrow = c(1,3), cex = 0.4, lwd = 0.6, mar = c(3,2,2,0), oma = c(0,1,0,0), mgp = c(2,0.8,0), xpd = NA)
+hist(gamcol$king, col = rgb(0.8,0,0.8), breaks = 100, main = 'x-species', xlab = 'King')
+with(gamcol[karyotype.a == karyotype.b], hist(king, col = rgb(0.8,0.6,0.8), add = T, breaks = 100))
+# Within gamgam, show the proportion of each bar that are from same location (unlike histogram
+# above, here the coloured bar is a subset of the larger histogram
+hist(gamgam$king, col = rgb(0,0,0.8), breaks = 100, main = 'gambiae pairs', xlab = 'King', ylab = '')
+with(gamgam[karyotype.a == karyotype.b], hist(king, col = rgb(0.6,0.6,1), add = T, breaks = 100))
+# And again for coluzzii
+hist(colcol$king, col = rgb(0.8,0,0), breaks = 100, main = 'coluzzii pairs', xlab = 'King', ylab = '')
+with(colcol[karyotype.a == karyotype.b], hist(king, col = rgb(1,0.6,0.6), add = T, breaks = 100))
+dev.off()
+
 
 # Now zoom in to try and see sib clusters. 
 png('king_histograms_zoomed.png', width = 4, height = 2.2, units = 'in', res = 300)
