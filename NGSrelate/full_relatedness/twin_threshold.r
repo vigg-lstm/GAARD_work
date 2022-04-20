@@ -1,5 +1,6 @@
 library(data.table)
 library(magrittr)
+library(stringr)
 
 # Load meta data
 meta <- fread('gaard_metadata.tsv', sep = '\t')
@@ -27,6 +28,8 @@ ngs.relate$species.a <- meta[ngs.relate$a, species_gambiae_coluzzii]
 ngs.relate$species.b <- meta[ngs.relate$b, species_gambiae_coluzzii]
 ngs.relate$location.a <- meta[ngs.relate$a, location]
 ngs.relate$location.b <- meta[ngs.relate$b, location]
+ngs.relate$insecticide.a <- meta[ngs.relate$a, insecticide]
+ngs.relate$insecticide.b <- meta[ngs.relate$b, insecticide]
 ngs.relate$phenotype.a <- meta[ngs.relate$a, phenotype]
 ngs.relate$phenotype.b <- meta[ngs.relate$b, phenotype]
 ngs.relate$karyotype.a <- kary.2La[ngs.relate$a, karyotype]
@@ -190,25 +193,31 @@ thresholds[order(missing.pair.ratio)]
 cat('We choose a king threshold of', thresholds[which.min(missing.pair.ratio)], 'as the best threshold\n.')
 best.threshold.results <- threshold.exploration[[which.min(missing.pair.ratio)]]
 
-# Now let's go through the sib groups and keep just one sample per sib group. 
-choose.samples.to.remove <- function(sib.table){
-	all.samples <- unique(c(sib.table$a, sib.table$b))
-	sample.to.keep <- sample(all.samples, 1)
-	samples.to.remove <- setdiff(all.samples, sample.to.keep)
-	data.table(Sib = samples.to.remove,
-	           Location = meta[samples.to.remove, location],
-	           Sib.group.of = rep(sample.to.keep, length(samples.to.remove)))
+# Create a list of sib groups, which includes the experiment that each individual was taken from
+create.sib.group.table <- function(sib.pair.table, sib.group.id){
+	sib.group.table <- data.table(sample.name = c(sib.pair.table$a, sib.pair.table$b), 
+	                              location = c(sib.pair.table$location.a, sib.pair.table$location.b),
+	                              insecticide = c(sib.pair.table$insecticide.a, sib.pair.table$insecticide.b),
+	                              sib.group.id = sib.group.id
+	                             ) %>%
+	                   {.[!duplicated(.)]} %>%
+	                   {.[order(sample.name)]}
+	sib.group.table
 }
 
-set.seed(42)
-samples.to.remove <- best.threshold.results$sib.groups %>%
-                     lapply(choose.samples.to.remove) %>%
-                     rbindlist
+sib.group.table <- mapply(create.sib.group.table, 
+                          best.threshold.results$sib.groups, 
+                          1:length(best.threshold.results$sib.groups),
+                          SIMPLIFY = F) %>%
+                   rbindlist()
 
-cat('\nWe have removed the following numbers of samples:\n\n')
-meta[samples.to.remove$Sib, ] %>%
-with(table(location, phenotype, insecticide)) %>%
+set.seed(42)
+sib.group.table[, keep := sample(c(T, rep(F, nrow(.SD) -1)), nrow(.SD)), by = c('location', 'insecticide', 'sib.group.id')]
+
+cat('\nWe have removed', table(sib.group.table$keep)['FALSE'], 'samples, broken down as follows:\n\n')
+meta[sib.group.table[!(keep), sample.name]] %>%
+with(., table(location, phenotype, insecticide)) %>%
 print
 
-fwrite(samples.to.remove, file = 'samples_to_remove.csv', sep = '\t')
+fwrite(sib.group.table, file = 'sib_group_table.csv', sep = '\t')
 

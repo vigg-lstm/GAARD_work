@@ -387,7 +387,7 @@ Running find.sib.groups with a king threshold of 0.35
 [37] 0.295 0.155 0.160 0.165 0.150
 We choose a king threshold of 0.195 as the best threshold
 .
-We have removed the following numbers of samples:
+We have removed 106 samples, broken down as follows:
 
 , , insecticide = Delta
 
@@ -395,9 +395,9 @@ We have removed the following numbers of samples:
 location   alive dead
   Aboisso      0    0
   Avrankou     3    7
-  Baguida      8   11
-  Korle-Bu     4   11
-  Madina      17   11
+  Baguida      7    9
+  Korle-Bu     2    5
+  Madina      15   11
   Obuasi       2    0
 
 , , insecticide = PM
@@ -406,8 +406,8 @@ location   alive dead
 location   alive dead
   Aboisso      1    0
   Avrankou     0    0
-  Baguida     10    5
-  Korle-Bu    10   10
-  Madina       4   10
-  Obuasi       8    8
+  Baguida      7    3
+  Korle-Bu     5    7
+  Madina       2    6
+  Obuasi       8    6
 
