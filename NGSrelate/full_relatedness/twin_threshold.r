@@ -197,6 +197,7 @@ best.threshold.results <- threshold.exploration[[which.min(missing.pair.ratio)]]
 create.sib.group.table <- function(sib.pair.table, sib.group.id){
 	sib.group.table <- data.table(sample.name = c(sib.pair.table$a, sib.pair.table$b), 
 	                              location = c(sib.pair.table$location.a, sib.pair.table$location.b),
+	                              species = c(sib.pair.table$species.a, sib.pair.table$species.b),
 	                              insecticide = c(sib.pair.table$insecticide.a, sib.pair.table$insecticide.b),
 	                              sib.group.id = sib.group.id
 	                             ) %>%
