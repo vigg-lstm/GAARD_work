@@ -1,0 +1,92 @@
+Loading required package: Matrix
+Aboisso_gambiae_PM 
+Only one sib group present. Returning NA p-values.
+Avrankou_coluzzii_Delta 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 0.9085
+alternative hypothesis: two.sided
+
+Baguida_gambiae_Delta 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 0.4274
+alternative hypothesis: two.sided
+
+Baguida_gambiae_PM 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 0.001131
+alternative hypothesis: two.sided
+
+Korle-Bu_coluzzii_Delta 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 0.2914
+alternative hypothesis: two.sided
+
+Korle-Bu_coluzzii_PM 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 0.001689
+alternative hypothesis: two.sided
+
+Madina_gambiae_Delta 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 1.624e-08
+alternative hypothesis: two.sided
+
+Madina_gambiae_PM 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 0.005594
+alternative hypothesis: two.sided
+
+Obuasi_gambiae_Delta 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 1
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+  0.00000 39.00055
+sample estimates:
+odds ratio 
+         0 
+
+Obuasi_gambiae_PM 
+
+	Fisher's Exact Test for Count Data
+
+data:  .
+p-value = 0.04827
+alternative hypothesis: two.sided
+
+
+
+Fisher testing of sib groups P.values:
+
+     Aboisso_gambiae_PM Avrankou_coluzzii_Delta   Baguida_gambiae_Delta 
+                     NA            9.085497e-01            4.274476e-01 
+     Baguida_gambiae_PM Korle-Bu_coluzzii_Delta    Korle-Bu_coluzzii_PM 
+           1.131222e-03            2.913753e-01            1.688714e-03 
+   Madina_gambiae_Delta       Madina_gambiae_PM    Obuasi_gambiae_Delta 
+           1.624022e-08            5.594406e-03            1.000000e+00 
+      Obuasi_gambiae_PM 
+           4.827029e-02 
