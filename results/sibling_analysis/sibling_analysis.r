@@ -1,5 +1,4 @@
 library(data.table)
-library(magrittr)
 library(lme4)
 library(stringr)
 
@@ -17,7 +16,7 @@ sib.groups[, population := paste(location, species, insecticide, sep = '_')]
 
 sib.group.test <- function(pop, verbose = T){
 	if (verbose)
-		cat(pop, '\n')
+		cat('\n', pop, '\n')
 	sibs <- sib.groups[(population == pop), ]
 	if (length(unique(sibs$sib.group.id)) == 1){
 		if (verbose)
@@ -27,12 +26,15 @@ sib.group.test <- function(pop, verbose = T){
 	# Remove samples that are not in sib groups within this dataset. This is super hacky, but I couldn't
 	# find a more elegant way of doing this. 
 	sibs <- sibs[, .SD[ifelse(rep(.N, .N) > 1, 1:.N, 0), ], by = 'sib.group.id']
-	fisher.p <- sibs %>%
-	            {table(.$phenotype, .$sib.group.id)} %>%
-	            fisher.test()
-	if (verbose)
+	contingency.table <- with(sibs,
+	                          table(phenotype, sib.group.id)
+	)
+	fisher.p <- fisher.test(contingency.table)$p.value
+	if (verbose){
+		print(contingency.table)
 		print(fisher.p)
-	fisher.p$p.value
+	}
+	fisher.p
 }
 
 populations <- setNames(nm = sort(unique(sib.groups$population)))

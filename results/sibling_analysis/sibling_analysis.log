@@ -1,83 +1,70 @@
 Loading required package: Matrix
-Aboisso_gambiae_PM 
+
+ Aboisso_gambiae_PM 
 Only one sib group present. Returning NA p-values.
-Avrankou_coluzzii_Delta 
 
-	Fisher's Exact Test for Count Data
+ Avrankou_coluzzii_Delta 
+         sib.group.id
+phenotype 91 92 93 94 95 96 97 98 99 100
+    alive  0  1  1  0  1  1  0  1  1   2
+    dead   2  1  1  2  1  1  2  1  1   0
+[1] 0.9085497
 
-data:  .
-p-value = 0.9085
-alternative hypothesis: two.sided
+ Baguida_gambiae_Delta 
+         sib.group.id
+phenotype 40 41 42 43 44 45 46 47 48 49 50 55
+    alive  0  1  1  1  1  0  1  1  0  1  1  4
+    dead   2  1  1  1  2  3  1  1  2  1  1  0
+[1] 0.4274476
 
-Baguida_gambiae_Delta 
+ Baguida_gambiae_PM 
+         sib.group.id
+phenotype 52 57 58 59 60 61 62 63
+    alive  2  0  0  0  3  3  2  2
+    dead   0  2  2  2  0  0  0  0
+[1] 0.001131222
 
-	Fisher's Exact Test for Count Data
+ Korle-Bu_coluzzii_Delta 
+         sib.group.id
+phenotype 65 69 70 72 74 79 84
+    alive  1  0  0  0  1  2  2
+    dead   1  2  2  2  1  0  0
+[1] 0.2913753
 
-data:  .
-p-value = 0.4274
-alternative hypothesis: two.sided
+ Korle-Bu_coluzzii_PM 
+         sib.group.id
+phenotype 65 71 73 75 80 85 86 87 88 89 90
+    alive  0  3  0  0  2  0  0  0  1  2  2
+    dead   2  0  2  2  0  2  2  2  1  0  0
+[1] 0.001688714
 
-Baguida_gambiae_PM 
+ Madina_gambiae_Delta 
+         sib.group.id
+phenotype 1 2 3 5 6 7 8 9 10 12 13 14 15 16 17
+    alive 0 0 0 0 0 2 3 2  2  3  3  3  2  2  3
+    dead  3 3 5 3 2 0 0 0  0  0  0  0  0  0  0
+[1] 1.624022e-08
 
-	Fisher's Exact Test for Count Data
+ Madina_gambiae_PM 
+         sib.group.id
+phenotype 3 24 25 26 27
+    alive 0  0  0  2  2
+    dead  4  3  2  0  0
+[1] 0.005594406
 
-data:  .
-p-value = 0.001131
-alternative hypothesis: two.sided
+ Obuasi_gambiae_Delta 
+         sib.group.id
+phenotype 20 23
+    alive  1  2
+    dead   1  0
+[1] 1
 
-Korle-Bu_coluzzii_Delta 
-
-	Fisher's Exact Test for Count Data
-
-data:  .
-p-value = 0.2914
-alternative hypothesis: two.sided
-
-Korle-Bu_coluzzii_PM 
-
-	Fisher's Exact Test for Count Data
-
-data:  .
-p-value = 0.001689
-alternative hypothesis: two.sided
-
-Madina_gambiae_Delta 
-
-	Fisher's Exact Test for Count Data
-
-data:  .
-p-value = 1.624e-08
-alternative hypothesis: two.sided
-
-Madina_gambiae_PM 
-
-	Fisher's Exact Test for Count Data
-
-data:  .
-p-value = 0.005594
-alternative hypothesis: two.sided
-
-Obuasi_gambiae_Delta 
-
-	Fisher's Exact Test for Count Data
-
-data:  .
-p-value = 1
-alternative hypothesis: true odds ratio is not equal to 1
-95 percent confidence interval:
-  0.00000 39.00055
-sample estimates:
-odds ratio 
-         0 
-
-Obuasi_gambiae_PM 
-
-	Fisher's Exact Test for Count Data
-
-data:  .
-p-value = 0.04827
-alternative hypothesis: two.sided
-
+ Obuasi_gambiae_PM 
+         sib.group.id
+phenotype 21 28 29 30 31 32 33 34 35 36 37 38 39
+    alive  2  0  1  0  0  0  1  1  1  2  2  2  2
+    dead   0  3  1  2  2  2  1  1  1  0  0  0  0
+[1] 0.04827029
 
 
 Fisher testing of sib groups P.values:
