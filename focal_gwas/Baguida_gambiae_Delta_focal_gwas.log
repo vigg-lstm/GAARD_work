@@ -1,0 +1,100 @@
+Loading required package: Matrix
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:Matrix’:
+
+    expand, unname
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+Attaching package: ‘ape’
+
+The following object is masked from ‘package:Biostrings’:
+
+    complement
+
+Arguments:
+Baguida_gambiae_Delta
+
+
+Warning message:
+In dir.create(study.pop) : 'Baguida_gambiae_Delta' already exists
+Loading SNP data from ~/data/ML/GAARD_SNP/Baguida_gambiae_Delta/csvs/filtered_SNPs.csv.
+            used   (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells   3873396  206.9   34784892  1857.8   38444374  2053.2
+Vcells 283545413 2163.3 4621910662 35262.4 7217646933 55066.3
+Loading phenotype data from ../data/combined/sample_phenotypes.csv.
+Warning messages:
+1: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+2: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+Running extract_zarr_region.py at 15:19 on 31/05/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1253-VO-TG-DJOGBENOU-VMF00052
+	chrom = 2R
+	region = 33957209-33991960
+	output_fn = Baguida_gambiae_Delta/2R:33973881_allele_counts.csv
+	sample_names = WA-0325,WA-0326,WA-0328,WA-0331,WA-0332,WA-0334,WA-0335,WA-0336,WA-0337,WA-0340,WA-0341,WA-0342,WA-0343,WA-0344,WA-0345,WA-0346,WA-0347,WA-0349,WA-0350,WA-0351,WA-0352,WA-0353,WA-0354,WA-0355,WA-0356,WA-0358,WA-0362,WA-0363,WA-0364,WA-0365,WA-0366,WA-0367,WA-0368,WA-0369,WA-0370,WA-0371,WA-0372,WA-0374,WA-0375,WA-0376,WA-0377,WA-0378,WA-0379,WA-0383,WA-0384,WA-0386,WA-0387,WA-0389,WA-0390,WA-0391,WA-0392,WA-0393,WA-0394,WA-0395,WA-0396,WA-0398,WA-0399,WA-0400,WA-0401,WA-0402,WA-0403,WA-0404,WA-0405,WA-0406,WA-0407,WA-0408,WA-0409,WA-0410,WA-0411,WA-0412,WA-0413,WA-0415,WA-0416,WA-0417,WA-0418,WA-0419,WA-0420,WA-0421,WA-0425,WA-0428,WA-0429,WA-0431,WA-0432,WA-0433,WA-0434,WA-0435,WA-0436,WA-0438
+
+Running extract_zarr_region.py at 15:19 on 31/05/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1253-VO-TG-DJOGBENOU-VMF00052
+	chrom = 3L
+	region = 3049554-3122922
+	output_fn = Baguida_gambiae_Delta/3L:3090681_allele_counts.csv
+	sample_names = WA-0325,WA-0326,WA-0328,WA-0331,WA-0332,WA-0334,WA-0335,WA-0336,WA-0337,WA-0340,WA-0341,WA-0342,WA-0343,WA-0344,WA-0345,WA-0346,WA-0347,WA-0349,WA-0350,WA-0351,WA-0352,WA-0353,WA-0354,WA-0355,WA-0356,WA-0358,WA-0362,WA-0363,WA-0364,WA-0365,WA-0366,WA-0367,WA-0368,WA-0369,WA-0370,WA-0371,WA-0372,WA-0374,WA-0375,WA-0376,WA-0377,WA-0378,WA-0379,WA-0383,WA-0384,WA-0386,WA-0387,WA-0389,WA-0390,WA-0391,WA-0392,WA-0393,WA-0394,WA-0395,WA-0396,WA-0398,WA-0399,WA-0400,WA-0401,WA-0402,WA-0403,WA-0404,WA-0405,WA-0406,WA-0407,WA-0408,WA-0409,WA-0410,WA-0411,WA-0412,WA-0413,WA-0415,WA-0416,WA-0417,WA-0418,WA-0419,WA-0420,WA-0421,WA-0425,WA-0428,WA-0429,WA-0431,WA-0432,WA-0433,WA-0434,WA-0435,WA-0436,WA-0438
+
+Running snpEff on significant SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_Delta/temp.vcf > Baguida_gambiae_Delta/focal_windows.vcf .
+2R:33973881.null device  3L:3090681.null device 
+                      1                       1 
