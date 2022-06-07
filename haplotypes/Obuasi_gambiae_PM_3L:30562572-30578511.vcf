@@ -1,0 +1,54 @@
+##SnpEffVersion="5.1d (build 2022-04-19 15:49), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30562572-30578511_temp.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+3L	30562690	.	T	A	.	.	ANN=A|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30562690T>A||||||
+3L	30562827	.	T	C	.	.	ANN=C|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30562827T>C||||||
+3L	30563091	.	G	T	.	.	ANN=T|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30563091G>T||||||
+3L	30563222	.	G	A	.	.	ANN=A|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30563222G>A||||||
+3L	30563231	.	T	A	.	.	ANN=A|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30563231T>A||||||
+3L	30563678	.	C	G	.	.	ANN=G|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30563678C>G||||||
+3L	30563744	.	A	G	.	.	ANN=G|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30563744A>G||||||
+3L	30563745	.	C	T	.	.	ANN=T|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30563745C>T||||||
+3L	30565360	.	T	C	.	.	ANN=C|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*4351A>G|||||4351|,C|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30565360T>C||||||
+3L	30565379	.	A	T	.	.	ANN=T|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*4332T>A|||||4332|,T|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30565379A>T||||||
+3L	30565458	.	C	T	.	.	ANN=T|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*4253G>A|||||4253|,T|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30565458C>T||||||
+3L	30565958	.	A	C	.	.	ANN=C|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*3753T>G|||||3753|,C|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30565958A>C||||||
+3L	30566065	.	G	A	.	.	ANN=A|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*3646C>T|||||3646|,A|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30566065G>A||||||
+3L	30566202	.	T	C	.	.	ANN=C|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*3509A>G|||||3509|,C|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30566202T>C||||||
+3L	30567084	.	C	T	.	.	ANN=T|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*2627G>A|||||2627|,T|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567084C>T||||||
+3L	30567090	.	A	C	.	.	ANN=C|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*2621T>G|||||2621|,C|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567090A>C||||||
+3L	30567148	.	G	A	.	.	ANN=A|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*2563C>T|||||2563|,A|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567148G>A||||||
+3L	30567232	.	A	G	.	.	ANN=G|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*2479T>C|||||2479|,G|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567232A>G||||||
+3L	30567255	.	A	G	.	.	ANN=G|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*2456T>C|||||2456|,G|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567255A>G||||||
+3L	30567278	.	G	A	.	.	ANN=A|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*2433C>T|||||2433|,A|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567278G>A||||||
+3L	30567796	.	T	C	.	.	ANN=C|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*1915A>G|||||1915|,C|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567796T>C||||||
+3L	30567854	.	G	A	.	.	ANN=A|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*1857C>T|||||1857|,A|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567854G>A||||||
+3L	30567866	.	G	T	.	.	ANN=T|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*1845C>A|||||1845|,T|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567866G>T||||||
+3L	30567919	.	T	C	.	.	ANN=C|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*1792A>G|||||1792|,C|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567919T>C||||||
+3L	30567996	.	G	A	.	.	ANN=A|downstream_gene_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding||c.*1715C>T|||||1715|,A|intergenic_region|MODIFIER|AGAP029255-AGAP011640|AGAP029255-AGAP011640|intergenic_region|AGAP029255-AGAP011640|||n.30567996G>A||||||
+3L	30569780	.	G	A	.	.	ANN=A|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.7791C>T|p.Ser2597Ser|9780/9849|7791/7860|2597/2619||
+3L	30569792	.	T	C	.	.	ANN=C|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.7779A>G|p.Ala2593Ala|9768/9849|7779/7860|2593/2619||
+3L	30569990	.	C	T	.	.	ANN=T|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.7581G>A|p.Gln2527Gln|9570/9849|7581/7860|2527/2619||
+3L	30569993	.	C	T	.	.	ANN=T|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.7578G>A|p.Gln2526Gln|9567/9849|7578/7860|2526/2619||
+3L	30570077	.	C	T	.	.	ANN=T|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.7494G>A|p.Leu2498Leu|9483/9849|7494/7860|2498/2619||
+3L	30570188	.	G	A	.	.	ANN=A|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.7383C>T|p.Cys2461Cys|9372/9849|7383/7860|2461/2619||
+3L	30570718	.	A	G	.	.	ANN=G|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.6853T>C|p.Leu2285Leu|8842/9849|6853/7860|2285/2619||
+3L	30571928	.	G	A	.	.	ANN=A|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.5643C>T|p.Asp1881Asp|7632/9849|5643/7860|1881/2619||
+3L	30573107	.	A	C	.	.	ANN=C|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.4464T>G|p.Ala1488Ala|6453/9849|4464/7860|1488/2619||
+3L	30573619	.	T	C	.	.	ANN=C|missense_variant|MODERATE|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.3952A>G|p.Thr1318Ala|5941/9849|3952/7860|1318/2619||
+3L	30573925	.	T	C	.	.	ANN=C|missense_variant|MODERATE|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.3646A>G|p.Lys1216Glu|5635/9849|3646/7860|1216/2619||
+3L	30573999	.	G	A	.	.	ANN=A|missense_variant|MODERATE|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.3572C>T|p.Pro1191Leu|5561/9849|3572/7860|1191/2619||
+3L	30576020	.	T	C	.	.	ANN=C|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.1551A>G|p.Gly517Gly|3540/9849|1551/7860|517/2619||
+3L	30576694	.	A	G	.	.	ANN=G|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.877T>C|p.Leu293Leu|2866/9849|877/7860|293/2619||
+3L	30576820	.	C	T	.	.	ANN=T|missense_variant|MODERATE|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.751G>A|p.Ala251Thr|2740/9849|751/7860|251/2619||
+3L	30577028	.	G	A	.	.	ANN=A|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.543C>T|p.His181His|2532/9849|543/7860|181/2619||
+3L	30577046	.	C	T	.	.	ANN=T|synonymous_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.525G>A|p.Gln175Gln|2514/9849|525/7860|175/2619||
+3L	30577281	.	T	G	.	.	ANN=G|missense_variant|MODERATE|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.290A>C|p.Lys97Thr|2279/9849|290/7860|97/2619||
+3L	30577727	.	A	G	.	.	ANN=G|5_prime_UTR_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.-157T>C|||||157|
+3L	30577966	.	T	A	.	.	ANN=A|5_prime_UTR_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.-396A>T|||||396|
+3L	30578060	.	T	C	.	.	ANN=C|5_prime_UTR_premature_start_codon_gain_variant|LOW|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.-490A>G||||||,C|5_prime_UTR_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.-490A>G|||||490|
+3L	30578249	.	T	C	.	.	ANN=C|5_prime_UTR_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.-679A>G|||||679|
+3L	30578396	.	T	C	.	.	ANN=C|5_prime_UTR_variant|MODIFIER|AGAP011640|AGAP011640|transcript|AGAP011640-RA|protein_coding|2/2|c.-826A>G|||||826|

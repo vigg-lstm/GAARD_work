@@ -1,0 +1,52 @@
+##SnpEffVersion="5.1d (build 2022-04-19 15:49), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30624949-30635698_temp.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+3L	30625101	.	G	A	.	.	ANN=A|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-4024G>A|||||3654|,A|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30625101G>A||||||
+3L	30625110	.	A	T	.	.	ANN=T|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-4015A>T|||||3645|,T|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30625110A>T||||||
+3L	30625313	.	A	C	.	.	ANN=C|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-3812A>C|||||3442|,C|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30625313A>C||||||
+3L	30625482	.	C	T	.	.	ANN=T|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-3643C>T|||||3273|,T|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30625482C>T||||||
+3L	30625632	.	G	A	.	.	ANN=A|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-3493G>A|||||3123|,A|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30625632G>A||||||
+3L	30625689	.	T	C	.	.	ANN=C|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-3436T>C|||||3066|,C|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30625689T>C||||||
+3L	30625809	.	C	T	.	.	ANN=T|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-3316C>T|||||2946|,T|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30625809C>T||||||
+3L	30625938	.	A	G	.	.	ANN=G|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-3187A>G|||||2817|,G|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30625938A>G||||||
+3L	30626744	.	C	T	.	.	ANN=T|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-2381C>T|||||2011|,T|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30626744C>T||||||
+3L	30628164	.	A	G	.	.	ANN=G|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-961A>G|||||591|,G|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30628164A>G||||||
+3L	30628225	.	C	G	.	.	ANN=G|upstream_gene_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding||c.-900C>G|||||530|,G|intergenic_region|MODIFIER|AGAP028753-AGAP011641|AGAP028753-AGAP011641|intergenic_region|AGAP028753-AGAP011641|||n.30628225C>G||||||
+3L	30628844	.	C	T	.	.	ANN=T|5_prime_UTR_premature_start_codon_gain_variant|LOW|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/5|c.-281C>T||||||,T|5_prime_UTR_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/5|c.-281C>T|||||281|
+3L	30628857	.	A	G	.	.	ANN=G|5_prime_UTR_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/5|c.-268A>G|||||268|
+3L	30628901	.	G	A	.	.	ANN=A|5_prime_UTR_premature_start_codon_gain_variant|LOW|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/5|c.-224G>A||||||,A|5_prime_UTR_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/5|c.-224G>A|||||224|
+3L	30629176	.	T	C	.	.	ANN=C|synonymous_variant|LOW|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/5|c.52T>C|p.Leu18Leu|422/2270|52/1566|18/521||
+3L	30629419	.	G	A	.	.	ANN=A|missense_variant|MODERATE|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/5|c.295G>A|p.Val99Ile|665/2270|295/1566|99/521||
+3L	30629455	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.318+13G>A||||||
+3L	30629489	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.318+47G>A||||||
+3L	30629523	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.318+81G>A||||||
+3L	30629553	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.318+111A>G||||||
+3L	30630202	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.318+760T>C||||||
+3L	30630573	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.318+1131A>G||||||
+3L	30630766	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.318+1324A>G||||||
+3L	30631456	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-1329A>T||||||
+3L	30631530	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-1255C>T||||||
+3L	30632084	.	G	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-701G>T||||||
+3L	30632151	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-634T>C||||||
+3L	30632185	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-600G>A||||||
+3L	30632253	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-532A>T||||||
+3L	30632271	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-514A>T||||||
+3L	30632370	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-415T>C||||||
+3L	30632456	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-329G>A||||||
+3L	30632534	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-251G>A||||||
+3L	30632620	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|1/4|c.319-165A>G||||||
+3L	30633576	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|3/4|c.904+117T>C||||||
+3L	30633621	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|3/4|c.904+162A>T||||||
+3L	30633896	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|3/4|c.904+437T>C||||||
+3L	30633907	.	T	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|3/4|c.904+448T>A||||||
+3L	30634268	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|3/4|c.905-401C>T||||||
+3L	30634339	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|3/4|c.905-330G>A||||||
+3L	30634448	.	C	T	.	.	ANN=T|upstream_gene_variant|MODIFIER|AGAP011642|AGAP011642|transcript|AGAP011642-RA|protein_coding||c.-6017C>T|||||4904|,T|intron_variant|MODIFIER|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|3/4|c.905-221C>T||||||
+3L	30634730	.	C	T	.	.	ANN=T|synonymous_variant|LOW|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|4/5|c.966C>T|p.Phe322Phe|1336/2270|966/1566|322/521||,T|upstream_gene_variant|MODIFIER|AGAP011642|AGAP011642|transcript|AGAP011642-RA|protein_coding||c.-5735C>T|||||4622|
+3L	30634919	.	C	T	.	.	ANN=T|synonymous_variant|LOW|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|4/5|c.1155C>T|p.Asn385Asn|1525/2270|1155/1566|385/521||,T|upstream_gene_variant|MODIFIER|AGAP011642|AGAP011642|transcript|AGAP011642-RA|protein_coding||c.-5546C>T|||||4433|
+3L	30634949	.	T	C	.	.	ANN=C|synonymous_variant|LOW|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|4/5|c.1185T>C|p.Leu395Leu|1555/2270|1185/1566|395/521||,C|upstream_gene_variant|MODIFIER|AGAP011642|AGAP011642|transcript|AGAP011642-RA|protein_coding||c.-5516T>C|||||4403|
+3L	30635006	.	G	A	.	.	ANN=A|synonymous_variant|LOW|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|4/5|c.1242G>A|p.Lys414Lys|1612/2270|1242/1566|414/521||,A|upstream_gene_variant|MODIFIER|AGAP011642|AGAP011642|transcript|AGAP011642-RA|protein_coding||c.-5459G>A|||||4346|
+3L	30635377	.	G	A	.	.	ANN=A|synonymous_variant|LOW|AGAP011641|AGAP011641|transcript|AGAP011641-RA|protein_coding|5/5|c.1533G>A|p.Glu511Glu|1903/2270|1533/1566|511/521||,A|upstream_gene_variant|MODIFIER|AGAP011642|AGAP011642|transcript|AGAP011642-RA|protein_coding||c.-5088G>A|||||3975|
