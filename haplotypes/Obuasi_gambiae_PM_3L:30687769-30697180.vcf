@@ -1,0 +1,55 @@
+##SnpEffVersion="5.1d (build 2022-04-19 15:49), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30687769-30697180_temp.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+3L	30687867	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-9135T>C||||||
+3L	30688056	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-9324T>A||||||
+3L	30688089	.	T	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-9357A>T||||||
+3L	30688278	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-9546T>A||||||
+3L	30688464	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-9732A>G||||||
+3L	30689057	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-10325T>A||||||
+3L	30689185	.	G	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-10453C>G||||||
+3L	30689766	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-11034C>T||||||
+3L	30690080	.	T	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-11348A>T||||||
+3L	30690159	.	G	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-11427C>A||||||
+3L	30690260	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-11528G>A||||||
+3L	30690518	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-11786G>A||||||
+3L	30690542	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-11810G>A||||||
+3L	30690659	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-11927T>C||||||
+3L	30690706	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-11974T>C||||||
+3L	30690815	.	T	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-12083A>T||||||
+3L	30691165	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-12433T>C||||||
+3L	30691233	.	C	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-12501G>C||||||
+3L	30691246	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-12514A>G||||||
+3L	30691251	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-12519G>A||||||
+3L	30691603	.	T	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-12871A>T||||||
+3L	30691604	.	T	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-12872A>T||||||
+3L	30691967	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13235A>G||||||
+3L	30692003	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13271T>A||||||
+3L	30692064	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13332T>C||||||
+3L	30692195	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13463A>G||||||
+3L	30692297	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13565G>A||||||
+3L	30692325	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13593G>A||||||
+3L	30692330	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13598T>C||||||
+3L	30692406	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13674T>C||||||
+3L	30692574	.	A	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-13842T>G||||||
+3L	30692854	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-14122G>A||||||
+3L	30692899	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-14167A>G||||||
+3L	30693060	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-14328A>G||||||
+3L	30693437	.	G	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-14705C>G||||||
+3L	30693506	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-14774T>A||||||
+3L	30693905	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-15173C>T||||||
+3L	30694051	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-15319G>A||||||
+3L	30694632	.	T	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-15900A>T||||||
+3L	30695015	.	C	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-16283G>A||||||
+3L	30695247	.	T	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-16515A>C||||||
+3L	30695289	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-16557A>G||||||
+3L	30695336	.	A	T	.	.	ANN=T|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-16604T>A||||||
+3L	30695411	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-16679C>T||||||
+3L	30695418	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-16686A>G||||||
+3L	30696094	.	G	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-17362C>T||||||
+3L	30696252	.	T	C	.	.	ANN=C|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2121-17520A>G||||||
+3L	30696507	.	A	G	.	.	ANN=G|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2120+17727T>C||||||
+3L	30697166	.	C	A	.	.	ANN=A|intron_variant|MODIFIER|AGAP029536|AGAP029536|transcript|AGAP029536-RA|protein_coding|1/3|c.2120+17068G>T||||||
