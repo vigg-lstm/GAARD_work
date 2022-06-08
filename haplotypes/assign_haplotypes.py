@@ -11,6 +11,10 @@ import scipy.cluster
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.gridspec import GridSpec
+import seaborn as sns
 
 if (len(argv) == 4):
 	study_pop = argv[1]
@@ -175,5 +179,115 @@ print('\nRunning snpEff on haplotype SNPs, using command ' + snp_eff_command + '
 stdout.flush()
 system(snp_eff_command)
 system('rm ' + vcf_filename)
+
+# Now make a dendrogram plot
+def truspan(cluster, r):
+	# get the index of the cluster haps in the dendrogram list of all haps
+	cluster_leaves = sorted([r['leaves'].index(i) for i in cluster])
+	# are these indices monotonic - they should be!
+	x = np.asarray(cluster_leaves)
+	dx = np.diff(x)
+	mon = np.all(dx == 1)
+	assert mon
+	return min(cluster_leaves), max(cluster_leaves)
+
+
+def plot_dendrogram(zhier, ax, h, method='complete', color_threshold=0, above_threshold_color='k'):
+	
+	# plot dendrogram
+	sns.despine(ax=ax, offset=5, bottom=True, top=False)
+	r = scipy.cluster.hierarchy.dendrogram(zhier, no_labels=True, count_sort=True, 
+										   color_threshold=color_threshold, 
+										   above_threshold_color=above_threshold_color,
+										   ax=ax)
+	xmin, xmax = ax.xaxis.get_data_interval()
+	xticklabels = np.array(list(range(0, h.shape[1], 200)) + [h.shape[1]])
+	xticks = xticklabels / h.shape[1]
+	xticks = (xticks * (xmax - xmin)) + xmin
+	ax.set_xticks(xticks)
+	ax.set_xticklabels(xticklabels)
+	#ax.set_xlabel('Haplotypes')
+	ax.xaxis.set_label_position('top')
+	ax.set_ylim(bottom=-.0001)
+	
+	ax.set_ylabel(r'$d_{xy}$')
+	ax.autoscale(axis='x', tight=True)
+	return z, r
+
+phen_colours = {'dead': 'orangered', 'alive': 'deepskyblue'}
+
+def draw_hap_cluster_plot(z, r, h, cluster_labels, vspans, add_legend = True):
+	
+	gs = GridSpec(3, 1, height_ratios=[5.0, 0.5, 0.5])
+	fig = plt.figure(figsize=(15, 4))
+	
+	ax1 = plt.subplot(gs[0])
+	sns.despine(ax=ax1, offset=5, bottom=True, top=False)
+	_ = plot_dendrogram(z, ax1, h)
+	ax1.spines['top'].set_visible(False)
+	ax1.set_xticks([])
+	
+	ax_pops = fig.add_subplot(gs[1])
+	
+	hap_phen = meta.set_index('sample_id').loc[hapsamples, 'phenotype'].values
+	
+	x = hap_phen.take(r['leaves'])
+	hap_clrs = [phen_colours[p] for p in x]
+	ax_pops.broken_barh(xranges=[(i, 1) for i in range(h.shape[1])], 
+						yrange=(0, 1),
+						color=hap_clrs);
+	sns.despine(ax=ax_pops, offset=5, left=True, bottom=True)
+	
+	ax_pops.set_xticks([])
+	ax_pops.set_yticks([])
+	ax_pops.set_xlim(0, h.shape[1])
+	ax_pops.yaxis.set_label_position('left')
+	ax_pops.set_ylabel('Population', rotation=0, ha='right', va='center')
+	
+	if add_legend:
+		unique_phenotypes = np.unique(x)
+		plot_x_range = ax1.get_xlim()[1] - ax1.get_xlim()[0]
+		plot_y_range = ax1.get_ylim()[1] - ax1.get_ylim()[0]
+		legend_x = ax1.get_xlim()[0] + plot_x_range * 0.95
+		for i, k in enumerate(unique_phenotypes[::-1]):
+			legend_y = ax1.get_ylim()[0] + plot_y_range * (0.6 + 0.1 * i)
+			ax1.add_patch(mpl.patches.Rectangle((legend_x,legend_y), plot_x_range/50,plot_y_range/15, color = phen_colours[k]))
+			ax1.text(legend_x*1.03,legend_y + plot_y_range / 50, k)
+	
+	# cluster brackets
+	ax_clu = fig.add_subplot(gs[2])
+	sns.despine(ax=ax_clu, bottom=True, left=True)
+	ax_clu.set_xlim(0, h.shape[1])
+	ax_clu.set_ylim(0, 1)
+	for lbl, (xmin, xmax) in zip(cluster_labels, vspans):
+		if lbl:
+			# hack to get the "fraction" right, which controls length of bracket arms
+			fraction = -2 / (xmax - xmin)
+			ax_clu.annotate("", ha='left', va='center',
+							xy=(xmin, 1), xycoords='data',
+							xytext=(xmax, 1), textcoords='data',
+							arrowprops=dict(arrowstyle="-",
+											connectionstyle="bar,fraction=%.4f" % fraction,
+											),
+							)
+			ax_clu.text((xmax + xmin)/2, 0.1, lbl, va='top', ha='center')
+	
+	ax_clu.set_xticks([])
+	ax_clu.set_yticks([])
+	ax1.set_title(f'{study_pop}_{region}')
+
+
+
+z = scipy.cluster.hierarchy.linkage(dist_dxy, method="complete")
+r = scipy.cluster.hierarchy.dendrogram(
+        z, no_labels=True, count_sort=True, 
+        color_threshold=0, no_plot=True,
+        above_threshold_color='k')
+v_span = [truspan(cluster, r) for cluster in large_focal_clusters]
+cluster_lab = ['Cluster' + str(i+1) for i in range(len(large_focal_clusters))]
+
+dendrogram_filename = re.sub('\.[^.]+$', '_dendrogram.png', output_filename)
+draw_hap_cluster_plot(z, r, haparray, cluster_labels=cluster_lab, vspans=v_span)
+plt.savefig(dendrogram_filename, format = 'png', dpi = 100)
 
 
