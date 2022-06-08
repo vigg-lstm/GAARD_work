@@ -1,5 +1,5 @@
 Loading required package: Matrix
-Running assign_haplotypes.py at 00:33 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:39 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -9,12 +9,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Avrankou_coluzzii_Delta_X:8742864-8775262.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:01<00:05,  1.15s/it]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:02<00:04,  1.13s/it]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:03<00:03,  1.12s/it]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:04<00:02,  1.12s/it]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:05<00:01,  1.11s/it]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:06<00:00,  1.11s/it]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:06<00:00,  1.12s/it]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.17it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.19it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.19it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.21it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.23it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.21it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.21it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Avrankou_coluzzii_Delta_X:8742864-8775262_temp.vcf > Avrankou_coluzzii_Delta_X:8742864-8775262.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:33 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:40 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -24,12 +25,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Baguida_gambiae_Delta_2R:33967209-33981960.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:04,  1.12it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.08it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.13it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.15it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.06it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.09it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.10it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.25it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.28it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.30it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.25it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.25it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_Delta_2R:33967209-33981960_temp.vcf > Baguida_gambiae_Delta_2R:33967209-33981960.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:34 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:40 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -39,12 +41,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Baguida_gambiae_Delta_3L:3059554-3112922.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.28it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.28it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.30it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.28it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.28it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.27it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.28it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.21it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.30s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.15s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:02,  1.03s/it]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:00,  1.04it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.10it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_Delta_3L:3059554-3112922_temp.vcf > Baguida_gambiae_Delta_3L:3059554-3112922.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:34 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:41 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -54,12 +57,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Baguida_gambiae_PM_X:15411876-15495650.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:04,  1.16it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.16it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.22it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.11it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.12it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.13it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.14it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.15it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.16it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.17it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.24it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_PM_X:15411876-15495650_temp.vcf > Baguida_gambiae_PM_X:15411876-15495650.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:35 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:41 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -69,12 +73,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Baguida_gambiae_PM_X:9165646-9222299.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:04,  1.23it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.26it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.25it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.25it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.27it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.26it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.26it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.42it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.31it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.33it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:02<00:01,  1.35it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.36it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.38it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.36it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_PM_X:9165646-9222299_temp.vcf > Baguida_gambiae_PM_X:9165646-9222299.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:35 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:42 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -84,12 +89,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Baguida_gambiae_PM_X:9222298-9273975.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.34it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.28it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.29it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.28it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.29it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.32it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.30it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.29it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_PM_X:9222298-9273975_temp.vcf > Baguida_gambiae_PM_X:9222298-9273975.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:35 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:42 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -99,12 +105,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Baguida_gambiae_PM_X:9273975-9317640.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.28it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.18it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.14it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.14it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.11it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.17it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.16it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.22it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.17s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.03it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.05it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.05it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.14it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.08it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_PM_X:9273975-9317640_temp.vcf > Baguida_gambiae_PM_X:9273975-9317640.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:36 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:42 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -114,12 +121,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Baguida_gambiae_PM_X:9317639-9346605.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:04,  1.06it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.23it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.22it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.27it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.31it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.21it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.23it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.41it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.11s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.09it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.19it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.02it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.08it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_PM_X:9317639-9346605_temp.vcf > Baguida_gambiae_PM_X:9317639-9346605.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:36 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:43 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -129,12 +137,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_2R:39682393-39697973.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:01<00:06,  1.29s/it]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:02<00:04,  1.19s/it]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:03<00:03,  1.09s/it]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:04<00:02,  1.18s/it]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:05<00:01,  1.05s/it]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:06<00:00,  1.02s/it]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:06<00:00,  1.08s/it]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.40it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.13it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.23it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.25it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.16it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.18it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_2R:39682393-39697973_temp.vcf > Korle-Bu_coluzzii_Delta_2R:39682393-39697973.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:37 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:43 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -144,12 +153,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_3R:50969310-51019562.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.37it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.34it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.31it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.32it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.33it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.26it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.20it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.22it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.24it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.10it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.16it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.18it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_3R:50969310-51019562_temp.vcf > Korle-Bu_coluzzii_Delta_3R:50969310-51019562.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:37 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:44 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -159,12 +169,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_X:14635817-14653444.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:01<00:08,  1.68s/it]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:02<00:04,  1.12s/it]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:03<00:02,  1.08it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.18it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.26it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.31it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.15it/s]There were 4 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:02,  1.37it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.30it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.33it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.35it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.34it/s]There were 4 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_X:14635817-14653444_temp.vcf > Korle-Bu_coluzzii_Delta_X:14635817-14653444.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:37 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:45 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -174,12 +185,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_X:14653443-14668614.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.30it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.33it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.34it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.34it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.08it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.19it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.22it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.15it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.19it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_X:14653443-14668614_temp.vcf > Korle-Bu_coluzzii_Delta_X:14653443-14668614.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:38 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:45 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -189,12 +201,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_X:14668614-14683957.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.44it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.41it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.20it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.14it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.11it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.19it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:02,  1.40it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:02<00:01,  1.39it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.38it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.39it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.39it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_X:14668614-14683957_temp.vcf > Korle-Bu_coluzzii_Delta_X:14668614-14683957.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:39 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:46 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -204,12 +217,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_X:14683957-14701067.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:04,  1.13it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.16it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.15it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.06it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.10it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.03it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.07it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:02,  1.37it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.35it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:02<00:01,  1.35it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.36it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.37it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_X:14683957-14701067_temp.vcf > Korle-Bu_coluzzii_Delta_X:14683957-14701067.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:41 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:47 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -219,12 +233,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_X:15615595-15668856.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:01<00:05,  1.08s/it]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:02<00:04,  1.08s/it]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:03<00:03,  1.04s/it]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:04<00:02,  1.06s/it]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:05<00:01,  1.05s/it]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:06<00:00,  1.01s/it]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:06<00:00,  1.03s/it]There were 4 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:06,  1.50s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.18s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:02,  1.01s/it]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:00,  1.03it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.10it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.00s/it]There were 4 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_X:15615595-15668856_temp.vcf > Korle-Bu_coluzzii_Delta_X:15615595-15668856.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:42 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:48 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -234,12 +249,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_X:15668855-15701561.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.40it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.37it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.39it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.29it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:02,  1.35it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.36it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:02<00:01,  1.33it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.34it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.35it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.35it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_X:15668855-15701561_temp.vcf > Korle-Bu_coluzzii_Delta_X:15668855-15701561.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:42 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:48 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -249,12 +265,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_Delta_X:15701560-15753994.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.38it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.36it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.33it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.36it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:02<00:01,  1.34it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.35it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.36it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.35it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta_X:15701560-15753994_temp.vcf > Korle-Bu_coluzzii_Delta_X:15701560-15753994.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:42 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:49 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -264,12 +281,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_PM_2R:54392588-54425247.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.40it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.39it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.40it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.39it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.39it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.04it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.14it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.18it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.15it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.17it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_PM_2R:54392588-54425247_temp.vcf > Korle-Bu_coluzzii_PM_2R:54392588-54425247.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:43 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:50 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -279,12 +297,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_PM_3R:28470441-28489578.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.33it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.32it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.29it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.30it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.31it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.32it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.08s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.07it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.14it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.06it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_PM_3R:28470441-28489578_temp.vcf > Korle-Bu_coluzzii_PM_3R:28470441-28489578.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:43 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:51 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -294,12 +313,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_PM_3R:28489578-28516482.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.43it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.41it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.40it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.38it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.39it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.39it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.40it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.40it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:02,  1.38it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.39it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.36it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.35it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.36it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_PM_3R:28489578-28516482_temp.vcf > Korle-Bu_coluzzii_PM_3R:28489578-28516482.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:43 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:51 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -309,12 +329,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_PM_3R:28516482-28545971.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.32it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.35it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.31it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.32it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.33it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.27it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.36s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.08s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:01,  1.03it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:00,  1.01it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_PM_3R:28516482-28545971_temp.vcf > Korle-Bu_coluzzii_PM_3R:28516482-28545971.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:44 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:52 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -324,12 +345,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_PM_3R:28633422-28664039.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.41it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.36it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.37it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.35it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.36it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.47s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.17s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:02,  1.04s/it]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:01,  1.06s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.03it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.05s/it]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_PM_3R:28633422-28664039_temp.vcf > Korle-Bu_coluzzii_PM_3R:28633422-28664039.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:44 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:53 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -339,12 +361,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Korle-Bu_coluzzii_PM_3R:2920673-2937378.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:01<00:07,  1.55s/it]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:02<00:04,  1.08s/it]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:03<00:02,  1.06it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.13it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.21it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.19it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.10it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:01<00:05,  1.05s/it]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.35s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.33s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:02,  1.10s/it]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:01,  1.12s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.00s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.10s/it]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_PM_3R:2920673-2937378_temp.vcf > Korle-Bu_coluzzii_PM_3R:2920673-2937378.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:45 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:54 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -354,12 +377,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Madina_gambiae_Delta_2R:28401363-28416200.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.37it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.36it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.35it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.24it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.05s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.01it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.02it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.06s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.03s/it]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Madina_gambiae_Delta_2R:28401363-28416200_temp.vcf > Madina_gambiae_Delta_2R:28401363-28416200.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:45 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:55 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -369,12 +393,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Madina_gambiae_Delta_2R:28454838-28474602.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.37it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.33it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.34it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.06it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.02it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.07it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.09it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.03it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.05it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.05it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Madina_gambiae_Delta_2R:28454838-28474602_temp.vcf > Madina_gambiae_Delta_2R:28454838-28474602.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:45 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:55 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -384,12 +409,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Madina_gambiae_PM_2R:54255612-54278008.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.38it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.36it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.36it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.11it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.18it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.21it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.18it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.19it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Madina_gambiae_PM_2R:54255612-54278008_temp.vcf > Madina_gambiae_PM_2R:54255612-54278008.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:46 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:56 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -399,12 +425,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28250033-28262588.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.26it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.30it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.30it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.31it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.13it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.22it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.24it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.21it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28250033-28262588_temp.vcf > Obuasi_gambiae_Delta_2R:28250033-28262588.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:46 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:57 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -414,12 +441,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28262588-28274893.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.32it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.31it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.15it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.21it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.23it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.24it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.06it/s]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.15s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:02,  1.21s/it]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:01,  1.11s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.01it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.03s/it]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28262588-28274893_temp.vcf > Obuasi_gambiae_Delta_2R:28262588-28274893.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:46 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:58 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -429,12 +457,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28274893-28289873.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.37it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.35it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.36it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.36it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.36it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.21s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.00s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.09it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.07it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.13it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28274893-28289873_temp.vcf > Obuasi_gambiae_Delta_2R:28274893-28289873.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:47 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 12:59 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -444,12 +473,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28289873-28306606.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.36it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.35it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.33it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.35it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.35it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.16s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.00s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.06it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.02it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.03it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28289873-28306606_temp.vcf > Obuasi_gambiae_Delta_2R:28289873-28306606.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:47 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:00 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -459,12 +489,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28306605-28322681.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.38it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.37it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.38it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:04,  1.03s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.07it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.14it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.18it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.23it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.17it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28306605-28322681_temp.vcf > Obuasi_gambiae_Delta_2R:28306605-28322681.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:47 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:00 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -474,12 +505,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28322681-28337951.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.34it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.28it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.26it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.29it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.28it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.29it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.18it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:04,  1.01s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.09it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.13it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.09it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.12it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28322681-28337951_temp.vcf > Obuasi_gambiae_Delta_2R:28322681-28337951.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:48 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:01 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -489,12 +521,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28337951-28354693.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.28it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.04it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.13it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.07it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.15it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.19it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:05<00:00,  1.15it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.14it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.23it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.26it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.24it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.29it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28337951-28354693_temp.vcf > Obuasi_gambiae_Delta_2R:28337951-28354693.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:48 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:02 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -504,12 +537,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28354692-28369784.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.32it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.36it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.34it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.32it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.35it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.19s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:02,  1.02it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.12it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.09it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.10it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28354692-28369784_temp.vcf > Obuasi_gambiae_Delta_2R:28354692-28369784.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:49 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:03 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -519,12 +553,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28369784-28391434.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:04,  1.06it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.13it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.19it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.22it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.20it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.24it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.20it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.22it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.31it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.32it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.34it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.36it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.35it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28369784-28391434_temp.vcf > Obuasi_gambiae_Delta_2R:28369784-28391434.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:49 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:04 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -534,12 +569,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28391433-28405240.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.39it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.37it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.34it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.35it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.36it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.36it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.02it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.16it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.22it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.21it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28391433-28405240_temp.vcf > Obuasi_gambiae_Delta_2R:28391433-28405240.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:49 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:05 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -549,12 +585,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28405239-28421116.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.34it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.35it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.35it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.33s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.07s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:01,  1.03it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:01,  1.03s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.04it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.00s/it]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28405239-28421116_temp.vcf > Obuasi_gambiae_Delta_2R:28405239-28421116.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:50 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:05 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -564,12 +601,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28421116-28439220.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.32it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.36it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.33it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.34it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.36it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.36it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.35it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.49s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.14s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:01,  1.01it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:00,  1.03it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.00it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28421116-28439220_temp.vcf > Obuasi_gambiae_Delta_2R:28421116-28439220.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:50 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:06 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -579,12 +617,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28439219-28456407.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.32it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.33it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.32it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.30it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.32it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.29it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.21s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:02,  1.00it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.11it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.02it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.05it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28439219-28456407_temp.vcf > Obuasi_gambiae_Delta_2R:28439219-28456407.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:50 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:07 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -594,12 +633,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28456407-28475225.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.33it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.32it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.29it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.23it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.27it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.27it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.28it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.13s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.05it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.14it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.23it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.16it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28456407-28475225_temp.vcf > Obuasi_gambiae_Delta_2R:28456407-28475225.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:51 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:08 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -609,12 +649,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28475225-28496115.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.35it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.35it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.34it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.33it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.33it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.26s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.01s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.04it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.12it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.10it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28475225-28496115_temp.vcf > Obuasi_gambiae_Delta_2R:28475225-28496115.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:51 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:09 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -624,12 +665,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28496114-28515482.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.34it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.31it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.30it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.33it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.33it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.15it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.15it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.21it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.19it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.21it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28496114-28515482_temp.vcf > Obuasi_gambiae_Delta_2R:28496114-28515482.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:51 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:10 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -639,12 +681,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_Delta_2R:28515481-28531112.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.27it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.33it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.34it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.33it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.33it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.33it/s]There were 2 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.41it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:02,  1.39it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.16it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.23it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:03<00:00,  1.28it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.22it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.24it/s]There were 2 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_Delta_2R:28515481-28531112_temp.vcf > Obuasi_gambiae_Delta_2R:28515481-28531112.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:52 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:10 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -654,12 +697,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_2R:3474360-3509400.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.37it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.38it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.36it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.18it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.25it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.28it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:01,  1.14s/it]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.03s/it]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_2R:3474360-3509400_temp.vcf > Obuasi_gambiae_PM_2R:3474360-3509400.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:52 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:11 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -669,12 +713,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30477135-30487616.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.27it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.30it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.31it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.30it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.30it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.31it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.41it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.19it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.26it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.29it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.25it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30477135-30487616_temp.vcf > Obuasi_gambiae_PM_3L:30477135-30487616.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:52 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:12 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -684,12 +729,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30487615-30497759.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.36it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.36it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.38it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.18s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.02it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.11it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.06it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.06s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.01s/it]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30487615-30497759_temp.vcf > Obuasi_gambiae_PM_3L:30487615-30497759.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:53 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:13 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -699,12 +745,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30497758-30506894.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.36it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.37it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.36it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.36it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.13s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.06it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.17it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.18it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.15it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30497758-30506894_temp.vcf > Obuasi_gambiae_PM_3L:30497758-30506894.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:53 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:14 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -714,12 +761,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30506893-30516797.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.40it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.39it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.39it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.38it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.39it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.39it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.05it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.17it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.23it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.03it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.05s/it]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30506893-30516797_temp.vcf > Obuasi_gambiae_PM_3L:30506893-30516797.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:53 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:15 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -729,12 +777,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30534828-30545854.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.41it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.38it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.37it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.39it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.39it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.39it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.10s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.07it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.17it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:01,  1.02s/it]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30534828-30545854_temp.vcf > Obuasi_gambiae_PM_3L:30534828-30545854.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:54 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:16 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -744,12 +793,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30554459-30562573.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.39it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.38it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.38it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.37it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.08it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.18it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.23it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.28it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.30it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.26it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30554459-30562573_temp.vcf > Obuasi_gambiae_PM_3L:30554459-30562573.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:54 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:17 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -759,12 +809,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30562572-30578511.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.40it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.40it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.37it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.36it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:04,  1.04s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.12it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.21it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.18it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.22it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.18it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30562572-30578511_temp.vcf > Obuasi_gambiae_PM_3L:30562572-30578511.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:55 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:17 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -774,12 +825,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30578511-30587941.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.41it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.38it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.37it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.37it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.26it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.25it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.25it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.19it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.18it/s]Load sample metadata: 100%|██████████| 6/6 [00:04<00:00,  1.21it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30578511-30587941_temp.vcf > Obuasi_gambiae_PM_3L:30578511-30587941.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:55 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:18 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -789,12 +841,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30587941-30597762.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:04,  1.13it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.24it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.30it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.31it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.12it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.22it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.28it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:01,  1.01s/it]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.06it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30587941-30597762_temp.vcf > Obuasi_gambiae_PM_3L:30587941-30597762.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:55 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:19 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -804,12 +857,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30597761-30607138.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:04,  1.06it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.19it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.24it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.27it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:04<00:00,  1.27it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.29it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.26it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.41it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:04,  1.01s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.14it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.22it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:01,  1.02s/it]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.04it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.07it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30597761-30607138_temp.vcf > Obuasi_gambiae_PM_3L:30597761-30607138.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:56 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:20 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -819,12 +873,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30607137-30617085.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.30it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.32it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.32it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.29it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.31it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.31it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.15s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.03it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.12it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.08it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.04s/it]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30607137-30617085_temp.vcf > Obuasi_gambiae_PM_3L:30607137-30617085.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:56 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:21 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -834,12 +889,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30617085-30624950.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.34it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.35it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.27it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.29it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.31it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.39it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.33s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.06s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:01,  1.03it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:01,  1.07s/it]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.03it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.01s/it]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30617085-30624950_temp.vcf > Obuasi_gambiae_PM_3L:30617085-30624950.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:56 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:22 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -849,12 +905,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30624949-30635698.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.41it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.38it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.39it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.37it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.39s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.09s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:01,  1.03it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:00,  1.04it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30624949-30635698_temp.vcf > Obuasi_gambiae_PM_3L:30624949-30635698.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:57 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:22 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -864,12 +921,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30635698-30646602.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.35it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.32it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.31it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.33it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.24it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.28it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.28it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.47s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.14s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:01,  1.01it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:00,  1.03it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.07it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.01s/it]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30635698-30646602_temp.vcf > Obuasi_gambiae_PM_3L:30635698-30646602.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:57 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:23 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -879,12 +937,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30646601-30657763.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.33it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.31it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.30it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.31it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.31it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.38it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:05,  1.39s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.10s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:01,  1.03it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:00,  1.02it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.09it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30646601-30657763_temp.vcf > Obuasi_gambiae_PM_3L:30646601-30657763.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:57 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:24 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -894,12 +953,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30657762-30667355.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.31it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.31it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.32it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.31it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:06,  1.52s/it]Load sample metadata:  50%|█████     | 3/6 [00:03<00:03,  1.17s/it]Load sample metadata:  67%|██████▋   | 4/6 [00:04<00:02,  1.01s/it]Load sample metadata:  83%|████████▎ | 5/6 [00:05<00:00,  1.03it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.08it/s]Load sample metadata: 100%|██████████| 6/6 [00:06<00:00,  1.01s/it]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30657762-30667355_temp.vcf > Obuasi_gambiae_PM_3L:30657762-30667355.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:58 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:25 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -909,12 +969,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30667355-30678119.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.34it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.34it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.33it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.34it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.32it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.33it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.23it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.04it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.12it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.18it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.13it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.14it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.13it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30667355-30678119_temp.vcf > Obuasi_gambiae_PM_3L:30667355-30678119.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:58 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:26 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -924,12 +985,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30678119-30687769.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.33it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.34it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.28it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.30it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.31it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.34it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.02it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.14it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.21it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.22it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.22it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30678119-30687769_temp.vcf > Obuasi_gambiae_PM_3L:30678119-30687769.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:58 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:27 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -939,12 +1001,13 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3L:30687769-30697180.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.35it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:02,  1.37it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.37it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:02<00:01,  1.36it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.37it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.38it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.37it/s]There were 1 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:03,  1.36it/s]Load sample metadata:  33%|███▎      | 2/6 [00:01<00:03,  1.12it/s]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.20it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.21it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.18it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.20it/s]There were 1 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3L:30687769-30697180_temp.vcf > Obuasi_gambiae_PM_3L:30687769-30697180.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
-Running assign_haplotypes.py at 00:59 on 07/06/2022 using machine neptune
+Running assign_haplotypes.py at 13:27 on 08/06/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -954,8 +1017,9 @@ Script was run using the following arguments:
 	repo_folder = ..
 	output_filename = Obuasi_gambiae_PM_3R:48454456-48494640.csv
 
-Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:00<00:03,  1.31it/s]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:01<00:03,  1.33it/s]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:02<00:02,  1.32it/s]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:03<00:01,  1.31it/s]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:03<00:00,  1.29it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.28it/s]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:04<00:00,  1.30it/s]There were 3 clusters larger than 20 haplotypes.
+Load sample metadata:   0%|          | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|█▋        | 1/6 [00:00<00:04,  1.11it/s]Load sample metadata:  33%|███▎      | 2/6 [00:02<00:04,  1.04s/it]Load sample metadata:  50%|█████     | 3/6 [00:02<00:02,  1.10it/s]Load sample metadata:  67%|██████▋   | 4/6 [00:03<00:01,  1.19it/s]Load sample metadata:  83%|████████▎ | 5/6 [00:04<00:00,  1.14it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.06it/s]Load sample metadata: 100%|██████████| 6/6 [00:05<00:00,  1.08it/s]There were 3 clusters larger than 20 haplotypes.
 
 Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Obuasi_gambiae_PM_3R:48454456-48494640_temp.vcf > Obuasi_gambiae_PM_3R:48454456-48494640.vcf
 
+qt.qpa.xcb: X server does not support XInput 2
 
