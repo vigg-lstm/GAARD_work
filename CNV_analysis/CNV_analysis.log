@@ -1,0 +1,620 @@
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+
+Modal copy number in Cyp9k1:
+
+
+	 Avrankou Delta Cyp9k1:
+         Cyp9k1
+phenotype  0  1
+    alive 47  1
+    dead  33  2
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC     LRT Pr(>Chi)
+<none>      112.26 116.26                 
+Cyp9k1  1   113.02 115.02 0.75791    0.384
+
+
+	 Baguida Delta Cyp9k1:
+         Cyp9k1
+phenotype  0  1  2  3  4  5  7
+    alive  1  2 20  7 24  6  1
+    dead   0  5 11  3 18  3  0
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC     LRT Pr(>Chi)
+<none>      135.32 139.32                 
+Cyp9k1  1   135.62 137.62 0.29211   0.5889
+
+
+	 Korle-Bu Delta Cyp9k1:
+         Cyp9k1
+phenotype  0  1  2
+    alive 43  2  3
+    dead  61 11  6
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC    LRT Pr(>Chi)
+<none>      165.89 169.89                
+Cyp9k1  1   167.46 169.46 1.5736   0.2097
+
+
+	 Madina Delta Cyp9k1:
+         Cyp9k1
+phenotype  0  1  2  3  4  5  6  7  8  9 10
+    alive  4  1  7  5 13 18  9  1  1  1  0
+    dead   0  1  3  2 20  4  1  2  1  3  1
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC    LRT Pr(>Chi)
+<none>      129.23 133.23                
+Cyp9k1  1   130.88 132.88 1.6462   0.1995
+
+
+	 Obuasi Delta Cyp9k1:
+         Cyp9k1
+phenotype  0  1  2  3  4  5  6  7  8
+    alive  2  0  6  4 13  1  3  0  0
+    dead   2  2 14  2 13  7  1  2  1
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC       LRT Pr(>Chi)
+<none>      98.093 102.09                   
+Cyp9k1  1   98.095 100.09 0.0020543   0.9638
+
+
+	 Baguida PM Cyp9k1:
+         Cyp9k1
+phenotype  0  1  2  3  4  5  6  7
+    alive  2  2 16  9  9  1  1  1
+    dead   1  0  7  5 12  2  1  0
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC    LRT Pr(>Chi)
+<none>      90.701 94.701                
+Cyp9k1  1   93.190 95.190 2.4889   0.1146
+
+
+	 Korle-Bu PM Cyp9k1:
+         Cyp9k1
+phenotype  0  1  2
+    alive 40  9  1
+    dead  32  7  3
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC     LRT Pr(>Chi)
+<none>      126.19 130.19                 
+Cyp9k1  1   126.84 128.84 0.65221   0.4193
+
+
+	 Madina PM Cyp9k1:
+         Cyp9k1
+phenotype 0 1 2 3 4 5 6 7 9 10
+    alive 1 1 4 2 6 5 2 1 0  1
+    dead  1 0 5 3 8 4 1 2 1  0
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC      LRT Pr(>Chi)
+<none>      66.453 70.453                  
+Cyp9k1  1   66.459 68.459 0.005691   0.9399
+
+
+	 Obuasi PM Cyp9k1:
+         Cyp9k1
+phenotype  0  1  2  3  4  5  6  7  8
+    alive  7  3 17 11 20  0  2  1  0
+    dead   2  4 15  5 10  1  1  0  1
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1
+       Df Deviance    AIC        LRT Pr(>Chi)
+<none>      133.75 137.75                    
+Cyp9k1  1   133.75 135.75 1.5915e-05   0.9968
+
+
+Cyp9k1 combined Deltamethrin, location as fixed factor:
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1 + location
+         Df Deviance    AIC     LRT  Pr(>Chi)    
+<none>        644.07 656.07                      
+Cyp9k1    1   645.07 655.07  0.9935 0.3188864    
+location  4   665.32 669.32 21.2434 0.0002833 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Cyp9k1 combined PM, location as fixed factor:
+Single term deletions
+
+Model:
+phenotype ~ Cyp9k1 + location
+         Df Deviance    AIC     LRT Pr(>Chi)
+<none>        419.52 429.52                 
+Cyp9k1    1   420.24 428.24 0.72355   0.3950
+location  3   422.59 426.59 3.07010   0.3809
+
+Modal copy number in Gste2:
+
+
+	 Avrankou Delta Gste2:
+         Gste2
+phenotype  0  1  2  3
+    alive 14 20  7  7
+    dead  11 15  9  0
+Single term deletions
+
+Model:
+phenotype ~ Gste2
+       Df Deviance    AIC    LRT Pr(>Chi)
+<none>      112.00 116.00                
+Gste2   1   113.02 115.02 1.0194   0.3127
+
+
+	 Korle-Bu Delta Gste2:
+         Gste2
+phenotype  0  1  2
+    alive 41  6  1
+    dead  63 12  3
+Single term deletions
+
+Model:
+phenotype ~ Gste2
+       Df Deviance    AIC     LRT Pr(>Chi)
+<none>      166.91 170.91                 
+Gste2   1   167.46 169.46 0.55402   0.4567
+
+
+	 Korle-Bu PM Gste2:
+         Gste2
+phenotype  0  1  2
+    alive 34 10  6
+    dead  34  6  2
+Single term deletions
+
+Model:
+phenotype ~ Gste2
+       Df Deviance    AIC    LRT Pr(>Chi)
+<none>      124.44 128.44                
+Gste2   1   126.84 128.84 2.4038    0.121
+
+Modal copy number in Cyp6aa1:
+
+
+	 Avrankou Delta Cyp6aa1:
+         Cyp6aa1
+phenotype  0  1  2
+    alive 10 20 18
+    dead  10 20  5
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aa1
+        Df Deviance    AIC    LRT Pr(>Chi)  
+<none>       109.21 113.21                  
+Cyp6aa1  1   113.02 115.02 3.8062  0.05106 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+	 Korle-Bu Delta Cyp6aa1:
+         Cyp6aa1
+phenotype  0  1  2
+    alive 32 13  3
+    dead  64 14  0
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aa1
+        Df Deviance    AIC    LRT Pr(>Chi)  
+<none>       161.80 165.80                  
+Cyp6aa1  1   167.46 169.46 5.6587  0.01737 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+	 Korle-Bu PM Cyp6aa1:
+         Cyp6aa1
+phenotype  0  1  2
+    alive 38  8  4
+    dead  35  5  2
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aa1
+        Df Deviance    AIC    LRT Pr(>Chi)
+<none>       126.05 130.05                
+Cyp6aa1  1   126.84 128.84 0.7921   0.3735
+
+Modal copy number in Cyp6p3:
+
+
+	 Korle-Bu Delta Cyp6p3:
+         Cyp6p3
+phenotype  0  1  2
+    alive 38 10  0
+    dead  67 10  1
+Single term deletions
+
+Model:
+phenotype ~ Cyp6p3
+       Df Deviance    AIC     LRT Pr(>Chi)
+<none>      166.92 170.92                 
+Cyp6p3  1   167.46 169.46 0.54184   0.4617
+
+
+	 Madina Delta Cyp6p3:
+         Cyp6p3
+phenotype  0  1  3
+    alive 51  1  8
+    dead  31  2  5
+Single term deletions
+
+Model:
+phenotype ~ Cyp6p3
+       Df Deviance    AIC      LRT Pr(>Chi)
+<none>      130.85 134.85                  
+Cyp6p3  1   130.88 132.88 0.020977   0.8848
+
+
+	 Korle-Bu PM Cyp6p3:
+         Cyp6p3
+phenotype  0  1  2
+    alive 43  6  1
+    dead  36  4  2
+Single term deletions
+
+Model:
+phenotype ~ Cyp6p3
+       Df Deviance    AIC     LRT Pr(>Chi)
+<none>      126.74 130.74                 
+Cyp6p3  1   126.84 128.84 0.10115   0.7505
+
+
+	 Madina PM Cyp6p3:
+         Cyp6p3
+phenotype  0  3
+    alive 20  3
+    dead  21  4
+Single term deletions
+
+Model:
+phenotype ~ Cyp6p3
+       Df Deviance    AIC      LRT Pr(>Chi)
+<none>      66.374 70.374                  
+Cyp6p3  1   66.459 68.459 0.084382   0.7714
+
+
+Cyp6aa1 + Cyp6p3 combined Deltamethrin, location as fixed factor:
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aa1 + Cyp6p3 + location
+         Df Deviance    AIC     LRT  Pr(>Chi)    
+<none>        403.56 413.56                      
+Cyp6aa1   1   411.08 419.08  7.5265 0.0060799 ** 
+Cyp6p3    1   403.56 411.56  0.0000 0.9955574    
+location  2   418.35 424.35 14.7895 0.0006145 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aa1 + location
+         Df Deviance    AIC     LRT  Pr(>Chi)    
+<none>        403.56 411.56                      
+Cyp6aa1   1   411.35 417.35  7.7971 0.0052329 ** 
+location  2   418.93 422.93 15.3707 0.0004595 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	 Coefficients (negative means positively association with resistance:
+
+Call:  glm(formula = phenotype ~ Cyp6aa1 + location, family = "binomial")
+
+Coefficients:
+     (Intercept)           Cyp6aa1  locationKorle-Bu    locationMadina  
+          0.3386           -0.6473            0.3244           -0.7746  
+
+Degrees of Freedom: 306 Total (i.e. Null);  303 Residual
+Null Deviance:	    425.5 
+Residual Deviance: 403.6 	AIC: 411.6
+
+
+Cyp6aa1 + Cyp6p3 combined PM, location as fixed factor:
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aa1 + Cyp6p3 + location
+         Df Deviance    AIC     LRT Pr(>Chi)
+<none>        191.85 199.85                 
+Cyp6aa1   1   193.13 199.13 1.28534   0.2569
+Cyp6p3    1   192.51 198.51 0.66362   0.4153
+location  1   191.89 197.89 0.04627   0.8297
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aa1 + location
+         Df Deviance    AIC     LRT Pr(>Chi)
+<none>        192.51 198.51                 
+Cyp6aa1   1   193.30 197.30 0.79210   0.3735
+location  1   192.72 196.72 0.21101   0.6460
+
+Modal copy number in Ace1:
+
+
+	 Baguida Delta Ace1:
+         Ace1
+phenotype  1  2  3  4  5  6  7
+    alive  0  0  3 10 17 27  4
+    dead   1  1  4  3 13 18  0
+Single term deletions
+
+Model:
+phenotype ~ Ace1
+       Df Deviance    AIC   LRT Pr(>Chi)
+<none>      133.71 137.71               
+Ace1    1   135.62 137.62 1.903   0.1677
+
+
+	 Korle-Bu Delta Ace1:
+         Ace1
+phenotype  0  1  2  3  4  5  6
+    alive  3 16  9 10  8  1  1
+    dead  11 22 19 10 12  4  0
+Single term deletions
+
+Model:
+phenotype ~ Ace1
+       Df Deviance    AIC    LRT Pr(>Chi)
+<none>      166.85 170.85                
+Ace1    1   167.46 169.46 0.6097   0.4349
+
+
+	 Madina Delta Ace1:
+         Ace1
+phenotype  0  1  2  3  4  5  6
+    alive  3  4 14 19 16  4  0
+    dead   1  4 11  8  9  4  1
+Single term deletions
+
+Model:
+phenotype ~ Ace1
+       Df Deviance    AIC      LRT Pr(>Chi)
+<none>      130.82 134.82                  
+Ace1    1   130.88 132.88 0.059165   0.8078
+
+
+	 Obuasi Delta Ace1:
+         Ace1
+phenotype  2  3  4  5  6  7
+    alive  2  3  4  4 14  2
+    dead   2  1  8 17 14  2
+Single term deletions
+
+Model:
+phenotype ~ Ace1
+       Df Deviance    AIC       LRT Pr(>Chi)
+<none>      98.089 102.09                   
+Ace1    1   98.095 100.09 0.0065517   0.9355
+
+
+	 Baguida PM Ace1:
+         Ace1
+phenotype  1  2  3  4  5  6  7  8
+    alive  0  0  5  4  7 23  2  0
+    dead   1  2  0  1  9 13  0  2
+Single term deletions
+
+Model:
+phenotype ~ Ace1
+       Df Deviance    AIC       LRT Pr(>Chi)
+<none>      93.181 97.181                   
+Ace1    1   93.190 95.190 0.0098346    0.921
+
+
+	 Korle-Bu PM Ace1:
+         Ace1
+phenotype  0  1  2  3  4  5  6
+    alive  2  1 13 13 13  7  1
+    dead  13 13 12  3  1  0  0
+Single term deletions
+
+Model:
+phenotype ~ Ace1
+       Df Deviance     AIC    LRT  Pr(>Chi)    
+<none>      79.508  83.508                     
+Ace1    1  126.843 128.843 47.335 5.984e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+	 Madina PM Ace1:
+         Ace1
+phenotype  0  1  2  3  4  5
+    alive  0  3  2  2 14  2
+    dead   6  7 10  2  0  0
+Single term deletions
+
+Model:
+phenotype ~ Ace1
+       Df Deviance    AIC    LRT  Pr(>Chi)    
+<none>      36.970 40.970                     
+Ace1    1   66.459 68.459 29.488 5.625e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+	 Obuasi PM Ace1:
+         Ace1
+phenotype  1  2  3  4  5  6  7
+    alive  0  0  0 12 22 21  6
+    dead   1  7  7  6 11  7  0
+Single term deletions
+
+Model:
+phenotype ~ Ace1
+       Df Deviance    AIC    LRT  Pr(>Chi)    
+<none>      107.85 111.85                     
+Ace1    1   133.75 135.75 25.904 3.588e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Ace1 combined Deltamethrin, location as fixed factor:
+Single term deletions
+
+Model:
+phenotype ~ Ace1 + location
+         Df Deviance    AIC     LRT  Pr(>Chi)    
+<none>        644.11 656.11                      
+Ace1      1   645.07 655.07  0.9577 0.3277716    
+location  4   666.24 670.24 22.1271 0.0001891 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Ace1 combined PM, location as fixed factor:
+Single term deletions
+
+Model:
+phenotype ~ Ace1 + location
+         Df Deviance    AIC    LRT  Pr(>Chi)    
+<none>        342.87 352.87                     
+Ace1      1   420.24 428.24 77.375 < 2.2e-16 ***
+location  3   371.98 375.98 29.111 2.122e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Ace1 combined + Del1 presence, PM, location as fixed factor:
+Single term deletions
+
+Model:
+phenotype ~ Ace1 + Ace1_Del1_presence + location
+                   Df Deviance    AIC    LRT  Pr(>Chi)    
+<none>                  336.86 348.86                     
+Ace1                1   374.27 384.27 37.406 9.593e-10 ***
+Ace1_Del1_presence  1   342.87 352.87  6.006   0.01426 *  
+location            3   368.58 374.58 31.717 6.003e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	 Coefficients (negative means positively association with resistance:
+
+Call:  glm(formula = phenotype ~ Ace1 + Ace1_Del1_presence + location, 
+    family = "binomial")
+
+Coefficients:
+           (Intercept)                    Ace1  Ace1_Del1_presenceTRUE  
+                4.4172                 -0.7056                 -1.0996  
+      locationKorle-Bu          locationMadina          locationObuasi  
+               -2.5825                 -1.9778                 -0.4155  
+
+Degrees of Freedom: 308 Total (i.e. Null);  303 Residual
+Null Deviance:	    422.9 
+Residual Deviance: 336.9 	AIC: 348.9
+
+
+Ace1 combined + Del1 copy number, PM, location as fixed factor:
+Single term deletions
+
+Model:
+phenotype ~ Ace1 + Ace1_Del_cn + location
+            Df Deviance    AIC    LRT  Pr(>Chi)    
+<none>           342.12 354.12                     
+Ace1         1   380.90 390.90 38.780 4.745e-10 ***
+Ace1_Del_cn  1   342.87 352.87  0.751    0.3862    
+location     3   371.62 377.62 29.501 1.757e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Cyp6aap alleles in Avrankou:
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aap_Dup7 + Cyp6aap_Dup10
+              Df Deviance    AIC     LRT Pr(>Chi)
+<none>             124.01 130.01                 
+Cyp6aap_Dup7   1   124.27 128.27 0.25639   0.6126
+Cyp6aap_Dup10  1   124.16 128.16 0.15237   0.6963
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aap_Dup7
+             Df Deviance    AIC    LRT Pr(>Chi)
+<none>            124.16 128.16                
+Cyp6aap_Dup7  1   124.37 126.37 0.2025   0.6527
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aap_Dup10 + Cyp6aap_Dup17 + Cyp6aap_Dup18
+              Df Deviance    AIC    LRT Pr(>Chi)   
+<none>             191.75 199.75                   
+Cyp6aap_Dup10  1   199.96 205.96 8.2178 0.004148 **
+Cyp6aap_Dup17  1   191.75 197.75 0.0047 0.945307   
+Cyp6aap_Dup18  1   194.63 200.63 2.8879 0.089247 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aap_Dup10 + Cyp6aap_Dup18
+              Df Deviance    AIC    LRT Pr(>Chi)   
+<none>             191.75 197.75                   
+Cyp6aap_Dup10  1   199.99 203.99 8.2418 0.004094 **
+Cyp6aap_Dup18  1   194.66 198.66 2.9124 0.087903 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Single term deletions
+
+Model:
+phenotype ~ Cyp6aap_Dup10
+              Df Deviance    AIC    LRT Pr(>Chi)   
+<none>             194.66 198.66                   
+Cyp6aap_Dup10  1   202.69 204.69 8.0251 0.004613 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	 Coefficients (negative means positively association with resistance:
+
+Call:  glm(formula = phenotype ~ Cyp6aap_Dup10 + Cyp6aap_Dup17 + Cyp6aap_Dup18, 
+    family = "binomial")
+
+Coefficients:
+      (Intercept)  Cyp6aap_Dup10TRUE  Cyp6aap_Dup17TRUE  Cyp6aap_Dup18TRUE  
+          0.60848           -2.47645            0.08467           -0.82200  
+
+Degrees of Freedom: 149 Total (i.e. Null);  146 Residual
+Null Deviance:	    202.7 
+Residual Deviance: 191.7 	AIC: 199.7
