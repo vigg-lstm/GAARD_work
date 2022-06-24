@@ -1,0 +1,933 @@
+
+
+Avrankou Delta:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1527T_C + Vgsc.1603T_C + Vgsc.1940T_C + Vgsc.402L_T + Vgsc.995F_T + Rdl.296G_G + Gste2.114T_G, data = avrankou.delta.table, family = binomial) 
+	Removing marker Vgsc.1527T_C due to perfect correlation.
+
+Building model: glm(phenotype ~ Vgsc.1603T_C + Vgsc.1940T_C + Vgsc.402L_T + Vgsc.995F_T + Rdl.296G_G + Gste2.114T_G, data = avrankou.delta.table, family = binomial) 
+	Removing marker Vgsc.402L_T due to perfect correlation.
+
+Building model: glm(phenotype ~ Vgsc.1603T_C + Vgsc.1940T_C + Vgsc.995F_T + Rdl.296G_G + Gste2.114T_G, data = avrankou.delta.table, family = binomial) 
+	Removing marker Vgsc.1940T_C as the highest, non-significant marker (P = 0.9979762).
+
+Building model: glm(phenotype ~ Vgsc.1603T_C + Vgsc.995F_T + Rdl.296G_G + Gste2.114T_G, data = avrankou.delta.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.4237454).
+
+Building model: glm(phenotype ~ Vgsc.1603T_C + Vgsc.995F_T + Rdl.296G_G, data = avrankou.delta.table, family = binomial) 
+	Removing marker Rdl.296G_G as the highest, non-significant marker (P = 0.322583).
+
+Building model: glm(phenotype ~ Vgsc.1603T_C + Vgsc.995F_T, data = avrankou.delta.table, family = binomial) 
+	Removing marker Vgsc.1603T_C as the highest, non-significant marker (P = 0.1095779).
+
+Building model: glm(phenotype ~ Vgsc.995F_T, data = avrankou.delta.table, family = binomial) 
+	Removing marker Vgsc.995F_T as the highest, non-significant marker (P = 0.08191423).
+
+	All variables removed.
+Final model was the null model.
+
+
+   P deviance
+1 NA       NA
+$invariable.markers
+character(0)
+
+$correlated.markers
+[1] "Vgsc.1527T_C" "Vgsc.402L_T" 
+
+$sig.alone
+                      P pseudo.R2
+Vgsc.1527T_C 0.08191423        NA
+Vgsc.1603T_C 0.19799386        NA
+Vgsc.1940T_C 0.81426382        NA
+Vgsc.402L_T  0.08191423        NA
+Vgsc.995F_T  0.08191423        NA
+Rdl.296G_G   0.19015263        NA
+Gste2.114T_G 0.69297477        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ 1, family = binomial, data = avrankou.delta.table)
+
+Coefficients:
+(Intercept)  
+    -0.1335  
+
+Degrees of Freedom: 89 Total (i.e. Null);  89 Residual
+Null Deviance:	    124.4 
+Residual Deviance: 124.4 	AIC: 126.4
+
+$final.sig
+   P deviance
+1 NA       NA
+
+$temporarily.removed
+[1] NA
+
+
+Note that the direction of effect of 995F, though non-significant, is that 995F makes you less resistant (ie: 402L affords more resistance:
+(Intercept) Vgsc.995F_T 
+  -1.611741    0.829331 
+
+
+Baguida Delta:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = baguida.delta.table, family = binomial) 
+	Removing marker Rdl.296G_G as the highest, non-significant marker (P = 0.9898274).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = baguida.delta.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.9455883).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.791M_T + Ace1.119S_A + Gste2.119V_C, data = baguida.delta.table, family = binomial) 
+	Removing marker Vgsc.791M_T as the highest, non-significant marker (P = 0.7694852).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Ace1.119S_A + Gste2.119V_C, data = baguida.delta.table, family = binomial) 
+	Removing marker Vgsc.1570Y_T as the highest, non-significant marker (P = 0.4237993).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Ace1.119S_A + Gste2.119V_C, data = baguida.delta.table, family = binomial) 
+	Removing marker Vgsc.1746S_T as the highest, non-significant marker (P = 0.4339511).
+
+Building model: glm(phenotype ~ Vgsc.1853I_A + Vgsc.1868T_C + Ace1.119S_A + Gste2.119V_C, data = baguida.delta.table, family = binomial) 
+	Removing marker Gste2.119V_C as the highest, non-significant marker (P = 0.4666644).
+
+Building model: glm(phenotype ~ Vgsc.1853I_A + Vgsc.1868T_C + Ace1.119S_A, data = baguida.delta.table, family = binomial) 
+	Removing marker Vgsc.1853I_A as the highest, non-significant marker (P = 0.1665643).
+
+Building model: glm(phenotype ~ Vgsc.1868T_C + Ace1.119S_A, data = baguida.delta.table, family = binomial) 
+	Removing marker Vgsc.1868T_C as the highest, non-significant marker (P = 0.2864129).
+
+Building model: glm(phenotype ~ Ace1.119S_A, data = baguida.delta.table, family = binomial) 
+	Removing marker Ace1.119S_A as the highest, non-significant marker (P = 0.1123793).
+
+	All variables removed.
+Final model was the null model.
+
+
+   P deviance
+1 NA       NA
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                     P pseudo.R2
+Vgsc.1570Y_T 0.2449565        NA
+Vgsc.1746S_T 0.7162818        NA
+Vgsc.1853I_A 0.2832338        NA
+Vgsc.1868T_C 0.2448640        NA
+Vgsc.791M_T  0.6776785        NA
+Rdl.296G_G   0.6506586        NA
+Ace1.119S_A  0.1123793        NA
+Gste2.114T_G 0.8996709        NA
+Gste2.119V_C 0.6231383        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ 1, family = binomial, data = baguida.delta.table)
+
+Coefficients:
+(Intercept)  
+    -0.3497  
+
+Degrees of Freedom: 103 Total (i.e. Null);  103 Residual
+Null Deviance:	    141 
+Residual Deviance: 141 	AIC: 143
+
+$final.sig
+   P deviance
+1 NA       NA
+
+$temporarily.removed
+[1] NA
+
+
+Nothing is significant in Baguida Delta
+
+
+Korle-Bu Delta:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1527T_C + Vgsc.995F_T + Ace1.119S_A + Gste2.114T_G, data = kb.delta.table, family = binomial) 
+	Removing marker Vgsc.1527T_C due to perfect correlation.
+
+Building model: glm(phenotype ~ Vgsc.995F_T + Ace1.119S_A + Gste2.114T_G, data = kb.delta.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.4697166).
+
+Building model: glm(phenotype ~ Vgsc.995F_T + Ace1.119S_A, data = kb.delta.table, family = binomial) 
+	Removing marker Vgsc.995F_T as the highest, non-significant marker (P = 0.3703161).
+
+Building model: glm(phenotype ~ Ace1.119S_A, data = kb.delta.table, family = binomial) 
+	Removing marker Ace1.119S_A as the highest, non-significant marker (P = 0.1404446).
+
+	All variables removed.
+Final model was the null model.
+
+
+   P deviance
+1 NA       NA
+$invariable.markers
+character(0)
+
+$correlated.markers
+[1] "Vgsc.1527T_C"
+
+$sig.alone
+                     P pseudo.R2
+Vgsc.1527T_C 0.3563412        NA
+Vgsc.995F_T  0.3563412        NA
+Ace1.119S_A  0.1404446        NA
+Gste2.114T_G 0.4078693        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ 1, family = binomial, data = kb.delta.table)
+
+Coefficients:
+(Intercept)  
+     0.3778  
+
+Degrees of Freedom: 149 Total (i.e. Null);  149 Residual
+Null Deviance:	    202.7 
+Residual Deviance: 202.7 	AIC: 204.7
+
+$final.sig
+   P deviance
+1 NA       NA
+
+$temporarily.removed
+[1] NA
+
+
+Nothing is significant in Korle-Bu Delta
+
+
+Madina Delta:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1874L_T + Vgsc.791M_T + Ace1.119S_A + Gste2.119V_C, data = madina.delta.table, family = binomial) 
+	Removing marker Vgsc.1874L_T as the highest, non-significant marker (P = 0.9282369).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Ace1.119S_A + Gste2.119V_C, data = madina.delta.table, family = binomial) 
+	Removing marker Vgsc.1570Y_T as the highest, non-significant marker (P = 0.6834984).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Ace1.119S_A + Gste2.119V_C, data = madina.delta.table, family = binomial) 
+	Removing marker Ace1.119S_A as the highest, non-significant marker (P = 0.5896442).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Gste2.119V_C, data = madina.delta.table, family = binomial) 
+	Removing marker Vgsc.1853I_A as the highest, non-significant marker (P = 0.4973806).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.791M_T + Gste2.119V_C, data = madina.delta.table, family = binomial) 
+	Removing marker Vgsc.1746S_T as the highest, non-significant marker (P = 0.4515312).
+
+Building model: glm(phenotype ~ Vgsc.791M_T + Gste2.119V_C, data = madina.delta.table, family = binomial) 
+	Removing marker Vgsc.791M_T as the highest, non-significant marker (P = 0.1034786).
+
+Building model: glm(phenotype ~ Gste2.119V_C, data = madina.delta.table, family = binomial) 
+	All remaining variables significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ Gste2.119V_C, family = binomial, data = madina.delta.table)
+
+Coefficients:
+ (Intercept)  Gste2.119V_C  
+      -1.052         0.513  
+
+Degrees of Freedom: 126 Total (i.e. Null);  125 Residual
+Null Deviance:	    168.4 
+Residual Deviance: 164.5 	AIC: 168.5
+Final model contained 1 parameters: Gste2.119V_C.
+
+
+                      P deviance
+Gste2.119V_C 0.04772707 3.919571
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                      P pseudo.R2
+Vgsc.1570Y_T 0.40899928        NA
+Vgsc.1746S_T 0.10387974        NA
+Vgsc.1853I_A 0.61120730        NA
+Vgsc.1874L_T 0.40233872        NA
+Vgsc.791M_T  0.05876966        NA
+Ace1.119S_A  0.53893633        NA
+Gste2.119V_C 0.04772707        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ Gste2.119V_C, family = binomial, data = madina.delta.table)
+
+Coefficients:
+ (Intercept)  Gste2.119V_C  
+      -1.052         0.513  
+
+Degrees of Freedom: 126 Total (i.e. Null);  125 Residual
+Null Deviance:	    168.4 
+Residual Deviance: 164.5 	AIC: 168.5
+
+$final.sig
+                      P deviance
+Gste2.119V_C 0.04772707 3.919571
+
+$temporarily.removed
+character(0)
+
+
+Gste2-119V negatively associated with Deltamethrin resistance in Madina, but only just.
+
+
+Obuasi Delta:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1874L_T + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = obuasi.delta.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.9376594).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1874L_T + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.119V_C, data = obuasi.delta.table, family = binomial) 
+	Removing marker Vgsc.1874L_T as the highest, non-significant marker (P = 0.5773838).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.119V_C, data = obuasi.delta.table, family = binomial) 
+	Removing marker Rdl.296G_G as the highest, non-significant marker (P = 0.5198412).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Ace1.119S_A + Gste2.119V_C, data = obuasi.delta.table, family = binomial) 
+	Removing marker Ace1.119S_A as the highest, non-significant marker (P = 0.4261714).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Gste2.119V_C, data = obuasi.delta.table, family = binomial) 
+	Removing marker Vgsc.1853I_A as the highest, non-significant marker (P = 0.4057704).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.791M_T + Gste2.119V_C, data = obuasi.delta.table, family = binomial) 
+	Removing marker Vgsc.1570Y_T as the highest, non-significant marker (P = 0.4556061).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.791M_T + Gste2.119V_C, data = obuasi.delta.table, family = binomial) 
+	All remaining variables significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ Vgsc.1746S_T + Vgsc.791M_T + Gste2.119V_C, 
+    family = binomial, data = obuasi.delta.table)
+
+Coefficients:
+ (Intercept)  Vgsc.1746S_T   Vgsc.791M_T  Gste2.119V_C  
+      0.9075        2.1800       -1.7275       -0.7237  
+
+Degrees of Freedom: 79 Total (i.e. Null);  76 Residual
+Null Deviance:	    104.8 
+Residual Deviance: 94.66 	AIC: 102.7
+Final model contained 3 parameters: Vgsc.1746S_T,Vgsc.791M_T,Gste2.119V_C.
+
+
+                      P deviance
+Vgsc.1746S_T 0.01623809 5.776907
+Vgsc.791M_T  0.04548861 4.000432
+Gste2.119V_C 0.03425818 4.481772
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                      P pseudo.R2
+Vgsc.1570Y_T 0.42274488        NA
+Vgsc.1746S_T 0.14083457        NA
+Vgsc.1853I_A 0.19591929        NA
+Vgsc.1874L_T 0.89345515        NA
+Vgsc.791M_T  0.51670605        NA
+Rdl.296G_G   0.60313858        NA
+Ace1.119S_A  0.79318471        NA
+Gste2.114T_G 0.53518437        NA
+Gste2.119V_C 0.04590218        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ Vgsc.1746S_T + Vgsc.791M_T + Gste2.119V_C, 
+    family = binomial, data = obuasi.delta.table)
+
+Coefficients:
+ (Intercept)  Vgsc.1746S_T   Vgsc.791M_T  Gste2.119V_C  
+      0.9075        2.1800       -1.7275       -0.7237  
+
+Degrees of Freedom: 79 Total (i.e. Null);  76 Residual
+Null Deviance:	    104.8 
+Residual Deviance: 94.66 	AIC: 102.7
+
+$final.sig
+                      P deviance
+Vgsc.1746S_T 0.01623809 5.776907
+Vgsc.791M_T  0.04548861 4.000432
+Gste2.119V_C 0.03425818 4.481772
+
+$temporarily.removed
+character(0)
+
+
+Vgsc.791M and Gste2-119V positively associated with Deltamethrin resistance in Obuasi. Vgsc.1746S negatively associated. None are particularly strongly significant.
+
+
+Baguida PM:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = baguida.pm.table, family = binomial) 
+	Removing marker Vgsc.791M_T as the highest, non-significant marker (P = 0.9999402).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = baguida.pm.table, family = binomial) 
+	Removing marker Rdl.296G_G as the highest, non-significant marker (P = 0.8718867).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = baguida.pm.table, family = binomial) 
+	Removing marker Ace1.119S_A as the highest, non-significant marker (P = 0.8686305).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Gste2.114T_G + Gste2.119V_C, data = baguida.pm.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.7738522).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Gste2.119V_C, data = baguida.pm.table, family = binomial) 
+	Removing marker Vgsc.1853I_A as the highest, non-significant marker (P = 0.2710842).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1868T_C + Gste2.119V_C, data = baguida.pm.table, family = binomial) 
+	Removing marker Vgsc.1868T_C as the highest, non-significant marker (P = 0.5677611).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Gste2.119V_C, data = baguida.pm.table, family = binomial) 
+	Removing marker Vgsc.1746S_T as the highest, non-significant marker (P = 0.1313547).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Gste2.119V_C, data = baguida.pm.table, family = binomial) 
+	Removing marker Gste2.119V_C as the highest, non-significant marker (P = 0.1972651).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T, data = baguida.pm.table, family = binomial) 
+	All remaining variables significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ Vgsc.1570Y_T, family = binomial, data = baguida.pm.table)
+
+Coefficients:
+ (Intercept)  Vgsc.1570Y_T  
+      0.5159       -1.2803  
+
+Degrees of Freedom: 74 Total (i.e. Null);  73 Residual
+Null Deviance:	    102.9 
+Residual Deviance: 91.97 	AIC: 95.97
+Final model contained 1 parameters: Vgsc.1570Y_T.
+
+
+                        P deviance
+Vgsc.1570Y_T 0.0009520174 10.91863
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                        P pseudo.R2
+Vgsc.1570Y_T 0.0009520174        NA
+Vgsc.1746S_T 0.7774289958        NA
+Vgsc.1853I_A 0.0172427436        NA
+Vgsc.1868T_C 0.9795958385        NA
+Vgsc.791M_T  0.6424924085        NA
+Rdl.296G_G   0.3355156332        NA
+Ace1.119S_A  0.8635523410        NA
+Gste2.114T_G 0.7842760146        NA
+Gste2.119V_C 0.0665958496        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ Vgsc.1570Y_T, family = binomial, data = baguida.pm.table)
+
+Coefficients:
+ (Intercept)  Vgsc.1570Y_T  
+      0.5159       -1.2803  
+
+Degrees of Freedom: 74 Total (i.e. Null);  73 Residual
+Null Deviance:	    102.9 
+Residual Deviance: 91.97 	AIC: 95.97
+
+$final.sig
+                        P deviance
+Vgsc.1570Y_T 0.0009520174 10.91863
+
+$temporarily.removed
+character(0)
+
+
+Vgsc.1570Y positively associated with PM resistance in Baguida.
+
+
+Korle-Bu PM:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1527T_C + Vgsc.1603T_C + Vgsc.402L_C + Vgsc.995F_T + Ace1.119S_A + Gste2.114T_G, data = kb.pm.table, family = binomial) 
+	Removing marker Vgsc.1603T_C as the highest, non-significant marker (P = 0.9451541).
+
+Building model: glm(phenotype ~ Vgsc.1527T_C + Vgsc.402L_C + Vgsc.995F_T + Ace1.119S_A + Gste2.114T_G, data = kb.pm.table, family = binomial) 
+	Removing marker Vgsc.402L_C as the highest, non-significant marker (P = 0.8963297).
+
+Building model: glm(phenotype ~ Vgsc.1527T_C + Vgsc.995F_T + Ace1.119S_A + Gste2.114T_G, data = kb.pm.table, family = binomial) 
+	Removing marker Vgsc.1527T_C as the highest, non-significant marker (P = 0.2310268).
+
+Building model: glm(phenotype ~ Vgsc.995F_T + Ace1.119S_A + Gste2.114T_G, data = kb.pm.table, family = binomial) 
+	All remaining variables significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ Vgsc.995F_T + Ace1.119S_A + Gste2.114T_G, 
+    family = binomial, data = kb.pm.table)
+
+Coefficients:
+ (Intercept)   Vgsc.995F_T   Ace1.119S_A  Gste2.114T_G  
+     -0.2482        0.8494       -2.2362        0.8324  
+
+Degrees of Freedom: 117 Total (i.e. Null);  114 Residual
+Null Deviance:	    163.3 
+Residual Deviance: 134.9 	AIC: 142.9
+Final model contained 3 parameters: Vgsc.995F_T,Ace1.119S_A,Gste2.114T_G.
+
+
+                        P  deviance
+Vgsc.995F_T  4.150346e-02  4.155339
+Ace1.119S_A  7.267698e-06 20.121451
+Gste2.114T_G 2.794181e-02  4.831654
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                        P pseudo.R2
+Vgsc.1527T_C 7.388798e-02        NA
+Vgsc.1603T_C 5.267926e-01        NA
+Vgsc.402L_C  1.347687e-01        NA
+Vgsc.995F_T  4.014065e-02        NA
+Ace1.119S_A  9.585217e-06        NA
+Gste2.114T_G 5.701789e-02        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ Vgsc.995F_T + Ace1.119S_A + Gste2.114T_G, 
+    family = binomial, data = kb.pm.table)
+
+Coefficients:
+ (Intercept)   Vgsc.995F_T   Ace1.119S_A  Gste2.114T_G  
+     -0.2482        0.8494       -2.2362        0.8324  
+
+Degrees of Freedom: 117 Total (i.e. Null);  114 Residual
+Null Deviance:	    163.3 
+Residual Deviance: 134.9 	AIC: 142.9
+
+$final.sig
+                        P  deviance
+Vgsc.995F_T  4.150346e-02  4.155339
+Ace1.119S_A  7.267698e-06 20.121451
+Gste2.114T_G 2.794181e-02  4.831654
+
+$temporarily.removed
+character(0)
+
+
+Ace1 very strongly associated with PM resistance in Korle-Bu. Vgsc-995F (ie: absence of 402L) and Gste2-114T both negatively associated.
+
+
+Madina PM:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = madina.pm.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.9342268).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Ace1.119S_A + Gste2.119V_C, data = madina.pm.table, family = binomial) 
+	Removing marker Vgsc.1570Y_T as the highest, non-significant marker (P = 0.6807809).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Ace1.119S_A + Gste2.119V_C, data = madina.pm.table, family = binomial) 
+	Removing marker Gste2.119V_C as the highest, non-significant marker (P = 0.4660112).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Ace1.119S_A, data = madina.pm.table, family = binomial) 
+	Removing marker Vgsc.791M_T as the highest, non-significant marker (P = 0.1761755).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1853I_A + Ace1.119S_A, data = madina.pm.table, family = binomial) 
+	Removing marker Vgsc.1746S_T as the highest, non-significant marker (P = 0.1963003).
+
+Building model: glm(phenotype ~ Vgsc.1853I_A + Ace1.119S_A, data = madina.pm.table, family = binomial) 
+	All remaining variables significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ Vgsc.1853I_A + Ace1.119S_A, family = binomial, 
+    data = madina.pm.table)
+
+Coefficients:
+ (Intercept)  Vgsc.1853I_A   Ace1.119S_A  
+      20.193         1.147       -20.293  
+
+Degrees of Freedom: 72 Total (i.e. Null);  70 Residual
+Null Deviance:	    100.5 
+Residual Deviance: 47.66 	AIC: 53.66
+Final model contained 2 parameters: Vgsc.1853I_A,Ace1.119S_A.
+
+
+                        P  deviance
+Vgsc.1853I_A 4.207733e-02  4.132091
+Ace1.119S_A  1.835221e-12 49.652649
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                        P pseudo.R2
+Vgsc.1570Y_T 3.309601e-01        NA
+Vgsc.1746S_T 3.893717e-01        NA
+Vgsc.1853I_A 7.314774e-02        NA
+Vgsc.791M_T  2.247044e-01        NA
+Ace1.119S_A  2.935154e-12        NA
+Gste2.114T_G 3.123842e-01        NA
+Gste2.119V_C 1.998280e-01        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ Vgsc.1853I_A + Ace1.119S_A, family = binomial, 
+    data = madina.pm.table)
+
+Coefficients:
+ (Intercept)  Vgsc.1853I_A   Ace1.119S_A  
+      20.193         1.147       -20.293  
+
+Degrees of Freedom: 72 Total (i.e. Null);  70 Residual
+Null Deviance:	    100.5 
+Residual Deviance: 47.66 	AIC: 53.66
+
+$final.sig
+                        P  deviance
+Vgsc.1853I_A 4.207733e-02  4.132091
+Ace1.119S_A  1.835221e-12 49.652649
+
+$temporarily.removed
+character(0)
+
+
+Ace1 very strongly associated with PM resistance in Madina. Vgsc-1853Y negatively associated.
+
+
+Obuasi PM:
+Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1874L_T + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = obuasi.pm.table, family = binomial) 
+	Removing marker Vgsc.1874L_T as the highest, non-significant marker (P = 0.994727).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = obuasi.pm.table, family = binomial) 
+	Removing marker Rdl.296G_G as the highest, non-significant marker (P = 0.7616776).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = obuasi.pm.table, family = binomial) 
+	Removing marker Vgsc.1853I_A as the highest, non-significant marker (P = 0.7276014).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = obuasi.pm.table, family = binomial) 
+	Removing marker Gste2.119V_C as the highest, non-significant marker (P = 0.6347398).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G, data = obuasi.pm.table, family = binomial) 
+	Removing marker Vgsc.1746S_T as the highest, non-significant marker (P = 0.542282).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G, data = obuasi.pm.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.228773).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.791M_T + Ace1.119S_A, data = obuasi.pm.table, family = binomial) 
+	Removing marker Vgsc.791M_T as the highest, non-significant marker (P = 0.09802378).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Ace1.119S_A, data = obuasi.pm.table, family = binomial) 
+	Removing marker Vgsc.1570Y_T as the highest, non-significant marker (P = 0.146543).
+
+Building model: glm(phenotype ~ Ace1.119S_A, data = obuasi.pm.table, family = binomial) 
+	All remaining variables significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ Ace1.119S_A, family = binomial, data = obuasi.pm.table)
+
+Coefficients:
+(Intercept)  Ace1.119S_A  
+      3.232       -1.846  
+
+Degrees of Freedom: 117 Total (i.e. Null);  116 Residual
+Null Deviance:	    163.3 
+Residual Deviance: 149.2 	AIC: 153.2
+Final model contained 1 parameters: Ace1.119S_A.
+
+
+                       P deviance
+Ace1.119S_A 0.0001719579  14.1151
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                        P pseudo.R2
+Vgsc.1570Y_T 0.0736226052        NA
+Vgsc.1746S_T 0.6512053618        NA
+Vgsc.1853I_A 0.2191428878        NA
+Vgsc.1874L_T 0.4969852017        NA
+Vgsc.791M_T  0.5750494477        NA
+Rdl.296G_G   0.2225284120        NA
+Ace1.119S_A  0.0001719579        NA
+Gste2.114T_G 0.3363296152        NA
+Gste2.119V_C 0.9177315554        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ Ace1.119S_A, family = binomial, data = obuasi.pm.table)
+
+Coefficients:
+(Intercept)  Ace1.119S_A  
+      3.232       -1.846  
+
+Degrees of Freedom: 117 Total (i.e. Null);  116 Residual
+Null Deviance:	    163.3 
+Residual Deviance: 149.2 	AIC: 153.2
+
+$final.sig
+                       P deviance
+Ace1.119S_A 0.0001719579  14.1151
+
+$temporarily.removed
+character(0)
+
+
+Ace1 very strongly associated with PM resistance in Obuasi.
+Removing random effect  location  was removed because it is invariable.Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1597G_G + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.1874L_T + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = pm.table, family = binomial) 
+	Removing marker Vgsc.1874L_T as the highest, non-significant marker (P = 0.8908931).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1597G_G + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = pm.table, family = binomial) 
+	Removing marker Rdl.296G_G as the highest, non-significant marker (P = 0.7906457).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1597G_G + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = pm.table, family = binomial) 
+	Removing marker Gste2.119V_C as the highest, non-significant marker (P = 0.7306216).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1597G_G + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G, data = pm.table, family = binomial) 
+	Removing marker Vgsc.1853I_A as the highest, non-significant marker (P = 0.6505736).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1597G_G + Vgsc.1746S_T + Vgsc.1868T_C + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G, data = pm.table, family = binomial) 
+	Removing marker Vgsc.1746S_T as the highest, non-significant marker (P = 0.5487414).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1597G_G + Vgsc.1868T_C + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G, data = pm.table, family = binomial) 
+	Removing marker Vgsc.1597G_G as the highest, non-significant marker (P = 0.536765).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1868T_C + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G, data = pm.table, family = binomial) 
+	Removing marker Vgsc.1868T_C as the highest, non-significant marker (P = 0.4549981).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.791M_T + Ace1.119S_A + Gste2.114T_G, data = pm.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.228773).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.791M_T + Ace1.119S_A, data = pm.table, family = binomial) 
+	Removing marker Vgsc.791M_T as the highest, non-significant marker (P = 0.09802378).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Ace1.119S_A, data = pm.table, family = binomial) 
+	Removing marker Vgsc.1570Y_T as the highest, non-significant marker (P = 0.146543).
+
+Building model: glm(phenotype ~ Ace1.119S_A, data = pm.table, family = binomial) 
+	All remaining variables significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ Ace1.119S_A, family = binomial, data = pm.table)
+
+Coefficients:
+(Intercept)  Ace1.119S_A  
+      3.232       -1.846  
+
+Degrees of Freedom: 117 Total (i.e. Null);  116 Residual
+Null Deviance:	    163.3 
+Residual Deviance: 149.2 	AIC: 153.2
+Final model contained 1 parameters: Ace1.119S_A.
+
+
+                       P deviance
+Ace1.119S_A 0.0001719579  14.1151
+$invariable.markers
+[1] "Vgsc.1527T_C" "Vgsc.1603T_C" "Vgsc.1940T_C" "Vgsc.995F_T"  "Rdl.296S_T"  
+[6] "Gste2.119V_T"
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                        P pseudo.R2
+Vgsc.1570Y_T 0.0736226052        NA
+Vgsc.1597G_G 0.9421449730        NA
+Vgsc.1746S_T 0.6512053618        NA
+Vgsc.1853I_A 0.2191428878        NA
+Vgsc.1868T_C 0.4971886346        NA
+Vgsc.1874L_T 0.4969852017        NA
+Vgsc.791M_T  0.5750494477        NA
+Rdl.296G_G   0.2225284120        NA
+Ace1.119S_A  0.0001719579        NA
+Gste2.114T_G 0.3363296152        NA
+Gste2.119V_C 0.9177315554        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ Ace1.119S_A, family = binomial, data = pm.table)
+
+Coefficients:
+(Intercept)  Ace1.119S_A  
+      3.232       -1.846  
+
+Degrees of Freedom: 117 Total (i.e. Null);  116 Residual
+Null Deviance:	    163.3 
+Residual Deviance: 149.2 	AIC: 153.2
+
+$final.sig
+                       P deviance
+Ace1.119S_A 0.0001719579  14.1151
+
+$temporarily.removed
+character(0)
+
+
+Ace1 is the only significant SNP. It is positively associated with resistance.
+Removing random effect  location  was removed because it is invariable.Using the following string to control for confounding factors: 
+
+Detecting invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.1874L_T + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.114T_G + Gste2.119V_C, data = delta.table, family = binomial) 
+	Removing marker Gste2.114T_G as the highest, non-significant marker (P = 0.8901412).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.1874L_T + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.119V_C, data = delta.table, family = binomial) 
+	Removing marker Vgsc.1874L_T as the highest, non-significant marker (P = 0.8626503).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1853I_A + Vgsc.1868T_C + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.119V_C, data = delta.table, family = binomial) 
+	Removing marker Vgsc.1853I_A as the highest, non-significant marker (P = 0.5999468).
+
+Building model: glm(phenotype ~ Vgsc.1570Y_T + Vgsc.1746S_T + Vgsc.1868T_C + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.119V_C, data = delta.table, family = binomial) 
+	Removing marker Vgsc.1570Y_T as the highest, non-significant marker (P = 0.5025858).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1868T_C + Vgsc.791M_T + Rdl.296G_G + Ace1.119S_A + Gste2.119V_C, data = delta.table, family = binomial) 
+	Removing marker Rdl.296G_G as the highest, non-significant marker (P = 0.4959183).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1868T_C + Vgsc.791M_T + Ace1.119S_A + Gste2.119V_C, data = delta.table, family = binomial) 
+	Removing marker Ace1.119S_A as the highest, non-significant marker (P = 0.3029896).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.1868T_C + Vgsc.791M_T + Gste2.119V_C, data = delta.table, family = binomial) 
+	Removing marker Vgsc.1868T_C as the highest, non-significant marker (P = 0.1085544).
+
+Building model: glm(phenotype ~ Vgsc.1746S_T + Vgsc.791M_T + Gste2.119V_C, data = delta.table, family = binomial) 
+	All remaining variables significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ Vgsc.1746S_T + Vgsc.791M_T + Gste2.119V_C, 
+    family = binomial, data = delta.table)
+
+Coefficients:
+ (Intercept)  Vgsc.1746S_T   Vgsc.791M_T  Gste2.119V_C  
+      0.9075        2.1800       -1.7275       -0.7237  
+
+Degrees of Freedom: 79 Total (i.e. Null);  76 Residual
+Null Deviance:	    104.8 
+Residual Deviance: 94.66 	AIC: 102.7
+Final model contained 3 parameters: Vgsc.1746S_T,Vgsc.791M_T,Gste2.119V_C.
+
+
+                      P deviance
+Vgsc.1746S_T 0.01623809 5.776907
+Vgsc.791M_T  0.04548861 4.000432
+Gste2.119V_C 0.03425818 4.481772
+$invariable.markers
+[1] "Vgsc.1527T_C" "Vgsc.1597G_G" "Vgsc.1603T_C" "Vgsc.1940T_C" "Vgsc.995F_T" 
+[6] "Rdl.296S_T"   "Gste2.119V_T"
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                      P pseudo.R2
+Vgsc.1570Y_T 0.42274488        NA
+Vgsc.1746S_T 0.14083457        NA
+Vgsc.1853I_A 0.19591929        NA
+Vgsc.1868T_C 0.17614420        NA
+Vgsc.1874L_T 0.89345515        NA
+Vgsc.791M_T  0.51670605        NA
+Rdl.296G_G   0.60313858        NA
+Ace1.119S_A  0.79318471        NA
+Gste2.114T_G 0.53518437        NA
+Gste2.119V_C 0.04590218        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ Vgsc.1746S_T + Vgsc.791M_T + Gste2.119V_C, 
+    family = binomial, data = delta.table)
+
+Coefficients:
+ (Intercept)  Vgsc.1746S_T   Vgsc.791M_T  Gste2.119V_C  
+      0.9075        2.1800       -1.7275       -0.7237  
+
+Degrees of Freedom: 79 Total (i.e. Null);  76 Residual
+Null Deviance:	    104.8 
+Residual Deviance: 94.66 	AIC: 102.7
+
+$final.sig
+                      P deviance
+Vgsc.1746S_T 0.01623809 5.776907
+Vgsc.791M_T  0.04548861 4.000432
+Gste2.119V_C 0.03425818 4.481772
+
+$temporarily.removed
+character(0)
+
+
+Vgsc-791M and Gste2-119V are both positively associated with deltamethrin resistance. Vgsc-1746S is negatively associated.
+None of the P-value are particularly small.
