@@ -387,14 +387,22 @@ Running find.sib.groups with a king threshold of 0.35
 [37] 0.295 0.155 0.160 0.165 0.150
 We choose a king threshold of 0.195 as the best threshold
 .
-We have removed 106 samples, broken down as follows:
+The following samples from the sib.group.table were male:
+
+	 WA-1059 
+
+This sample had just one sib:
+[1] "WA-1086"
+Removing this sib group from the table.
+
+We have removed 105 samples as sibs, broken down as follows:
 
 , , insecticide = Delta
 
           phenotype
 location   alive dead
   Aboisso      0    0
-  Avrankou     3    7
+  Avrankou     3    6
   Baguida      7    9
   Korle-Bu     2    5
   Madina      15   11
