@@ -12,7 +12,7 @@ kary.2La <- fread('../karyotypes/gaard_karyotypes.tsv', sep = '\t') %>%
             setkey(partner_sample_id)
 
 # Load relatedness results
-ngs.relate.output.fn <- 'king.csv'
+ngs.relate.output.fn <- 'gaard.allsnps.king.csv'
 ngs.relate <- fread(ngs.relate.output.fn, sep = '\t')
 # Change the name of the king column for easier typing
 colnames(ngs.relate)[3] <- tolower(colnames(ngs.relate)[3])
@@ -79,8 +79,9 @@ with(gamgam[location.a == location.b], hist(king, col = rgb(0.6,0.6,1), add = T,
 hist(colcol$king, col = rgb(0.8,0,0), breaks = 100, main = 'coluzzii pairs', xlab = 'King', ylab = '', ylim = c(0,100))
 with(colcol[location.a == location.b], hist(king, col = rgb(1,0.6,0.6), add = T, breaks = 100))
 dev.off()
-
 # We still have a peak of negatively related individual
+
+# A function to build sib groups based on a given kinship threshold value. 
 find.sib.groups <- function(sib.table, verbose = F){
 	# First, create a list where each entry is a sib pair declared by the sib.table
 	pair.list <- lapply(split(sib.table[, .(a, b)], 1:nrow(sib.table)), unlist)
@@ -138,6 +139,7 @@ find.sib.groups <- function(sib.table, verbose = F){
 	     total.pairs = total.pairs, 
 	     total.missing.pairs = total.missing.pairs, 
 		 missing.pair.ratio = total.missing.pairs / total.pairs,
+		 incorrect.group.ratio = length(missing.pair.tables) / length(sib.groups),
 	     total.cross.study.pairs = total.cross.study.pairs, 
 	     missing.pair.tables = missing.pair.tables, 
 	     cross.study.sibs.per.group = cross.study.sibs.per.group)
@@ -149,12 +151,13 @@ test.threshold <- function(king.thresh, pairs.table, verbose = F){
 	invisible(find.sib.groups(sib.pairs, verbose = verbose))
 }
 
-thresholds <- seq(0.15, 0.35, 0.005)
+thresholds <- seq(0.15, 0.3, 0.005)
 threshold.exploration.gam <- lapply(thresholds, test.threshold, gamgam)
 gam.num.cross.pairs <- sapply(threshold.exploration.gam, function(x) x$total.cross.study.pairs)
 gam.total.missing.pairs <- sapply(threshold.exploration.gam, function(x) x$total.missing.pairs)
 gam.total.pairs <- sapply(threshold.exploration.gam, function(x) x$total.pairs)
 gam.missing.pair.ratio <- sapply(threshold.exploration.gam, function(x) x$missing.pair.ratio)
+gam.incorrect.group.ratio <- sapply(threshold.exploration.gam, function(x) x$incorrect.group.ratio)
 x11()
 par(mfrow = c(1,2))
 plot(thresholds, gam.total.pairs, pch = 19, col = 'black', ylim = c(0, max(c(gam.total.pairs, gam.total.missing.pairs))), main = 'gambiae pairs')
@@ -168,6 +171,7 @@ col.num.cross.pairs <- sapply(threshold.exploration.col, function(x) x$total.cro
 col.total.missing.pairs <- sapply(threshold.exploration.col, function(x) x$total.missing.pairs)
 col.total.pairs <- sapply(threshold.exploration.col, function(x) x$total.pairs)
 col.missing.pair.ratio <- sapply(threshold.exploration.col, function(x) x$missing.pair.ratio)
+col.incorrect.group.ratio <- sapply(threshold.exploration.col, function(x) x$incorrect.group.ratio)
 x11()
 par(mfrow = c(1,2))
 plot(thresholds, col.total.pairs, pch = 19, col = 'black', ylim = c(0, max(c(col.total.pairs, col.total.missing.pairs))), main = 'coluzzii pairs')
@@ -181,17 +185,19 @@ num.cross.pairs <- sapply(threshold.exploration, function(x) x$total.cross.study
 total.missing.pairs <- sapply(threshold.exploration, function(x) x$total.missing.pairs)
 total.pairs <- sapply(threshold.exploration, function(x) x$total.pairs)
 missing.pair.ratio <- sapply(threshold.exploration, function(x) x$missing.pair.ratio)
+incorrect.group.ratio <- sapply(threshold.exploration, function(x) x$incorrect.group.ratio)
 x11()
 par(mfrow = c(1,2))
 plot(thresholds, total.pairs, pch = 19, col = 'black', ylim = c(0, max(c(total.pairs, total.missing.pairs))), main = 'same species pairs')
 points(thresholds, total.missing.pairs, pch = 19, col = 'red')
 points(thresholds, num.cross.pairs, pch = 19, col = 'magenta')
 plot(thresholds, missing.pair.ratio, pch = 19, col = rgb(1,0.5,0.5))
+points(thresholds, 5*(incorrect.group.ratio-0.1), pch = 19, col = rgb(0.5,1,0.5))
 thresholds[order(missing.pair.ratio)]
 
 # So we settle on a threshold of 0.195.
-cat('We choose a king threshold of', thresholds[which.min(missing.pair.ratio)], 'as the best threshold\n.')
-best.threshold.results <- threshold.exploration[[which.min(missing.pair.ratio)]]
+cat('We choose a king threshold of', thresholds[which.min(incorrect.group.ratio)], 'as the best threshold\n.')
+best.threshold.results <- threshold.exploration[[which.min(incorrect.group.ratio)]]
 
 # Create a list of sib groups, which includes the experiment that each individual was taken from
 create.sib.group.table <- function(sib.pair.table, sib.group.id){
