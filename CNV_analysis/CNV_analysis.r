@@ -8,6 +8,15 @@ meta <- fread('../data/combined/all_samples.samples.meta.csv', key = 'sample_id'
 meta.sample.names <- meta$partner_sample_id
 phen <- fread('../data/combined/sample_phenotypes.csv', key = 'specimen')[sort(meta.sample.names), ]
 
+# Load the sib groups information
+sib.groups <- fread('../NGSrelate/full_relatedness/sib_group_table.csv', sep = '\t')
+sibs.to.remove <- sib.groups[keep == F, sample.name]
+
+# Identify the males and add them to the list of samples to remove
+males <- meta[sex_call == 'M', partner_sample_id]
+samples.to.remove <- c(sibs.to.remove, males)
+
+
 load.target.cnv.table <- function(study.id){
 	target.cnv.table <- fread(paste('Ag1000G_CNV_data', study.id, 'target_regions_analysis/focal_region_CNV_table.csv', sep = '/'))
 	these.sample.names <- meta[target.cnv.table$V1, partner_sample_id]
@@ -18,6 +27,7 @@ load.target.cnv.table <- function(study.id){
 
 target.CNV.table <- lapply(unique(study.ids.table$study_id), load.target.cnv.table) %>%
                     rbindlist() %>%
+                    .[!(sample.id %in% samples.to.remove)] %>%
                     setkey(sample.id)
 
 Dup.names <- grep('_D[upel]{2}', colnames(target.CNV.table), value = T)
@@ -35,7 +45,7 @@ for (D in Dups.any){
 	target.CNV.table[[D]] <- apply(subset(target.CNV.table[, ..these.cnvs]), 1, any)
 }
 
-target.CNV.table$phenotype <- as.factor(phen[target.CNV.table$sample.id, phenotype])
+target.CNV.table$phenotype <- as.factor(phen[sample.names, phenotype])
 
 # Get the CNV count per population
 population.target.numCNVs <- aggregate(target.CNV.table[, c(Dup.names, Dups.any), with = F], 
@@ -80,8 +90,6 @@ focal.region.cnv.frequencies <- cbind(spin.and.fill(population.target.numCNVs, '
 
 
 # Now get the modal CNVs by gene
-gene.table <- fread('Ag1000G_CNV_data/gene_annotation_fullgenetable.csv', key = 'Gene_stable_ID', check.names = T)
-
 load.modal.cnv.table <- function(study.id){
 	modal.cnv.table <- fread(paste('Ag1000G_CNV_data', study.id, 'modal_CNVs/modal_copy_number_gambcolu.csv', sep = '/'))
 	these.sample.names <- meta[modal.cnv.table$V1, partner_sample_id]
@@ -92,6 +100,7 @@ load.modal.cnv.table <- function(study.id){
 
 modal.copy.number <- lapply(unique(study.ids.table$study_id), load.modal.cnv.table) %>%
                      rbindlist() %>%
+                     .[!(sample.id %in% samples.to.remove)] %>%
                      .[high_variance == F, -c('sex_call', 'high_variance')]
 
 modal.CNV.table <- copy(modal.copy.number) %>%
@@ -103,6 +112,8 @@ detox.genes <- c('Ace1',
                  paste('Gste', 1:8, sep = ''),
                  'Cyp9k1')
 
+# Get the names of the detox genes
+gene.table <- fread('Ag1000G_CNV_data/gene_annotation_fullgenetable.csv', key = 'Gene_stable_ID', check.names = T)
 detox.gene.conversion <- gene.table[Gene.name %in% toupper(detox.genes), 
                                     .(Gene.id = Gene_stable_ID, Gene.name = str_to_title(Gene.name))]
 
@@ -453,7 +464,7 @@ print(modal.copy.number[.('Delta', c('Avrankou', 'Korle-Bu', 'Madina')), drop1(g
 # What's the direction?
 cat('\n\t Coefficients (negative means positively association with resistance:\n')
 print(modal.copy.number[.('Delta', c('Avrankou', 'Korle-Bu', 'Madina')), glm(phenotype ~ Cyp6aa1 + location, family = 'binomial')])
-# That's significant for Cyp6aa1. 
+# That's significant positive association with resistance for Cyp6aa1. 
 
 cat('\n\nCyp6aa1 + Cyp6p3 combined PM, location as fixed factor:\n')
 print(modal.copy.number[.('PM', c('Avrankou', 'Korle-Bu', 'Madina')), drop1(glm(phenotype ~ Cyp6aa1 + Cyp6p3 + location, family = 'binomial'), test = 'Chisq')])
@@ -490,9 +501,7 @@ cat('\n\nAce1 combined + Del1 presence, PM, location as fixed factor:\n')
 print(modal.copy.number['PM', drop1(glm(phenotype ~ Ace1 + Ace1_Del1_presence + location, family = 'binomial'), test = 'Chisq')])
 cat('\n\t Coefficients (negative means positively association with resistance:\n')
 print(modal.copy.number['PM', glm(phenotype ~ Ace1 + Ace1_Del1_presence + location, family = 'binomial')])
-# Having the deletion increases the level of resistance. 
-# So even once the number of copies of Ace1 is taken into account, we are still seeing a significant effect of the
-# number of deletions. 
+# Having the deletion, not quite significant, but direction of trend is to increase the level of resistance. 
 
 # An alternative model would be one that counts the number of deletions. We can do this by taking the mean modal
 # copy number of several genes present in the deletion and subtracting this from the copy number in Ace1. That's 
@@ -504,8 +513,8 @@ modal.copy.number[, Ace1_Del_cn := Ace1 - apply(.SD, 1, median), .SDcols = ace1.
 cat('\n\nAce1 combined + Del1 copy number, PM, location as fixed factor:\n')
 print(modal.copy.number['PM', drop1(glm(phenotype ~ Ace1 + Ace1_Del_cn + location, family = 'binomial'), test = 'Chisq')])
 
-# It's now non-significant. It's at least partly because in the samples with a deletion copy number of 1, survival
-# is higher in those that have Del1 than those that don't. 
+# It's much further from significance. It's at least partly because in the samples with a deletion copy number of 
+# 1, survival is higher in those that have Del1 than those that don't. 
 
 # For Cyp6aap, let's look at each Dup in turn. We'll do that by population because there are different CNVs in
 # different populations. In gambiae, there is very little diversity of Dups, so not really worth looking into 
@@ -514,16 +523,16 @@ print(modal.copy.number['PM', drop1(glm(phenotype ~ Ace1 + Ace1_Del_cn + locatio
 cat('\n\nCyp6aap alleles in Avrankou:\n')
 avrankou.delta.samples <- phen[location == 'Avrankou', specimen]
 print(target.CNV.table[avrankou.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup7 + Cyp6aap_Dup10, family = 'binomial'), test = 'Chisq')])
-# Dup10 is least significant
-print(target.CNV.table[avrankou.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup7, family = 'binomial'), test = 'Chisq')])
-# Dup7 also non significant 
+# Dup7 is least significant
+print(target.CNV.table[avrankou.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup10, family = 'binomial'), test = 'Chisq')])
+# Dup10 also non significant 
 
 # Korle-Bu:
 korlebu.delta.samples <- phen[location == 'Korle-Bu' & insecticide == 'Delta', specimen]
 print(target.CNV.table[korlebu.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup10 + Cyp6aap_Dup17 + Cyp6aap_Dup18, family = 'binomial'), test = 'Chisq')])
 # Dup17 is least significant
 print(target.CNV.table[korlebu.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup10 + Cyp6aap_Dup18, family = 'binomial'), test = 'Chisq')])
-# Dup18 is non-significant. 
+# Dup18 is non-significant, but only just
 print(target.CNV.table[korlebu.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup10, family = 'binomial'), test = 'Chisq')])
 # Dup10 is significant
 cat('\n\t Coefficients (negative means positively association with resistance:\n')
