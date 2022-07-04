@@ -5,7 +5,8 @@ library(stringr)
 library(reticulate)
 
 # Load the SNP data and functions from the Fst analysis
-load('~/data/ML/GAARD_SNP/fst_analyses/fst_1000_window/fst_1000_window.Rdata')
+#load('~/data/ML/GAARD_SNP/fst_analyses/fst_1000_window/fst_1000_window.Rdata')
+load('~/data/ML/GAARD_SNP/filtered_snp_tables/filtered_snp_tables.Rdata')
 
 arg.values <- commandArgs(trailingOnly=T)
 cat('Running with populations:', arg.values[1], '\n', sep = '\n')
@@ -24,11 +25,17 @@ num.randomisations <- as.integer(arg.values[2])
 use_condaenv('gaard')
 allel <- import('allel')
 
-# Print out some variables from that environment so we know what they are
-cat('window.size = ', window.size, '\n')
+# Set the window size for Fst analysis
+window.size <- 1000
+
+# Load the sibgroup data
+sib.groups.fn <- '~/data/GAARD_repo/GAARD_work/NGSrelate/full_relatedness/sib_group_table.csv'
+sib.groups <- fread(sib.groups.fn)
+sib.groups[, pop := paste(location, species, insecticide, sep = '_')]
+sib.groups.list <- split(sib.groups, sib.groups$pop)
 
 # Load the phenotype randomisations
-phenotype.filename <- '../phenotype_10000_randomisations.csv'
+phenotype.filename <- '../phenotype_randomisations.csv'
 cat('Loading randomised phenotype data from ', phenotype.filename, '.\n', sep = '')
 phenotype.table <- fread(phenotype.filename, key = 'specimen')
 phenotype.table$population <- gsub('\\.', '_', phenotype.table$population)
@@ -47,17 +54,24 @@ calculate.window.pos <- function(pop){
 	window.pos
 }
 
-cat('Calculating window positions\n')
-window.pos <- lapply(setNames(nm = populations), calculate.window.pos)
-window.num.table <- sapply(window.pos, function(x) table(x$window.chrom))
-
-# Calculate the total allele count in each population, this will speed things up later
-cat('Calculating total allele counts\n')
-allele.counts.total <- lapply(setNames(nm = populations), function(pop) snp.tables[[pop]][[1]][, get.allele.counts(.SD), .SDcols = samples.by.pop[[pop]]])
-
 # Write a function to pull out a phenotype vector 
 get.phenotype.iteration <- function(pop, iteration){
 	with(phenotype.table[population == pop, c('specimen', get('iteration'))], setNames(get(iteration), specimen))
+}
+
+# Within each sample set, we want to create every permutation of sample removal from the sib groups. 
+create.permutations <- function(sib.table){
+	table(sib.table$sib.group.id) %>%
+	lapply(., seq) %>%
+	expand.grid() %>%
+	as.matrix()
+}
+
+# A function to turn a table of genotypes into a table of allele counts. 
+get.allele.counts <- function(genotypes){
+	mut.counts <- as.integer(rowSums(genotypes))
+	wt.counts <- as.integer(ncol(genotypes) * 2 - mut.counts)
+	data.table('wt'= wt.counts, 'mut'= mut.counts)
 }
 
 # A function to calculate windowed Fst. Similar as for the main data, but we pass phenotype as a separate argument. 
@@ -132,6 +146,14 @@ windowed.fst.permuted.sibdrop <- function(pop, randomisations, window.size, num.
 	                        function(r) windowed.fst.with.dropped.samples(pop, r, samples.to.drop, window.size))
 	do.call(cbind, windowed.data)
 }
+
+cat('Calculating window positions\n')
+window.pos <- lapply(setNames(nm = populations), calculate.window.pos)
+window.num.table <- sapply(window.pos, function(x) table(x$window.chrom))
+
+# Calculate the total allele count in each population, this will speed things up later
+cat('Calculating total allele counts\n')
+allele.counts.total <- lapply(setNames(nm = populations), function(pop) snp.tables[[pop]][[1]][, get.allele.counts(.SD), .SDcols = samples.by.pop[[pop]]])
 
 set.seed(42)
 

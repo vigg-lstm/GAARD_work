@@ -5,6 +5,8 @@ library(stringr)
 # sequenced samples. 
 phenotypes <- fread('../data/combined/sample_phenotypes.csv', key = 'specimen')
 vobs.meta <- fread('../data/combined/all_samples.samples.meta.csv', key = 'partner_sample_id')
+# Remove males
+vobs.meta <- vobs.meta[sex_call == 'F', ]
 
 # Reduced the phenotype table to only include sequenced samples
 phenotypes <- phenotypes[vobs.meta$partner_sample_id, ]
