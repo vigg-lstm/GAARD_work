@@ -1,13 +1,21 @@
 library(data.table)
 library(magrittr)
 library(reticulate)
+library(glmmTMB)
 use_condaenv('gaard')
 zarr <- import('zarr')
 np <- import('numpy', convert = F)
 expanduser <- import('os')$path$expanduser
 
-meta <- fread('../data/combined/sample_metadata.csv', key = 'MalGEN_ID')
+meta <- fread('../data/combined/all_samples.samples.meta.csv', key = 'sample_id')
 phen <- fread('../data/combined/sample_phenotypes.csv', key = 'specimen')
+
+# Identify samples for removal (sibs and males)
+sib.groups <- fread('../NGSrelate/full_relatedness/sib_group_table.csv')
+sibs.to.remove <- sib.groups[keep == F, sample.name]
+males <- meta[sex_call == 'M', partner_sample_id]
+samples.to.remove <- c(sibs.to.remove, males)
+
 
 pos <- list('2L' = py_to_r(np$array(zarr$open(expanduser('~/scratch/VObs_GAARD/sites/2L/variants/POS'), mode = 'r'))),
             '2R' = py_to_r(np$array(zarr$open(expanduser('~/scratch/VObs_GAARD/sites/2R/variants/POS'), mode = 'r'))),
@@ -66,7 +74,7 @@ get.zarr.genotypes <- function(zarr_folder, chrom, indices){
 	             expanduser() %>%
 	             zarr$open(mode = 'r')
 	vobs.sample.names <- zarr$open(expanduser(paste(zarr_folder, 'samples', sep = '/')), mode = 'r')$get_basic_selection()
-	gaard.sample.names <- meta[sub('-.*', '', vobs.sample.names), External_ID]
+	gaard.sample.names <- meta[vobs.sample.names, partner_sample_id]
 	
 	genotypes.array <- genotypes$get_orthogonal_selection(tuple(np_array(as.integer(indices - 1)), 
 	                                                            np_array(as.integer((1:genotypes$shape[[2]]) - 1)), 
@@ -114,24 +122,32 @@ zarr.folders <- c(Avrankou = '~/scratch/VObs_GAARD/1237-VO-BJ-DJOGBENOU-VMF00050
 
 kdr.genotypes <- lapply(zarr.folders, get.zarr.genotypes, '2L', kdr.indices) %>%
                  Reduce(function(x, y) {xy <- merge(x, y, by = 'row.names', all = T); rownames(xy) <- xy[,1];  xy[,-1]}, .) %>%
-                 .[sort(rownames(.)), sort(colnames(.))]
+                 .[sort(rownames(.)), sort(colnames(.))] %>%
+				 .[, !(colnames(.) %in% samples.to.remove)]
 kdr.genotypes[is.na(kdr.genotypes)] <- 0
 
 rdl.genotypes <- lapply(zarr.folders, get.zarr.genotypes, '2L', rdl.indices) %>%
                  Reduce(function(x, y) {xy <- merge(x, y, by = 'row.names', all = T); rownames(xy) <- xy[,1];  xy[,-1]}, .) %>%
-                 .[sort(rownames(.)), sort(colnames(.))]
+                 .[sort(rownames(.)), sort(colnames(.))] %>%
+				 .[, !(colnames(.) %in% samples.to.remove)]
 rdl.genotypes[is.na(rdl.genotypes)] <- 0
 
 ace1.genotypes <- lapply(zarr.folders, get.zarr.genotypes, '2R', ace1.indices) %>%
                  Reduce(function(x, y) {xy <- merge(x, y, by = 'row.names', all = T); rownames(xy) <- xy[,1];  xy[,-1]}, .) %>%
-                 .[sort(rownames(.)), sort(colnames(.))]
+                 .[sort(rownames(.)), sort(colnames(.))] %>%
+				 .[, !(colnames(.) %in% samples.to.remove)]
 ace1.genotypes[is.na(ace1.genotypes)] <- 0
 
 gste2.genotypes <- lapply(zarr.folders, get.zarr.genotypes, '3R', gste2.indices) %>%
                  Reduce(function(x, y) {xy <- merge(x, y, by = 'row.names', all = T); rownames(xy) <- xy[,1];  xy[,-1]}, .) %>%
-                 .[sort(rownames(.)), sort(colnames(.))]
+                 .[sort(rownames(.)), sort(colnames(.))] %>%
+				 .[, !(colnames(.) %in% samples.to.remove)]
 gste2.genotypes[is.na(gste2.genotypes)] <- 0
 
+# There appears to be a new mutation in gste2.119, where instead of a G->C substitution (leading to a C->G
+# change in the codon, which leads to a L->V change in the amino acid), we have a G->T substitution, which
+# leads to a C->A change in the codon, which leads to a L->M change in the amino acid. However, this is only 
+# found in a single sample in Madina, so could be a genotyping error. 
 
 # Now calculate the allele frequency in each of the populations
 wgs.phen <- phen[colnames(kdr.genotypes)]
@@ -145,6 +161,7 @@ all.markers <- c(rownames(kdr.genotypes),
                  rownames(rdl.genotypes),
                  rownames(ace1.genotypes),
                  rownames(gste2.genotypes))
+
 pop.freqs <- wgs.phen[, lapply(.SD, function(x) mean(x)/2), by = .(location, species), .SDcols = all.markers]
 t.pop.freqs <- cbind(data.table(all.markers),
                      data.table(pop.freqs[, t(.SD), .SDcols =  all.markers])) %>%
@@ -156,7 +173,7 @@ study.freqs <- wgs.phen[, lapply(.SD, function(x) mean(x)/2), by = .(location, s
                setkey(location, insecticide)
 
 # GLMs:
-glmodelling <- function(input.table, list.of.markers = markers, rescolumn = 'AliveDead', control.for = character(), glm.function = NULL, verbose = T){
+glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'AliveDead', control.for = character(), glm.function = NULL, verbose = T){
 	# Check whether the markers and random effects are present in the data.frame
 	if (sum(list.of.markers %in% colnames(input.table)) != length(list.of.markers))
 		stop('Some of the requested markers were not found in genotypes table.')
@@ -184,7 +201,7 @@ glmodelling <- function(input.table, list.of.markers = markers, rescolumn = 'Ali
 		# on the glm function you use
 		P.val.column <- 'Pr(>Chi)'
 	}
-	else if (glm.function == 'glmer'){
+	else if (glm.function %in% c('glmer', 'glmmTMB')){
 		random.effects.string <- ifelse(length(random.effects) > 0, paste(' +', paste('(1|', random.effects, ')', collapse = ' + ', sep = '')), '')
 		P.val.column <- 'Pr(>Chisq)'
 	}
@@ -192,7 +209,7 @@ glmodelling <- function(input.table, list.of.markers = markers, rescolumn = 'Ali
 		cat('Using the following string to control for confounding factors: ', random.effects.string, '\n', sep = '')
 	# We remove markers for which there is no variation in the dataset or for which some alleles are too rare. 
 	if (verbose)
-		cat('\nDetecting invariable markers.\n')
+		cat('\nDetecting invariable and nearly invariable markers.\n')
 	kept.markers <- character()
 	invariable.markers <- character()
 	for (this.marker in list.of.markers){
@@ -203,7 +220,7 @@ glmodelling <- function(input.table, list.of.markers = markers, rescolumn = 'Ali
 			invariable.markers <- c(invariable.markers, this.marker)
 	}
 	if (length(kept.markers) == 0)
-		stop('Fail. None of the markers provided were variable.')
+		stop('Fail. None of the markers provided were sufficiently variable.')
 	# We check whether there are any ordered factors and recode them as numeric
 	converted.table <- input.table
 	has.ordered.factors <- F
@@ -246,43 +263,51 @@ glmodelling <- function(input.table, list.of.markers = markers, rescolumn = 'Ali
 		individual.markers[this.marker, ] <- c(this.p, this.pseudo.r2)
 	}
 	
-	# We now build the full model and remove markers one by one until all markers are significant
-	markers.remaining <- kept.markers
-	full.model.text <- paste(glm.function, '(', rescolumn, ' ~ ', paste(markers.remaining, collapse = ' + '), random.effects.string, ', data = ', working.table.name, ', family = binomial)', sep = '')
+	# We now build the null model and add markers one by one until all markers are significant
+	working.markers <- character()
 	# We'll keep track of the markers with perfect correlation
 	correlated.markers <- character()
 	if (verbose)
 		cat('\nRunning commentary on model optimisation:\n\n')
-	while(length(markers.remaining)){
-		# It is possible that when building the model, some of the markers become monomorphic (because the other 
-		# alleles are removed when other markers are NA). The model building will raise an error if this is the 
-		# case, so let's check for this and temporarily remove such markers before we go ahead.
-		temporarily.removed <- character()
-		markers.remaining.genotypes <- input.table[, markers.remaining, drop = F]
-		markers.remaining.genotypes <- markers.remaining.genotypes[complete.cases(markers.remaining.genotypes), , drop = F]
-		for (this.marker in markers.remaining){
-			allele.counts <- tapply(markers.remaining.genotypes[ ,this.marker], markers.remaining.genotypes[,this.marker], length)
-			if (max(allele.counts, na.rm = T) == sum(allele.counts, na.rm = T)) {
-				if (verbose){
-					cat('Temporarily removing marker ', this.marker, ' as it has no variation left when NAs at other ',
-					    'loci are removed.\n', sep = '')
+	while(length(working.markers) < length(kept.markers)){
+		# Build the model using the working.markers
+		if (length(working.markers)){
+			old.model.text <- paste(glm.function, '(', rescolumn, ' ~ ', paste(working.markers, collapse = ' + '), random.effects.string, ', data = ', working.table.name, ', family = binomial)', sep = '')
+			old.model <- eval(parse(text = old.model.text))
+			# Check the remaining markers as some of them may become monomorphic when NAs from the current marker are 
+			# taken into account
+			for (this.marker in setdiff(kept.markers, working.markers)){
+				markers.subset.genotypes <- input.table[, c(working.markers, this.marker), drop = F]
+				markers.subset.genotypes <- markers.subset.genotypes[complete.cases(markers.subset.genotypes), , drop = F]
+				number.of.alleles <- unique(markers.subset.genotypes[ ,this.marker])
+				if (length(number.of.alleles) < 2) {
+					if (verbose){
+						cat('Removing marker ', this.marker, ' as it has no variation left when NAs at previously added ',
+							'loci are removed.\n\n', sep = '')
+					}
+					kept.markers <- setdiff(kept.markers, this.marker)
 				}
-				temporarily.removed <- c(temporarily.removed, this.marker)
+			}
+			# If we have removed all the remaining markers, we quit the loop and report the final model. 
+			if (length(working.markers) == length(kept.markers)){
+				final.model <- old.model
+				if (verbose){
+					cat('\tNo further markers are significant, keeping final model:\n')
+					print(final.model)
+				}
+				break
 			}
 		}
-		# If any markers need to be temporarily removed, do so here.
-		working.markers <- markers.remaining[!(markers.remaining %in% temporarily.removed)]
-		# Build the model using the working.markers
-		old.model.text <- paste(glm.function, '(', rescolumn, ' ~ ', paste(working.markers, collapse = ' + '), random.effects.string, ', data = ', working.table.name, ', family = binomial)', sep = '')
+		else{
+			old.model.text <- paste(glm.function, '(', rescolumn, ' ~ 1 ', random.effects.string, ', data = ', working.table.name, ', family = binomial)', sep = '')
+			old.model <- eval(parse(text = old.model.text))
+		}
 		if (verbose)
 			cat('Building model:', old.model.text, '\n')
-		old.model <- eval(parse(text = old.model.text))
 		p.values <- numeric()
-		# This will tell us whether we have broken out of the marker loop and therefore should go to the next model loop
-		next.loop <- F
-		for (this.marker in working.markers){
-			new.model <- eval(parse(text = paste('update(old.model, .~.-', this.marker, ')', sep = '')))
-			# Check that the new model doesn't have more rows than the old one (if the removed marker had unique NAs)
+		for (this.marker in setdiff(kept.markers, working.markers)){
+			new.model <- eval(parse(text = paste('update(old.model, .~.+', this.marker, ')', sep = '')))
+			# Check that the new model doesn't have fewer rows than the old one (if the added marker had unique NAs)
 			if (length(fitted(new.model)) == length(fitted(old.model))){
 				this.p.value <- anova(old.model, new.model, test = 'Chisq')[[P.val.column]][2]
 			}
@@ -292,82 +317,78 @@ glmodelling <- function(input.table, list.of.markers = markers, rescolumn = 'Ali
 					reduced.input.table <- converted.table[!is.na(converted.table[,this.marker]),]
 				else 
 					reduced.input.table <- input.table[!is.na(input.table[,this.marker]),]
-				temp.old.model <- eval(parse(text = paste(glm.function, '(', rescolumn, ' ~ ', paste(working.markers, collapse = ' + '), random.effects.string, ', data = reduced.input.table, family = binomial)', sep = '')))
-				new.model <- eval(parse(text = paste('update(temp.old.model, .~.-', this.marker, ')', sep = '')))
+				if (length(working.markers))
+					temp.old.model <- eval(parse(text = paste(glm.function, '(', rescolumn, ' ~ ', paste(working.markers, collapse = ' + '), random.effects.string, ', data = reduced.input.table, family = binomial)', sep = '')))
+				else 
+					temp.old.model <- eval(parse(text = paste(glm.function, '(', rescolumn, ' ~ 1 ', random.effects.string, ', data = reduced.input.table, family = binomial)', sep = '')))
+				new.model <- eval(parse(text = paste('update(temp.old.model, .~.+', this.marker, ')', sep = '')))
 				this.p.value <- anova(temp.old.model, new.model, test = 'Chisq')[[P.val.column]][2]
 			}
-			# If the p.value was NA, then there is perfect correlation or something else was wrong. Remove the marker with a comment
+			# If the p.value was NA, then there is perfect correlation or something else was wrong. Set the p-value 
+			# to Inf and move on to the next marker
 			if (is.na(this.p.value)){
 				if (verbose)
-					cat('\tRemoving marker ', this.marker, ' due to perfect correlation.\n\n', sep = '')
-				markers.remaining <- markers.remaining[markers.remaining != this.marker]
-				correlated.markers <- c(correlated.markers, this.marker)
-				if (length(markers.remaining) == 0){
-					final.model <- paste(glm.function, '(', rescolumn, ' ~ ', '1 ', random.effects.string, ', data = ', working.table.name, ', family = binomial)', sep = '')
-					if (verbose)
-						cat('All variables removed.\n')
-				}
-				next.loop <- T
-				break
+					cat('\tCould not calculate p-value for marker ', this.marker, '.\n\n', sep = '')
+				p.values[this.marker] <- Inf
 			}
 			else{
 				p.values[this.marker] <- this.p.value
 			}
 		}
-		if (next.loop)
-			next
-		else if (max(p.values) > 0.05){
-			# Remove the highest non-significant p-value
+		if (min(p.values) <= 0.05){
+			# Add the lowest significant p-value
 			if (verbose)
-				cat('\tRemoving marker ', names(p.values)[which.max(p.values)], ' as the highest, non-significant marker (P = ', max(p.values), ').\n\n', sep = '')
-			marker.to.remove <- names(p.values)[which.max(p.values)]
-			markers.remaining <- markers.remaining[markers.remaining != marker.to.remove]
-			if (length(markers.remaining) == 0){
-				# If there are no markers remaining, then the final model is the null model
-				final.model <- eval(parse(text = paste(glm.function, '(', rescolumn, ' ~ ', '1 ', random.effects.string, ', data = ', working.table.name, ', family = binomial)', sep = '')))
+				cat('\tAdding marker ', names(p.values)[which.min(p.values)], ' as the lowest significant marker (P = ', min(p.values), ').\n\n', sep = '')
+			marker.to.add <- names(p.values)[which.min(p.values)]
+			working.markers <- c(working.markers, marker.to.add)
+			if (length(working.markers) == length(kept.markers)){
+				# If all markers have been added, then we have the final model
+				final.model <- new.model
 				if (verbose)
-					cat('\tAll variables removed.\n')
+					cat('\tNo markers left to add.\n')
 			}
 		}
 		else {
 			final.model <- old.model
 			if (verbose){
-				cat('\tAll remaining variables significant, keeping final model:\n')
+				cat('\tNo further markers are significant, keeping final model:\n')
 				print(final.model)
 			}
 			break
 		}
 	}
 	if (verbose){
-		if (length(markers.remaining) == 0)
+		if (length(working.markers) == 0)
 			cat('Final model was the null model.\n\n')
-		else {
-			cat('Final model contained ', length(markers.remaining), ' parameters: ', paste(markers.remaining, collapse = ','), '.\n\n', sep = '')
-			if (length(temporarily.removed) > 0){
-				cat('\tMarkers ', paste(temporarily.removed, collapse = ','), ' were temporarily removed but could ',
-					'never be reintegrated into the model.\n', sep = '')
-			}
-		}
+		else 
+			cat('Final model contained ', length(working.markers), ' parameters: ', paste(working.markers, collapse = ','), '.\n\n', sep = '')
 	}
 	# Now get the p-values and pseudo R-squared value for all the variables in the final model, when added as the 
 	# last variable
-	if (length(markers.remaining) > 0){
+	if (length(working.markers) > 0){
 		deviance.effect <- numeric()
-		for (this.marker in names(p.values)){
-			reduced.model <- eval(parse(text = paste('update(final.model, .~.-', this.marker, ')', sep = '')))
-			deviance.effect[this.marker] <- deviance(reduced.model) - deviance(final.model)
+		final.p.values <- numeric()
+		for (this.marker in working.markers){
+			# Remove the Na values for this marker
+			this.table <- converted.table[!is.na(converted.table[,this.marker]),]
+			# Build the model 
+			reduced.final.model <- update(final.model, data = this.table)
+			reduced.model <- eval(parse(text = paste('update(reduced.final.model, .~.-', this.marker, ')', sep = '')))
+			# Get the stats
+			dev.eff <- deviance(reduced.model) - deviance(final.model)
+			deviance.effect[this.marker] <- ifelse(is.null(dev.eff), NA, dev.eff)
+			final.p.values[this.marker] <- anova(reduced.model, reduced.final.model, test = 'Chisq')[[P.val.column]][2]
 		}
 	}
 	else {
-		p.values <- NA
+		final.p.values <- NA
 		deviance.effect <- NA
-		temporarily.removed <- NA
 	}
 	cat('\n')
 	#
-	final.model.sig <- data.frame(P = p.values, deviance = deviance.effect)
+	final.model.sig <- data.frame(P = final.p.values, deviance = deviance.effect)
 	print(final.model.sig)
-	list('invariable.markers' = invariable.markers, 'correlated.markers' = correlated.markers, 'sig.alone' = individual.markers, 'final.model' = final.model, 'final.sig' = final.model.sig, 'temporarily.removed' = temporarily.removed)
+	list('invariable.markers' = invariable.markers, 'correlated.markers' = correlated.markers, 'sig.alone' = individual.markers, 'final.model' = final.model, 'final.sig' = final.model.sig)
 }
 
 # Let's test things in Avrankou Delta
@@ -376,10 +397,8 @@ avrankou.delta.seg.markers <- study.freqs[.('Avrankou', 'Delta'), ..all.markers]
                               {(. > 0.05) & (. < 0.95)} %>%
                               colnames(.)[.]
 avrankou.delta.table <- as.data.frame(wgs.phen[.('Avrankou', 'Delta')])
-glmodelling(avrankou.delta.table, avrankou.delta.seg.markers, 'phenotype')
-cat('\nNote that the direction of effect of 995F, though non-significant, is that 995F makes you less',
-    'resistant (ie: 402L affords more resistance:\n')
-print(glm(phenotype ~ Vgsc.995F_T, data = avrankou.delta.table, family = 'binomial')$coefficients)
+glm.up(avrankou.delta.table, avrankou.delta.seg.markers, 'phenotype')
+cat('\nVgsc.1527T and Vgsc.1603T are both significant, leading to increased resistance against Delta.\n')
 
 # Baguida Delta
 cat('\n\nBaguida Delta:\n')
@@ -387,7 +406,7 @@ baguida.delta.seg.markers <- study.freqs[.('Baguida', 'Delta'), ..all.markers] %
                         {(. > 0.05) & (. < 0.95)} %>%
                         colnames(.)[.]
 baguida.delta.table <- as.data.frame(wgs.phen[.('Baguida', 'Delta')])
-glmodelling(baguida.delta.table, baguida.delta.seg.markers, 'phenotype')
+glm.up(baguida.delta.table, baguida.delta.seg.markers, 'phenotype')
 cat('\nNothing is significant in Baguida Delta\n')
 
 # Korle-Bu Delta
@@ -398,7 +417,7 @@ kb.delta.seg.markers <- study.freqs[.('Korle-Bu', 'Delta'), ..all.markers] %>%
 # We kick out 402L_C 
 kb.delta.seg.markers <- setdiff(kb.delta.seg.markers, c('Vgsc.402L_C'))
 kb.delta.table <- as.data.frame(wgs.phen[.('Korle-Bu', 'Delta')])
-glmodelling(kb.delta.table, kb.delta.seg.markers, 'phenotype')
+glm.up(kb.delta.table, kb.delta.seg.markers, 'phenotype')
 cat('\nNothing is significant in Korle-Bu Delta\n')
 
 # Madina Delta
@@ -407,8 +426,8 @@ madina.delta.seg.markers <- study.freqs[.('Madina', 'Delta'), ..all.markers] %>%
                         {(. > 0.05) & (. < 0.95)} %>%
                         colnames(.)[.]
 madina.delta.table <- as.data.frame(wgs.phen[.('Madina', 'Delta')])
-glmodelling(madina.delta.table, madina.delta.seg.markers, 'phenotype')
-cat('\nGste2-119V negatively associated with Deltamethrin resistance in Madina, but only just.\n')
+glm.up(madina.delta.table, madina.delta.seg.markers, 'phenotype')
+cat('\nNothing significant in Madina Delta.\n')
 
 # Obuasi Delta
 cat('\n\nObuasi Delta:\n')
@@ -416,8 +435,8 @@ obuasi.delta.seg.markers <- study.freqs[.('Obuasi', 'Delta'), ..all.markers] %>%
                         {(. > 0.05) & (. < 0.95)} %>%
                         colnames(.)[.]
 obuasi.delta.table <- as.data.frame(wgs.phen[.('Obuasi', 'Delta')])
-glmodelling(obuasi.delta.table, obuasi.delta.seg.markers, 'phenotype')
-cat('\nVgsc.791M and Gste2-119V positively associated with Deltamethrin resistance in Obuasi. Vgsc.1746S negatively associated. None are particularly strongly significant.\n')
+glm.up(obuasi.delta.table, obuasi.delta.seg.markers, 'phenotype')
+cat('\nNothing significant in Obuasi Delta.\n')
 
 # Baguida PM
 cat('\n\nBaguida PM:\n')
@@ -425,7 +444,7 @@ baguida.pm.seg.markers <- study.freqs[.('Baguida', 'PM'), ..all.markers] %>%
                         {(. > 0.05) & (. < 0.95)} %>%
                         colnames(.)[.]
 baguida.pm.table <- as.data.frame(wgs.phen[.('Baguida', 'PM')])
-glmodelling(baguida.pm.table, baguida.pm.seg.markers, 'phenotype')
+glm.up(baguida.pm.table, baguida.pm.seg.markers, 'phenotype')
 cat('\nVgsc.1570Y positively associated with PM resistance in Baguida.\n')
 
 # Korle-Bu PM
@@ -434,8 +453,9 @@ kb.pm.seg.markers <- study.freqs[.('Korle-Bu', 'PM'), ..all.markers] %>%
                         {(. > 0.05) & (. < 0.95)} %>%
                         colnames(.)[.]
 kb.pm.table <- as.data.frame(wgs.phen[.('Korle-Bu', 'PM')])
-glmodelling(kb.pm.table, kb.pm.seg.markers, 'phenotype')
-cat('\nAce1 very strongly associated with PM resistance in Korle-Bu. Vgsc-995F (ie: absence of 402L) and Gste2-114T both negatively associated.\n')
+glm.up(kb.pm.table, kb.pm.seg.markers, 'phenotype')
+cat('\nAce1 very strongly associated with PM resistance in Korle-Bu. Vgsc-995F (ie: absence of 402L)',
+    'and Gste2-114T both negatively associated.\n')
 
 # Madina PM
 cat('\n\nMadina PM:\n')
@@ -443,8 +463,8 @@ madina.pm.seg.markers <- study.freqs[.('Madina', 'PM'), ..all.markers] %>%
                         {(. > 0.05) & (. < 0.95)} %>%
                         colnames(.)[.]
 madina.pm.table <- as.data.frame(wgs.phen[.('Madina', 'PM')])
-glmodelling(madina.pm.table, madina.pm.seg.markers, 'phenotype')
-cat('\nAce1 very strongly associated with PM resistance in Madina. Vgsc-1853Y negatively associated.\n')
+glm.up(madina.pm.table, madina.pm.seg.markers, 'phenotype')
+cat('\nAce1 very strongly associated with PM resistance in Madina.\n')
 
 # Obuasi PM
 cat('\n\nObuasi PM:\n')
@@ -452,20 +472,22 @@ obuasi.pm.seg.markers <- study.freqs[.('Obuasi', 'PM'), ..all.markers] %>%
                         {(. > 0.05) & (. < 0.95)} %>%
                         colnames(.)[.]
 obuasi.pm.table <- as.data.frame(wgs.phen[.('Obuasi', 'PM')])
-glmodelling(obuasi.pm.table, obuasi.pm.seg.markers, 'phenotype')
+glm.up(obuasi.pm.table, obuasi.pm.seg.markers, 'phenotype')
 cat('\nAce1 very strongly associated with PM resistance in Obuasi.\n')
 
-# Now let's try comining locations:
-pm.table <- as.data.frame(wgs.phen[.('Obuasi', 'PM')])
+# Now let's try combining locations:
 # We kick out 402L since it's perfectly associated with 995 and the presence of two alleles is confusing
 non.402.markers <- setdiff(all.markers, c('Vgsc.402L_C', 'Vgsc.402L_T')) 
-glmodelling(pm.table, non.402.markers, 'phenotype', control.for = 'location')
-cat('\nAce1 is the only significant SNP. It is positively associated with resistance.\n')
+pm.table <- as.data.frame(wgs.phen[insecticide == 'PM'])
+cat('\n\nAll populations PM:\n')
+glm.up(pm.table, non.402.markers, 'phenotype', control.for = 'location', glm.function = 'glmmTMB')
+cat('\n995F negatively associated with resistance (so 402 provides better resistance). 1570Y and Ace1.119S',
+    'both associated with increased resistance.\n')
 
-delta.table <- as.data.frame(wgs.phen[.('Obuasi', 'Delta')])
-glmodelling(delta.table, non.402.markers, 'phenotype', control.for = 'location')
-cat('\nVgsc-791M and Gste2-119V are both positively associated with deltamethrin resistance. Vgsc-1746S is negatively associated.')
-cat('\nNone of the P-value are particularly small.\n')
+delta.table <- as.data.frame(wgs.phen[insecticide == 'Delta'])
+cat('\n\nAll populations Delta:\n')
+glm.up(delta.table, non.402.markers, 'phenotype', control.for = 'location', glm.function = 'glmmTMB')
+cat('\nVgsc.1868T negatively associated with deltamethrin resistance.\n')
 
 
 
