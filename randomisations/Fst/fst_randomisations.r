@@ -5,7 +5,6 @@ library(stringr)
 library(reticulate)
 
 # Load the SNP data and functions from the Fst analysis
-#load('~/data/ML/GAARD_SNP/fst_analyses/fst_1000_window/fst_1000_window.Rdata')
 load('~/data/ML/GAARD_SNP/filtered_snp_tables/filtered_snp_tables.Rdata')
 
 arg.values <- commandArgs(trailingOnly=T)
