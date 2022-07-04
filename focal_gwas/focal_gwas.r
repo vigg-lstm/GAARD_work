@@ -100,14 +100,18 @@ focal.window.ranges <- mapply(get.window.start.end,
                               filtered.table$window.pos, 
                               MoreArgs = list(window.pos = window.pos),
                               SIMPLIFY = F
-                             ) %>%
-                             rbindlist() %>%
-							 setkey(name)
+                       ) %>%
+                       rbindlist() %>%
+                       setkey(name)
 
 # Load the sib groups information
 sib.groups <- fread('../NGSrelate/full_relatedness/sib_group_table.csv', sep = '\t')
 sib.groups[, pop := paste(location, species, insecticide, sep = '_')]
-samples.to.remove <- sib.groups[keep == F & pop == study.pop, sample.name]
+sibs.to.remove <- sib.groups[keep == F & pop == study.pop, sample.name]
+
+# Identify males
+meta <- fread('../data/combined/all_samples.samples.meta.csv')
+males <- meta[sex_call == 'M', partner_sample_id]
 
 # We now need to load the SNP data including non-accessible sites. 
 # Load SNP data
@@ -119,9 +123,11 @@ SNP.filename <- paste(
 )
 cat('Loading SNP data from ', SNP.filename, '.\n', sep = '')
 all.snps <- fread(SNP.filename)
-# Remove sibs
+# Remove sibs and males
+males.to.remove <- intersect(names(all.snps), males)
+samples.to.remove <- c(sibs.to.remove, males.to.remove)
 all.snps[, c(samples.to.remove) := NULL]
-sample.names <- grep('WA-\\d{4}', colnames(all.snps), value = T)
+sample.names <- grep('WA-\\d{4}', names(all.snps), value = T)
 # Focus on focal regions
 extract.window.snps <- function(window.name, region.border.size = 10000){
 	all.snps[Chrom == focal.window.ranges[window.name, chrom] & 
@@ -155,7 +161,7 @@ phenotype.filename <- '../data/combined/sample_phenotypes.csv'
 cat('Loading phenotype data from ', phenotype.filename, '.\n', sep = '')
 # The object sample.names already excludes dicarded sibs, so applying here makes the phenotypes
 # match the samples from the snp table, as well as their order. 
-phenotype.table <- fread(phenotype.filename, key = 'specimen')[sample.names, ]
+phenotype.table <- fread(phenotype.filename, key = 'specimen')
 phenotypes <- setNames(as.factor(phenotype.table[sample.names, phenotype]),
                        nm = sample.names)
 
