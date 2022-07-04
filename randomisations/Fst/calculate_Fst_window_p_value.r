@@ -19,7 +19,7 @@ for (l in locations){
 fst.tables <- all.fst.tables
 rm(all.fst.tables)
 
-randomisation.columns <- grep('^r\\d{5}\\.', colnames(fst.tables[[1]]), value = T)
+randomisation.columns <- grep('^r\\d{4}\\.', colnames(fst.tables[[1]]), value = T)
 populations <- names(fst.tables)
 
 # Calculate a P-value for each window based on the number of randomisations larger than the observed value
