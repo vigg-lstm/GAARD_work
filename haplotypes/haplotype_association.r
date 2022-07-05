@@ -60,8 +60,10 @@ sig.tests <- rbindlist(sig.test.list, idcol = 'population')
 
 fwrite(sig.tests, file = 'haplotype_significance_tests.csv', sep = '\t')
 
-# A function that will perform a fisher test on cluster allele frequencies and report whether the mutant is 
-# more frequency in the haplotype, with a p.value that is smaller than a threshold
+# A function that will perform a fisher test on cluster allele frequencies and report whether the mutant at
+# eac allele is more frequent in the haplotype that outside of it, with a p.value that is smaller than a 
+# threshold. This is effectively just checking that a SNP present in a haplotype is actually associated with
+# that haplotype compared to the wt. 
 test.fisher.p <- function(cluster_ref, cluster_alt, non_cluster_ref, non_cluster_alt, threshold = 0.01){
 	freq.test <- (cluster_alt / cluster_ref) > (non_cluster_alt / non_cluster_ref)
 	d <- c(cluster_ref, cluster_alt, non_cluster_ref, non_cluster_alt)

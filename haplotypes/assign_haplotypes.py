@@ -43,7 +43,7 @@ ag3 = malariagen_data.Ag3('gs://vo_agam_release', pre = True)
 ag3.sample_sets(release = '3.2')
 ag3
 
-# Get the metadata and phenotypes
+# Get the metadata and phenotypes, and drop the males
 meta = pd.merge(
     pd.read_csv(
         repo_folder + '/data/combined/all_samples.samples.meta.csv', 
@@ -57,9 +57,9 @@ meta = pd.merge(
     ),
     left_index = True, 
     right_index = True
-)
+).query('sex_call == "F"')
 
-# Get sib groups and kick out sibs from meta and phenotypes
+# Get sib groups and kick out sibs 
 sib_groups = pd.read_csv(repo_folder + '/NGSrelate/full_relatedness/sib_group_table.csv', sep = '\t', index_col = 'sample.name')
 kick_out = sib_groups.query('keep == False').index
 meta.drop(kick_out, inplace = True)
@@ -67,7 +67,6 @@ meta.drop(kick_out, inplace = True)
 # Subset to only the phenotypes that we are interested in
 meta['population'] = meta[['location', 'species', 'insecticide']].apply('_'.join, 1)
 meta.query(f'population == "{study_pop}"', inplace = True)
-focal_samples = meta.index
 
 # Get the haplotypes from the region of interest
 haps = ag3.haplotypes(
@@ -121,7 +120,6 @@ output_table = meta[['phenotype'] + [f'cluster_{i+1}' for i in range(len(large_f
 output_table.to_csv(output_filename, sep = '\t', index_label = 'sample_name')
 
 # Now we want to work out the sequence of each haplotype
-#window_alleles = haps['variant_allele'].astype('str').to_pandas()
 window_alleles = pd.concat((
     pd.DataFrame({'Chrom': [haps.contigs[x] for x in haps['variant_contig'].values]}),
     haps['variant_position'].to_pandas().rename('Pos'),

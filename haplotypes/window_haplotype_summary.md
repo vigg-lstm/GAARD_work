@@ -18,20 +18,37 @@ ___
 
 &nbsp;
 
-[Avrankou_coluzzii_Delta_X:8742864-8775262](#avrankou_coluzzii_delta_x_8742864-8775262)  
-### Avrankou_coluzzii_Delta_X_8742864-8775262
+[Avrankou_coluzzii_Delta_2R:45413683-45433265](#avrankou_coluzzii_delta_2r_45413683-45433265)  
+[Avrankou_coluzzii_Delta_X:8745589-8778998](#avrankou_coluzzii_delta_x_8745589-8778998)  
+### Avrankou_coluzzii_Delta_2R_45413683-45433265
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_X:8742864-8775262_overview](../focal_gwas/Avrankou_coluzzii_Delta/X_8761715.png)
+![Avrankou_coluzzii_Delta_2R:45413683-45433265_overview](../focal_gwas/Avrankou_coluzzii_Delta/2R_45423603.png)
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_X:8742864-8775262_dendrogram](Avrankou_coluzzii_Delta_X%3A8742864-8775262_dendrogram.png)
+![Avrankou_coluzzii_Delta_2R:45413683-45433265_dendrogram](Avrankou_coluzzii_Delta_2R%3A45413683-45433265_dendrogram.png)
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_X:8742864-8775262_haplotypes](Avrankou_coluzzii_Delta_X%3A8742864-8775262.png)
+![Avrankou_coluzzii_Delta_2R:45413683-45433265_haplotypes](Avrankou_coluzzii_Delta_2R%3A45413683-45433265.png)
+
+&nbsp;
+
+### Avrankou_coluzzii_Delta_X_8745589-8778998
+
+&nbsp;
+
+![Avrankou_coluzzii_Delta_X:8745589-8778998_overview](../focal_gwas/Avrankou_coluzzii_Delta/X_8769262.png)
+
+&nbsp;
+
+![Avrankou_coluzzii_Delta_X:8745589-8778998_dendrogram](Avrankou_coluzzii_Delta_X%3A8745589-8778998_dendrogram.png)
+
+&nbsp;
+
+![Avrankou_coluzzii_Delta_X:8745589-8778998_haplotypes](Avrankou_coluzzii_Delta_X%3A8745589-8778998.png)
 
 &nbsp;
 
@@ -39,8 +56,8 @@ ___
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 11 | 23 | 11 |
-|  dead     | 17 | 14 | 4 |
+|  alive    | 11 | 22 | 12 |
+|  dead     | 14 | 16 | 4 |
 
 
 &nbsp;
@@ -125,28 +142,82 @@ ___
 
 &nbsp;
 
-[Korle-Bu_coluzzii_Delta_2R:39682393-39697973](#korle-bu_coluzzii_delta_2r_39682393-39697973)  
-[Korle-Bu_coluzzii_Delta_3R:50969310-51019562](#korle-bu_coluzzii_delta_3r_50969310-51019562)  
-[Korle-Bu_coluzzii_Delta_X:14635817-14653444](#korle-bu_coluzzii_delta_x_14635817-14653444)  
-[Korle-Bu_coluzzii_Delta_X:14653443-14668614](#korle-bu_coluzzii_delta_x_14653443-14668614)  
-[Korle-Bu_coluzzii_Delta_X:14668614-14683957](#korle-bu_coluzzii_delta_x_14668614-14683957)  
-[Korle-Bu_coluzzii_Delta_X:14683957-14701067](#korle-bu_coluzzii_delta_x_14683957-14701067)  
-[Korle-Bu_coluzzii_Delta_X:15615595-15668856](#korle-bu_coluzzii_delta_x_15615595-15668856)  
-[Korle-Bu_coluzzii_Delta_X:15668855-15701561](#korle-bu_coluzzii_delta_x_15668855-15701561)  
-[Korle-Bu_coluzzii_Delta_X:15701560-15753994](#korle-bu_coluzzii_delta_x_15701560-15753994)  
-### Korle-Bu_coluzzii_Delta_2R_39682393-39697973
+[Korle-Bu_coluzzii_Delta_2R:28145243-28168331](#korle-bu_coluzzii_delta_2r_28145243-28168331)  
+[Korle-Bu_coluzzii_Delta_2R:39682306-39698081](#korle-bu_coluzzii_delta_2r_39682306-39698081)  
+[Korle-Bu_coluzzii_Delta_3R:50971406-51021318](#korle-bu_coluzzii_delta_3r_50971406-51021318)  
+[Korle-Bu_coluzzii_Delta_X:14653714-14668824](#korle-bu_coluzzii_delta_x_14653714-14668824)  
+[Korle-Bu_coluzzii_Delta_X:14668824-14684264](#korle-bu_coluzzii_delta_x_14668824-14684264)  
+[Korle-Bu_coluzzii_Delta_X:15670884-15702974](#korle-bu_coluzzii_delta_x_15670884-15702974)  
+[Korle-Bu_coluzzii_Delta_X:15702974-15756306](#korle-bu_coluzzii_delta_x_15702974-15756306)  
+### Korle-Bu_coluzzii_Delta_2R_28145243-28168331
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:39682393-39697973_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/2R_39689465.png)
+![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/2R_28159882.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:39682393-39697973_dendrogram](Korle-Bu_coluzzii_Delta_2R%3A39682393-39697973_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_dendrogram](Korle-Bu_coluzzii_Delta_2R%3A28145243-28168331_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:39682393-39697973_haplotypes](Korle-Bu_coluzzii_Delta_2R%3A39682393-39697973.png)
+![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_haplotypes](Korle-Bu_coluzzii_Delta_2R%3A28145243-28168331.png)
+
+&nbsp;
+
+#### Contingency table for cluster_1:
+
+| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
+| :---:     | :---: | :---: | :---: |
+|  alive    | 52 | 7 | 0 |
+|  dead     | 52 | 30 | 1 |
+
+
+&nbsp;
+
+#### Contingency table for cluster_2:
+
+| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
+| :---:     | :---: | :---: | :---: |
+|  alive    | 46 | 12 | 1 |
+|  dead     | 69 | 13 | 1 |
+
+
+&nbsp;
+
+#### Contingency table for cluster_3:
+
+| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
+| :---:     | :---: | :---: | :---: |
+|  alive    | 50 | 9 | 0 |
+|  dead     | 67 | 16 | 0 |
+
+
+&nbsp;
+
+#### Contingency table for cluster_4:
+
+| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
+| :---:     | :---: | :---: | :---: |
+|  alive    | 48 | 11 | 0 |
+|  dead     | 72 | 11 | 0 |
+
+
+&nbsp;
+
+### Korle-Bu_coluzzii_Delta_2R_39682306-39698081
+
+&nbsp;
+
+![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/2R_39689465.png)
+
+&nbsp;
+
+![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_dendrogram](Korle-Bu_coluzzii_Delta_2R%3A39682306-39698081_dendrogram.png)
+
+&nbsp;
+
+![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_haplotypes](Korle-Bu_coluzzii_Delta_2R%3A39682306-39698081.png)
 
 &nbsp;
 
@@ -155,7 +226,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 47 | 12 | 0 |
-|  dead     | 66 | 16 | 2 |
+|  dead     | 65 | 16 | 2 |
 
 
 &nbsp;
@@ -165,24 +236,24 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 42 | 16 | 1 |
-|  dead     | 78 | 6 | 0 |
+|  dead     | 77 | 6 | 0 |
 
 
 &nbsp;
 
-### Korle-Bu_coluzzii_Delta_3R_50969310-51019562
+### Korle-Bu_coluzzii_Delta_3R_50971406-51021318
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_3R:50969310-51019562_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/3R_50996517.png)
+![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/3R_50997716.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_3R:50969310-51019562_dendrogram](Korle-Bu_coluzzii_Delta_3R%3A50969310-51019562_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_dendrogram](Korle-Bu_coluzzii_Delta_3R%3A50971406-51021318_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_3R:50969310-51019562_haplotypes](Korle-Bu_coluzzii_Delta_3R%3A50969310-51019562.png)
+![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_haplotypes](Korle-Bu_coluzzii_Delta_3R%3A50971406-51021318.png)
 
 &nbsp;
 
@@ -191,7 +262,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 44 | 13 | 2 |
-|  dead     | 54 | 26 | 4 |
+|  dead     | 53 | 26 | 4 |
 
 
 &nbsp;
@@ -201,7 +272,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 45 | 14 | 0 |
-|  dead     | 76 | 7 | 1 |
+|  dead     | 75 | 7 | 1 |
 
 
 &nbsp;
@@ -211,80 +282,24 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 49 | 10 | 0 |
-|  dead     | 73 | 10 | 1 |
+|  dead     | 72 | 10 | 1 |
 
 
 &nbsp;
 
-### Korle-Bu_coluzzii_Delta_X_14635817-14653444
+### Korle-Bu_coluzzii_Delta_X_14653714-14668824
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14635817-14653444_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_14643856.png)
+![Korle-Bu_coluzzii_Delta_X:14653714-14668824_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_14662155.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14635817-14653444_dendrogram](Korle-Bu_coluzzii_Delta_X%3A14635817-14653444_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_X:14653714-14668824_dendrogram](Korle-Bu_coluzzii_Delta_X%3A14653714-14668824_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14635817-14653444_haplotypes](Korle-Bu_coluzzii_Delta_X%3A14635817-14653444.png)
-
-&nbsp;
-
-#### Contingency table for cluster_1:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 31 | 25 | 3 |
-|  dead     | 59 | 24 | 1 |
-
-
-&nbsp;
-
-#### Contingency table for cluster_2:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 50 | 9 | 0 |
-|  dead     | 70 | 11 | 3 |
-
-
-&nbsp;
-
-#### Contingency table for cluster_3:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 51 | 7 | 1 |
-|  dead     | 70 | 13 | 1 |
-
-
-&nbsp;
-
-#### Contingency table for cluster_4:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 55 | 3 | 1 |
-|  dead     | 67 | 17 | 0 |
-
-
-&nbsp;
-
-### Korle-Bu_coluzzii_Delta_X_14653443-14668614
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:14653443-14668614_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_14661904.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:14653443-14668614_dendrogram](Korle-Bu_coluzzii_Delta_X%3A14653443-14668614_dendrogram.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:14653443-14668614_haplotypes](Korle-Bu_coluzzii_Delta_X%3A14653443-14668614.png)
+![Korle-Bu_coluzzii_Delta_X:14653714-14668824_haplotypes](Korle-Bu_coluzzii_Delta_X%3A14653714-14668824.png)
 
 &nbsp;
 
@@ -293,7 +308,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 30 | 26 | 3 |
-|  dead     | 59 | 24 | 1 |
+|  dead     | 58 | 24 | 1 |
 
 
 &nbsp;
@@ -303,7 +318,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 49 | 9 | 1 |
-|  dead     | 70 | 12 | 2 |
+|  dead     | 69 | 12 | 2 |
 
 
 &nbsp;
@@ -313,24 +328,24 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 51 | 8 | 0 |
-|  dead     | 70 | 13 | 1 |
+|  dead     | 70 | 13 | 0 |
 
 
 &nbsp;
 
-### Korle-Bu_coluzzii_Delta_X_14668614-14683957
+### Korle-Bu_coluzzii_Delta_X_14668824-14684264
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14668614-14683957_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_14676956.png)
+![Korle-Bu_coluzzii_Delta_X:14668824-14684264_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_14677313.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14668614-14683957_dendrogram](Korle-Bu_coluzzii_Delta_X%3A14668614-14683957_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_X:14668824-14684264_dendrogram](Korle-Bu_coluzzii_Delta_X%3A14668824-14684264_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14668614-14683957_haplotypes](Korle-Bu_coluzzii_Delta_X%3A14668614-14683957.png)
+![Korle-Bu_coluzzii_Delta_X:14668824-14684264_haplotypes](Korle-Bu_coluzzii_Delta_X%3A14668824-14684264.png)
 
 &nbsp;
 
@@ -339,7 +354,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 31 | 25 | 3 |
-|  dead     | 59 | 24 | 1 |
+|  dead     | 58 | 24 | 1 |
 
 
 &nbsp;
@@ -349,7 +364,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 47 | 11 | 1 |
-|  dead     | 70 | 12 | 2 |
+|  dead     | 69 | 12 | 2 |
 
 
 &nbsp;
@@ -359,126 +374,24 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 51 | 8 | 0 |
-|  dead     | 70 | 13 | 1 |
+|  dead     | 70 | 13 | 0 |
 
 
 &nbsp;
 
-### Korle-Bu_coluzzii_Delta_X_14683957-14701067
+### Korle-Bu_coluzzii_Delta_X_15670884-15702974
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14683957-14701067_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_14692335.png)
+![Korle-Bu_coluzzii_Delta_X:15670884-15702974_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_15687842.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14683957-14701067_dendrogram](Korle-Bu_coluzzii_Delta_X%3A14683957-14701067_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_X:15670884-15702974_dendrogram](Korle-Bu_coluzzii_Delta_X%3A15670884-15702974_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14683957-14701067_haplotypes](Korle-Bu_coluzzii_Delta_X%3A14683957-14701067.png)
-
-&nbsp;
-
-#### Contingency table for cluster_1:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 30 | 26 | 3 |
-|  dead     | 59 | 24 | 1 |
-
-
-&nbsp;
-
-#### Contingency table for cluster_2:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 49 | 10 | 0 |
-|  dead     | 71 | 11 | 2 |
-
-
-&nbsp;
-
-#### Contingency table for cluster_3:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 51 | 8 | 0 |
-|  dead     | 70 | 13 | 1 |
-
-
-&nbsp;
-
-### Korle-Bu_coluzzii_Delta_X_15615595-15668856
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:15615595-15668856_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_15641225.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:15615595-15668856_dendrogram](Korle-Bu_coluzzii_Delta_X%3A15615595-15668856_dendrogram.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:15615595-15668856_haplotypes](Korle-Bu_coluzzii_Delta_X%3A15615595-15668856.png)
-
-&nbsp;
-
-#### Contingency table for cluster_1:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 9 | 33 | 17 |
-|  dead     | 31 | 38 | 15 |
-
-
-&nbsp;
-
-#### Contingency table for cluster_2:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 50 | 9 | 0 |
-|  dead     | 61 | 21 | 2 |
-
-
-&nbsp;
-
-#### Contingency table for cluster_3:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 51 | 8 | 0 |
-|  dead     | 68 | 16 | 0 |
-
-
-&nbsp;
-
-#### Contingency table for cluster_4:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 52 | 7 | 0 |
-|  dead     | 70 | 14 | 0 |
-
-
-&nbsp;
-
-### Korle-Bu_coluzzii_Delta_X_15668855-15701561
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:15668855-15701561_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_15687193.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:15668855-15701561_dendrogram](Korle-Bu_coluzzii_Delta_X%3A15668855-15701561_dendrogram.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_Delta_X:15668855-15701561_haplotypes](Korle-Bu_coluzzii_Delta_X%3A15668855-15701561.png)
+![Korle-Bu_coluzzii_Delta_X:15670884-15702974_haplotypes](Korle-Bu_coluzzii_Delta_X%3A15670884-15702974.png)
 
 &nbsp;
 
@@ -487,7 +400,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 13 | 32 | 14 |
-|  dead     | 37 | 35 | 12 |
+|  dead     | 37 | 35 | 11 |
 
 
 &nbsp;
@@ -497,7 +410,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 52 | 7 | 0 |
-|  dead     | 70 | 14 | 0 |
+|  dead     | 69 | 14 | 0 |
 
 
 &nbsp;
@@ -507,24 +420,24 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 53 | 6 | 0 |
-|  dead     | 69 | 15 | 0 |
+|  dead     | 68 | 15 | 0 |
 
 
 &nbsp;
 
-### Korle-Bu_coluzzii_Delta_X_15701560-15753994
+### Korle-Bu_coluzzii_Delta_X_15702974-15756306
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15701560-15753994_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_15723443.png)
+![Korle-Bu_coluzzii_Delta_X:15702974-15756306_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_15724340.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15701560-15753994_dendrogram](Korle-Bu_coluzzii_Delta_X%3A15701560-15753994_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_X:15702974-15756306_dendrogram](Korle-Bu_coluzzii_Delta_X%3A15702974-15756306_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15701560-15753994_haplotypes](Korle-Bu_coluzzii_Delta_X%3A15701560-15753994.png)
+![Korle-Bu_coluzzii_Delta_X:15702974-15756306_haplotypes](Korle-Bu_coluzzii_Delta_X%3A15702974-15756306.png)
 
 &nbsp;
 
@@ -533,7 +446,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 12 | 38 | 9 |
-|  dead     | 38 | 35 | 11 |
+|  dead     | 38 | 35 | 10 |
 
 
 &nbsp;
@@ -543,7 +456,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 52 | 7 | 0 |
-|  dead     | 70 | 13 | 1 |
+|  dead     | 68 | 14 | 1 |
 
 
 &nbsp;
@@ -553,7 +466,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 52 | 7 | 0 |
-|  dead     | 70 | 14 | 0 |
+|  dead     | 69 | 14 | 0 |
 
 
 &nbsp;
@@ -1568,51 +1481,25 @@ ___
 
 &nbsp;
 
-[Korle-Bu_coluzzii_PM_2R:54392588-54425247](#korle-bu_coluzzii_pm_2r_54392588-54425247)  
-[Korle-Bu_coluzzii_PM_3R:28470441-28489578](#korle-bu_coluzzii_pm_3r_28470441-28489578)  
-[Korle-Bu_coluzzii_PM_3R:28489578-28516482](#korle-bu_coluzzii_pm_3r_28489578-28516482)  
-[Korle-Bu_coluzzii_PM_3R:28516482-28545971](#korle-bu_coluzzii_pm_3r_28516482-28545971)  
-[Korle-Bu_coluzzii_PM_3R:28633422-28664039](#korle-bu_coluzzii_pm_3r_28633422-28664039)  
-[Korle-Bu_coluzzii_PM_3R:2920673-2937378](#korle-bu_coluzzii_pm_3r_2920673-2937378)  
-### Korle-Bu_coluzzii_PM_2R_54392588-54425247
+[Korle-Bu_coluzzii_PM_2R:3910531-3922880](#korle-bu_coluzzii_pm_2r_3910531-3922880)  
+[Korle-Bu_coluzzii_PM_2R:54371673-54397846](#korle-bu_coluzzii_pm_2r_54371673-54397846)  
+[Korle-Bu_coluzzii_PM_3R:28482794-28505651](#korle-bu_coluzzii_pm_3r_28482794-28505651)  
+[Korle-Bu_coluzzii_PM_3R:28505651-28533744](#korle-bu_coluzzii_pm_3r_28505651-28533744)  
+[Korle-Bu_coluzzii_PM_3R:28563392-28595112](#korle-bu_coluzzii_pm_3r_28563392-28595112)  
+[Korle-Bu_coluzzii_PM_3R:2929236-2946500](#korle-bu_coluzzii_pm_3r_2929236-2946500)  
+### Korle-Bu_coluzzii_PM_2R_3910531-3922880
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:54392588-54425247_overview](../focal_gwas/Korle-Bu_coluzzii_PM/2R_54404080.png)
+![Korle-Bu_coluzzii_PM_2R:3910531-3922880_overview](../focal_gwas/Korle-Bu_coluzzii_PM/2R_3917054.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:54392588-54425247_dendrogram](Korle-Bu_coluzzii_PM_2R%3A54392588-54425247_dendrogram.png)
+![Korle-Bu_coluzzii_PM_2R:3910531-3922880_dendrogram](Korle-Bu_coluzzii_PM_2R%3A3910531-3922880_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:54392588-54425247_haplotypes](Korle-Bu_coluzzii_PM_2R%3A54392588-54425247.png)
-
-&nbsp;
-
-#### Contingency table for cluster_1:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 18 | 30 | 9 |
-|  dead     | 26 | 15 | 8 |
-
-
-&nbsp;
-
-### Korle-Bu_coluzzii_PM_3R_28470441-28489578
-
-&nbsp;
-
-![Korle-Bu_coluzzii_PM_3R:28470441-28489578_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28479604.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_PM_3R:28470441-28489578_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28470441-28489578_dendrogram.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_PM_3R:28470441-28489578_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28470441-28489578.png)
+![Korle-Bu_coluzzii_PM_2R:3910531-3922880_haplotypes](Korle-Bu_coluzzii_PM_2R%3A3910531-3922880.png)
 
 &nbsp;
 
@@ -1620,45 +1507,51 @@ ___
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 32 | 22 | 3 |
-|  dead     | 14 | 29 | 6 |
+|  alive    | 31 | 24 | 2 |
+|  dead     | 39 | 8 | 1 |
 
 
 &nbsp;
 
-#### Contingency table for cluster_2:
+### Korle-Bu_coluzzii_PM_2R_54371673-54397846
+
+&nbsp;
+
+![Korle-Bu_coluzzii_PM_2R:54371673-54397846_overview](../focal_gwas/Korle-Bu_coluzzii_PM/2R_54385556.png)
+
+&nbsp;
+
+![Korle-Bu_coluzzii_PM_2R:54371673-54397846_dendrogram](Korle-Bu_coluzzii_PM_2R%3A54371673-54397846_dendrogram.png)
+
+&nbsp;
+
+![Korle-Bu_coluzzii_PM_2R:54371673-54397846_haplotypes](Korle-Bu_coluzzii_PM_2R%3A54371673-54397846.png)
+
+&nbsp;
+
+#### Contingency table for cluster_1:
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 42 | 15 | 0 |
-|  dead     | 42 | 6 | 1 |
+|  alive    | 30 | 22 | 5 |
+|  dead     | 34 | 9 | 5 |
 
 
 &nbsp;
 
-#### Contingency table for cluster_3:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 42 | 13 | 2 |
-|  dead     | 43 | 6 | 0 |
-
+### Korle-Bu_coluzzii_PM_3R_28482794-28505651
 
 &nbsp;
 
-### Korle-Bu_coluzzii_PM_3R_28489578-28516482
+![Korle-Bu_coluzzii_PM_3R:28482794-28505651_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28493447.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28489578-28516482_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28501605.png)
+![Korle-Bu_coluzzii_PM_3R:28482794-28505651_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28482794-28505651_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28489578-28516482_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28489578-28516482_dendrogram.png)
-
-&nbsp;
-
-![Korle-Bu_coluzzii_PM_3R:28489578-28516482_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28489578-28516482.png)
+![Korle-Bu_coluzzii_PM_3R:28482794-28505651_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28482794-28505651.png)
 
 &nbsp;
 
@@ -1667,7 +1560,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 34 | 20 | 3 |
-|  dead     | 14 | 29 | 6 |
+|  dead     | 14 | 28 | 6 |
 
 
 &nbsp;
@@ -1676,8 +1569,8 @@ ___
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 33 | 20 | 4 |
-|  dead     | 41 | 8 | 0 |
+|  alive    | 34 | 19 | 4 |
+|  dead     | 40 | 8 | 0 |
 
 
 &nbsp;
@@ -1686,25 +1579,25 @@ ___
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 39 | 16 | 2 |
-|  dead     | 41 | 7 | 1 |
+|  alive    | 39 | 17 | 1 |
+|  dead     | 41 | 6 | 1 |
 
 
 &nbsp;
 
-### Korle-Bu_coluzzii_PM_3R_28516482-28545971
+### Korle-Bu_coluzzii_PM_3R_28505651-28533744
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28516482-28545971_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28528240.png)
+![Korle-Bu_coluzzii_PM_3R:28505651-28533744_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28521760.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28516482-28545971_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28516482-28545971_dendrogram.png)
+![Korle-Bu_coluzzii_PM_3R:28505651-28533744_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28505651-28533744_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28516482-28545971_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28516482-28545971.png)
+![Korle-Bu_coluzzii_PM_3R:28505651-28533744_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28505651-28533744.png)
 
 &nbsp;
 
@@ -1712,8 +1605,8 @@ ___
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 38 | 16 | 3 |
-|  dead     | 18 | 26 | 5 |
+|  alive    | 37 | 17 | 3 |
+|  dead     | 15 | 29 | 4 |
 
 
 &nbsp;
@@ -1723,7 +1616,7 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 26 | 24 | 7 |
-|  dead     | 32 | 16 | 1 |
+|  dead     | 31 | 16 | 1 |
 
 
 &nbsp;
@@ -1733,24 +1626,24 @@ ___
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
 |  alive    | 39 | 15 | 3 |
-|  dead     | 40 | 8 | 1 |
+|  dead     | 40 | 7 | 1 |
 
 
 &nbsp;
 
-### Korle-Bu_coluzzii_PM_3R_28633422-28664039
+### Korle-Bu_coluzzii_PM_3R_28563392-28595112
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28633422-28664039_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28644865.png)
+![Korle-Bu_coluzzii_PM_3R:28563392-28595112_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28578544.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28633422-28664039_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28633422-28664039_dendrogram.png)
+![Korle-Bu_coluzzii_PM_3R:28563392-28595112_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28563392-28595112_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28633422-28664039_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28633422-28664039.png)
+![Korle-Bu_coluzzii_PM_3R:28563392-28595112_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28563392-28595112.png)
 
 &nbsp;
 
@@ -1758,8 +1651,8 @@ ___
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 15 | 32 | 10 |
-|  dead     | 10 | 23 | 16 |
+|  alive    | 20 | 27 | 10 |
+|  dead     | 20 | 25 | 3 |
 
 
 &nbsp;
@@ -1768,25 +1661,35 @@ ___
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 28 | 26 | 3 |
-|  dead     | 36 | 13 | 0 |
+|  alive    | 38 | 17 | 2 |
+|  dead     | 18 | 25 | 5 |
 
 
 &nbsp;
 
-### Korle-Bu_coluzzii_PM_3R_2920673-2937378
+#### Contingency table for cluster_3:
+
+| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
+| :---:     | :---: | :---: | :---: |
+|  alive    | 38 | 16 | 3 |
+|  dead     | 41 | 6 | 1 |
+
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:2920673-2937378_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_2928451.png)
+### Korle-Bu_coluzzii_PM_3R_2929236-2946500
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:2920673-2937378_dendrogram](Korle-Bu_coluzzii_PM_3R%3A2920673-2937378_dendrogram.png)
+![Korle-Bu_coluzzii_PM_3R:2929236-2946500_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_2938559.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:2920673-2937378_haplotypes](Korle-Bu_coluzzii_PM_3R%3A2920673-2937378.png)
+![Korle-Bu_coluzzii_PM_3R:2929236-2946500_dendrogram](Korle-Bu_coluzzii_PM_3R%3A2929236-2946500_dendrogram.png)
+
+&nbsp;
+
+![Korle-Bu_coluzzii_PM_3R:2929236-2946500_haplotypes](Korle-Bu_coluzzii_PM_3R%3A2929236-2946500.png)
 
 &nbsp;
 
@@ -1794,8 +1697,8 @@ ___
 
 | &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
 | :---:     | :---: | :---: | :---: |
-|  alive    | 18 | 30 | 9 |
-|  dead     | 8 | 24 | 17 |
+|  alive    | 24 | 26 | 7 |
+|  dead     | 7 | 27 | 14 |
 
 
 &nbsp;
