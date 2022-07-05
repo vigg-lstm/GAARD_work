@@ -1,0 +1,38 @@
+1237-VO-BJ-DJOGBENOU-VMF00050 (Avrankou)
+
+Samples received: 102
+Samples sequenced: 92
+Samples passed all QC: 90
+
+One sample was excluded during QC due to low coverage. One sample was excluded due to evidence of a high level of cross-contamination.
+
+#
+
+1244-VO-GH-YAWSON-VMF00051 (Korle-Bu, Madina & Obuasi)
+
+Samples received: 965
+Samples sequenced: 924
+Samples passed all QC: 666
+
+55 samples were excluded during QC due to low coverage. 197 samples were excluded due to evidence of a high level of cross-contamination. 6 samples (3 pairs) were excluded due to an unexpectedly high level of similarity. 
+
+#
+
+1245-VO-CI-CONSTANT-VMF00054 (Aboisso)
+
+Samples received: 56
+Samples sequenced: 49
+Samples passed all QC: 38
+
+11 samples were excluded during QC due to evidence of a high level of cross-contamination.
+
+#
+
+1253-VO-TG-DJOGBENOU-VMF00052 (Baguida)
+
+Samples received: 212
+Samples sequenced: 193
+Samples passed all QC: 179
+
+6 samples were excluded during QC due to low coverage. 6 samples were excluded due to evidence of a high level of cross-contamination. 2 samples (1 pair) were excluded due to an unexpectedly high level of similarity.
+
