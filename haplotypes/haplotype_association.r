@@ -52,6 +52,9 @@ for (pop in study.pops){
 		            setNames(nm = .) %>%
 		            lapply(function(cluster) haplotypes[, cbind(cluster.size = sum(get(cluster)), logreg.test(get(cluster), as.factor(phenotype)))]) %>%
 		            rbindlist(idcol = 'cluster.name')
+		# If there were no haplotype clusters, sig.test will be an empty table and will disappear in the rbindlist
+		if (nrow(sig.test) == 0)
+			sig.test <- data.table(cluster.name = NA, cluster.size = NA, logregP = NA, direction = NA)
 		sig.tests.this.pop[[window.range]] <- sig.test
 	}
 	sig.test.list[[pop]] <- rbindlist(sig.tests.this.pop, idcol = 'window')
@@ -170,6 +173,12 @@ plot.hap.cluster <- function(pop.win, filename, point.cex, remove.background.snp
 	end.pos <- as.integer(str_extract(pop.win, '(?<=-)\\d+$'))
 	# Get the SNPs
 	snp.table <- snp.tables[[pop.win]]
+	# Get the names of the clusters
+	clusters <- str_extract(names(snp.table), 'cluster_\\d+$') %>%
+	            unlist %>%
+	            unique %>%
+	            {.[!is.na(.)]}
+	
 	# Get the list of genes present in the window
 	gene.gff <- gff[seqid == chrom & 
 	                start < end.pos & 
@@ -185,10 +194,6 @@ plot.hap.cluster <- function(pop.win, filename, point.cex, remove.background.snp
 	                start < end.pos & 
 	                end > start.pos &
 	                type == 'exon', ]
-	clusters <- str_extract(names(snp.table), 'cluster_\\d+$') %>%
-	            unlist %>%
-	            unique %>%
-	            {.[!is.na(.)]}
 	
 	plot.height = 0.2 * (length(clusters) - 1) + 1.5
 	plot.width = 6.5
@@ -203,74 +208,82 @@ plot.hap.cluster <- function(pop.win, filename, point.cex, remove.background.snp
 	else if (!add){
 		x11(width = plot.width, height = plot.height)
 	}
-	layout(
-		matrix(1:2, 2, 1), 
-		heights = c(0.4 + 0.2 * (length(clusters) - 1), 0.1)
-	)
-	par(
-		mar = c(0,0,0,0), 
-		omi = c(0.4,0.6,0.175,0.175), 
-		cex = 0.75,
-		mex = 1.3,
-		mgp = c(1,0.3,0),
-		tcl = -0.2,
-		xaxs = 'i',
-		xpd = NA
-	)
-	plot(c(start.pos, end.pos), c(0, 0.3 + length(clusters) * 0.2), type = 'n', bty = 'n', xaxt = 'n', xlab = '', yaxt = 'n', ylab = '')
-	for (i in 1:length(clusters)){
-		cluster <- clusters[i]
-		alt.column <- paste('n_Alt', cluster, sep = '_')
-		ref.column <- paste('n_Ref', cluster, sep = '_')
-		cluster.size <- sig.tests[.(pop.win, cluster), cluster.size]
-		cluster.p <- sig.tests[.(pop.win, cluster), logregP]
-		cluster.dir <- sig.tests[.(pop.win, cluster), direction]
-		y.pos <- 0.3 + (length(clusters) - i) * 0.2
-		draw.gene.model(
-			start.pos, 
-			end.pos, 
-			gene.gff, 
-			exon.gff, 
-			y.pos, 
-			include.gene.names = (i == length(clusters)),
-			text.cex = 0.5,
-			gene.thickness.fraction = 15
+	
+	if (length(clusters) == 0){
+		par(mar = c(0,0,0,0), omi = c(0.4,0.6,0.175,0.175))
+		plot(0, 0, type = 'n', xaxt = 'n', bty = 'n', yaxt = 'n', xlab = '', ylab = '')
+		text(0, 0, 'No haplotype clusters found', cex = 2, adj = c(0.5, 0.5))
+	}	
+	else{
+		layout(
+			matrix(1:2, 2, 1), 
+			heights = c(0.4 + 0.2 * (length(clusters) - 1), 0.1)
 		)
-		# Set the minimum SNP point size
-		hpc <- par('cex')/2
-		# Pull out the SNPs that have at least some alt alleles in the cluster
-		snp.sub.table <- snp.table[get(alt.column) > 0]
-		# Set up the colours and pch
-		snp.sub.table[, 
-			`:=`(bg = 'deepskyblue', col = 'deepskyblue3', pch = 21)]
-		snp.sub.table[(!non.synonymous & grepl('synonymous_variant', INFO)), 
-			`:=`(bg = 'yellow', col = 'goldenrod3', pch = 21)]
-		snp.sub.table[(non.synonymous), 
-			`:=`(bg = 'violetred1', col = 'violetred4', pch = 23)]
-		if (remove.background.snps)
-			snp.sub.table <- snp.sub.table[get(paste(cluster, '_isdiff', sep = '')), ]
-		else 
-			# Lighten the colour of SNPs that are not different from the genetic background of the population
-			snp.sub.table[get(paste(cluster, '_isdiff', sep = '')) == F, 
-				`:=`(bg = lighten.col(bg, 0.2), col = lighten.col(col, 0.2))]
-		# Now add the points to the plot
-		snp.sub.table[, points(
-			Pos, 
-		    rep(y.pos, .N), 
-		    bg = bg,
-		    col = col,
-		    cex = hpc + hpc * get(alt.column) / ..cluster.size, 
-		    pch = pch
-		)]
-		# Now indicate cluster size and P-value
-		label.x <- start.pos - (end.pos - start.pos)/50
-		arrow.code <- ifelse(cluster.dir == 'alive', '\u2191', '\u2193')
-		text(label.x, y.pos + 0.04, paste('n =', cluster.size), adj = 1, cex = 0.6)
-		p.col <- ifelse(cluster.p < 0.05, 'red', 'black')
-		text(label.x, y.pos - 0.04, paste('p =', format(cluster.p, digits = 2, scientific = -2)), adj = 1, col = p.col, cex = 0.6)
-		text(label.x, y.pos - 0.04, arrow.code, adj = 0, cex = 0.8)
+		par(
+			mar = c(0,0,0,0), 
+			omi = c(0.4,0.6,0.175,0.175), 
+			cex = 0.75,
+			mex = 1.3,
+			mgp = c(1,0.3,0),
+			tcl = -0.2,
+			xaxs = 'i',
+			xpd = NA
+		)
+		plot(c(start.pos, end.pos), c(0, 0.3 + length(clusters) * 0.2), type = 'n', bty = 'n', xaxt = 'n', xlab = '', yaxt = 'n', ylab = '')
+		for (i in 1:length(clusters)){
+			cluster <- clusters[i]
+			alt.column <- paste('n_Alt', cluster, sep = '_')
+			ref.column <- paste('n_Ref', cluster, sep = '_')
+			cluster.size <- sig.tests[.(pop.win, cluster), cluster.size]
+			cluster.p <- sig.tests[.(pop.win, cluster), logregP]
+			cluster.dir <- sig.tests[.(pop.win, cluster), direction]
+			y.pos <- 0.3 + (length(clusters) - i) * 0.2
+			draw.gene.model(
+				start.pos, 
+				end.pos, 
+				gene.gff, 
+				exon.gff, 
+				y.pos, 
+				include.gene.names = (i == length(clusters)),
+				text.cex = 0.5,
+				gene.thickness.fraction = 15
+			)
+			# Set the minimum SNP point size
+			hpc <- par('cex')/2
+			# Pull out the SNPs that have at least some alt alleles in the cluster
+			snp.sub.table <- snp.table[get(alt.column) > 0]
+			# Set up the colours and pch
+			snp.sub.table[, 
+				`:=`(bg = 'deepskyblue', col = 'deepskyblue3', pch = 21)]
+			snp.sub.table[(!non.synonymous & grepl('synonymous_variant', INFO)), 
+				`:=`(bg = 'yellow', col = 'goldenrod3', pch = 21)]
+			snp.sub.table[(non.synonymous), 
+				`:=`(bg = 'violetred1', col = 'violetred4', pch = 23)]
+			if (remove.background.snps)
+				snp.sub.table <- snp.sub.table[get(paste(cluster, '_isdiff', sep = '')), ]
+			else 
+				# Lighten the colour of SNPs that are not different from the genetic background of the population
+				snp.sub.table[get(paste(cluster, '_isdiff', sep = '')) == F, 
+					`:=`(bg = lighten.col(bg, 0.2), col = lighten.col(col, 0.2))]
+			# Now add the points to the plot
+			snp.sub.table[, points(
+				Pos, 
+				rep(y.pos, .N), 
+				bg = bg,
+				col = col,
+				cex = hpc + hpc * get(alt.column) / ..cluster.size, 
+				pch = pch
+			)]
+			# Now indicate cluster size and P-value
+			label.x <- start.pos - (end.pos - start.pos)/50
+			arrow.code <- ifelse(cluster.dir == 'alive', '\u2191', '\u2193')
+			text(label.x, y.pos + 0.04, paste('n =', cluster.size), adj = 1, cex = 0.6)
+			p.col <- ifelse(cluster.p < 0.05, 'red', 'black')
+			text(label.x, y.pos - 0.04, paste('p =', format(cluster.p, digits = 2, scientific = -2)), adj = 1, col = p.col, cex = 0.6)
+			text(label.x, y.pos - 0.04, arrow.code, adj = 0, cex = 0.8)
+		}
+		plot(c(start.pos, end.pos), c(0,0), type = 'n', bty = 'n', xlab = paste('Position on', chrom), yaxt = 'n', ylab = '', cex.lab = 0.8, cex.axis = 0.6)
 	}
-	plot(c(start.pos, end.pos), c(0,0), type = 'n', bty = 'n', xlab = paste('Position on', chrom), yaxt = 'n', ylab = '', cex.lab = 0.8, cex.axis = 0.6)
 	mtext(pop.win, outer = T, cex = 0.8)
 	if (!missing(filename))
 		dev.off()
