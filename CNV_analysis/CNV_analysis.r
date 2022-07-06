@@ -1,6 +1,7 @@
 library(data.table)
 library(magrittr)
 library(stringr)
+library(glmmTMB)
 
 study.ids.table <- fread('../data/study_ids.csv')[population != 'Aboisso_gambiae_PM']
 study.ids.table[, study_id := paste('v3.2_', study_id, sep = '')]
@@ -128,7 +129,7 @@ modal.copy.number <- modal.copy.number[, c('sample.id', genes.of.interest), with
                      ) %>%
                      .[, phenotype := as.factor(phenotype)] %>%
                      setnames(detox.gene.conversion$Gene.id, detox.gene.conversion$Gene.name) %>%
-                     setkey(insecticide, location)
+                     setkey(location, insecticide)
 
 # For a smaller table, we only keep genes where a CNV was present. 
 no.cnv <- names(which(apply(modal.CNV.table[, -1], 2, sum, na.rm = T) < 1))
@@ -390,117 +391,269 @@ contable(Dup.clusters$Cyp9k1,
 dev.off()
 
 
-# Now correlate modal copy number in cyp9k1 with phenotype
-cat('\nModal copy number in Cyp9k1:\n')
+glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'AliveDead', control.for = character(), glm.function = NULL, verbose = T){
+	# Check whether the markers and random effects are present in the data.frame
+	if (sum(list.of.markers %in% colnames(input.table)) != length(list.of.markers))
+		stop('Some of the requested markers were not found in genotypes table.')
+	if (sum(control.for %in% colnames(input.table)) != length(control.for))
+		stop('At least one random effect was not found in genotypes table.')
+	if (!(rescolumn %in% colnames(input.table)))
+		stop('Resistance column not found in genotypes table.')
+	# Remove any requested random effects that have only 1 level
+	random.effects <- character()
+	for (this.control in control.for){
+		level.counts <- tapply(input.table[,this.control], input.table[,this.control], length)
+		if (max(level.counts, na.rm = T) < sum(level.counts, na.rm = T)) 
+			random.effects <- c(random.effects, this.control)
+		else
+			cat('Removing random effect ', this.control, ' was removed because it is invariable.')
+	}
+	# If you did not set a glm.function, decide which glm function you are going to use, based on whether mixed 
+	# modelling will be necessary
+	if (is.null(glm.function))
+		glm.function <- ifelse(length(random.effects) > 0, 'glmer', 'glm')
+	if (glm.function == 'glm'){
+		# Create the random effect string, which will be empty if we have no random effects
+		random.effects.string <- ifelse(length(random.effects) > 0, paste(' +', paste(random.effects, collapse = ' + ', sep = '')), '')
+		# Set the name of the column containing the P.value in the anova function (which is different depending
+		# on the glm function you use
+		P.val.column <- 'Pr(>Chi)'
+	}
+	else if (glm.function %in% c('glmer', 'glmmTMB')){
+		random.effects.string <- ifelse(length(random.effects) > 0, paste(' +', paste('(1|', random.effects, ')', collapse = ' + ', sep = '')), '')
+		P.val.column <- 'Pr(>Chisq)'
+	}
+	if (verbose)
+		cat('Using the following string to control for confounding factors: ', random.effects.string, '\n', sep = '')
+	# We remove markers for which there is no variation in the dataset or for which some alleles are too rare. 
+	if (verbose)
+		cat('\nDetecting invariable and nearly invariable markers.\n')
+	kept.markers <- character()
+	invariable.markers <- character()
+	for (this.marker in list.of.markers){
+		allele.counts <- tapply(input.table[,this.marker], input.table[,this.marker], length)
+		if (max(allele.counts, na.rm = T) <= (sum(allele.counts, na.rm = T) - 2)) 
+			kept.markers <- c(kept.markers, this.marker)
+		else
+			invariable.markers <- c(invariable.markers, this.marker)
+	}
+	if (length(kept.markers) == 0)
+		stop('Fail. None of the markers provided were sufficiently variable.')
+	# We check whether there are any ordered factors and recode them as numeric
+	converted.table <- input.table
+	has.ordered.factors <- F
+	for (this.marker in kept.markers){
+		if ('ordered' %in% class(converted.table[, this.marker])){
+			if (verbose)
+				cat('Converting ordered factor ', this.marker, ' to numeric.\n', sep = '')
+			converted.table[, this.marker] <- as.numeric(converted.table[, this.marker])
+			has.ordered.factors <- T
+		}
+	}
+	# We do the glm analysis directly on the table from the global environment rather than the argument, this 
+	# way the table that was used is recorded in the output. If we had to convert the ordered factors, then
+	# we are forced to use a new table
+	if (has.ordered.factors){
+		working.table.name <- make.names(paste(deparse(substitute(input.table)), '_numeric_conversion', sep = ''))
+		eval(parse(text = paste(working.table.name, '<- converted.table')))
+	}
+	else
+		working.table.name <- deparse(substitute(input.table))
+	
+	# For each marker, we calculate its pseudo-R2 and P-value compared to the null model.
+	if (verbose)
+		cat('\nAnalysing markers independently.\n')
+	individual.markers <- data.frame(P = numeric(), pseudo.R2 = numeric())
+	for (this.marker in kept.markers){
+		# Remove the Na values for this marker
+		this.table <- converted.table[!is.na(converted.table[,this.marker]),]
+		# Build the model 
+		this.model <- eval(parse(text = paste(glm.function, '(', rescolumn, ' ~ ', this.marker, random.effects.string, ', data = this.table, family = binomial)', sep = '')))
+		# Build the null model
+		this.null.model <- eval(parse(text = paste(glm.function, '(', rescolumn, ' ~ 1 ', random.effects.string, ', data = this.table, family = binomial)', sep = '')))
+		# Get the stats
+		this.p <- anova(this.model, this.null.model, test = 'Chisq')[[P.val.column]][2]
+		# Report pseudo Rsquared if we used GLM and if we have the modEvA package
+		if (('modEvA' %in% (.packages())) & (glm.function == 'glm'))
+			this.pseudo.r2 <- mean(unlist(RsqGLM(this.model)))
+		else
+			this.pseudo.r2 <- NA
+		individual.markers[this.marker, ] <- c(this.p, this.pseudo.r2)
+	}
+	
+	# We now build the null model and add markers one by one until all markers are significant
+	working.markers <- character()
+	# We'll keep track of the markers with perfect correlation
+	correlated.markers <- character()
+	if (verbose)
+		cat('\nRunning commentary on model optimisation:\n\n')
+	while(length(working.markers) < length(kept.markers)){
+		# Build the model using the working.markers
+		if (length(working.markers)){
+			old.model.text <- paste(glm.function, '(', rescolumn, ' ~ ', paste(working.markers, collapse = ' + '), random.effects.string, ', data = ', working.table.name, ', family = binomial)', sep = '')
+			old.model <- eval(parse(text = old.model.text))
+			# Check the remaining markers as some of them may become monomorphic when NAs from the current marker are 
+			# taken into account
+			for (this.marker in setdiff(kept.markers, working.markers)){
+				markers.subset.genotypes <- input.table[, c(working.markers, this.marker), drop = F]
+				markers.subset.genotypes <- markers.subset.genotypes[complete.cases(markers.subset.genotypes), , drop = F]
+				number.of.alleles <- unique(markers.subset.genotypes[ ,this.marker])
+				if (length(number.of.alleles) < 2) {
+					if (verbose){
+						cat('Removing marker ', this.marker, ' as it has no variation left when NAs at previously added ',
+							'loci are removed.\n\n', sep = '')
+					}
+					kept.markers <- setdiff(kept.markers, this.marker)
+				}
+			}
+			# If we have removed all the remaining markers, we quit the loop and report the final model. 
+			if (length(working.markers) == length(kept.markers)){
+				final.model <- old.model
+				if (verbose){
+					cat('\tNo further markers are significant, keeping final model:\n')
+					print(final.model)
+				}
+				break
+			}
+		}
+		else{
+			old.model.text <- paste(glm.function, '(', rescolumn, ' ~ 1 ', random.effects.string, ', data = ', working.table.name, ', family = binomial)', sep = '')
+			old.model <- eval(parse(text = old.model.text))
+		}
+		if (verbose)
+			cat('Building model:', old.model.text, '\n')
+		p.values <- numeric()
+		for (this.marker in setdiff(kept.markers, working.markers)){
+			new.model <- eval(parse(text = paste('update(old.model, .~.+', this.marker, ')', sep = '')))
+			# Check that the new model doesn't have fewer rows than the old one (if the added marker had unique NAs)
+			if (length(fitted(new.model)) == length(fitted(old.model))){
+				this.p.value <- anova(old.model, new.model, test = 'Chisq')[[P.val.column]][2]
+			}
+			# Otherwise, we need to rebuild the models with those samples removed.
+			else{
+				if (has.ordered.factors)
+					reduced.input.table <- converted.table[!is.na(converted.table[,this.marker]),]
+				else 
+					reduced.input.table <- input.table[!is.na(input.table[,this.marker]),]
+				if (length(working.markers))
+					temp.old.model <- eval(parse(text = paste(glm.function, '(', rescolumn, ' ~ ', paste(working.markers, collapse = ' + '), random.effects.string, ', data = reduced.input.table, family = binomial)', sep = '')))
+				else 
+					temp.old.model <- eval(parse(text = paste(glm.function, '(', rescolumn, ' ~ 1 ', random.effects.string, ', data = reduced.input.table, family = binomial)', sep = '')))
+				new.model <- eval(parse(text = paste('update(temp.old.model, .~.+', this.marker, ')', sep = '')))
+				this.p.value <- anova(temp.old.model, new.model, test = 'Chisq')[[P.val.column]][2]
+			}
+			# If the p.value was NA, then there is perfect correlation or something else was wrong. Set the p-value 
+			# to Inf and move on to the next marker
+			if (is.na(this.p.value)){
+				if (verbose)
+					cat('\tCould not calculate p-value for marker ', this.marker, '.\n\n', sep = '')
+				p.values[this.marker] <- Inf
+			}
+			else{
+				p.values[this.marker] <- this.p.value
+			}
+		}
+		if (min(p.values) <= 0.05){
+			# Add the lowest significant p-value
+			if (verbose)
+				cat('\tAdding marker ', names(p.values)[which.min(p.values)], ' as the lowest significant marker (P = ', min(p.values), ').\n\n', sep = '')
+			marker.to.add <- names(p.values)[which.min(p.values)]
+			working.markers <- c(working.markers, marker.to.add)
+			if (length(working.markers) == length(kept.markers)){
+				# If all markers have been added, then we have the final model
+				final.model <- new.model
+				if (verbose)
+					cat('\tNo markers left to add.\n')
+			}
+		}
+		else {
+			final.model <- old.model
+			if (verbose){
+				cat('\tNo further markers are significant, keeping final model:\n')
+				print(final.model)
+			}
+			break
+		}
+	}
+	if (verbose){
+		if (length(working.markers) == 0)
+			cat('Final model was the null model.\n\n')
+		else 
+			cat('Final model contained ', length(working.markers), ' parameters: ', paste(working.markers, collapse = ','), '.\n\n', sep = '')
+	}
+	# Now get the p-values and pseudo R-squared value for all the variables in the final model, when added as the 
+	# last variable
+	if (length(working.markers) > 0){
+		deviance.effect <- numeric()
+		final.p.values <- numeric()
+		for (this.marker in working.markers){
+			# Remove the Na values for this marker
+			this.table <- converted.table[!is.na(converted.table[,this.marker]),]
+			# Build the model 
+			reduced.final.model <- update(final.model, data = this.table)
+			reduced.model <- eval(parse(text = paste('update(reduced.final.model, .~.-', this.marker, ')', sep = '')))
+			# Get the stats
+			dev.eff <- deviance(reduced.model) - deviance(final.model)
+			deviance.effect[this.marker] <- ifelse(is.null(dev.eff), NA, dev.eff)
+			final.p.values[this.marker] <- anova(reduced.model, reduced.final.model, test = 'Chisq')[[P.val.column]][2]
+		}
+	}
+	else {
+		final.p.values <- NA
+		deviance.effect <- NA
+	}
+	cat('\n')
+	#
+	final.model.sig <- data.frame(P = final.p.values, deviance = deviance.effect)
+	print(final.model.sig)
+	list('invariable.markers' = invariable.markers, 'correlated.markers' = correlated.markers, 'sig.alone' = individual.markers, 'final.model' = final.model, 'final.sig' = final.model.sig)
+}
+
+genes.to.model <- c('Ace1', 'Cyp6aa1','Cyp6p3','Gste2', 'Cyp9k1')
+
+
+# Let's test things using copy number in each population independently
+cat('\n\t#######################')
+cat('\n\t# Copy number testing #')
+cat('\n\t#######################\n')
+
 for (insecticide in c('Delta', 'PM')){
 	for (location in c('Avrankou', 'Baguida', 'Korle-Bu', 'Madina', 'Obuasi')){
 		if (insecticide == 'PM' & location == 'Avrankou')
 			next
-		cat('\n\n\t', location, insecticide, 'Cyp9k1:\n')
 		# For some reason, this doesn't work if I do the indexing directly. I have to create this object first
-		index <- list(insecticide, location)
-		print(modal.copy.number[index, table(phenotype, Cyp9k1)])
-		print(modal.copy.number[index, drop1(glm(phenotype ~ Cyp9k1, family = 'binomial'), test = 'Chisq')])
+		index <- list(location, insecticide)
+		cat('\n\tModal copy number test for ', paste(index, collapse = '_'), ':\n\n', sep = '')
+		test.table <- as.data.frame(modal.copy.number[index])
+		print(glm.up(test.table, genes.to.model, 'phenotype'))
 	}
 }
-
-# None of those tests are significant.
-
-# Let's try a glm that includes population as a fixed factor. We don't also include species, since the 
-# effect of species will be perfectly captured by the population fixed factor (all populations contained
-# only one species). 
-cat('\n\nCyp9k1 combined Deltamethrin, location as fixed factor:\n')
-print(modal.copy.number['Delta', drop1(glm(phenotype ~ Cyp9k1 + location, family = 'binomial'), test = 'Chisq')])
-# That's non-significant. 
-cat('\n\nCyp9k1 combined PM, location as fixed factor:\n')
-print(modal.copy.number['PM', drop1(glm(phenotype ~ Cyp9k1 + location, family = 'binomial'), test = 'Chisq')])
-# Also non-significant.
-
-# Now again with Gste2. We only find dups at appreciable frequency in the coluzzii populations
-cat('\nModal copy number in Gste2:\n')
-for (insecticide in c('Delta', 'PM')){
-	for (location in c('Avrankou', 'Korle-Bu')){
-		if (insecticide == 'PM' & location == 'Avrankou')
-			next
-		cat('\n\n\t', location, insecticide, 'Gste2:\n')
-		index <- list(insecticide, location)
-		print(modal.copy.number[index, table(phenotype, Gste2)])
-		print(modal.copy.number[index, drop1(glm(phenotype ~ Gste2, family = 'binomial'), test = 'Chisq')])
-	}
-}
-# Nothing significant
-
-# Cyp6aa1. Again, only at decent numbers in coluzzii
-cat('\nModal copy number in Cyp6aa1:\n')
-for (insecticide in c('Delta', 'PM')){
-	for (location in c('Avrankou', 'Korle-Bu')){
-		if (insecticide == 'PM' & location == 'Avrankou')
-			next
-		cat('\n\n\t', location, insecticide, 'Cyp6aa1:\n')
-		index <- list(insecticide, location)
-		print(modal.copy.number[index, table(phenotype, Cyp6aa1)])
-		print(modal.copy.number[index, drop1(glm(phenotype ~ Cyp6aa1, family = 'binomial'), test = 'Chisq')])
-	}
-}
-# Korle-Bu Delta significant. Avrankou Delta nearly significant
-
-# Cyp6p3. Found at appreciable freqs in Korle-Bu and Madina
-cat('\nModal copy number in Cyp6p3:\n')
-for (insecticide in c('Delta', 'PM')){
-	for (location in c('Korle-Bu', 'Madina')){
-		cat('\n\n\t', location, insecticide, 'Cyp6p3:\n')
-		index <- list(insecticide, location)
-		print(modal.copy.number[index, table(phenotype, Cyp6p3)])
-		print(modal.copy.number[index, drop1(glm(phenotype ~ Cyp6p3, family = 'binomial'), test = 'Chisq')])
-	}
-}
-# Nothing significant
-
-# Combine populations
-cat('\n\nCyp6aa1 + Cyp6p3 combined Deltamethrin, location as fixed factor:\n')
-print(modal.copy.number[.('Delta', c('Avrankou', 'Korle-Bu', 'Madina')), drop1(glm(phenotype ~ Cyp6aa1 + Cyp6p3 + location, family = 'binomial'), test = 'Chisq')])
-# P3 non-significant, so drop it from the model
-print(modal.copy.number[.('Delta', c('Avrankou', 'Korle-Bu', 'Madina')), drop1(glm(phenotype ~ Cyp6aa1 + location, family = 'binomial'), test = 'Chisq')])
-# What's the direction?
-cat('\n\t Coefficients (negative means positively association with resistance:\n')
-print(modal.copy.number[.('Delta', c('Avrankou', 'Korle-Bu', 'Madina')), glm(phenotype ~ Cyp6aa1 + location, family = 'binomial')])
-# That's significant positive association with resistance for Cyp6aa1. 
-
-cat('\n\nCyp6aa1 + Cyp6p3 combined PM, location as fixed factor:\n')
-print(modal.copy.number[.('PM', c('Avrankou', 'Korle-Bu', 'Madina')), drop1(glm(phenotype ~ Cyp6aa1 + Cyp6p3 + location, family = 'binomial'), test = 'Chisq')])
-# P3 least significant, so drop it from the model
-print(modal.copy.number[.('PM', c('Avrankou', 'Korle-Bu', 'Madina')), drop1(glm(phenotype ~ Cyp6aa1 + location, family = 'binomial'), test = 'Chisq')])
-# Non-significant
-
-# Ace1.
-cat('\nModal copy number in Ace1:\n')
-for (insecticide in c('Delta', 'PM')){
-	for (location in c('Baguida', 'Korle-Bu', 'Madina', 'Obuasi')){
-		cat('\n\n\t', location, insecticide, 'Ace1:\n')
-		index <- list(insecticide, location)
-		print(modal.copy.number[index, table(phenotype, Ace1)])
-		print(modal.copy.number[index, drop1(glm(phenotype ~ Ace1, family = 'binomial'), test = 'Chisq')])
-	}
-}
+# Cyp9k1 non-sig.
+# Gste2 non-sig.
+# Cyp6p3 non-sig.
+# Cyp6aa1 sig for Delta in Korle-Bu, nearly sig in Avrankou.
 # PM significant in KB, Madina and Obuasi, but not in Baguida, despite variation in copy number. In fact, copy
 # number overall is quite high in Baguida, and yet there were appreciable numbers of dead with high copy number
 # (eg: 6). Exposure wasn't even that high (0.5x and changing exposure time). 
 
-# Combine populations
-cat('\n\nAce1 combined Deltamethrin, location as fixed factor:\n')
-print(modal.copy.number['Delta', drop1(glm(phenotype ~ Ace1 + location, family = 'binomial'), test = 'Chisq')])
-# That's non-significant for Delta, as expected
-cat('\n\nAce1 combined PM, location as fixed factor:\n')
-print(modal.copy.number['PM', drop1(glm(phenotype ~ Ace1 + location, family = 'binomial'), test = 'Chisq')])
-# And highly significant for PM. 
+# Let's try a glm that includes population as a random factor. 
+pm.table <- as.data.frame(modal.copy.number[insecticide == 'PM'])
+cat('\n\nAll populations PM:\n')
+glm.up(pm.table, genes.to.model, 'phenotype', control.for = 'location', glm.function = 'glmmTMB')
+# Ace1 highly significant
 
-# Add the presence of the Del to the model? Presence of the Del is of course correlated with copy number. But
+delta.table <- as.data.frame(modal.copy.number[insecticide == 'Delta'])
+cat('\n\nAll populations Delta:\n')
+glm.up(delta.table, genes.to.model, 'phenotype', control.for = 'location', glm.function = 'glmmTMB')
+# Cyp6aa1 significant
+
+# Add the presence of the Del to the model. Presence of the Del is of course correlated with copy number. But
 # does it add anything to the model? 
 modal.copy.number$Ace1_Del1_presence <- target.CNV.table[modal.copy.number$sample.id, Ace1_Del1]
 cat('\n\nAce1 combined + Del1 presence, PM, location as fixed factor:\n')
-print(modal.copy.number['PM', drop1(glm(phenotype ~ Ace1 + Ace1_Del1_presence + location, family = 'binomial'), test = 'Chisq')])
+print(drop1(glmmTMB(phenotype ~ Ace1 + Ace1_Del1_presence + (1|location), family = 'binomial', data = modal.copy.number[insecticide == 'PM']), test = 'Chisq'))
 cat('\n\t Coefficients (negative means positively association with resistance:\n')
-print(modal.copy.number['PM', glm(phenotype ~ Ace1 + Ace1_Del1_presence + location, family = 'binomial')])
+print(glmmTMB(phenotype ~ Ace1 + Ace1_Del1_presence + (1|location), family = 'binomial', data = modal.copy.number[insecticide == 'PM']))
 # Having the deletion, not quite significant, but direction of trend is to increase the level of resistance. 
 
 # An alternative model would be one that counts the number of deletions. We can do this by taking the mean modal
@@ -511,10 +664,14 @@ modal.copy.number[, Ace1_Del_cn := Ace1 - apply(.SD, 1, median), .SDcols = ace1.
 # copy number and no Del1. 
 
 cat('\n\nAce1 combined + Del1 copy number, PM, location as fixed factor:\n')
-print(modal.copy.number['PM', drop1(glm(phenotype ~ Ace1 + Ace1_Del_cn + location, family = 'binomial'), test = 'Chisq')])
+print(drop1(glmmTMB(phenotype ~ Ace1 + Ace1_Del_cn + (1|location), family = 'binomial', data = modal.copy.number[insecticide == 'PM']), test = 'Chisq'))
 
 # It's much further from significance. It's at least partly because in the samples with a deletion copy number of 
 # 1, survival is higher in those that have Del1 than those that don't. 
+
+cat('\n\t##############################')
+cat('\n\t# Cyp6aap Dup allele testing #')
+cat('\n\t##############################\n')
 
 # For Cyp6aap, let's look at each Dup in turn. We'll do that by population because there are different CNVs in
 # different populations. In gambiae, there is very little diversity of Dups, so not really worth looking into 
@@ -522,21 +679,14 @@ print(modal.copy.number['PM', drop1(glm(phenotype ~ Ace1 + Ace1_Del_cn + locatio
 # Avrankou:
 cat('\n\nCyp6aap alleles in Avrankou:\n')
 avrankou.delta.samples <- phen[location == 'Avrankou', specimen]
-print(target.CNV.table[avrankou.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup7 + Cyp6aap_Dup10, family = 'binomial'), test = 'Chisq')])
-# Dup7 is least significant
-print(target.CNV.table[avrankou.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup10, family = 'binomial'), test = 'Chisq')])
-# Dup10 also non significant 
+avrankou.delta.allele.table <- as.data.frame(target.CNV.table[avrankou.delta.samples])
+print(glm.up(avrankou.delta.allele.table, c('Cyp6aap_Dup7', 'Cyp6aap_Dup10'), 'phenotype'))
+# Nothing is significant
 
 # Korle-Bu:
 korlebu.delta.samples <- phen[location == 'Korle-Bu' & insecticide == 'Delta', specimen]
-print(target.CNV.table[korlebu.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup10 + Cyp6aap_Dup17 + Cyp6aap_Dup18, family = 'binomial'), test = 'Chisq')])
-# Dup17 is least significant
-print(target.CNV.table[korlebu.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup10 + Cyp6aap_Dup18, family = 'binomial'), test = 'Chisq')])
-# Dup18 is non-significant, but only just
-print(target.CNV.table[korlebu.delta.samples, drop1(glm(phenotype ~ Cyp6aap_Dup10, family = 'binomial'), test = 'Chisq')])
-# Dup10 is significant
-cat('\n\t Coefficients (negative means positively association with resistance:\n')
-print(target.CNV.table[korlebu.delta.samples, glm(phenotype ~ Cyp6aap_Dup10 + Cyp6aap_Dup17 + Cyp6aap_Dup18, family = 'binomial')])
+korlebu.delta.allele.table <- as.data.frame(target.CNV.table[korlebu.delta.samples])
+print(glm.up(korlebu.delta.allele.table, c('Cyp6aap_Dup10', 'Cyp6aap_Dup17', 'Cyp6aap_Dup18'), 'phenotype'))
 # Both Dup10 and Dup18 are positively associated with resistance, although Dup18 is non-sig. 
 
 
