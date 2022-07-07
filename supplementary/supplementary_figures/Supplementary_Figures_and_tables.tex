@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[small]{caption}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage[outdir=./]{epstopdf}
+\usepackage[a4paper, top = 3cm, bottom = 3cm]{geometry}
+\usepackage[table,xcdraw]{xcolor}
+
+\title{Supplementary Figures.}
+
+
+\setlength{\oddsidemargin}{-0cm}
+\setlength{\textwidth}{16cm}
+
+
+
+\renewcommand{\figurename}{\textbf{Fig.}}
+\renewcommand{\thefigure}{\textbf{S\arabic{figure}}}
+\renewcommand{\thetable}{\textbf{S\arabic{table}}}
+
+\begin{document}
+
+\onehalfspacing
+
+\begin{center}
+	\Large
+	\noindent \textbf{Manuscript title}
+
+	\normalsize
+
+	\vskip 3cm
+
+\end{center}
+
+%\noindent Eric R. Lucas$^{1}$* 
+
+\noindent Author M. Surname \ldots and The \textit{Anopheles gambiae} 1000 Genomes Consortium
+ 
+\vskip 2cm 
+
+
+\section*{Electronic Supplementary Material \\ Supplementary figures and tables}
+
+\clearpage
+
+\begin{figure}[h]
+	\begin{center}
+		\makebox{\includegraphics*{../../CNV_analysis/Ace1_diagnostic_read_CNVs.png}}
+		\vskip 0.4cm
+		\makebox{\includegraphics*{../../CNV_analysis/Cyp6aap_diagnostic_read_CNVs.png}}
+		\vskip 0.4cm
+		\makebox{\includegraphics*{../../CNV_analysis/Cyp6mz_diagnostic_read_CNVs.png}}
+		\vskip 0.4cm
+		\makebox{\includegraphics*{../../CNV_analysis/Gste_diagnostic_read_CNVs.png}}
+		\vskip 0.4cm
+		\makebox{\includegraphics*{../../CNV_analysis/Cyp9k1_diagnostic_read_CNVs.png}}
+	\end{center}
+	\caption{\footnotesize Frequency (proportion of samples carrying at least one copy) of known CNV alleles detected using diagnostic reads around \textit{Ace1}, the \textit{Cyp6aa / Cyp6p} cluster, the \textit{Cyp6m / Cyp6z} cluster, the \textit{Gste} cluster and \textit{Cyp9k1}. Darkness of blue (\textit{An. gambiae}) and red (\textit{An. coluzzii}) provided as a visual aid for the magnitude of the value in each cell. The genomic coordinates of each CNV allele can be found in Supplementary Data @@. In each cluster, the ``Dup0'' column indicates the presence of increased copy number in any of the genes in the cluster. Where this is larger than the sum of known alleles, it suggests the presence of CNV alleles not present in the Ag1000G database. ``Del'' alleles in Ace1 represent secondary deletions within the Ace1-Dup1 CNV.}
+	\label{FigS1}
+\end{figure}
+
+\clearpage
+
+Copy number of Ace1 was strongly associated with resistance to PM (P < 10^-5 in all cases) in all populations except Baguida. No other genes showed a significant association. For deltamethrin, copy number of Cyp6aa1 was associated with resistance in Korle-Bu (P = ), with a trend in the same direction in Avrankou (P = ), the two populations of An. coluzzii. In An. gambiae, Cyp6aa1 CNVs are much rarer. There is appreciable frequency of increased copy number in Cyp6p3 in An. gambiae from Madina, but there was no significant association with resistance. 
+
+
+\end{document}
