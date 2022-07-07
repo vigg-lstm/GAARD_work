@@ -107,9 +107,21 @@ modal.copy.number <- lapply(unique(study.ids.table$study_id), load.modal.cnv.tab
 modal.CNV.table <- copy(modal.copy.number) %>%
                    .[, colnames(.)[-1] := lapply(.SD, `>`, 0), .SDcols = colnames(.)[-1]]
 
+# For a smaller table, we only keep genes where a CNV was present. 
+no.cnv <- names(which(apply(modal.CNV.table[, -1], 2, sum, na.rm = T) < 1))
+modal.CNV.table <- modal.CNV.table[, -c(..no.cnv)]
+
+# Calculate the frequency of CNVs in each population by year
+population.modal.CNVs <- aggregate(modal.CNV.table[, -c('sample.id')],
+                                   phen[modal.CNV.table$sample.id, .(location, species)], 
+                                   function(x) sum(x) / length(x)
+)
+
 detox.genes <- c('Ace1',
                  paste('Cyp6aa', 1:2, sep = ''),
                  paste('Cyp6p', 1:5, sep = ''),
+                 paste('Cyp6m', 2:4, sep = ''),
+                 paste('Cyp6z', 1:3, sep = ''),
                  paste('Gste', 1:8, sep = ''),
                  'Cyp9k1')
 
@@ -130,16 +142,6 @@ modal.copy.number <- modal.copy.number[, c('sample.id', genes.of.interest), with
                      .[, phenotype := as.factor(phenotype)] %>%
                      setnames(detox.gene.conversion$Gene.id, detox.gene.conversion$Gene.name) %>%
                      setkey(location, insecticide)
-
-# For a smaller table, we only keep genes where a CNV was present. 
-no.cnv <- names(which(apply(modal.CNV.table[, -1], 2, sum, na.rm = T) < 1))
-modal.CNV.table <- modal.CNV.table[, -c(..no.cnv)]
-
-# Calculate the frequency of CNVs in each population by year
-population.modal.CNVs <- aggregate(modal.CNV.table[, -c('sample.id')],
-                                   phen[modal.CNV.table$sample.id, .(location, species)], 
-                                   function(x) sum(x) / length(x)
-)
 
 # A function that will lighten the colour by a given proportion
 lighten.col <- function(color, lightness){
@@ -330,13 +332,13 @@ contable <- function(x, ...){
 		modal.contable(x, ...)
 }
 
-png('detox_gene_consensus_CNVs.png', width = 4, height = 1, units = 'in', res = 300)
+png('detox_gene_modal_CNVs.png', width = 4.5, height = 1, units = 'in', res = 300)
 par(family = 'Arial')
 contable(detox.genes, 
          text.cell.cex = 0.35,
          pop.cex = 0.35,
          gene.cex = 0.35,
-         mai = c(0,0.17,0.18,0)
+         mai = c(0,0.13,0.18,0)
 )
 dev.off()
 
@@ -609,7 +611,7 @@ glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'AliveDea
 	list('invariable.markers' = invariable.markers, 'correlated.markers' = correlated.markers, 'sig.alone' = individual.markers, 'final.model' = final.model, 'final.sig' = final.model.sig)
 }
 
-genes.to.model <- c('Ace1', 'Cyp6aa1','Cyp6p3','Gste2', 'Cyp9k1')
+genes.to.model <- c('Ace1', 'Cyp6aa1', 'Cyp6z1', 'Cyp6z2', 'Cyp6z3', 'Cyp6p3','Gste2', 'Cyp9k1')
 
 
 # Let's test things using copy number in each population independently
@@ -617,13 +619,27 @@ cat('\n\t#######################')
 cat('\n\t# Copy number testing #')
 cat('\n\t#######################\n')
 
+detox.gene.freq <- aggregate(modal.CNV.table[, detox.gene.conversion$Gene.id, with = F],
+                             phen[modal.CNV.table$sample.id, .(location, insecticide)], 
+                             function(x) sum(x) / length(x)
+                   ) %>%
+                   setnames(detox.gene.conversion$Gene.id, detox.gene.conversion$Gene.name)
+rownames(detox.gene.freq) <- paste(detox.gene.freq$location, detox.gene.freq$insecticide, sep = '.')
+detox.gene.freq <- detox.gene.freq[sort(detox.gene.conversion$Gene.name)]
+
+
+
 for (insecticide in c('Delta', 'PM')){
 	for (location in c('Avrankou', 'Baguida', 'Korle-Bu', 'Madina', 'Obuasi')){
 		if (insecticide == 'PM' & location == 'Avrankou')
 			next
 		# For some reason, this doesn't work if I do the indexing directly. I have to create this object first
 		index <- list(location, insecticide)
+		# Keep genes where CNV exists in at least 10% of samples. 
+		genes.to.model <- (detox.gene.freq[paste(index, collapse = '.'), ] >= 0.1) %>%
+		                  colnames(.)[.]
 		cat('\n\tModal copy number test for ', paste(index, collapse = '_'), ':\n\n', sep = '')
+		cat('Analysing genes with CNV at >= 10% freq (', paste(genes.to.model, collapse = ', '), ').\n\n', sep = '')
 		test.table <- as.data.frame(modal.copy.number[index])
 		print(glm.up(test.table, genes.to.model, 'phenotype'))
 	}
