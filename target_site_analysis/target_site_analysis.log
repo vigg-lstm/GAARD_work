@@ -78,7 +78,80 @@ Cyp4j5.43F_A 0.006709816 7.349051
 Vgsc.1527T_C 0.024552607 5.055168
 
 
-Vgsc.1527T and Vgsc.1603T are both significant, leading to increased resistance against Delta.
+Vgsc.1527T and Cyp4j5.43F are both significant, leading to increased resistance against Delta.
+Using the following string to control for confounding factors: 
+
+Detecting invariable and nearly invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ 1 , data = avrankou.delta.table, family = binomial) 
+	Adding marker inv_2La as the lowest significant marker (P = 0.00294712).
+
+Building model: glm(phenotype ~ inv_2La, data = avrankou.delta.table, family = binomial) 
+	Adding marker Vgsc.1527T_C as the lowest significant marker (P = 0.01605891).
+
+Building model: glm(phenotype ~ inv_2La + Vgsc.1527T_C, data = avrankou.delta.table, family = binomial) 
+	Could not calculate p-value for marker Vgsc.402L_T.
+
+	Could not calculate p-value for marker Vgsc.995F_T.
+
+	No further markers are significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ inv_2La + Vgsc.1527T_C, family = binomial, 
+    data = avrankou.delta.table)
+
+Coefficients:
+ (Intercept)       inv_2La  Vgsc.1527T_C  
+      0.7493       -1.1779       -1.4746  
+
+Degrees of Freedom: 78 Total (i.e. Null);  76 Residual
+Null Deviance:	    108 
+Residual Deviance: 93.34 	AIC: 99.34
+Final model contained 2 parameters: inv_2La,Vgsc.1527T_C.
+
+
+                       P deviance
+inv_2La      0.001859563 9.683241
+Vgsc.1527T_C 0.016058907 5.796413
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                       P pseudo.R2
+Vgsc.1527T_C 0.026044052        NA
+Vgsc.402L_T  0.026044052        NA
+Vgsc.995F_T  0.026044052        NA
+Rdl.296G_G   0.113142766        NA
+Cyp4j5.43F_A 0.007102054        NA
+Gste2.114T_G 0.972410895        NA
+inv_2La      0.002947120        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ inv_2La + Vgsc.1527T_C, family = binomial, 
+    data = avrankou.delta.table)
+
+Coefficients:
+ (Intercept)       inv_2La  Vgsc.1527T_C  
+      0.7493       -1.1779       -1.4746  
+
+Degrees of Freedom: 78 Total (i.e. Null);  76 Residual
+Null Deviance:	    108 
+Residual Deviance: 93.34 	AIC: 99.34
+
+$final.sig
+                       P deviance
+inv_2La      0.001859563 9.683241
+Vgsc.1527T_C 0.016058907 5.796413
+
+
+After controlling for the 2La inversion, Cyp4j5 was no longer significant.
 
 
 Baguida Delta:
