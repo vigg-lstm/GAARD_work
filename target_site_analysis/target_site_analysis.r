@@ -151,6 +151,9 @@ gste2.genotypes <- lapply(zarr.folders, get.zarr.genotypes, '3R', gste2.indices)
 				 .[, !(colnames(.) %in% samples.to.remove)]
 gste2.genotypes[is.na(gste2.genotypes)] <- 0
 
+# Get the 2La karyotypes
+kary <- fread('../NGSrelate/karyotypes/gaard_karyotypes.tsv')[inversion == '2La', .(partner_sample_id, inv_2La = round(mean_genotype))]
+
 # There appears to be a new mutation in gste2.119, where instead of a G->C substitution (leading to a C->G
 # change in the codon, which leads to a L->V change in the amino acid), we have a G->T substitution, which
 # leads to a C->A change in the codon, which leads to a L->M change in the amino acid. However, this is only 
@@ -164,21 +167,23 @@ wgs.phen[, (rownames(rdl.genotypes)) := data.table(t(rdl.genotypes))]
 wgs.phen[, (rownames(cyp4j5.genotypes)) := data.table(t(cyp4j5.genotypes))]
 wgs.phen[, (rownames(ace1.genotypes)) := data.table(t(ace1.genotypes))]
 wgs.phen[, (rownames(gste2.genotypes)) := data.table(t(gste2.genotypes))]
+wgs.phen <- merge(wgs.phen, kary, by.x = 'specimen', by.y = 'partner_sample_id')
 setkey(wgs.phen, location, insecticide)
-all.markers <- c(rownames(kdr.genotypes),
-                 rownames(rdl.genotypes),
-                 rownames(cyp4j5.genotypes),
-                 rownames(ace1.genotypes),
-                 rownames(gste2.genotypes))
+all.snps <- c(rownames(kdr.genotypes),
+              rownames(rdl.genotypes),
+              rownames(cyp4j5.genotypes),
+              rownames(ace1.genotypes),
+              rownames(gste2.genotypes))
 
-pop.freqs <- wgs.phen[, lapply(.SD, function(x) mean(x)/2), by = .(location, species), .SDcols = all.markers]
-t.pop.freqs <- cbind(data.table(all.markers),
-                     data.table(pop.freqs[, t(.SD), .SDcols =  all.markers])) %>%
+# Now calculate the allele frequency in each of the populations
+pop.freqs <- wgs.phen[, lapply(.SD, function(x) mean(x)/2), by = .(location, species), .SDcols = all.snps]
+t.pop.freqs <- cbind(data.table(all.snps),
+                     data.table(pop.freqs[, t(.SD), .SDcols =  all.snps])) %>%
                setattr('names', c('Locus', paste(pop.freqs$location, pop.freqs$species, sep = '.')))
 
 fwrite(t.pop.freqs, 'target_site_genotype_frequencies.csv', sep = '\t')
 
-study.freqs <- wgs.phen[, lapply(.SD, function(x) mean(x)/2), by = .(location, species, insecticide), .SDcols = all.markers] %>%
+study.freqs <- wgs.phen[, lapply(.SD, function(x) mean(x)/2), by = .(location, species, insecticide), .SDcols = all.snps] %>%
                setkey(location, insecticide)
 
 # GLMs:
@@ -402,16 +407,19 @@ glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'AliveDea
 
 # Let's test things in Avrankou Delta
 cat('\n\nAvrankou Delta:\n')
-avrankou.delta.seg.markers <- study.freqs[.('Avrankou', 'Delta'), ..all.markers] %>%
+avrankou.delta.seg.markers <- study.freqs[.('Avrankou', 'Delta'), ..all.snps] %>%
                               {(. >= 0.1) & (. <= 0.9)} %>%
                               colnames(.)[.]
 avrankou.delta.table <- as.data.frame(wgs.phen[.('Avrankou', 'Delta')])
 glm.up(avrankou.delta.table, avrankou.delta.seg.markers, 'phenotype')
-cat('\nVgsc.1527T and Vgsc.1603T are both significant, leading to increased resistance against Delta.\n')
+cat('\nVgsc.1527T and Cyp4j5.43F are both significant, leading to increased resistance against Delta.\n')
+# Now take karyotype into account
+glm.up(avrankou.delta.table, c(avrankou.delta.seg.markers, 'inv_2La'), 'phenotype')
+cat('\nAfter controlling for the 2La inversion, Cyp4j5 was no longer significant.\n')
 
 # Baguida Delta
 cat('\n\nBaguida Delta:\n')
-baguida.delta.seg.markers <- study.freqs[.('Baguida', 'Delta'), ..all.markers] %>%
+baguida.delta.seg.markers <- study.freqs[.('Baguida', 'Delta'), ..all.snps] %>%
                              {(. >= 0.1) & (. <= 0.9)} %>%
                              colnames(.)[.]
 baguida.delta.table <- as.data.frame(wgs.phen[.('Baguida', 'Delta')])
@@ -420,7 +428,7 @@ cat('\nNothing is significant in Baguida Delta\n')
 
 # Korle-Bu Delta
 cat('\n\nKorle-Bu Delta:\n')
-kb.delta.seg.markers <- study.freqs[.('Korle-Bu', 'Delta'), ..all.markers] %>%
+kb.delta.seg.markers <- study.freqs[.('Korle-Bu', 'Delta'), ..all.snps] %>%
                         {(. >= 0.1) & (. <= 0.9)} %>%
                         colnames(.)[.]
 # We kick out 402L_C 
@@ -431,7 +439,7 @@ cat('\nNothing is significant in Korle-Bu Delta\n')
 
 # Madina Delta
 cat('\n\nMadina Delta:\n')
-madina.delta.seg.markers <- study.freqs[.('Madina', 'Delta'), ..all.markers] %>%
+madina.delta.seg.markers <- study.freqs[.('Madina', 'Delta'), ..all.snps] %>%
                             {(. >= 0.1) & (. <= 0.9)} %>%
                             colnames(.)[.]
 madina.delta.table <- as.data.frame(wgs.phen[.('Madina', 'Delta')])
@@ -440,7 +448,7 @@ cat('\nNothing significant in Madina Delta.\n')
 
 # Obuasi Delta
 cat('\n\nObuasi Delta:\n')
-obuasi.delta.seg.markers <- study.freqs[.('Obuasi', 'Delta'), ..all.markers] %>%
+obuasi.delta.seg.markers <- study.freqs[.('Obuasi', 'Delta'), ..all.snps] %>%
                             {(. >= 0.1) & (. <= 0.9)} %>%
                             colnames(.)[.]
 obuasi.delta.table <- as.data.frame(wgs.phen[.('Obuasi', 'Delta')])
@@ -449,7 +457,7 @@ cat('\nNothing significant in Obuasi Delta.\n')
 
 # Baguida PM
 cat('\n\nBaguida PM:\n')
-baguida.pm.seg.markers <- study.freqs[.('Baguida', 'PM'), ..all.markers] %>%
+baguida.pm.seg.markers <- study.freqs[.('Baguida', 'PM'), ..all.snps] %>%
                           {(. >= 0.1) & (. <= 0.9)} %>%
                           colnames(.)[.]
 baguida.pm.table <- as.data.frame(wgs.phen[.('Baguida', 'PM')])
@@ -458,7 +466,7 @@ cat('\nVgsc.1570Y positively associated with PM resistance in Baguida.\n')
 
 # Korle-Bu PM
 cat('\n\nKorle-Bu PM:\n')
-kb.pm.seg.markers <- study.freqs[.('Korle-Bu', 'PM'), ..all.markers] %>%
+kb.pm.seg.markers <- study.freqs[.('Korle-Bu', 'PM'), ..all.snps] %>%
                      {(. >= 0.1) & (. <= 0.9)} %>%
                      colnames(.)[.]
 kb.pm.table <- as.data.frame(wgs.phen[.('Korle-Bu', 'PM')])
@@ -468,7 +476,7 @@ cat('\nAce1 very strongly associated with PM resistance in Korle-Bu. Vgsc-995F (
 
 # Madina PM
 cat('\n\nMadina PM:\n')
-madina.pm.seg.markers <- study.freqs[.('Madina', 'PM'), ..all.markers] %>%
+madina.pm.seg.markers <- study.freqs[.('Madina', 'PM'), ..all.snps] %>%
                          {(. >= 0.1) & (. <= 0.9)} %>%
                          colnames(.)[.]
 madina.pm.table <- as.data.frame(wgs.phen[.('Madina', 'PM')])
@@ -477,7 +485,7 @@ cat('\nAce1 very strongly associated with PM resistance in Madina.\n')
 
 # Obuasi PM
 cat('\n\nObuasi PM:\n')
-obuasi.pm.seg.markers <- study.freqs[.('Obuasi', 'PM'), ..all.markers] %>%
+obuasi.pm.seg.markers <- study.freqs[.('Obuasi', 'PM'), ..all.snps] %>%
                          {(. >= 0.1) & (. <= 0.9)} %>%
                          colnames(.)[.]
 obuasi.pm.table <- as.data.frame(wgs.phen[.('Obuasi', 'PM')])
@@ -486,7 +494,7 @@ cat('\nAce1 very strongly associated with PM resistance in Obuasi.\n')
 
 # Now let's try combining locations:
 # We kick out 402L since it's perfectly associated with 995 and the presence of two alleles is confusing
-non.402.markers <- setdiff(all.markers, c('Vgsc.402L_C', 'Vgsc.402L_T')) 
+non.402.markers <- setdiff(all.snps, c('Vgsc.402L_C', 'Vgsc.402L_T')) 
 pm.table <- as.data.frame(wgs.phen[insecticide == 'PM'])
 cat('\n\nAll populations PM:\n')
 glm.up(pm.table, non.402.markers, 'phenotype', control.for = 'location', glm.function = 'glmmTMB')
