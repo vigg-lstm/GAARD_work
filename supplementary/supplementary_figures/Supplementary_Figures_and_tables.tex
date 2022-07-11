@@ -6,7 +6,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{setspace}
 \usepackage[outdir=./]{epstopdf}
-\usepackage[a4paper, top = 3cm, bottom = 3cm]{geometry}
+\usepackage[a4paper, top = 2cm, bottom = 2cm]{geometry}
 \usepackage[table,xcdraw]{xcolor}
 
 \title{Supplementary Figures.}
@@ -64,7 +64,25 @@
 
 \clearpage
 
-Copy number of Ace1 was strongly associated with resistance to PM (P < 10^-5 in all cases) in all populations except Baguida. No other genes showed a significant association. For deltamethrin, copy number of Cyp6aa1 was associated with resistance in Korle-Bu (P = ), with a trend in the same direction in Avrankou (P = ), the two populations of An. coluzzii. In An. gambiae, Cyp6aa1 CNVs are much rarer. There is appreciable frequency of increased copy number in Cyp6p3 in An. gambiae from Madina, but there was no significant association with resistance. 
+\begin{figure}[h]
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png}
+	%\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png}
+	\vskip 0.4cm
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png}
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png}
+	\vskip 0.4cm
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png}
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png}
+	\vskip 0.4cm
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png}
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png}
+	\vskip 0.4cm
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png}
+	\includegraphics*[width = 7.9cm]{../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png}
+	\caption{\footnotesize $F_{ST}$ between resistant and susceptible individuals in each sample set, calculated in 1000 SNP windows. Red line indicates $F_{ST}$, grey lines in background show results from 200 randomisations in which phenotype labels were permuted. Regions of extended haplotype homozygosity can cause spurious peaks in $F_{ST}$, which are captured by the randomisations (eg., peaks around Ace1 in Deltamethrin sample sets). Windows identified as peaks were considered ``significant'' (green points) if their $F_{ST}$ value fell above the 99th centile of the randomisations for that window (ie: P < 0.01) and non-significant (purple points) otherwise}.
+	\label{FigS2}
+\end{figure}
+
 
 
 \end{document}
