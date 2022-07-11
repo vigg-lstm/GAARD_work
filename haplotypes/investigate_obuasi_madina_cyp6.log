@@ -1,0 +1,10 @@
+Running investigate_obuasi_madina_cyp6.py at 22:45 on 11/07/2022 using machine neptune
+
+
+Load sample metadata:   0%|                                                                           | 0/6 [00:00<?, ?it/s]Load sample metadata:  17%|███████████▏                                                       | 1/6 [00:01<00:06,  1.28s/it]Load sample metadata:  33%|██████████████████████▎                                            | 2/6 [00:02<00:05,  1.34s/it]Load sample metadata:  50%|█████████████████████████████████▌                                 | 3/6 [00:03<00:03,  1.24s/it]Load sample metadata:  67%|████████████████████████████████████████████▋                      | 4/6 [00:04<00:02,  1.22s/it]Load sample metadata:  83%|███████████████████████████████████████████████████████▊           | 5/6 [00:06<00:01,  1.30s/it]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:07<00:00,  1.28s/it]Load sample metadata: 100%|███████████████████████████████████████████████████████████████████| 6/6 [00:07<00:00,  1.28s/it]qt.qpa.xcb: X server does not support XInput 2
+In window1, the main clusters was identical whether Obuasi and Madina were analysed together or separately.
+qt.qpa.xcb: QXcbConnection: XCB error: 1 (BadRequest), sequence: 169, resource id: 665, major code: 130 (Unknown), minor code: 47
+
+Running snpEff on haplotype SNPs, using command java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Madina_Obuasi_delta_shared_Cyp6_cluster_temp.vcf > Madina_Obuasi_delta_shared_Cyp6_cluster.vcf
+
+
