@@ -329,8 +329,8 @@ draw_hap_cluster_plot(z2, r2, haparray2, cluster_labels=cluster_lab2,
                       vspans=v_span2, colour_scheme = cluster_colours,
                       labels_for_colours = hap_assignment2, title = ''
 )
-dendrogram_filename = 'Madina_Obuasi_delta_shared_Cyp6_cluster_dendrogram.png'
-plt.savefig(dendrogram_filename, format = 'png', dpi = 100)
+dendrogram_filename = 'Madina_Obuasi_delta_shared_Cyp6_cluster_dendrogram.svg'
+plt.savefig(dendrogram_filename, format = 'svg')
 
 # Now colour-code by alive/dead instead.
 hap_phen2 = meta.set_index('sample_id').loc[hapsamples2, 'phenotype'].values
@@ -348,8 +348,8 @@ draw_hap_cluster_plot(z2, r2, haparray2, cluster_labels=cluster_lab2,
                       labels_for_colours = hap_assignment2_deadalive,
                       title = ''
 )
-dendrogram_filename_phen = 'Madina_Obuasi_delta_shared_Cyp6_cluster_dendrogram_phenlabel.png'
-plt.savefig(dendrogram_filename, format = 'png', dpi = 100)
+dendrogram_filename_phen = 'Madina_Obuasi_delta_shared_Cyp6_cluster_dendrogram_phenlabel.svg'
+plt.savefig(dendrogram_filename, format = 'svg')
 
 # Indeed, the two clusters are identical
 hap_clusters_split = set(np.concatenate([focal_cluster2_haps_obuasi, focal_cluster2_haps_madina]))
