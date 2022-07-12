@@ -131,6 +131,8 @@ plot.hap.cluster <- function(snp.table, sig.test, filename, point.cex, remove.ba
 			postscript(filename, width = plot.width, height = plot.height, horizontal = F, onefile = FALSE, paper = "special")
 		else if (grepl('\\.png', filename))
 			png(filename, width = plot.width, height = plot.height, units = 'in', res = 200)
+		else if (grepl('\\.svg', filename))
+			svg(filename, width = plot.width, height = plot.height)
 		else if (grepl('\\.tif', filename))
 			tiff(filename, width = plot.width, height = plot.height, units = 'in', res = 200)
 	}
@@ -207,6 +209,6 @@ plot.hap.cluster <- function(snp.table, sig.test, filename, point.cex, remove.ba
 		dev.off()
 }
 
-plot.hap.cluster(snp.table, sig.test, 'Madina_Obuasi_shared_Cyp6_haplotype.png', point.cex = 0.8)
+plot.hap.cluster(snp.table, sig.test, 'Madina_Obuasi_shared_Cyp6_haplotype.svg', point.cex = 0.8)
 
 
