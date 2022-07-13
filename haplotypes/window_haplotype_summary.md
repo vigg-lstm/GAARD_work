@@ -1481,35 +1481,25 @@ ___
 
 &nbsp;
 
-[Korle-Bu_coluzzii_PM_2R:3910531-3922880](#korle-bu_coluzzii_pm_2r_3910531-3922880)  
+[Korle-Bu_coluzzii_PM_2R:38097626-38111826](#korle-bu_coluzzii_pm_2r_38097626-38111826)  
 [Korle-Bu_coluzzii_PM_2R:54371673-54397846](#korle-bu_coluzzii_pm_2r_54371673-54397846)  
 [Korle-Bu_coluzzii_PM_3R:28482794-28505651](#korle-bu_coluzzii_pm_3r_28482794-28505651)  
 [Korle-Bu_coluzzii_PM_3R:28505651-28533744](#korle-bu_coluzzii_pm_3r_28505651-28533744)  
 [Korle-Bu_coluzzii_PM_3R:28563392-28595112](#korle-bu_coluzzii_pm_3r_28563392-28595112)  
 [Korle-Bu_coluzzii_PM_3R:2929236-2946500](#korle-bu_coluzzii_pm_3r_2929236-2946500)  
-### Korle-Bu_coluzzii_PM_2R_3910531-3922880
+### Korle-Bu_coluzzii_PM_2R_38097626-38111826
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:3910531-3922880_overview](../focal_gwas/Korle-Bu_coluzzii_PM/2R_3917054.png)
+![Korle-Bu_coluzzii_PM_2R:38097626-38111826_overview](../focal_gwas/Korle-Bu_coluzzii_PM/2R_38104953.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:3910531-3922880_dendrogram](Korle-Bu_coluzzii_PM_2R%3A3910531-3922880_dendrogram.png)
+![Korle-Bu_coluzzii_PM_2R:38097626-38111826_dendrogram](Korle-Bu_coluzzii_PM_2R%3A38097626-38111826_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:3910531-3922880_haplotypes](Korle-Bu_coluzzii_PM_2R%3A3910531-3922880.png)
-
-&nbsp;
-
-#### Contingency table for cluster_1:
-
-| &nbsp;&nbsp;&nbsp;  phenotype  &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  wt  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  het  &nbsp;&nbsp;&nbsp;  |  &nbsp;&nbsp;&nbsp;  hom  &nbsp;&nbsp;&nbsp;  |
-| :---:     | :---: | :---: | :---: |
-|  alive    | 31 | 24 | 2 |
-|  dead     | 39 | 8 | 1 |
-
+![Korle-Bu_coluzzii_PM_2R:38097626-38111826_haplotypes](Korle-Bu_coluzzii_PM_2R%3A38097626-38111826.png)
 
 &nbsp;
 
