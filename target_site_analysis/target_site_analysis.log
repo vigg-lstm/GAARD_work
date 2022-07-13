@@ -16,38 +16,34 @@ Analysing markers independently.
 Running commentary on model optimisation:
 
 Building model: glm(phenotype ~ 1 , data = avrankou.delta.table, family = binomial) 
-	Adding marker Vgsc.1527T_C as the lowest significant marker (P = 0.02604405).
+	Adding marker Cyp4j5.43F_A as the lowest significant marker (P = 0.007102054).
 
-Building model: glm(phenotype ~ Vgsc.1527T_C, data = avrankou.delta.table, family = binomial) 
-	Could not calculate p-value for marker Vgsc.402L_T.
+Building model: glm(phenotype ~ Cyp4j5.43F_A, data = avrankou.delta.table, family = binomial) 
+	Adding marker Vgsc.1527T_C as the lowest significant marker (P = 0.02455261).
 
-	Could not calculate p-value for marker Vgsc.995F_T.
-
-	Adding marker Vgsc.1603T_C as the lowest significant marker (P = 0.01816611).
-
-Building model: glm(phenotype ~ Vgsc.1527T_C + Vgsc.1603T_C, data = avrankou.delta.table, family = binomial) 
+Building model: glm(phenotype ~ Cyp4j5.43F_A + Vgsc.1527T_C, data = avrankou.delta.table, family = binomial) 
 	Could not calculate p-value for marker Vgsc.402L_T.
 
 	Could not calculate p-value for marker Vgsc.995F_T.
 
 	No further markers are significant, keeping final model:
 
-Call:  glm(formula = phenotype ~ Vgsc.1527T_C + Vgsc.1603T_C, family = binomial, 
+Call:  glm(formula = phenotype ~ Cyp4j5.43F_A + Vgsc.1527T_C, family = binomial, 
     data = avrankou.delta.table)
 
 Coefficients:
- (Intercept)  Vgsc.1527T_C  Vgsc.1603T_C  
-      0.1531       -1.4621       -1.9950  
+ (Intercept)  Cyp4j5.43F_A  Vgsc.1527T_C  
+      0.6396       -1.0319       -1.3529  
 
 Degrees of Freedom: 78 Total (i.e. Null);  76 Residual
 Null Deviance:	    108 
-Residual Deviance: 97.45 	AIC: 103.4
-Final model contained 2 parameters: Vgsc.1527T_C,Vgsc.1603T_C.
+Residual Deviance: 95.68 	AIC: 101.7
+Final model contained 2 parameters: Cyp4j5.43F_A,Vgsc.1527T_C.
 
 
-                      P deviance
-Vgsc.1527T_C 0.01123617 6.427577
-Vgsc.1603T_C 0.01816611 5.580059
+                       P deviance
+Cyp4j5.43F_A 0.006709816 7.349051
+Vgsc.1527T_C 0.024552607 5.055168
 $invariable.markers
 character(0)
 
@@ -55,35 +51,107 @@ $correlated.markers
 character(0)
 
 $sig.alone
-                      P pseudo.R2
-Vgsc.1527T_C 0.02604405        NA
-Vgsc.1603T_C 0.04274209        NA
-Vgsc.1940T_C 0.85094598        NA
-Vgsc.402L_T  0.02604405        NA
-Vgsc.995F_T  0.02604405        NA
-Rdl.296G_G   0.11314277        NA
-Gste2.114T_G 0.97241089        NA
+                       P pseudo.R2
+Vgsc.1527T_C 0.026044052        NA
+Vgsc.402L_T  0.026044052        NA
+Vgsc.995F_T  0.026044052        NA
+Rdl.296G_G   0.113142766        NA
+Cyp4j5.43F_A 0.007102054        NA
+Gste2.114T_G 0.972410895        NA
 
 $final.model
 
-Call:  glm(formula = phenotype ~ Vgsc.1527T_C + Vgsc.1603T_C, family = binomial, 
+Call:  glm(formula = phenotype ~ Cyp4j5.43F_A + Vgsc.1527T_C, family = binomial, 
     data = avrankou.delta.table)
 
 Coefficients:
- (Intercept)  Vgsc.1527T_C  Vgsc.1603T_C  
-      0.1531       -1.4621       -1.9950  
+ (Intercept)  Cyp4j5.43F_A  Vgsc.1527T_C  
+      0.6396       -1.0319       -1.3529  
 
 Degrees of Freedom: 78 Total (i.e. Null);  76 Residual
 Null Deviance:	    108 
-Residual Deviance: 97.45 	AIC: 103.4
+Residual Deviance: 95.68 	AIC: 101.7
 
 $final.sig
-                      P deviance
-Vgsc.1527T_C 0.01123617 6.427577
-Vgsc.1603T_C 0.01816611 5.580059
+                       P deviance
+Cyp4j5.43F_A 0.006709816 7.349051
+Vgsc.1527T_C 0.024552607 5.055168
 
 
-Vgsc.1527T and Vgsc.1603T are both significant, leading to increased resistance against Delta.
+Vgsc.1527T and Cyp4j5.43F are both significant, leading to increased resistance against Delta.
+Using the following string to control for confounding factors: 
+
+Detecting invariable and nearly invariable markers.
+
+Analysing markers independently.
+
+Running commentary on model optimisation:
+
+Building model: glm(phenotype ~ 1 , data = avrankou.delta.table, family = binomial) 
+	Adding marker inv_2La as the lowest significant marker (P = 0.00294712).
+
+Building model: glm(phenotype ~ inv_2La, data = avrankou.delta.table, family = binomial) 
+	Adding marker Vgsc.1527T_C as the lowest significant marker (P = 0.01605891).
+
+Building model: glm(phenotype ~ inv_2La + Vgsc.1527T_C, data = avrankou.delta.table, family = binomial) 
+	Could not calculate p-value for marker Vgsc.402L_T.
+
+	Could not calculate p-value for marker Vgsc.995F_T.
+
+	No further markers are significant, keeping final model:
+
+Call:  glm(formula = phenotype ~ inv_2La + Vgsc.1527T_C, family = binomial, 
+    data = avrankou.delta.table)
+
+Coefficients:
+ (Intercept)       inv_2La  Vgsc.1527T_C  
+      0.7493       -1.1779       -1.4746  
+
+Degrees of Freedom: 78 Total (i.e. Null);  76 Residual
+Null Deviance:	    108 
+Residual Deviance: 93.34 	AIC: 99.34
+Final model contained 2 parameters: inv_2La,Vgsc.1527T_C.
+
+
+                       P deviance
+inv_2La      0.001859563 9.683241
+Vgsc.1527T_C 0.016058907 5.796413
+$invariable.markers
+character(0)
+
+$correlated.markers
+character(0)
+
+$sig.alone
+                       P pseudo.R2
+Vgsc.1527T_C 0.026044052        NA
+Vgsc.402L_T  0.026044052        NA
+Vgsc.995F_T  0.026044052        NA
+Rdl.296G_G   0.113142766        NA
+Cyp4j5.43F_A 0.007102054        NA
+Gste2.114T_G 0.972410895        NA
+inv_2La      0.002947120        NA
+
+$final.model
+
+Call:  glm(formula = phenotype ~ inv_2La + Vgsc.1527T_C, family = binomial, 
+    data = avrankou.delta.table)
+
+Coefficients:
+ (Intercept)       inv_2La  Vgsc.1527T_C  
+      0.7493       -1.1779       -1.4746  
+
+Degrees of Freedom: 78 Total (i.e. Null);  76 Residual
+Null Deviance:	    108 
+Residual Deviance: 93.34 	AIC: 99.34
+
+$final.sig
+                       P deviance
+inv_2La      0.001859563 9.683241
+Vgsc.1527T_C 0.016058907 5.796413
+
+
+After controlling for the 2La inversion, Cyp4j5 was no longer significant.
 
 
 Baguida Delta:
@@ -119,16 +187,15 @@ $correlated.markers
 character(0)
 
 $sig.alone
-                      P pseudo.R2
-Vgsc.1570Y_T 0.18049309        NA
-Vgsc.1746S_T 0.71377784        NA
-Vgsc.1853I_A 0.38746998        NA
-Vgsc.1868T_C 0.06575037        NA
-Vgsc.791M_T  0.69129060        NA
-Rdl.296G_G   0.43799010        NA
-Ace1.119S_A  0.20468822        NA
-Gste2.114T_G 0.97091780        NA
-Gste2.119V_C 0.84521432        NA
+                     P pseudo.R2
+Vgsc.1570Y_T 0.1804931        NA
+Vgsc.1746S_T 0.7137778        NA
+Vgsc.1853I_A 0.3874700        NA
+Vgsc.791M_T  0.6912906        NA
+Rdl.296G_G   0.4379901        NA
+Cyp4j5.43F_A 0.9211631        NA
+Gste2.114T_G 0.9709178        NA
+Gste2.119V_C 0.8452143        NA
 
 $final.model
 
@@ -186,6 +253,7 @@ $sig.alone
                       P pseudo.R2
 Vgsc.1527T_C 0.29943863        NA
 Vgsc.995F_T  0.29943863        NA
+Cyp4j5.43F_A 0.40033590        NA
 Ace1.119S_A  0.09109937        NA
 Gste2.114T_G 0.33602481        NA
 
@@ -243,11 +311,10 @@ character(0)
 
 $sig.alone
                      P pseudo.R2
-Vgsc.1570Y_T 0.2568596        NA
 Vgsc.1746S_T 0.1956363        NA
 Vgsc.1853I_A 0.9760644        NA
-Vgsc.1874L_T 0.7019858        NA
 Vgsc.791M_T  0.1324566        NA
+Cyp4j5.43F_A 0.3801099        NA
 Ace1.119S_A  0.2360663        NA
 Gste2.119V_C 0.5404901        NA
 
@@ -305,14 +372,12 @@ character(0)
 
 $sig.alone
                       P pseudo.R2
-Vgsc.1570Y_T 0.34584906        NA
 Vgsc.1746S_T 0.13088076        NA
 Vgsc.1853I_A 0.38600952        NA
 Vgsc.1874L_T 0.92306754        NA
 Vgsc.791M_T  0.52230201        NA
 Rdl.296G_G   0.58683075        NA
-Ace1.119S_A  0.70409350        NA
-Gste2.114T_G 0.60865736        NA
+Cyp4j5.43F_A 0.23792574        NA
 Gste2.119V_C 0.08170013        NA
 
 $final.model
@@ -375,10 +440,9 @@ $sig.alone
 Vgsc.1570Y_T 0.01117085        NA
 Vgsc.1746S_T 0.81238805        NA
 Vgsc.1853I_A 0.10722380        NA
-Vgsc.1868T_C 0.83735193        NA
 Vgsc.791M_T  0.67137562        NA
 Rdl.296G_G   0.41515522        NA
-Ace1.119S_A  0.95927876        NA
+Cyp4j5.43F_A 0.20020634        NA
 Gste2.114T_G 1.00000000        NA
 Gste2.119V_C 0.09730548        NA
 
@@ -449,9 +513,9 @@ character(0)
 $sig.alone
                         P pseudo.R2
 Vgsc.1527T_C 7.479976e-02        NA
-Vgsc.1603T_C 4.447358e-01        NA
 Vgsc.402L_C  1.207337e-01        NA
 Vgsc.995F_T  3.703736e-02        NA
+Cyp4j5.43F_A 2.396816e-01        NA
 Ace1.119S_A  3.077123e-05        NA
 Gste2.114T_G 5.414630e-02        NA
 
@@ -519,8 +583,8 @@ Vgsc.1570Y_T 8.170138e-01        NA
 Vgsc.1746S_T 2.626668e-01        NA
 Vgsc.1853I_A 1.252868e-01        NA
 Vgsc.791M_T  1.446059e-01        NA
+Cyp4j5.43F_A 1.958291e-01        NA
 Ace1.119S_A  3.305504e-11        NA
-Gste2.114T_G 3.791051e-01        NA
 Gste2.119V_C 2.817793e-01        NA
 
 $final.model
@@ -553,25 +617,22 @@ Analysing markers independently.
 Running commentary on model optimisation:
 
 Building model: glm(phenotype ~ 1 , data = obuasi.pm.table, family = binomial) 
-	Adding marker Ace1.119S_A as the lowest significant marker (P = 0.0003057922).
-
-Building model: glm(phenotype ~ Ace1.119S_A, data = obuasi.pm.table, family = binomial) 
 	No further markers are significant, keeping final model:
 
-Call:  glm(formula = phenotype ~ Ace1.119S_A, family = binomial, data = obuasi.pm.table)
+Call:  glm(formula = phenotype ~ 1, family = binomial, data = obuasi.pm.table)
 
 Coefficients:
-(Intercept)  Ace1.119S_A  
-      3.753       -2.079  
+(Intercept)  
+   -0.07696  
 
-Degrees of Freedom: 103 Total (i.e. Null);  102 Residual
+Degrees of Freedom: 103 Total (i.e. Null);  103 Residual
 Null Deviance:	    144 
-Residual Deviance: 131 	AIC: 135
-Final model contained 1 parameters: Ace1.119S_A.
+Residual Deviance: 144 	AIC: 146
+Final model was the null model.
 
 
-                       P deviance
-Ace1.119S_A 0.0003057922 13.03458
+   P deviance
+1 NA       NA
 $invariable.markers
 character(0)
 
@@ -579,32 +640,30 @@ $correlated.markers
 character(0)
 
 $sig.alone
-                        P pseudo.R2
-Vgsc.1570Y_T 0.0650358102        NA
-Vgsc.1746S_T 0.5896322919        NA
-Vgsc.1853I_A 0.3231769878        NA
-Vgsc.1874L_T 0.3232239309        NA
-Vgsc.791M_T  0.5126732451        NA
-Rdl.296G_G   0.2267164824        NA
-Ace1.119S_A  0.0003057922        NA
-Gste2.114T_G 0.4177979916        NA
-Gste2.119V_C 0.7469208922        NA
+                     P pseudo.R2
+Vgsc.1746S_T 0.5896323        NA
+Vgsc.1853I_A 0.3231770        NA
+Vgsc.1874L_T 0.3232239        NA
+Vgsc.791M_T  0.5126732        NA
+Rdl.296G_G   0.2267165        NA
+Cyp4j5.43F_A 0.2624272        NA
+Gste2.119V_C 0.7469209        NA
 
 $final.model
 
-Call:  glm(formula = phenotype ~ Ace1.119S_A, family = binomial, data = obuasi.pm.table)
+Call:  glm(formula = phenotype ~ 1, family = binomial, data = obuasi.pm.table)
 
 Coefficients:
-(Intercept)  Ace1.119S_A  
-      3.753       -2.079  
+(Intercept)  
+   -0.07696  
 
-Degrees of Freedom: 103 Total (i.e. Null);  102 Residual
+Degrees of Freedom: 103 Total (i.e. Null);  103 Residual
 Null Deviance:	    144 
-Residual Deviance: 131 	AIC: 135
+Residual Deviance: 144 	AIC: 146
 
 $final.sig
-                       P deviance
-Ace1.119S_A 0.0003057922 13.03458
+   P deviance
+1 NA       NA
 
 
 Ace1 very strongly associated with PM resistance in Obuasi.
@@ -675,6 +734,7 @@ Vgsc.1940T_C 4.632299e-01        NA
 Vgsc.791M_T  5.284950e-01        NA
 Vgsc.995F_T  5.697212e-02        NA
 Rdl.296G_G   1.238795e-01        NA
+Cyp4j5.43F_A 7.021846e-01        NA
 Ace1.119S_A  5.763026e-11        NA
 Gste2.114T_G 3.675283e-01        NA
 Gste2.119V_C 8.664584e-01        NA
@@ -764,6 +824,7 @@ Vgsc.1940T_C 0.939714969        NA
 Vgsc.791M_T  0.364945044        NA
 Vgsc.995F_T  0.608151724        NA
 Rdl.296G_G   0.318309720        NA
+Cyp4j5.43F_A 0.196045244        NA
 Ace1.119S_A  0.819463848        NA
 Gste2.114T_G 0.572942291        NA
 Gste2.119V_C 0.394751292        NA

@@ -18,6 +18,7 @@ table.order <- c('Ace1.119S_A',
                  'Vgsc.1940T_C', 
                  'Rdl.296G_G', 
                  'Rdl.296S_T', 
+                 'Cyp4j5.43F_A', 
                  'Gste2.114T_G', 
                  'Gste2.119V_C')
 snp.frequencies <- snp.frequencies[table.order, ]
