@@ -13,7 +13,7 @@ study.pop <- arg.values[1]
 filter.regions <- arg.values[-1]
 
 # Allow the common filtered regions to be defined by name
-filter.regions[filter.regions == 'Ace1'] <- '2R:3100000-3900000'
+filter.regions[filter.regions == 'Ace1'] <- '2R:3100000-3950000'
 filter.regions[filter.regions == '2La'] <- '2L:20524000-42165600'
 
 chrom.sizes <- c('2R' = 61545105, '2L' = 49364325, '3R' = 53200684, '3L' = 41963435, 'X' = 24393108)
@@ -23,8 +23,8 @@ dir.create(study.pop)
 # Write a function to filter out a region from a "filtered.tables" entry
 remove.region <- function(filtered.table, regions){
 	chroms <- str_extract(regions, '^[23]?[LRX](?=:)')
-	start <- str_extract(regions, '(?<=:)\\d+(?=-)')
-	end <- str_extract(regions, '(?<=-)\\d+$')
+	start <- as.numeric(str_extract(regions, '(?<=:)\\d+(?=-)'))
+	end <- as.numeric(str_extract(regions, '(?<=-)\\d+$'))
 	for (i in 1:length(chroms)){
 		filtered.table <- filtered.table[window.chrom != chroms[i] | 
 										 window.pos > end[i] |
