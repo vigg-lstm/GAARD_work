@@ -64,11 +64,11 @@ Avrankou_coluzzii_Delta
 
 Loading SNP data from ~/data/ML/GAARD_SNP/Avrankou_coluzzii_Delta/csvs/filtered_SNPs.csv.
             used   (Mb) gc trigger    (Mb)   max used    (Mb)
-Ncells   3857053  206.0   34643680  1850.2   38357136  2048.5
-Vcells 275296344 2100.4 4560759532 34795.9 7126185242 54368.5
+Ncells   3857058  206.0   34643664  1850.2   38357140  2048.5
+Vcells 275296371 2100.4 4560759532 34795.9 7126185242 54368.5
 Loading phenotype data from ../data/combined/sample_phenotypes.csv.
 There were 26 warnings (use warnings() to see them)
-Running extract_zarr_region.py at 17:20 on 04/07/2022 using machine neptune
+Running extract_zarr_region.py at 15:05 on 12/07/2022 using machine neptune
 
 
 Script was run using the following arguments:
@@ -80,7 +80,7 @@ Script was run using the following arguments:
 	output_fn = Avrankou_coluzzii_Delta/2R:45423603_allele_counts.csv
 	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
 
-Running extract_zarr_region.py at 17:20 on 04/07/2022 using machine neptune
+Running extract_zarr_region.py at 15:05 on 12/07/2022 using machine neptune
 
 
 Script was run using the following arguments:
