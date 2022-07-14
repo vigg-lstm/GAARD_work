@@ -20,6 +20,7 @@ ___
 
 [Avrankou_coluzzii_Delta_2R:45413683-45433265](#avrankou_coluzzii_delta_2r_45413683-45433265)  
 [Avrankou_coluzzii_Delta_X:8745589-8778998](#avrankou_coluzzii_delta_x_8745589-8778998)  
+
 ### Avrankou_coluzzii_Delta_2R_45413683-45433265
 
 &nbsp;
@@ -72,6 +73,7 @@ ___
 
 [Baguida_gambiae_Delta_2R:33967209-33981960](#baguida_gambiae_delta_2r_33967209-33981960)  
 [Baguida_gambiae_Delta_3L:3059554-3112922](#baguida_gambiae_delta_3l_3059554-3112922)  
+
 ### Baguida_gambiae_Delta_2R_33967209-33981960
 
 &nbsp;
@@ -149,6 +151,7 @@ ___
 [Korle-Bu_coluzzii_Delta_X:14668824-14684264](#korle-bu_coluzzii_delta_x_14668824-14684264)  
 [Korle-Bu_coluzzii_Delta_X:15670884-15702974](#korle-bu_coluzzii_delta_x_15670884-15702974)  
 [Korle-Bu_coluzzii_Delta_X:15702974-15756306](#korle-bu_coluzzii_delta_x_15702974-15756306)  
+
 ### Korle-Bu_coluzzii_Delta_2R_28145243-28168331
 
 &nbsp;
@@ -481,6 +484,7 @@ ___
 
 [Madina_gambiae_Delta_2R:28401363-28416200](#madina_gambiae_delta_2r_28401363-28416200)  
 [Madina_gambiae_Delta_2R:28454838-28474602](#madina_gambiae_delta_2r_28454838-28474602)  
+
 ### Madina_gambiae_Delta_2R_28401363-28416200
 
 &nbsp;
@@ -568,6 +572,7 @@ ___
 [Obuasi_gambiae_Delta_2R:28475225-28496115](#obuasi_gambiae_delta_2r_28475225-28496115)  
 [Obuasi_gambiae_Delta_2R:28496114-28515482](#obuasi_gambiae_delta_2r_28496114-28515482)  
 [Obuasi_gambiae_Delta_2R:28515481-28531112](#obuasi_gambiae_delta_2r_28515481-28531112)  
+
 ### Obuasi_gambiae_Delta_2R_28250033-28262588
 
 &nbsp;
@@ -1283,6 +1288,7 @@ ___
 [Baguida_gambiae_PM_X:9222298-9273975](#baguida_gambiae_pm_x_9222298-9273975)  
 [Baguida_gambiae_PM_X:9273975-9317640](#baguida_gambiae_pm_x_9273975-9317640)  
 [Baguida_gambiae_PM_X:9317639-9346605](#baguida_gambiae_pm_x_9317639-9346605)  
+
 ### Baguida_gambiae_PM_X_15411876-15495650
 
 &nbsp;
@@ -1487,6 +1493,7 @@ ___
 [Korle-Bu_coluzzii_PM_3R:28505651-28533744](#korle-bu_coluzzii_pm_3r_28505651-28533744)  
 [Korle-Bu_coluzzii_PM_3R:28563392-28595112](#korle-bu_coluzzii_pm_3r_28563392-28595112)  
 [Korle-Bu_coluzzii_PM_3R:2929236-2946500](#korle-bu_coluzzii_pm_3r_2929236-2946500)  
+
 ### Korle-Bu_coluzzii_PM_2R_38097626-38111826
 
 &nbsp;
@@ -1702,6 +1709,7 @@ ___
 &nbsp;
 
 [Madina_gambiae_PM_2R:54255612-54278008](#madina_gambiae_pm_2r_54255612-54278008)  
+
 ### Madina_gambiae_PM_2R_54255612-54278008
 
 &nbsp;
@@ -1757,6 +1765,7 @@ ___
 [Obuasi_gambiae_PM_3L:30678119-30687769](#obuasi_gambiae_pm_3l_30678119-30687769)  
 [Obuasi_gambiae_PM_3L:30687769-30697180](#obuasi_gambiae_pm_3l_30687769-30697180)  
 [Obuasi_gambiae_PM_3R:48454456-48494640](#obuasi_gambiae_pm_3r_48454456-48494640)  
+
 ### Obuasi_gambiae_PM_2R_3474360-3509400
 
 &nbsp;
