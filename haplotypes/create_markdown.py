@@ -47,6 +47,8 @@ for pop in populations:
 	for i in range(len(pop_windows)):
 		f.write(f'[{pop_windows[i]}](#{pop_windows_section[i].lower()})  \n')
 
+	f.write('\n')
+
 	for i in range(len(pop_windows)):
 		f.write(f'### {pop_windows_section[i]}\n\n&nbsp;\n\n')
 		# Getting the right overview file is a bit complicated since they were named by the middle SNP
