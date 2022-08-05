@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  8 JUL 2022 14:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  5 AUG 2022 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -176,44 +176,147 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen154
+\Hy@linkcounter=\count181
+\Hy@pagecounter=\count182
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count183
+\pdfmajorversion=\count184
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count185
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen155
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count186
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count187
+\c@Item=\count188
+\c@Hfootnote=\count189
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count190
+\c@bookmark@seq@number=\count191
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 12.
+
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count181
+\l__kernel_color_stack_int=\count192
 \l__pdf_internal_box=\box47
 )
 (./Supplementary_Figures_and_tables.aux)
 \openout1 = `Supplementary_Figures_and_tables.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count182
-\scratchdimen=\dimen154
+\scratchcounter=\count193
+\scratchdimen=\dimen158
 \scratchbox=\box48
-\nofMPsegments=\count183
-\nofMParguments=\count184
+\nofMPsegments=\count194
+\nofMParguments=\count195
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count185
-\MPscratchDim=\dimen155
-\MPnumerator=\count186
-\makeMPintoPDFobject=\count187
+\MPscratchCnt=\count196
+\MPscratchDim=\dimen159
+\MPnumerator=\count197
+\makeMPintoPDFobject=\count198
 \everyMPtoPDFconversion=\toks21
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
@@ -250,45 +353,67 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-[1
+\AtBeginShipoutBox=\box49
+Package hyperref Info: Link coloring ON on input line 26.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count199
+)
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
+
+(./Supplementary_Figures_and_tables.out)
+(./Supplementary_Figures_and_tables.out)
+\@outlinefile=\write3
+\openout3 = `Supplementary_Figures_and_tables.out'.
+
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<../../CNV_analysis/Ace1_diagnostic_read_CNVs.png, id=9, 144.54pt x 93.951pt>
+<../../CNV_analysis/Ace1_diagnostic_read_CNVs.png, id=13, 144.54pt x 93.951pt>
 File: ../../CNV_analysis/Ace1_diagnostic_read_CNVs.png Graphic file (type png)
 <use ../../CNV_analysis/Ace1_diagnostic_read_CNVs.png>
 Package pdftex.def Info: ../../CNV_analysis/Ace1_diagnostic_read_CNVs.png  used
- on input line 51.
+ on input line 53.
 (pdftex.def)             Requested size: 144.53963pt x 93.95078pt.
-<../../CNV_analysis/Cyp6aap_diagnostic_read_CNVs.png, id=11, 433.62pt x 101.178
+<../../CNV_analysis/Cyp6aap_diagnostic_read_CNVs.png, id=15, 433.62pt x 101.178
 pt>
 File: ../../CNV_analysis/Cyp6aap_diagnostic_read_CNVs.png Graphic file (type pn
 g)
 <use ../../CNV_analysis/Cyp6aap_diagnostic_read_CNVs.png>
 Package pdftex.def Info: ../../CNV_analysis/Cyp6aap_diagnostic_read_CNVs.png  u
-sed on input line 53.
+sed on input line 55.
 (pdftex.def)             Requested size: 433.61894pt x 101.17773pt.
-<../../CNV_analysis/Cyp6mz_diagnostic_read_CNVs.png, id=13, 180.675pt x 101.178
+<../../CNV_analysis/Cyp6mz_diagnostic_read_CNVs.png, id=17, 180.675pt x 101.178
 pt>
 File: ../../CNV_analysis/Cyp6mz_diagnostic_read_CNVs.png Graphic file (type png
 )
 <use ../../CNV_analysis/Cyp6mz_diagnostic_read_CNVs.png>
 Package pdftex.def Info: ../../CNV_analysis/Cyp6mz_diagnostic_read_CNVs.png  us
-ed on input line 55.
+ed on input line 57.
 (pdftex.def)             Requested size: 180.67455pt x 101.17773pt.
-<../../CNV_analysis/Gste_diagnostic_read_CNVs.png, id=15, 216.81pt x 101.178pt>
+<../../CNV_analysis/Gste_diagnostic_read_CNVs.png, id=19, 216.81pt x 101.178pt>
 
 File: ../../CNV_analysis/Gste_diagnostic_read_CNVs.png Graphic file (type png)
 <use ../../CNV_analysis/Gste_diagnostic_read_CNVs.png>
 Package pdftex.def Info: ../../CNV_analysis/Gste_diagnostic_read_CNVs.png  used
- on input line 57.
+ on input line 59.
 (pdftex.def)             Requested size: 216.80946pt x 101.17773pt.
-<../../CNV_analysis/Cyp9k1_diagnostic_read_CNVs.png, id=17, 433.62pt x 101.178p
+<../../CNV_analysis/Cyp9k1_diagnostic_read_CNVs.png, id=21, 433.62pt x 101.178p
 t>
 File: ../../CNV_analysis/Cyp9k1_diagnostic_read_CNVs.png Graphic file (type png
 )
 <use ../../CNV_analysis/Cyp9k1_diagnostic_read_CNVs.png>
 Package pdftex.def Info: ../../CNV_analysis/Cyp9k1_diagnostic_read_CNVs.png  us
-ed on input line 59.
+ed on input line 61.
 (pdftex.def)             Requested size: 433.61894pt x 101.17773pt.
 
 
@@ -299,85 +424,85 @@ lysis/Cyp6aap_diagnostic_read_CNVs.png (PNG copy)> <../../CNV_analysis/Cyp6mz_d
 iagnostic_read_CNVs.png (PNG copy)> <../../CNV_analysis/Gste_diagnostic_read_CN
 Vs.png (PNG copy)> <../../CNV_analysis/Cyp9k1_diagnostic_read_CNVs.png (PNG cop
 y)>]
-<../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png, id=31, 
+<../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png, id=37, 
 469.755pt x 252.945pt>
 File: ../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png Gra
 phic file (type png)
 <use ../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_
-filter_plot.png  used on input line 68.
+filter_plot.png  used on input line 70.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png, id=33, 46
+<../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png, id=39, 46
 9.755pt x 252.945pt>
 File: ../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png Graph
 ic file (type png)
 <use ../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Baguida_gambiae_Delta_peak_fi
-lter_plot.png  used on input line 71.
+lter_plot.png  used on input line 72.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png, id=35, 469.7
+<../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png, id=41, 469.7
 55pt x 252.945pt>
 File: ../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png Graphic 
 file (type png)
 <use ../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Baguida_gambiae_PM_peak_filte
-r_plot.png  used on input line 72.
+r_plot.png  used on input line 73.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png, id=37, 
+<../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png, id=43, 
 469.755pt x 252.945pt>
 File: ../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png Gra
 phic file (type png)
 <use ../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_
-filter_plot.png  used on input line 74.
+filter_plot.png  used on input line 75.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png, id=39, 469
+<../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png, id=45, 469
 .755pt x 252.945pt>
 File: ../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_fil
-ter_plot.png  used on input line 75.
+ter_plot.png  used on input line 76.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png, id=41, 469
+<../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png, id=47, 469
 .755pt x 252.945pt>
 File: ../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Madina_gambiae_Delta_peak_fil
-ter_plot.png  used on input line 77.
+ter_plot.png  used on input line 78.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png, id=43, 469.75
+<../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png, id=49, 469.75
 5pt x 252.945pt>
 File: ../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png Graphic f
 ile (type png)
 <use ../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Madina_gambiae_PM_peak_filter
-_plot.png  used on input line 78.
+_plot.png  used on input line 79.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png, id=45, 469
+<../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png, id=51, 469
 .755pt x 252.945pt>
 File: ../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Obuasi_gambiae_Delta_peak_fil
-ter_plot.png  used on input line 80.
+ter_plot.png  used on input line 81.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png, id=47, 469.75
+<../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png, id=53, 469.75
 5pt x 252.945pt>
 File: ../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png Graphic f
 ile (type png)
 <use ../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter
-_plot.png  used on input line 81.
+_plot.png  used on input line 82.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 82.
+(Font)              <7> on input line 83.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 82.
+(Font)              <5> on input line 83.
 
 
-LaTeX Warning: Float too large for page by 29.47763pt on input line 84.
+LaTeX Warning: Float too large for page by 18.57767pt on input line 85.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -391,30 +516,69 @@ G copy)> <../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png (PNG
 g (PNG copy)> <../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png 
 (PNG copy)> <../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png
  (PNG copy)> <../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png (
-PNG copy)>] (./Supplementary_Figures_and_tables.aux) ) 
+PNG copy)>]
+<../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png, id
+=71, 1084.05pt x 361.35pt>
+File: ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.pn
+g Graphic file (type png)
+<use ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png
+>
+Package pdftex.def Info: ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_hapl
+otype_clustering.png  used on input line 91.
+(pdftex.def)             Requested size: 483.69684pt x 161.23306pt.
+
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 91--92
+[][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
+2.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
+ [4
+
+
+
+ <../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
+
+(./Supplementary_Figures_and_tables.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+Package rerunfilecheck Info: File `Supplementary_Figures_and_tables.out' has no
+t changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
+ ) 
 Here is how much of TeX's memory you used:
- 4124 strings out of 483183
- 66240 string characters out of 5966293
- 298381 words of memory out of 5000000
- 19093 multiletter control sequences out of 15000+600000
- 539406 words of font info for 34 fonts, out of 8000000 for 9000
+ 7644 strings out of 483183
+ 122379 string characters out of 5966293
+ 375425 words of memory out of 5000000
+ 22521 multiletter control sequences out of 15000+600000
+ 539719 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,7n,42p,1018b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/eric/.texlive2019
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/eric/.texlive2019
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/eric/.texlive2019
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/eric/.texlive2019
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/eric/.texlive2019
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/eric/.texlive2019
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/eric/.texlive2019
-/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-Output written on Supplementary_Figures_and_tables.pdf (3 pages, 8229586 bytes)
+ 41i,7n,42p,1036b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
+k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
+Output written on Supplementary_Figures_and_tables.pdf (4 pages, 8265868 bytes)
 .
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
