@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  9 AUG 2022 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  9 AUG 2022 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -720,11 +720,12 @@ nput line 122.
 [4
 
  <./figures/Fst_example_histogram_annotated.pdf>]
-<figures/plate_layouts.png, id=226, 867.24pt x 433.62pt>
-File: figures/plate_layouts.png Graphic file (type png)
-<use figures/plate_layouts.png>
-Package pdftex.def Info: figures/plate_layouts.png  used on input line 139.
-(pdftex.def)             Requested size: 469.75499pt x 234.87912pt.
+<figures/plate_layouts_annotated.pdf, id=226, 578.16pt x 433.62pt>
+File: figures/plate_layouts_annotated.pdf Graphic file (type pdf)
+<use figures/plate_layouts_annotated.pdf>
+Package pdftex.def Info: figures/plate_layouts_annotated.pdf  used on input lin
+e 139.
+(pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
 Overfull \hbox (14.51091pt too wide) in paragraph at lines 139--140
  [] 
@@ -732,32 +733,32 @@ Overfull \hbox (14.51091pt too wide) in paragraph at lines 139--140
 
 [5
 
- <./figures/plate_layouts.png (PNG copy)>]
-Overfull \hbox (5.97885pt too wide) in paragraph at lines 150--150
-\T1/cmr/m/n/12 pair-wise re-lat-ed-ness from next-generation se-quenc-ing data.
- \T1/cmr/m/it/12 Bioin-for-mat-ics \T1/cmr/m/n/12 31(24):4009^^U
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
-[6
+ <./figures/plate_layouts_annotated.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
+ [6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
  (./Supplementary_methods.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `Supplementary_methods.out' has not changed.
 (rerunfilecheck)             Checksum: 728AEAAFB8FBDC60B1AEB6CEC2AB6D69;196.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'Supplementary_methods.run.xml'.
 \openout1 = `Supplementary_methods.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 14705 strings out of 483183
- 255464 string characters out of 5966293
- 905040 words of memory out of 5000000
- 29517 multiletter control sequences out of 15000+600000
+ 14710 strings out of 483183
+ 255670 string characters out of 5966293
+ 905222 words of memory out of 5000000
+ 29521 multiletter control sequences out of 15000+600000
  547622 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  43i,10n,51p,1515b,1400s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -780,10 +781,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Supplementary_methods.pdf (6 pages, 665347 bytes).
+Output written on Supplementary_methods.pdf (6 pages, 367054 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 18 named destinations out of 1000 (max. 500000)
+ 573 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 19 named destinations out of 1000 (max. 500000)
  80 words of extra memory for PDF output out of 10000 (max. 10000000)
 
