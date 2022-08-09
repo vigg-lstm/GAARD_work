@@ -47,7 +47,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bioinformatics}
-      \field{month}{08}
       \field{number}{24}
       \field{title}{NgsRelate: a software tool for estimating pairwise relatedness from next-generation sequencing data}
       \field{volume}{31}
@@ -58,6 +57,53 @@
       \verb 10.1093/bioinformatics/btv509
       \endverb
       \keyw{kinship,KING}
+    \endentry
+    \entry{Lu17}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=642f8aecd69ae5ee926bceabfd45a56d}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=098c27d16ff0b4d0c327ecc388e9619d}{%
+           family={Breitwieser},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi P.},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=691580902b170c285086a9c3706c2862}{%
+           family={Thielen},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28f96fb2d05c70cdd37ada862db476f0}{%
+           family={Salzberg},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{22d28ee2158de88764a3e4d042289e1d}
+      \strng{fullhash}{66ea6d70209adaa3b618c8cbd67f818f}
+      \strng{bibnamehash}{22d28ee2158de88764a3e4d042289e1d}
+      \strng{authorbibnamehash}{22d28ee2158de88764a3e4d042289e1d}
+      \strng{authornamehash}{22d28ee2158de88764a3e4d042289e1d}
+      \strng{authorfullhash}{66ea6d70209adaa3b618c8cbd67f818f}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PeerJ Computer Science}
+      \field{title}{Bracken: estimating species abundance in metagenomics data}
+      \field{volume}{3}
+      \field{year}{2017}
+      \field{pages}{e104}
+      \range{pages}{-1}
+      \keyw{kraken,microbiome}
     \endentry
     \entry{Man10}{article}{}
       \name{author}{6}{}{%

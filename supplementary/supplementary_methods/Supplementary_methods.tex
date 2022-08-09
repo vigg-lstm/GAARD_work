@@ -136,12 +136,14 @@ In an original pass of the GWAS analysis, we found SNPs significantly correlated
 	\hspace*{-0.5cm}
 	\begin{minipage}{\textwidth}
 		\begin{center}
-			\makebox{\includegraphics*[width = 6.5in]{figures/plate_layouts.png}}
+			\makebox{\includegraphics*[width = 6.5in]{figures/plate_layouts_annotated.pdf}}
 		\end{center}
 	\end{minipage}
-	\caption{\footnotesize Layout of levels of \textit{Asaia} reads across DNA storage plates. Size of circle indicates normalised number of Asaia reads. Colour indicates phenotype of sample (blue = alive, red = dead). Crosses indicate wells not used for sequencing.}
+	\caption{\footnotesize Layout of levels of \textit{Asaia} reads across DNA storage plates for deltamethrin-exposed samples from Korle-Bu. Size of circle indicates normalised number of Asaia reads. Colour indicates phenotype of sample (blue = alive, red = dead). Crosses indicate wells not used for sequencing. Diagonal line on top left plate separates wells with broadly less \textit{Asaia} signal on the left and more signal on the right. }
 	\label{FigM4}
 \end{figure}
+
+To control for this in the GWAS, we used Bracken \parencite{Lu17} to estimate the amount of \textit{Asaia} signal in each sample, and then calculated the correlation between \textit{Asaia} levels and each SNP in the analysis. SNPs that were correlated with \textit{Asaia} (uncorrected \textit{P} < 0.05) were removed from the GWAS. 
 
 
 \clearpage
