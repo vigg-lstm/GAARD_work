@@ -1,0 +1,151 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{graphicx}
+\usepackage[small]{caption}
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=simple, font={bf,small}, skip=1pt, margin=-0.7cm, singlelinecheck=false, margin={3pt,3pt}}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage[outdir=./]{epstopdf}
+\usepackage[a4paper, top = 2cm, bottom = 2cm]{geometry}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+\usepackage[style=authoryear,backend=biber,firstinits=true,doi=false,url=false,sorting=nyt]{biblatex}
+% This removes quotes from bibliography entry titles
+\DeclareFieldFormat[article, inbook]{title}{#1} 
+% This stops the bibliography from writing ``In'' before the name of the journal
+\renewbibmacro{in:}{}
+%-- no punctuation after volume
+\DeclareFieldFormat[article]
+{volume}{{#1}} 
+%-- puts number/issue between brackets
+\DeclareFieldFormat[article, inbook, incollection, inproceedings, misc, thesis, unpublished]
+{number}{(#1)} 
+%-- and then for articles directly the pages w/o any "pages" or "pp." 
+\DeclareFieldFormat[article]
+{pages}{#1}
+%-- for some types replace "pages" by "p."
+\DeclareFieldFormat[inproceedings, incollection, inbook]
+{pages}{p. #1}
+%-- format 16(4):224--225 for articles
+\renewbibmacro*{volume+number+eid}{
+  \printfield{volume}\printfield{number}
+  \printunit{\addcolon}
+}
+
+\addbibresource{refs.bib}
+
+\title{Supplementary methods.}
+
+
+\setlength{\oddsidemargin}{-0cm}
+\setlength{\textwidth}{16cm}
+
+\newcommand{\fst}{F\textsubscript{ST}}
+
+\renewcommand{\figurename}{\textbf{Fig.}}
+\renewcommand{\thefigure}{\textbf{M\arabic{figure}}}
+\renewcommand{\thetable}{\textbf{M\arabic{table}}}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+\begin{document}
+
+\onehalfspacing
+
+\begin{center}
+	\Large
+	\noindent \textbf{Manuscript title}
+
+	\normalsize
+
+	\vskip 3cm
+
+\end{center}
+
+%\noindent Eric R. Lucas$^{1}$* 
+
+\noindent Author M. Surname \ldots and The \textit{Anopheles gambiae} 1000 Genomes Consortium
+ 
+\vskip 2cm 
+
+
+\section*{Electronic Supplementary Material \\ Supplementary methods}
+
+\clearpage
+
+\subsection{Choice of kinship treshold}
+
+We calculated pairwise kinship between all samples using the KING statistic \parencite{Man10} implemented in NGSRelate \parencite{Kor15} using SNP data across the whole genome. Whole genome SNPs were used because the recombination rate on such a small genome can lead to large disparity in kinship values between chromosomes (Fig. \ref{FigM1}). Results indicated a slight positive bias in kinship, with the mode of the distribution slightly above 0 (Fig. \ref{FigM2}). Because of this positive bias in kinship values, we sought to empirically establish the most parsimonious threshold to identify full siblings in our data, instead of the threshold of 0.177 suggested in the manual (\url{https://www.kingrelatedness.com/manual.shtml}). For all possible threshhold between 0.15 and 0.35, in increments of 0.005, we identified all full siblings and counted the proportion of full sib groups that contained inconsistencies (where siblings of siblings were not themselves classed as siblings). The script to carry out this analysis is available at . We chose the threshold 0.195 as that which produced the smallest proportion of inconsistent sib groups. 
+
+\begin{figure}[h]
+	\hspace*{-2cm}
+	\begin{minipage}{\textwidth}
+		\begin{center}
+			\makebox{\includegraphics*[width = 7.8in]{../../NGSrelate/divergence_along_chromosome/genetic_difference_across_genome.png}}
+		\end{center}
+	\end{minipage}
+	\caption{\footnotesize Genetic difference (calculated as the mean proportion of nucleotide differences across all sites) between a single pair of siblings (WA-0997 and WA-1288, both \textit{An. coluzzii} from Korle-Bu in Ghana) across the genome. Aside from the centromeres, the values of genetic difference occupy one of three states: 0 (genetically identical, where the two individuals inherited the same allele from both their mother and their father, for example the start of Chromosome 2L), around 0.007 (intermediate: where the two individuals inherited the same allele from one of their parents, but not the other, for example the middle of chromosome 2L) and around 0.014 (low: where the two individuals inherited different alleles from both their mother and their father, for example the end of chromosome 2L). These states are invariant over large stretches of the genome (eg: the whole of chromosome 3L is identical between these two individuals) due to the recombination rate per site per generation (usually assumed to be $10{-8}$ for modelling purposes) relative to the size of a chromosome (on the order of $5 x 10^{-7}$). Thus, a single chromosome can give an inaccurate picture of relatedness (using chromosome 3L for this pair would make them appear to be clones).}
+	\label{FigM1}
+\end{figure}
+
+\begin{figure}[h]
+	\hspace*{-1cm}
+	\begin{minipage}{\textwidth}
+		\begin{subfigure}{\textwidth}
+			\subcaption{}
+			\includegraphics*[width = 7in]{../../NGSrelate/full_relatedness/king_histograms.png}
+		\end{subfigure}\par
+		\begin{subfigure}{\textwidth}
+			\subcaption{}
+			\includegraphics*[width = 7in]{../../NGSrelate/full_relatedness/king_histograms_karyotype.png}
+		\end{subfigure}
+	\end{minipage}
+	\caption{\footnotesize Histograms of kinship values (KING scores, expected score between full sibs = 0.25, expected score between unrelated individuals = 0) across all sample pairs. \textbf{a} Left: Coloured by species (blue = gambiae, red = coluzzii, magenta = cross-species pair). Middle and right: stacked and coloured by whether the pair is of individuals from the same (light colours) or different (dark colours) sampling locations. \textbf{b} Stacked and coloured by whether the pair is of individuals with the same (light) or different (dark) 2La karyotype. The three modes of the distribution correspond to the 2La karyotype of the pair, with the right hand mode consisting of pairs of 2La heterozygotes (shared heterozygote genotype produces the largest relatedness values), the main central mode consisting of pairs with the same homozygous karyotype (in dark) or where one individual is heterozygous and the other homozygous (in light), and the left hand mode consisting of pairs with opposite homozygous karyotypes.}
+	\label{FigM2}
+\end{figure}
+
+\clearpage
+
+\subsection{\fst\ outlier analysis}
+
+We calculcated \fst\ between phenotype classes (dead / alive after exposure to insecticides) in windows of 1000 SNPs across the genome, and wanted to identify peaks in the data. We used the fact that true \fst\ peaks in these data should only be positive, meaning that the left hand side of the distribution should be largely unaffected by the number of peaks in the data. We therefore used the left hand part of the \fst\ distribution to determine what the limits of the right hand part would typically look like in the absence of peaks, and conservatively identified outliers as positive windows beyond these limits (Fig. \ref{FigM3}).
+
+
+\begin{figure}[h]
+	\hspace*{-1cm}
+	\begin{minipage}{\textwidth}
+		\begin{center}
+			\makebox{\includegraphics*[width = 4.5in]{figures/Fst_example_histogram_annotated.pdf}}
+		\end{center}
+	\end{minipage}
+	\caption{\footnotesize Historgram of \fst\ values between phenotype groups in\textit{An. gambiae} from Obuasi exposed to deltamethrin (top) and zoomed in on at the origin of the Y axis to show small outlier peaks (bottom). We first identified the mode of the distribution (red point) and then calculated its distance from the minimum of the distribution (solid red line). We then conservatively took three times this distance to the right of the mode (dashed red line) as our threshold. Any windows with \fst\ values larger than this (in blue) were considered outliers and thus provisional windows of interest.}
+	\label{FigM3}
+\end{figure}
+
+\clearpage
+
+\subsection{Removal of \textit{Asaia} contamination}
+
+In an original pass of the GWAS analysis, we found SNPs significantly correlated with phenotype, but which showed strong allelic imbalance and, in some cases, heterozygote excess. Looking into these SNPs, we found that they were the result of mis-alignment of non-\textit{Anopheles} reads. Assembling and BLASTing the reads in question indicated that they likely originated from \textit{Asaia} / \textit{Acetobacter} bacteria. There are two possible explanations for this. The first is that of a metagenomic association with resistance. The second is of sample contamination differentially affecting the two phenotypes. We investigated this possibility by examining the distribution of the levels of \textit{Asaia} reads with respect to the position of the sample on the plates in which DNA was stored. Fig. \ref{FigM4} shows that \textit{Asaia} reads are non-randomly distributed across plates, indicating that they are likely to be the result of contamination, but creating the appearance of correlation with phenotype.
+
+\begin{figure}[h]
+	\hspace*{-0.5cm}
+	\begin{minipage}{\textwidth}
+		\begin{center}
+			\makebox{\includegraphics*[width = 6.5in]{figures/plate_layouts.png}}
+		\end{center}
+	\end{minipage}
+	\caption{\footnotesize Layout of levels of \textit{Asaia} reads across DNA storage plates. Size of circle indicates normalised number of Asaia reads. Colour indicates phenotype of sample (blue = alive, red = dead). Crosses indicate wells not used for sequencing.}
+	\label{FigM4}
+\end{figure}
+
+
+\clearpage
+
+\printbibliography
+
+\end{document}
