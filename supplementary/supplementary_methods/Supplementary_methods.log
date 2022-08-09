@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  8 AUG 2022 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  9 AUG 2022 10:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -645,16 +645,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 82.
 <../../NGSrelate/divergence_along_chromosome/genetic_difference_across_genome.p
-ng, id=26, 1156.32pt x 433.62pt>
+ng, id=30, 1156.32pt x 433.62pt>
 File: ../../NGSrelate/divergence_along_chromosome/genetic_difference_across_gen
 ome.png Graphic file (type png)
 <use ../../NGSrelate/divergence_along_chromosome/genetic_difference_across_geno
 me.png>
 Package pdftex.def Info: ../../NGSrelate/divergence_along_chromosome/genetic_di
 fference_across_genome.png  used on input line 88.
-(pdftex.def)             Requested size: 505.89pt x 189.70828pt.
+(pdftex.def)             Requested size: 563.7062pt x 211.39055pt.
 
-Overfull \hbox (50.64592pt too wide) in paragraph at lines 88--89
+Overfull \hbox (108.46213pt too wide) in paragraph at lines 88--89
  [] 
  []
 
@@ -662,90 +662,108 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 91.
-[2
-
- <../../NGSrelate/divergence_along_chromosome/genetic_difference_across_genome.
-png>]
-<../../NGSrelate/full_relatedness/king_histograms.png, id=52, 433.62pt x 158.99
+<../../NGSrelate/full_relatedness/king_histograms.png, id=33, 433.62pt x 158.99
 4pt>
 File: ../../NGSrelate/full_relatedness/king_histograms.png Graphic file (type p
 ng)
 <use ../../NGSrelate/full_relatedness/king_histograms.png>
 Package pdftex.def Info: ../../NGSrelate/full_relatedness/king_histograms.png  
-used on input line 102.
+used on input line 100.
 (pdftex.def)             Requested size: 505.89pt x 185.50305pt.
 
-Overfull \hbox (50.64592pt too wide) in paragraph at lines 102--103
+Overfull \hbox (50.64592pt too wide) in paragraph at lines 100--101
 [][] 
  []
 
-<../../NGSrelate/full_relatedness/king_histograms_karyotype.png, id=54, 433.62p
+<../../NGSrelate/full_relatedness/king_histograms_karyotype.png, id=35, 433.62p
 t x 158.994pt>
 File: ../../NGSrelate/full_relatedness/king_histograms_karyotype.png Graphic fi
 le (type png)
 <use ../../NGSrelate/full_relatedness/king_histograms_karyotype.png>
 Package pdftex.def Info: ../../NGSrelate/full_relatedness/king_histograms_karyo
-type.png  used on input line 106.
+type.png  used on input line 104.
 (pdftex.def)             Requested size: 505.89pt x 185.50305pt.
 
-Overfull \hbox (50.64592pt too wide) in paragraph at lines 106--107
+Overfull \hbox (50.64592pt too wide) in paragraph at lines 104--105
 [][] 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2
+
+ <../../NGSrelate/divergence_along_chromosome/genetic_difference_across_genome.
+png>] [3 <../../NGSrelate/full_relatedness/king_histograms.png (PNG copy)> <../
+../NGSrelate/full_relatedness/king_histograms_karyotype.png (PNG copy)>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 114.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 114.
+(Font)              <14.4> on input line 113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 114.
+(hyperref)                removing `\mathsurround' on input line 113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 114.
+(hyperref)                removing `\z@' on input line 113.
 
 
-LaTeX Warning: Reference `FigM3' on page 3 undefined on input line 116.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 113.
 
+<figures/Fst_example_histogram_annotated.pdf, id=68, 361.35pt x 361.35pt>
+File: figures/Fst_example_histogram_annotated.pdf Graphic file (type pdf)
+<use figures/Fst_example_histogram_annotated.pdf>
+Package pdftex.def Info: figures/Fst_example_histogram_annotated.pdf  used on i
+nput line 122.
+(pdftex.def)             Requested size: 325.215pt x 325.21751pt.
+[4
 
-Overfull \hbox (5.97885pt too wide) in paragraph at lines 121--121
+ <./figures/Fst_example_histogram_annotated.pdf>]
+<figures/plate_layouts.png, id=226, 867.24pt x 433.62pt>
+File: figures/plate_layouts.png Graphic file (type png)
+<use figures/plate_layouts.png>
+Package pdftex.def Info: figures/plate_layouts.png  used on input line 139.
+(pdftex.def)             Requested size: 469.75499pt x 234.87912pt.
+
+Overfull \hbox (14.51091pt too wide) in paragraph at lines 139--140
+ [] 
+ []
+
+[5
+
+ <./figures/plate_layouts.png (PNG copy)>]
+Overfull \hbox (5.97885pt too wide) in paragraph at lines 150--150
 \T1/cmr/m/n/12 pair-wise re-lat-ed-ness from next-generation se-quenc-ing data.
  \T1/cmr/m/it/12 Bioin-for-mat-ics \T1/cmr/m/n/12 31(24):4009^^U
  []
 
-[3
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
+[6
 
- <../../NGSrelate/full_relatedness/king_histograms.png (PNG copy)> <../../NGSre
-late/full_relatedness/king_histograms_karyotype.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
-
-(./Supplementary_methods.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+ (./Supplementary_methods.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `Supplementary_methods.out' has not changed.
-(rerunfilecheck)             Checksum: 665015E82714EEEEDA69CDDBF636979D;126.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 728AEAAFB8FBDC60B1AEB6CEC2AB6D69;196.
 Package logreq Info: Writing requests to 'Supplementary_methods.run.xml'.
 \openout1 = `Supplementary_methods.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 14681 strings out of 483183
- 254876 string characters out of 5966293
- 902162 words of memory out of 5000000
- 29503 multiletter control sequences out of 15000+600000
- 546153 words of font info for 50 fonts, out of 8000000 for 9000
+ 14705 strings out of 483183
+ 255464 string characters out of 5966293
+ 905040 words of memory out of 5000000
+ 29517 multiletter control sequences out of 15000+600000
+ 547622 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  43i,10n,51p,1515b,1400s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600p
+ </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600p
@@ -762,10 +780,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Supplementary_methods.pdf (4 pages, 275016 bytes).
+Output written on Supplementary_methods.pdf (6 pages, 665347 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 109 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 80 words of extra memory for PDF output out of 10000 (max. 10000000)
 
