@@ -75,7 +75,7 @@ plate.well.plot <- function(plates, wells, values, phenotypes, transform = 5){
 		well.plot(w[[pl]], v[[pl]], p[[pl]], transform = transform, main = pl)
 }
 
-png('plate_layouts2.png', width = 8, height = 6, units = 'in', res = 300)
+svg('plate_layouts.svg', width = 8, height = 6)
 with(layouts, plate.well.plot(GAARDPlate, GAARDWell, asaia.norm, phenotype, transform = 5))
 dev.off()
 
