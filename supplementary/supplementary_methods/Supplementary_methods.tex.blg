@@ -1,5 +1,0 @@
-[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
-[0] Config.pm:307> INFO - Logfile is 'Supplementary_methods.tex.blg'
-[61] biber:322> INFO - === Mon Aug  8, 2022, 13:03:25
-[82] Utils.pm:309> ERROR - Cannot find 'Supplementary_methods.tex.bcf'!
-[82] Biber.pm:132> INFO - ERRORS: 1
