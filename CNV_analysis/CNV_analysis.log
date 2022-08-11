@@ -592,32 +592,32 @@ Analysing markers independently.
 Running commentary on model optimisation:
 
 Building model: glmmTMB(phenotype ~ 1  + (1|location), data = pm.table, family = binomial) 
-	Adding marker Ace1 as the lowest significant marker (P = 2.425391e-12).
+	Adding marker Ace1 as the lowest significant marker (P = 1.332916e-16).
 
 Building model: glmmTMB(phenotype ~ Ace1 + (1|location), data = pm.table, family = binomial) 
 	No further markers are significant, keeping final model:
 Formula:          phenotype ~ Ace1 + (1 | location)
 Data: pm.table
       AIC       BIC    logLik  df.resid 
- 328.6402  339.4576 -161.3201       269 
+ 350.2941  361.4941 -172.1471       306 
 Random-effects (co)variances:
 
 Conditional model:
  Groups   Name        Std.Dev.
- location (Intercept) 0.9241  
+ location (Intercept) 1.243   
 
-Number of obs: 272 / Conditional model: location, 4
+Number of obs: 309 / Conditional model: location, 5
 
 Fixed Effects:
 
 Conditional model:
 (Intercept)         Ace1  
-     2.4226      -0.7341  
+     2.2673      -0.8058  
 Final model contained 1 parameters: Ace1.
 
 
                 P deviance
-Ace1 2.425391e-12       NA
+Ace1 1.332916e-16       NA
 $invariable.markers
 character(0)
 
@@ -626,31 +626,31 @@ character(0)
 
 $sig.alone
                   P pseudo.R2
-Ace1   2.425391e-12        NA
-Cyp9k1 6.466513e-01        NA
+Ace1   1.332916e-16        NA
+Cyp9k1 7.308683e-01        NA
 
 $final.model
 Formula:          phenotype ~ Ace1 + (1 | location)
 Data: pm.table
       AIC       BIC    logLik  df.resid 
- 328.6402  339.4576 -161.3201       269 
+ 350.2941  361.4941 -172.1471       306 
 Random-effects (co)variances:
 
 Conditional model:
  Groups   Name        Std.Dev.
- location (Intercept) 0.9241  
+ location (Intercept) 1.243   
 
-Number of obs: 272 / Conditional model: location, 4
+Number of obs: 309 / Conditional model: location, 5
 
 Fixed Effects:
 
 Conditional model:
 (Intercept)         Ace1  
-     2.4226      -0.7341  
+     2.2673      -0.8058  
 
 $final.sig
                 P deviance
-Ace1 2.425391e-12       NA
+Ace1 1.332916e-16       NA
 
 
 
@@ -728,10 +728,10 @@ Single term deletions
 
 Model:
 phenotype ~ Ace1 + Ace1_Del1_presence + (1 | location)
-                   Df    AIC     LRT  Pr(>Chi)    
-<none>                327.83                      
-Ace1                1 351.29 25.4664 4.501e-07 ***
-Ace1_Del1_presence  1 328.64  2.8133   0.09349 .  
+                   Df    AIC    LRT  Pr(>Chi)    
+<none>                348.76                     
+Ace1                1 379.65 32.899 9.709e-09 ***
+Ace1_Del1_presence  1 350.29  3.539   0.05994 .  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -739,20 +739,20 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Formula:          phenotype ~ Ace1 + Ace1_Del1_presence + (1 | location)
 Data: modal.copy.number[insecticide == "PM"]
       AIC       BIC    logLik  df.resid 
- 327.8269  342.2501 -159.9134       268 
+ 348.7552  363.6885 -170.3776       305 
 Random-effects (co)variances:
 
 Conditional model:
  Groups   Name        Std.Dev.
- location (Intercept) 0.9527  
+ location (Intercept) 1.203   
 
-Number of obs: 272 / Conditional model: location, 4
+Number of obs: 309 / Conditional model: location, 5
 
 Fixed Effects:
 
 Conditional model:
            (Intercept)                    Ace1  Ace1_Del1_presenceTRUE  
-                2.6489                 -0.6311                 -0.7853  
+                2.5471                 -0.6861                 -0.8743  
 
 
 Ace1 combined + Del1 copy number, PM, location as fixed factor:
@@ -761,9 +761,9 @@ Single term deletions
 Model:
 phenotype ~ Ace1 + Ace1_Del_cn + (1 | location)
             Df    AIC    LRT  Pr(>Chi)    
-<none>         330.61                     
-Ace1         1 359.73 31.122 2.423e-08 ***
-Ace1_Del_cn  1 328.64  0.031    0.8603    
+<none>         352.15                     
+Ace1         1 386.72 36.575 1.469e-09 ***
+Ace1_Del_cn  1 350.29  0.148    0.7008    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
