@@ -715,7 +715,7 @@ Ace1.119S_A  1.480179e-11       NA
 Vgsc.1570Y_T 2.261705e-03       NA
 Vgsc.995F_T  3.639263e-02       NA
 $invariable.markers
-[1] "Rdl.296S_T"   "Gste2.119V_T"
+[1] "Vgsc.1934V_T" "Vgsc.254K_A"  "Rdl.296S_T"   "Gste2.119V_T"
 
 $correlated.markers
 character(0)
@@ -806,7 +806,7 @@ Final model contained 1 parameters: Vgsc.1868T_C.
                        P deviance
 Vgsc.1868T_C 0.008083267       NA
 $invariable.markers
-[1] "Vgsc.1597G_G" "Rdl.296S_T"   "Gste2.119V_T"
+[1] "Vgsc.1597G_G" "Vgsc.1934V_T" "Vgsc.254K_A"  "Rdl.296S_T"   "Gste2.119V_T"
 
 $correlated.markers
 character(0)

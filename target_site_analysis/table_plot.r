@@ -35,6 +35,7 @@ colnames(snp.freq.flipped) <- snp.names
 # Sort the rows how we will want them in the output
 pop.order <- c('Avrankou.coluzzii',
                'Korle-Bu.coluzzii', 
+               'Aboisso.gambiae',
                'Baguida.gambiae', 
                'Madina.gambiae', 
                'Obuasi.gambiae')
@@ -89,7 +90,7 @@ plot.table <- function(freq.table, species.colours = c(coluzzii = 'coral3', gamb
 }
 
 
-png('target_snp_frequencies.png', width = 4, height = 1, units = 'in', res = 300)
+png('target_snp_frequencies.png', width = 4, height = 1.2, units = 'in', res = 300)
 par(family = 'Arial')
 plot.table(snp.freq.flipped, 
          text.cell.cex = 0.35,
