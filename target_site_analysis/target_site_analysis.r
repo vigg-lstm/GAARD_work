@@ -48,25 +48,25 @@ kdr.pos <- c('Vgsc.254K' = 2390177,
 # the names will end up incorrectly associated with position if the markers are not in position order, we
 # included it just in case.
 kdr.pos <- sort(kdr.pos)
-kdr.indices <- setNames(which(pos[['2L']] %in% kdr.pos), names(kdr.pos))
+kdr.indices <- setNames(findInterval(kdr.pos, pos[['2L']]), names(kdr.pos))
 
 rdl.pos <- c('Rdl.296S' = 25429235,
              'Rdl.296G' = 25429236
 )
 rdl.pos <- sort(rdl.pos)
-rdl.indices <- setNames(which(pos[['2L']] %in% rdl.pos), names(rdl.pos))
+rdl.indices <- setNames(findInterval(rdl.pos, pos[['2L']]), names(rdl.pos))
 
 cyp4j5.pos <- c('Cyp4j5.43F' = 25635973)
-cyp4j5.indices <- setNames(which(pos[['2L']] %in% cyp4j5.pos), names(cyp4j5.pos))
+cyp4j5.indices <- setNames(findInterval(cyp4j5.pos, pos[['2L']]), names(cyp4j5.pos))
 
 ace1.pos <- c('Ace1.119S' = 3492074)
-ace1.indices <- setNames(which(pos[['2R']] %in% ace1.pos), names(ace1.pos))
+ace1.indices <- setNames(findInterval(ace1.pos, pos[['2R']]), names(ace1.pos))
 
 gste2.pos <- c('Gste2.114T' = 28598166,
               'Gste2.119V' = 28598062
 )
 gste2.pos <- sort(gste2.pos)
-gste2.indices <- setNames(which(pos[['3R']] %in% gste2.pos), names(gste2.pos))
+gste2.indices <- setNames(findInterval(gste2.pos, pos[['3R']]), names(gste2.pos))
 
 
 # Write a function to pull out genotypes at a list of positions
@@ -116,7 +116,8 @@ get.zarr.genotypes <- function(zarr_folder, chrom, indices){
 }
 
 # Pull out the genotypes from the zarr.
-zarr.folders <- c(Avrankou = '~/scratch/VObs_GAARD/1237-VO-BJ-DJOGBENOU-VMF00050',
+zarr.folders <- c(Aboisso = '~/scratch/VObs_GAARD/1245-VO-CI-CONSTANT-VMF00054',
+                  Avrankou = '~/scratch/VObs_GAARD/1237-VO-BJ-DJOGBENOU-VMF00050',
                   Baguida = '~/scratch/VObs_GAARD/1253-VO-TG-DJOGBENOU-VMF00052',
                   Ghana = '~/scratch/VObs_GAARD/1244-VO-GH-YAWSON-VMF00051'
 )
@@ -187,7 +188,7 @@ study.freqs <- wgs.phen[, lapply(.SD, function(x) mean(x)/2), by = .(location, s
                setkey(location, insecticide)
 
 # GLMs:
-glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'AliveDead', control.for = character(), glm.function = NULL, verbose = T){
+glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'phenotype', control.for = character(), glm.function = NULL, verbose = T){
 	# Check whether the markers and random effects are present in the data.frame
 	if (sum(list.of.markers %in% colnames(input.table)) != length(list.of.markers))
 		stop('Some of the requested markers were not found in genotypes table.')
@@ -495,7 +496,7 @@ cat('\nAce1 very strongly associated with PM resistance in Obuasi.\n')
 # Now let's try combining locations:
 # We kick out 402L since it's perfectly associated with 995 and the presence of two alleles is confusing
 non.402.markers <- setdiff(all.snps, c('Vgsc.402L_C', 'Vgsc.402L_T')) 
-pm.table <- as.data.frame(wgs.phen[insecticide == 'PM'])
+pm.table <- as.data.frame(wgs.phen[location != 'Aboisso' & insecticide == 'PM'])
 cat('\n\nAll populations PM:\n')
 glm.up(pm.table, non.402.markers, 'phenotype', control.for = 'location', glm.function = 'glmmTMB')
 cat('\n995F negatively associated with resistance (so 402 provides better resistance). 1570Y and Ace1.119S',
