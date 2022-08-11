@@ -3,7 +3,7 @@ library(magrittr)
 library(stringr)
 library(glmmTMB)
 
-study.ids.table <- fread('../data/study_ids.csv')[population != 'Aboisso_gambiae_PM']
+study.ids.table <- fread('../data/study_ids.csv')#[population != 'Aboisso_gambiae_PM']
 study.ids.table[, study_id := paste('v3.2_', study_id, sep = '')]
 meta <- fread('../data/combined/all_samples.samples.meta.csv', key = 'sample_id')
 meta.sample.names <- meta$partner_sample_id
@@ -332,7 +332,7 @@ contable <- function(x, ...){
 		modal.contable(x, ...)
 }
 
-png('detox_gene_modal_CNVs.png', width = 4.5, height = 1, units = 'in', res = 300)
+png('detox_gene_modal_CNVs.png', width = 4.5, height = 1.3, units = 'in', res = 300)
 par(family = 'Arial')
 contable(detox.genes, 
          text.cell.cex = 0.35,
@@ -342,7 +342,7 @@ contable(detox.genes,
 )
 dev.off()
 
-png('Ace1_diagnostic_read_CNVs.png', width = 2, height = 1.3, units = 'in', res = 300)
+png('Ace1_diagnostic_read_CNVs.png', width = 2, height = 1.5, units = 'in', res = 300)
 par(family = 'Arial')
 contable(Dup.clusters$Ace1, 
          text.cell.cex = 0.35,
@@ -352,7 +352,7 @@ contable(Dup.clusters$Ace1,
 )
 dev.off()
 
-png('Cyp6aap_diagnostic_read_CNVs.png', width = 6, height = 1.4, units = 'in', res = 300)
+png('Cyp6aap_diagnostic_read_CNVs.png', width = 6, height = 1.5, units = 'in', res = 300)
 par(family = 'Arial')
 contable(Dup.clusters$Cyp6aap, 
          text.cell.cex = 0.35,
@@ -362,7 +362,7 @@ contable(Dup.clusters$Cyp6aap,
 )
 dev.off()
 
-png('Cyp6mz_diagnostic_read_CNVs.png', width = 2.5, height = 1.4, units = 'in', res = 300)
+png('Cyp6mz_diagnostic_read_CNVs.png', width = 2.5, height = 1.5, units = 'in', res = 300)
 par(family = 'Arial')
 contable(Dup.clusters$Cyp6mz, 
          text.cell.cex = 0.35,
@@ -372,7 +372,7 @@ contable(Dup.clusters$Cyp6mz,
 )
 dev.off()
 
-png('Gste_diagnostic_read_CNVs.png', width = 3, height = 1.4, units = 'in', res = 300)
+png('Gste_diagnostic_read_CNVs.png', width = 3, height = 1.5, units = 'in', res = 300)
 par(family = 'Arial')
 contable(Dup.clusters$Gstue, 
          text.cell.cex = 0.35,
@@ -382,7 +382,7 @@ contable(Dup.clusters$Gstue,
 )
 dev.off()
 
-png('Cyp9k1_diagnostic_read_CNVs.png', width = 6, height = 1.4, units = 'in', res = 300)
+png('Cyp9k1_diagnostic_read_CNVs.png', width = 6, height = 1.5, units = 'in', res = 300)
 par(family = 'Arial')
 contable(Dup.clusters$Cyp9k1, 
          text.cell.cex = 0.35,
@@ -393,7 +393,7 @@ contable(Dup.clusters$Cyp9k1,
 dev.off()
 
 
-glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'AliveDead', control.for = character(), glm.function = NULL, verbose = T){
+glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'phenotype', control.for = character(), glm.function = NULL, verbose = T){
 	# Check whether the markers and random effects are present in the data.frame
 	if (sum(list.of.markers %in% colnames(input.table)) != length(list.of.markers))
 		stop('Some of the requested markers were not found in genotypes table.')
