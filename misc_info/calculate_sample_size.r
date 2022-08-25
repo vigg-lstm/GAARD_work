@@ -15,6 +15,10 @@ samples.to.remove <- c(sibs.to.remove, males)
 sample.sizes <- phen[, .(dead = sum(phenotype == 'dead'), alive = sum(phenotype == 'alive')), 
 				       keyby = c('location', 'species', 'insecticide')]
 
+nomales.phen <- phen[!(males)]
+nomales.sample.sizes <- nomales.phen[, .(dead = sum(phenotype == 'dead'), alive = sum(phenotype == 'alive')), 
+				                       keyby = c('location', 'species', 'insecticide')]
+
 final.phen <- phen[!(samples.to.remove)]
 final.sample.sizes <- final.phen[, .(dead = sum(phenotype == 'dead'), alive = sum(phenotype == 'alive')), 
 				                   keyby = c('location', 'species', 'insecticide')]
@@ -22,9 +26,12 @@ final.sample.sizes <- final.phen[, .(dead = sum(phenotype == 'dead'), alive = su
 cat('\nSample sizes before removing males and sibs:\n\n')
 print(sample.sizes)
 
+cat('\nSample sizes after removing males:\n\n')
+print(nomales.sample.sizes)
+
 cat('\n\nSample sizes after removing males and sibs:\n\n')
 print(final.sample.sizes)
 
-fwrite(sample.sizes, file = 'sample_sizes.csv', sep = '\t')
+fwrite(nomales.sample.sizes, file = 'sample_sizes.csv', sep = '\t')
 fwrite(final.sample.sizes, file = 'final_sample_sizes.csv', sep = '\t')
 

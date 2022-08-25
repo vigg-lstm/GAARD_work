@@ -13,6 +13,20 @@ Sample sizes before removing males and sibs:
  9:   Obuasi  gambiae       Delta   51    29
 10:   Obuasi  gambiae          PM   56    62
 
+Sample sizes after removing males:
+
+    location  species insecticide dead alive
+ 1:  Aboisso  gambiae          PM    5    33
+ 2: Avrankou coluzzii       Delta   40    48
+ 3:  Baguida  gambiae       Delta   43    61
+ 4:  Baguida  gambiae          PM   33    42
+ 5: Korle-Bu coluzzii       Delta   88    61
+ 6: Korle-Bu coluzzii          PM   55    62
+ 7:   Madina  gambiae       Delta   48    79
+ 8:   Madina  gambiae          PM   33    40
+ 9:   Obuasi  gambiae       Delta   51    29
+10:   Obuasi  gambiae          PM   56    62
+
 
 Sample sizes after removing males and sibs:
 
