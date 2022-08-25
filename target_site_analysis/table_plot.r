@@ -2,7 +2,7 @@ library(data.table)
 
 snp.frequencies <- fread('target_site_genotype_frequencies.csv', key = 'Locus')
 # Sort the SNP names into a nicer order
-table.order <- c('Ace1.119S_A', 
+table.order <- c('Ace1.280S_A', 
                  'Vgsc.402L_C', 
                  'Vgsc.402L_T', 
                  'Vgsc.791M_T', 

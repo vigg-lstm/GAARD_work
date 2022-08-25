@@ -254,7 +254,7 @@ $sig.alone
 Vgsc.1527T_C 0.29943863        NA
 Vgsc.995F_T  0.29943863        NA
 Cyp4j5.43F_A 0.40033590        NA
-Ace1.119S_A  0.09109937        NA
+Ace1.280S_A  0.09109937        NA
 Gste2.114T_G 0.33602481        NA
 
 $final.model
@@ -315,7 +315,7 @@ Vgsc.1746S_T 0.1956363        NA
 Vgsc.1853I_A 0.9760644        NA
 Vgsc.791M_T  0.1324566        NA
 Cyp4j5.43F_A 0.3801099        NA
-Ace1.119S_A  0.2360663        NA
+Ace1.280S_A  0.2360663        NA
 Gste2.119V_C 0.5404901        NA
 
 $final.model
@@ -476,32 +476,32 @@ Analysing markers independently.
 Running commentary on model optimisation:
 
 Building model: glm(phenotype ~ 1 , data = kb.pm.table, family = binomial) 
-	Adding marker Ace1.119S_A as the lowest significant marker (P = 3.077123e-05).
+	Adding marker Ace1.280S_A as the lowest significant marker (P = 3.077123e-05).
 
-Building model: glm(phenotype ~ Ace1.119S_A, data = kb.pm.table, family = binomial) 
+Building model: glm(phenotype ~ Ace1.280S_A, data = kb.pm.table, family = binomial) 
 	Adding marker Gste2.114T_G as the lowest significant marker (P = 0.02616722).
 
-Building model: glm(phenotype ~ Ace1.119S_A + Gste2.114T_G, data = kb.pm.table, family = binomial) 
+Building model: glm(phenotype ~ Ace1.280S_A + Gste2.114T_G, data = kb.pm.table, family = binomial) 
 	Adding marker Vgsc.995F_T as the lowest significant marker (P = 0.03746402).
 
-Building model: glm(phenotype ~ Ace1.119S_A + Gste2.114T_G + Vgsc.995F_T, data = kb.pm.table, family = binomial) 
+Building model: glm(phenotype ~ Ace1.280S_A + Gste2.114T_G + Vgsc.995F_T, data = kb.pm.table, family = binomial) 
 	No further markers are significant, keeping final model:
 
-Call:  glm(formula = phenotype ~ Ace1.119S_A + Gste2.114T_G + Vgsc.995F_T, 
+Call:  glm(formula = phenotype ~ Ace1.280S_A + Gste2.114T_G + Vgsc.995F_T, 
     family = binomial, data = kb.pm.table)
 
 Coefficients:
- (Intercept)   Ace1.119S_A  Gste2.114T_G   Vgsc.995F_T  
+ (Intercept)   Ace1.280S_A  Gste2.114T_G   Vgsc.995F_T  
      -0.6463       -2.1662        0.9233        0.9470  
 
 Degrees of Freedom: 104 Total (i.e. Null);  101 Residual
 Null Deviance:	    144.8 
 Residual Deviance: 118.1 	AIC: 126.1
-Final model contained 3 parameters: Ace1.119S_A,Gste2.114T_G,Vgsc.995F_T.
+Final model contained 3 parameters: Ace1.280S_A,Gste2.114T_G,Vgsc.995F_T.
 
 
                         P  deviance
-Ace1.119S_A  2.542737e-05 17.732289
+Ace1.280S_A  2.542737e-05 17.732289
 Gste2.114T_G 1.823866e-02  5.573079
 Vgsc.995F_T  3.746402e-02  4.329192
 $invariable.markers
@@ -516,16 +516,16 @@ Vgsc.1527T_C 7.479976e-02        NA
 Vgsc.402L_C  1.207337e-01        NA
 Vgsc.995F_T  3.703736e-02        NA
 Cyp4j5.43F_A 2.396816e-01        NA
-Ace1.119S_A  3.077123e-05        NA
+Ace1.280S_A  3.077123e-05        NA
 Gste2.114T_G 5.414630e-02        NA
 
 $final.model
 
-Call:  glm(formula = phenotype ~ Ace1.119S_A + Gste2.114T_G + Vgsc.995F_T, 
+Call:  glm(formula = phenotype ~ Ace1.280S_A + Gste2.114T_G + Vgsc.995F_T, 
     family = binomial, data = kb.pm.table)
 
 Coefficients:
- (Intercept)   Ace1.119S_A  Gste2.114T_G   Vgsc.995F_T  
+ (Intercept)   Ace1.280S_A  Gste2.114T_G   Vgsc.995F_T  
      -0.6463       -2.1662        0.9233        0.9470  
 
 Degrees of Freedom: 104 Total (i.e. Null);  101 Residual
@@ -534,7 +534,7 @@ Residual Deviance: 118.1 	AIC: 126.1
 
 $final.sig
                         P  deviance
-Ace1.119S_A  2.542737e-05 17.732289
+Ace1.280S_A  2.542737e-05 17.732289
 Gste2.114T_G 1.823866e-02  5.573079
 Vgsc.995F_T  3.746402e-02  4.329192
 
@@ -552,25 +552,25 @@ Analysing markers independently.
 Running commentary on model optimisation:
 
 Building model: glm(phenotype ~ 1 , data = madina.pm.table, family = binomial) 
-	Adding marker Ace1.119S_A as the lowest significant marker (P = 3.305504e-11).
+	Adding marker Ace1.280S_A as the lowest significant marker (P = 3.305504e-11).
 
-Building model: glm(phenotype ~ Ace1.119S_A, data = madina.pm.table, family = binomial) 
+Building model: glm(phenotype ~ Ace1.280S_A, data = madina.pm.table, family = binomial) 
 	No further markers are significant, keeping final model:
 
-Call:  glm(formula = phenotype ~ Ace1.119S_A, family = binomial, data = madina.pm.table)
+Call:  glm(formula = phenotype ~ Ace1.280S_A, family = binomial, data = madina.pm.table)
 
 Coefficients:
-(Intercept)  Ace1.119S_A  
+(Intercept)  Ace1.280S_A  
       20.27       -19.84  
 
 Degrees of Freedom: 64 Total (i.e. Null);  63 Residual
 Null Deviance:	    88.24 
 Residual Deviance: 44.25 	AIC: 48.25
-Final model contained 1 parameters: Ace1.119S_A.
+Final model contained 1 parameters: Ace1.280S_A.
 
 
                        P deviance
-Ace1.119S_A 3.305504e-11 43.98708
+Ace1.280S_A 3.305504e-11 43.98708
 $invariable.markers
 character(0)
 
@@ -584,15 +584,15 @@ Vgsc.1746S_T 2.626668e-01        NA
 Vgsc.1853I_A 1.252868e-01        NA
 Vgsc.791M_T  1.446059e-01        NA
 Cyp4j5.43F_A 1.958291e-01        NA
-Ace1.119S_A  3.305504e-11        NA
+Ace1.280S_A  3.305504e-11        NA
 Gste2.119V_C 2.817793e-01        NA
 
 $final.model
 
-Call:  glm(formula = phenotype ~ Ace1.119S_A, family = binomial, data = madina.pm.table)
+Call:  glm(formula = phenotype ~ Ace1.280S_A, family = binomial, data = madina.pm.table)
 
 Coefficients:
-(Intercept)  Ace1.119S_A  
+(Intercept)  Ace1.280S_A  
       20.27       -19.84  
 
 Degrees of Freedom: 64 Total (i.e. Null);  63 Residual
@@ -601,7 +601,7 @@ Residual Deviance: 44.25 	AIC: 48.25
 
 $final.sig
                        P deviance
-Ace1.119S_A 3.305504e-11 43.98708
+Ace1.280S_A 3.305504e-11 43.98708
 
 
 Ace1 very strongly associated with PM resistance in Madina.
@@ -679,18 +679,18 @@ Analysing markers independently.
 Running commentary on model optimisation:
 
 Building model: glmmTMB(phenotype ~ 1  + (1|location), data = pm.table, family = binomial) 
-	Adding marker Ace1.119S_A as the lowest significant marker (P = 5.763026e-11).
+	Adding marker Ace1.280S_A as the lowest significant marker (P = 5.763026e-11).
 
-Building model: glmmTMB(phenotype ~ Ace1.119S_A + (1|location), data = pm.table, family = binomial) 
+Building model: glmmTMB(phenotype ~ Ace1.280S_A + (1|location), data = pm.table, family = binomial) 
 	Adding marker Vgsc.1570Y_T as the lowest significant marker (P = 0.002083802).
 
-Building model: glmmTMB(phenotype ~ Ace1.119S_A + Vgsc.1570Y_T + (1|location), data = pm.table, family = binomial) 
+Building model: glmmTMB(phenotype ~ Ace1.280S_A + Vgsc.1570Y_T + (1|location), data = pm.table, family = binomial) 
 	Adding marker Vgsc.995F_T as the lowest significant marker (P = 0.03639263).
 
-Building model: glmmTMB(phenotype ~ Ace1.119S_A + Vgsc.1570Y_T + Vgsc.995F_T + (1|location), data = pm.table, family = binomial) 
+Building model: glmmTMB(phenotype ~ Ace1.280S_A + Vgsc.1570Y_T + Vgsc.995F_T + (1|location), data = pm.table, family = binomial) 
 	No further markers are significant, keeping final model:
 Formula:          
-phenotype ~ Ace1.119S_A + Vgsc.1570Y_T + Vgsc.995F_T + (1 | location)
+phenotype ~ Ace1.280S_A + Vgsc.1570Y_T + Vgsc.995F_T + (1 | location)
 Data: pm.table
       AIC       BIC    logLik  df.resid 
  420.7178  439.8478 -205.3589       334 
@@ -705,13 +705,13 @@ Number of obs: 339 / Conditional model: location, 4
 Fixed Effects:
 
 Conditional model:
- (Intercept)   Ace1.119S_A  Vgsc.1570Y_T   Vgsc.995F_T  
+ (Intercept)   Ace1.280S_A  Vgsc.1570Y_T   Vgsc.995F_T  
       1.1165       -1.9536       -0.9849        0.9165  
-Final model contained 3 parameters: Ace1.119S_A,Vgsc.1570Y_T,Vgsc.995F_T.
+Final model contained 3 parameters: Ace1.280S_A,Vgsc.1570Y_T,Vgsc.995F_T.
 
 
                         P deviance
-Ace1.119S_A  1.480179e-11       NA
+Ace1.280S_A  1.480179e-11       NA
 Vgsc.1570Y_T 2.261705e-03       NA
 Vgsc.995F_T  3.639263e-02       NA
 $invariable.markers
@@ -735,13 +735,13 @@ Vgsc.791M_T  5.284950e-01        NA
 Vgsc.995F_T  5.697212e-02        NA
 Rdl.296G_G   1.238795e-01        NA
 Cyp4j5.43F_A 7.021846e-01        NA
-Ace1.119S_A  5.763026e-11        NA
+Ace1.280S_A  5.763026e-11        NA
 Gste2.114T_G 3.675283e-01        NA
 Gste2.119V_C 8.664584e-01        NA
 
 $final.model
 Formula:          
-phenotype ~ Ace1.119S_A + Vgsc.1570Y_T + Vgsc.995F_T + (1 | location)
+phenotype ~ Ace1.280S_A + Vgsc.1570Y_T + Vgsc.995F_T + (1 | location)
 Data: pm.table
       AIC       BIC    logLik  df.resid 
  420.7178  439.8478 -205.3589       334 
@@ -756,17 +756,17 @@ Number of obs: 339 / Conditional model: location, 4
 Fixed Effects:
 
 Conditional model:
- (Intercept)   Ace1.119S_A  Vgsc.1570Y_T   Vgsc.995F_T  
+ (Intercept)   Ace1.280S_A  Vgsc.1570Y_T   Vgsc.995F_T  
       1.1165       -1.9536       -0.9849        0.9165  
 
 $final.sig
                         P deviance
-Ace1.119S_A  1.480179e-11       NA
+Ace1.280S_A  1.480179e-11       NA
 Vgsc.1570Y_T 2.261705e-03       NA
 Vgsc.995F_T  3.639263e-02       NA
 
 
-995F negatively associated with resistance (so 402 provides better resistance). 1570Y and Ace1.119S both associated with increased resistance.
+995F negatively associated with resistance (so 402 provides better resistance). 1570Y and Ace1.280S both associated with increased resistance.
 
 
 All populations Delta:
@@ -825,7 +825,7 @@ Vgsc.791M_T  0.364945044        NA
 Vgsc.995F_T  0.608151724        NA
 Rdl.296G_G   0.318309720        NA
 Cyp4j5.43F_A 0.196045244        NA
-Ace1.119S_A  0.819463848        NA
+Ace1.280S_A  0.819463848        NA
 Gste2.114T_G 0.572942291        NA
 Gste2.119V_C 0.394751292        NA
 
