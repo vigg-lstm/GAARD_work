@@ -59,7 +59,7 @@ rdl.indices <- setNames(findInterval(rdl.pos, pos[['2L']]), names(rdl.pos))
 cyp4j5.pos <- c('Cyp4j5.43F' = 25635973)
 cyp4j5.indices <- setNames(findInterval(cyp4j5.pos, pos[['2L']]), names(cyp4j5.pos))
 
-ace1.pos <- c('Ace1.119S' = 3492074)
+ace1.pos <- c('Ace1.280S' = 3492074)
 ace1.indices <- setNames(findInterval(ace1.pos, pos[['2R']]), names(ace1.pos))
 
 gste2.pos <- c('Gste2.114T' = 28598166,
@@ -499,7 +499,7 @@ non.402.markers <- setdiff(all.snps, c('Vgsc.402L_C', 'Vgsc.402L_T'))
 pm.table <- as.data.frame(wgs.phen[location != 'Aboisso' & insecticide == 'PM'])
 cat('\n\nAll populations PM:\n')
 glm.up(pm.table, non.402.markers, 'phenotype', control.for = 'location', glm.function = 'glmmTMB')
-cat('\n995F negatively associated with resistance (so 402 provides better resistance). 1570Y and Ace1.119S',
+cat('\n995F negatively associated with resistance (so 402 provides better resistance). 1570Y and Ace1.280S',
     'both associated with increased resistance.\n')
 
 delta.table <- as.data.frame(wgs.phen[insecticide == 'Delta'])
