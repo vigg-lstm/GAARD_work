@@ -507,5 +507,10 @@ cat('\n\nAll populations Delta:\n')
 glm.up(delta.table, non.402.markers, 'phenotype', control.for = 'location', glm.function = 'glmmTMB')
 cat('\nVgsc.1868T negatively associated with deltamethrin resistance.\n')
 
+# Write the genotypes to file
+output.table <- setnames(wgs.phen[, !c('country', 'concentration', 'exposure_time', 'plate')],
+                         'specimen', 'sample.id')
+fwrite(output.table, 'target_site_genotypes.csv', sep = '\t')
+
 
 
