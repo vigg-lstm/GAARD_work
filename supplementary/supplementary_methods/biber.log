@@ -1,0 +1,16 @@
+INFO - This is Biber 2.14 (beta)
+INFO - Logfile is 'Supplementary_methods.blg'
+INFO - Reading 'Supplementary_methods.bcf'
+INFO - Found 3 citekeys in bib section 0
+INFO - Processing section 0
+INFO - Globbing data source 'refs.bib'
+INFO - Globbed data source 'refs.bib' to refs.bib
+INFO - Looking for bibtex format file 'refs.bib' for section 0
+INFO - LaTeX decoding ...
+INFO - Found BibTeX data source 'refs.bib'
+INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+INFO - No sort tailoring available for locale 'en-US'
+INFO - Writing 'Supplementary_methods.bbl' with encoding 'UTF-8'
+INFO - Output to Supplementary_methods.bbl
