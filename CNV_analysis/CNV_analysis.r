@@ -3,7 +3,7 @@ library(magrittr)
 library(stringr)
 library(glmmTMB)
 
-study.ids.table <- fread('../data/study_ids.csv')#[population != 'Aboisso_gambiae_PM']
+study.ids.table <- fread('../data/study_ids.csv')
 study.ids.table[, study_id := paste('v3.2_', study_id, sep = '')]
 meta <- fread('../data/combined/all_samples.samples.meta.csv', key = 'sample_id')
 meta.sample.names <- meta$partner_sample_id
@@ -704,5 +704,20 @@ korlebu.delta.samples <- phen[location == 'Korle-Bu' & insecticide == 'Delta', s
 korlebu.delta.allele.table <- as.data.frame(target.CNV.table[korlebu.delta.samples])
 print(glm.up(korlebu.delta.allele.table, c('Cyp6aap_Dup10', 'Cyp6aap_Dup17', 'Cyp6aap_Dup18'), 'phenotype'))
 # Both Dup10 and Dup18 are positively associated with resistance, although Dup18 is non-sig. 
+
+# Write tables to file
+# Find the Dups found at least once in the data
+Dups.present <- known.Dups[apply(target.CNV.table[, ..known.Dups], 2, sum) > 0]
+output.table <- merge(phen[, .(specimen, species, location, insecticide)],
+                      target.CNV.table[, c('sample.id', 'phenotype', 'High.var.sample', ..Dups.present)], 
+                      by.x = 'specimen',
+                      by.y = 'sample.id',
+                      all.x = F,
+                      all.y = T) %>%
+                setnames(., 'specimen', 'sample.id') %>%
+                merge(., modal.copy.number[, c('sample.id', detox.genes), with = F], by = 'sample.id', all = T) %>%
+				.[order(location, insecticide)]
+
+fwrite(output.table, 'CNV_calls.csv', sep = '\t')
 
 
