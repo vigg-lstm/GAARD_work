@@ -1,0 +1,970 @@
+sample.id	country	location	latitude	longitude	collection.date	species	insecticide	concentration	exposure_time	phenotype	sib.group.id	exclude.as.sib
+WA-0001	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0002	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	1	FALSE
+WA-0003	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	1	TRUE
+WA-0005	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	1	TRUE
+WA-0006	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0007	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0008	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0009	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0010	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0012	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0013	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0014	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0015	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0016	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0017	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0018	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0020	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0021	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0024	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	2	FALSE
+WA-0025	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	3	TRUE
+WA-0026	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	2	TRUE
+WA-0028	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	3	TRUE
+WA-0029	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0031	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0034	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	2	TRUE
+WA-0036	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	4	FALSE
+WA-0037	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	3	FALSE
+WA-0038	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	3	TRUE
+WA-0041	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0043	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	3	TRUE
+WA-0044	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0046	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0047	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	5	TRUE
+WA-0048	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0050	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	6	FALSE
+WA-0051	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	5	TRUE
+WA-0052	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	5	FALSE
+WA-0053	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0054	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead	6	TRUE
+WA-0055	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0056	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0057	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0060	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0061	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0062	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0064	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0066	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0071	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	1	60	dead		FALSE
+WA-0073	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0074	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0075	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0076	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0077	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0079	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0081	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0082	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0083	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	7	FALSE
+WA-0084	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0085	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0086	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	8	FALSE
+WA-0087	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	8	TRUE
+WA-0088	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0089	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0090	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	8	TRUE
+WA-0091	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	9	FALSE
+WA-0092	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0093	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	7	TRUE
+WA-0094	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0095	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0099	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0100	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	10	TRUE
+WA-0102	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0104	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	11	FALSE
+WA-0105	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	9	TRUE
+WA-0106	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0107	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0108	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	10	FALSE
+WA-0109	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0110	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0111	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0112	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0114	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	12	TRUE
+WA-0115	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	13	TRUE
+WA-0117	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0118	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	12	FALSE
+WA-0120	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0123	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0124	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0125	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0126	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0127	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0128	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	14	TRUE
+WA-0129	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	12	TRUE
+WA-0130	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	15	TRUE
+WA-0131	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0132	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	16	FALSE
+WA-0133	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0134	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0135	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0136	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0137	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	17	FALSE
+WA-0138	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0140	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0141	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0142	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0143	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0144	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	17	TRUE
+WA-0146	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	18	FALSE
+WA-0147	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	14	TRUE
+WA-0148	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0149	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0150	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	19	FALSE
+WA-0151	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	14	FALSE
+WA-0152	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0153	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0154	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	13	FALSE
+WA-0155	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0156	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	16	TRUE
+WA-0157	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0158	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0159	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0160	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0162	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0164	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	17	TRUE
+WA-0165	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	15	FALSE
+WA-0166	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive	13	TRUE
+WA-0167	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0168	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0169	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0171	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0174	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0175	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0176	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0179	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0186	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0187	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0195	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0196	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0199	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0200	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0203	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0204	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0207	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0211	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0212	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0215	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0218	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0219	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0220	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0221	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0222	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0223	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0227	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0228	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0229	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0234	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0235	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0236	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0237	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0239	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead	20	FALSE
+WA-0242	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0243	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0244	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0245	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0246	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0247	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0249	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0251	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0252	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0253	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0255	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead	21	FALSE
+WA-0256	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0257	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0258	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead	22	FALSE
+WA-0259	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0260	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0261	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0262	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0266	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive	20	TRUE
+WA-0269	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0270	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0274	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0282	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0283	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive	23	TRUE
+WA-0287	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0288	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0289	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0290	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0291	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0292	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0294	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0295	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0296	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0297	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0298	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0299	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0306	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0309	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0310	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive	23	FALSE
+WA-0313	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0314	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0317	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0318	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0319	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0320	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0321	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0322	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	Delta	5	60	alive		FALSE
+WA-0325	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0326	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0327	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	40	TRUE
+WA-0328	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0329	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	41	TRUE
+WA-0330	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	42	TRUE
+WA-0331	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0332	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0333	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	43	TRUE
+WA-0334	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0335	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	44	FALSE
+WA-0336	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0337	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0338	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	45	TRUE
+WA-0339	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	45	TRUE
+WA-0340	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0341	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0342	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0343	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0344	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	46	FALSE
+WA-0345	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0346	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0347	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	47	FALSE
+WA-0348	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	48	TRUE
+WA-0349	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0350	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0351	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0352	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0353	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	48	FALSE
+WA-0354	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0355	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0356	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	45	FALSE
+WA-0357	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	49	TRUE
+WA-0358	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	40	FALSE
+WA-0361	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	44	TRUE
+WA-0362	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0363	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0364	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0365	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0366	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead	50	FALSE
+WA-0367	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0368	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0369	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	2	60	dead		FALSE
+WA-0370	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0371	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	51	FALSE
+WA-0372	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	52	FALSE
+WA-0374	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0375	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0376	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0377	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0378	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	53	FALSE
+WA-0379	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0381	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	46	TRUE
+WA-0383	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	54	FALSE
+WA-0384	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	55	FALSE
+WA-0386	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0387	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0389	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0390	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0391	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0392	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0393	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0394	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0395	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0396	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0397	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	50	TRUE
+WA-0398	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0399	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0400	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	56	FALSE
+WA-0401	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	43	FALSE
+WA-0402	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0403	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0404	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0405	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	42	FALSE
+WA-0406	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0407	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0408	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0409	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0410	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0411	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	41	FALSE
+WA-0412	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0413	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0415	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0416	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0417	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	49	FALSE
+WA-0418	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0419	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0420	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0421	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0422	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	55	TRUE
+WA-0424	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	55	TRUE
+WA-0425	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0426	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	47	TRUE
+WA-0427	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	44	TRUE
+WA-0428	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0429	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0430	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive	55	TRUE
+WA-0431	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0432	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0433	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0434	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0435	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0436	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0438	Togo	Baguida	6.161	1.314	10/01/2017	gambiae	Delta	10	60	alive		FALSE
+WA-0442	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0444	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0451	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0452	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	5	FALSE
+WA-0455	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0457	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0458	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0459	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0460	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0462	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	3	TRUE
+WA-0463	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0464	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0465	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	3	TRUE
+WA-0466	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0468	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0469	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	3	TRUE
+WA-0472	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0473	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	3	FALSE
+WA-0474	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	4	FALSE
+WA-0476	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	24	TRUE
+WA-0477	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0478	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	25	TRUE
+WA-0479	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0480	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0481	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	24	TRUE
+WA-0483	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	24	FALSE
+WA-0484	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0485	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0486	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0487	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0488	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	25	FALSE
+WA-0489	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead	11	FALSE
+WA-0492	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0498	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0503	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0506	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0507	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive	26	TRUE
+WA-0510	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0515	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0516	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive	27	TRUE
+WA-0517	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0518	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0519	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0521	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0523	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0524	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0525	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0526	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0528	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0529	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0530	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive	26	FALSE
+WA-0531	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0532	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0533	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0534	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0537	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0540	Ghana	Madina	5.683	-0.166	11/01/2017	gambiae	PM	1	60	alive	27	FALSE
+WA-0550	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0563	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0572	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0573	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0575	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0576	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive	14	FALSE
+WA-0578	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0579	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0580	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0581	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0583	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0585	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive	13	FALSE
+WA-0586	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive	18	FALSE
+WA-0587	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive	19	FALSE
+WA-0589	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0592	Ghana	Madina	5.683	-0.166	12/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0593	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0594	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead	28	FALSE
+WA-0596	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0597	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0598	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead	29	FALSE
+WA-0599	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0600	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0601	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0602	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	28	TRUE
+WA-0604	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0605	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0606	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0607	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	28	TRUE
+WA-0608	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	30	FALSE
+WA-0609	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0610	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0611	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0612	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0613	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0614	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0615	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0616	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0617	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0618	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0619	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0620	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0621	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	31	FALSE
+WA-0622	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	32	TRUE
+WA-0623	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0624	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	31	TRUE
+WA-0626	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	33	FALSE
+WA-0627	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0629	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	32	FALSE
+WA-0630	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0631	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead		FALSE
+WA-0632	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0633	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0635	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0636	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0637	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0638	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0639	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0641	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0642	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0643	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0644	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0645	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0646	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0647	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	34	FALSE
+WA-0648	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead	35	TRUE
+WA-0649	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0650	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0651	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0653	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0654	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	15	dead	30	TRUE
+WA-0655	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	30	dead		FALSE
+WA-0656	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0657	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0658	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive	29	TRUE
+WA-0660	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0662	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0663	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0665	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0666	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0667	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0669	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0670	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0671	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0674	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	75	alive		FALSE
+WA-0675	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0676	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0677	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0678	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0679	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0680	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0681	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive	36	TRUE
+WA-0682	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0683	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive	37	TRUE
+WA-0684	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive	38	TRUE
+WA-0685	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive	38	FALSE
+WA-0686	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive	36	FALSE
+WA-0687	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0688	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive	37	FALSE
+WA-0689	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	75	alive		FALSE
+WA-0690	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0691	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0692	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0693	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0694	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0695	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0698	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive	21	TRUE
+WA-0699	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0700	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive	33	TRUE
+WA-0701	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0702	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0703	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0704	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive	35	FALSE
+WA-0705	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0706	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0707	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0708	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive	39	TRUE
+WA-0709	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0710	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	45	alive		FALSE
+WA-0711	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive	22	FALSE
+WA-0712	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive	39	FALSE
+WA-0713	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0714	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0715	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0716	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive	21	FALSE
+WA-0717	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0718	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0719	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0720	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0721	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive	34	TRUE
+WA-0722	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0723	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	60	alive		FALSE
+WA-0724	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	75	alive		FALSE
+WA-0725	Ghana	Obuasi	6.2	-1.683	09/01/2017	gambiae	PM	0.5	75	alive		FALSE
+WA-0728	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0729	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0731	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0732	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0735	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	0.5	60	dead		FALSE
+WA-0737	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0738	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0739	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0740	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0741	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0742	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0743	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0744	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive	64	TRUE
+WA-0745	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0746	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0747	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0748	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0751	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0753	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0754	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0755	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0756	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0757	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0758	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0759	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0760	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive	64	FALSE
+WA-0761	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0762	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0763	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0766	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0767	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0769	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0770	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0771	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0774	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0777	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0778	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0779	Cote d'Ivoire	Aboisso	5.467	-3.2	09/01/2017	gambiae	PM	1	60	alive		FALSE
+WA-0782	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0783	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0784	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0785	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	57	FALSE
+WA-0786	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0789	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0790	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	58	FALSE
+WA-0791	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	59	TRUE
+WA-0792	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	59	FALSE
+WA-0795	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0796	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0797	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0798	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	41	FALSE
+WA-0799	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	43	FALSE
+WA-0800	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0801	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0802	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	56	FALSE
+WA-0803	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0804	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0806	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	58	TRUE
+WA-0808	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0809	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	57	TRUE
+WA-0811	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0812	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0814	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	45	FALSE
+WA-0815	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0816	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead	54	FALSE
+WA-0817	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0818	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0819	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0820	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0821	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0822	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	45	dead		FALSE
+WA-0823	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0824	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0825	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0826	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0829	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	60	TRUE
+WA-0830	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0831	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0832	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	60	TRUE
+WA-0833	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	51	FALSE
+WA-0834	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0838	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0840	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	61	FALSE
+WA-0842	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0844	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0845	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	61	TRUE
+WA-0847	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0848	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	53	FALSE
+WA-0849	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	62	FALSE
+WA-0850	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	60	FALSE
+WA-0851	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	52	TRUE
+WA-0852	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0853	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0854	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	52	FALSE
+WA-0855	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0857	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0858	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0859	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	62	TRUE
+WA-0860	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0861	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0863	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0864	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	63	FALSE
+WA-0865	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0867	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	63	TRUE
+WA-0868	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0869	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0870	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive	61	TRUE
+WA-0871	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0872	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0873	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0874	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0875	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0877	Togo	Baguida	6.161	1.314	12/01/2017	gambiae	PM	0.5	90	alive		FALSE
+WA-0878	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0879	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0880	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0881	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0882	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0883	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0884	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0885	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0886	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0887	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0889	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	65	TRUE
+WA-0890	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0891	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	66	FALSE
+WA-0892	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0893	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	67	FALSE
+WA-0894	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0895	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0896	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0897	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0898	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0899	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0900	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0901	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0902	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0903	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0904	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0905	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0906	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0907	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0908	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0909	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	68	FALSE
+WA-0910	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	69	FALSE
+WA-0911	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	70	TRUE
+WA-0912	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	70	FALSE
+WA-0913	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0914	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0915	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0916	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0917	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	69	TRUE
+WA-0918	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0919	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0920	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	71	FALSE
+WA-0921	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	72	TRUE
+WA-0922	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0923	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0924	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0925	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	73	FALSE
+WA-0926	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0927	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	74	TRUE
+WA-0928	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0929	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0930	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0931	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0932	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0933	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0934	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0935	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	75	FALSE
+WA-0936	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0938	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0939	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0940	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0941	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0943	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0944	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	72	FALSE
+WA-0945	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0946	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0947	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0949	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0950	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	76	FALSE
+WA-0951	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0952	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0953	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0954	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0955	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0957	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0958	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0959	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0960	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0961	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0962	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0963	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	77	FALSE
+WA-0964	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0965	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0968	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0969	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead	78	FALSE
+WA-0970	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0971	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0972	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	0.5	60	dead		FALSE
+WA-0973	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0974	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0975	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0976	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0977	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0979	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0980	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	65	FALSE
+WA-0981	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0982	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0985	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0986	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0987	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0988	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0991	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0993	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	79	FALSE
+WA-0994	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0995	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0996	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-0997	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	80	FALSE
+WA-0998	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	81	FALSE
+WA-0999	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1000	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1001	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	82	FALSE
+WA-1002	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1003	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1004	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1005	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	83	FALSE
+WA-1006	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1007	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1009	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	74	FALSE
+WA-1010	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1011	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1012	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1013	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	79	TRUE
+WA-1014	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	84	TRUE
+WA-1015	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1017	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1018	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1019	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1020	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1021	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1022	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1023	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1024	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1025	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1026	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1027	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive	84	FALSE
+WA-1028	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1029	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1030	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1031	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1032	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1033	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1034	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1035	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1036	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1037	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1039	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1041	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1042	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1043	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	Delta	5	60	alive		FALSE
+WA-1044	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1045	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	91	FALSE
+WA-1046	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1047	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1048	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1049	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	92	TRUE
+WA-1050	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1052	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	91	TRUE
+WA-1053	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	93	TRUE
+WA-1054	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1055	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1056	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1057	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1058	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1060	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	94	FALSE
+WA-1061	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1063	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1064	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1065	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1066	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1067	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1068	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	95	TRUE
+WA-1069	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1070	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1071	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1072	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1073	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1075	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1076	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1077	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1078	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1079	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1080	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	96	FALSE
+WA-1082	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	97	FALSE
+WA-1084	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1085	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	96	TRUE
+WA-1086	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1087	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1088	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead		FALSE
+WA-1089	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	0.5	60	dead	98	TRUE
+WA-1090	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1091	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1093	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive	95	FALSE
+WA-1094	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1095	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive	98	FALSE
+WA-1097	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1098	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive	97	TRUE
+WA-1099	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive	99	FALSE
+WA-1100	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1102	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1103	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1104	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1105	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1106	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1107	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1109	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive	99	TRUE
+WA-1110	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1112	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1113	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1114	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1115	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1116	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1117	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1118	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1119	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1120	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1121	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive	93	FALSE
+WA-1122	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1123	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1124	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1125	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1126	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1128	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive	94	TRUE
+WA-1129	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1130	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1132	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1133	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1134	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1136	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1137	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1138	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive	92	FALSE
+WA-1139	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1140	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1141	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1142	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1143	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1144	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1145	Benin	Avrankou	6.55	2.667	09/01/2017	coluzzii	Delta	2	60	alive		FALSE
+WA-1147	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1149	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	0.5	60	dead	85	TRUE
+WA-1153	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1158	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1159	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	0.5	60	dead	85	FALSE
+WA-1162	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1164	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	65	FALSE
+WA-1165	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1166	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1169	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1171	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1172	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	66	FALSE
+WA-1173	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1174	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1176	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	86	TRUE
+WA-1177	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	65	TRUE
+WA-1181	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1182	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	86	FALSE
+WA-1183	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1184	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1188	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1189	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1190	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1191	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	87	TRUE
+WA-1192	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1193	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1196	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	76	FALSE
+WA-1198	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	75	TRUE
+WA-1199	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1200	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	87	FALSE
+WA-1201	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1202	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1204	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1206	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1207	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1208	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1209	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1210	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	73	FALSE
+WA-1212	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1213	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	73	TRUE
+WA-1214	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1215	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1217	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1220	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1221	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1222	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1226	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1228	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1229	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1230	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	75	FALSE
+WA-1231	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1235	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1236	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1237	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead	88	TRUE
+WA-1240	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	0.5	60	dead		FALSE
+WA-1241	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1242	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1244	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1245	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1246	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1247	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1248	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1249	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1250	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1252	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1253	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1254	Ghana	Korle-Bu	5.537	-0.24	01/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1257	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1259	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1260	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1261	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1262	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	68	FALSE
+WA-1264	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	89	FALSE
+WA-1267	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1268	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1271	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	67	FALSE
+WA-1272	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1273	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1274	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1275	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1276	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1277	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1278	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	81	FALSE
+WA-1280	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	89	TRUE
+WA-1283	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1284	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1285	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	90	FALSE
+WA-1288	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	80	TRUE
+WA-1291	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1293	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	88	FALSE
+WA-1296	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	90	TRUE
+WA-1297	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1298	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	71	TRUE
+WA-1299	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1300	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	72	FALSE
+WA-1301	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1302	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1303	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	71	TRUE
+WA-1308	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	83	FALSE
+WA-1309	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1310	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1311	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	82	FALSE
+WA-1312	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1316	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1317	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	74	FALSE
+WA-1318	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1319	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	71	FALSE
+WA-1320	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1323	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1324	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	77	FALSE
+WA-1325	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1326	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	80	FALSE
+WA-1327	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1328	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1333	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
+WA-1334	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive	78	FALSE
+WA-1335	Ghana	Korle-Bu	5.537	-0.24	02/01/2018	coluzzii	PM	1	60	alive		FALSE
