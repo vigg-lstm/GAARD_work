@@ -112,7 +112,7 @@ We calculated pairwise kinship between all samples using the KING statistic \par
 
 \subsection{\fst\ outlier analysis}
 
-We calculcated \fst\ between phenotype classes (dead / alive after exposure to insecticides) in windows of 1000 SNPs across the genome, and wanted to identify peaks in the data. We used the fact that true \fst\ peaks in these data should only be positive, meaning that the left hand side of the distribution should be largely unaffected by the number of peaks in the data. We therefore used the left hand part of the \fst\ distribution to determine what the limits of the right hand part would typically look like in the absence of peaks, and conservatively identified outliers as positive windows beyond these limits (Fig. \ref{FigM3}).
+We calculcated \fst\ between phenotype classes (dead / alive after exposure to insecticides) in windows of 1000 SNPs across the genome, and wanted to identify peaks in the data. We used the fact that true \fst\ peaks in these data should only be positive, meaning that the left hand side of the distribution should be largely unaffected by the number of peaks in the data. We therefore used the left hand part of the \fst\ distribution to determine what the limits of the right hand part would typically look like in the absence of peaks, and identified outliers as positive windows beyond these limits. To do this, we took the difference between the smallest \fst\ value and the mode of the distribution, and considered an outlier to be any value more than three times this distance away from the mode (Fig. \ref{FigM3}).
 
 
 \begin{figure}[h]
