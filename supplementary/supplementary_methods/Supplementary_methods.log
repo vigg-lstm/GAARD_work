@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  26 AUG 2022 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  26 AUG 2022 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,15 +137,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [4 <./figures/Fst_example_histogram_annotated.pdf>]
 Overfull \hbox (14.51091pt too wide) in paragraph at lines 139--140
  [] 
-[5 <./figures/plate_layouts_annotated.pdf>] [6] (./Supplementary_methods.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
- )
+[5 <./figures/plate_layouts_annotated.pdf>] [6] (./Supplementary_methods.aux) )
 (see the transcript file for additional information) </home/eric/.texlive2019/t
 exmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600pk> </home/eric/.texlive2019/t
 exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/eric/.texlive2019/t
@@ -166,9 +158,13 @@ nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy7.pfb>
-Output written on Supplementary_methods.pdf (6 pages, 367054 bytes).
+Output written on Supplementary_methods.pdf (6 pages, 367213 bytes).
 Transcript written on Supplementary_methods.log.
-6
+s/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count185
+\pdfmajorversion=\count186
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -700,24 +696,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `Supplementary_methods.out' has not changed.
 (rerunfilecheck)             Checksum: 728AEAAFB8FBDC60B1AEB6CEC2AB6D69;196.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'Supplementary_methods.run.xml'.
 \openout1 = `Supplementary_methods.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 14706 strings out of 483183
- 255630 string characters out of 5966293
- 905150 words of memory out of 5000000
- 29517 multiletter control sequences out of 15000+600000
+ 14712 strings out of 483183
+ 255690 string characters out of 5966293
+ 905257 words of memory out of 5000000
+ 29523 multiletter control sequences out of 15000+600000
  547622 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  43i,10n,51p,1515b,1400s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -740,7 +728,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Supplementary_methods.pdf (6 pages, 367054 bytes).
+Output written on Supplementary_methods.pdf (6 pages, 367213 bytes).
 PDF statistics:
  573 PDF objects out of 1000 (max. 8388607)
  240 compressed objects within 3 object streams
