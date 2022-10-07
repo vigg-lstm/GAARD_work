@@ -14,7 +14,7 @@ import allel
 import dask.array as da
 from pathlib import Path
 
-randomisations = pd.read_csv("phenotype_randomisations.csv", sep="\t")
+randomisations = pd.read_csv("../phenotype_randomisations.csv", sep="\t")
 
 # Garuds Selection Scans # 
 cloud = False #snakemake.params['cloud']
@@ -27,11 +27,13 @@ cohort = snakemake.params['cohort']
 
 #cohort = '.'.join(np.array(cohort_out.split("."))[[2,0,1]])
 
+# All objects in VOBs_GAARD/ag3_gaard_haplotypes are the Ag1000G data for these datasets in 
+# zarr format, which are publically available to download from the MalariGEN website. 
 haplotypePath = f"/home/snagi/lstm_projects/VObs_GAARD/ag3_gaard_haplotypes/{contig}/GT/"
 positionsPath=  f"/home/snagi/lstm_projects/VObs_GAARD/ag3_gaard_haplotypes/sites/{contig}/POS/" #snakemake.input['haplotypes'] if stat in ['H1', 'H12', 'H2/1'] else []
 
 
-metadata = pd.read_csv("~/lstm_projects/VObs_GAARD/ag3_gaard_haplotypes/gaard_metadata_haplotypes.tsv", sep="\t")
+metadata = pd.read_csv("/home/snagi/lstm_projects/VObs_GAARD/ag3_gaard_haplotypes/gaard_metadata_haplotypes.tsv", sep="\t")
 female_bool = metadata.eval("sex_call == 'F'")
 meta = metadata.query("sex_call == 'F'")
 sibs = pd.read_csv("resources/sib_group_table.csv", sep="\t")
@@ -76,7 +78,7 @@ def garudsStat(stat, geno, pos, cut_height=None, metric='euclidean', window_size
 random = randomisations.query("population == @cohort")
 
 alive_dead_dict = {}
-for i in np.arange(1, 200):
+for i in np.arange(1, 201):
     i = '%0.4d' % i
 
     alive_dead_dict['alive'] = np.where(pd.factorize(random[f'r{i}'])[0])[0]
@@ -85,7 +87,7 @@ for i in np.arange(1, 200):
     for pheno, idxs in alive_dead_dict.items():
 # Loop through each cohort, manipulate genotype arrays and calculate chosen Garuds Statistic
 
-        if Path("randomisations/H12/H12_{cohort}_{pheno}{i}.{contig}.tsv").exists():
+        if Path("./H12_{cohort}_{pheno}{i}.{contig}.tsv").exists():
             probe.log(f"skipping {cohort} {pheno} {i} {contig}")
             continue
 
@@ -124,7 +126,7 @@ for i in np.arange(1, 200):
                     cohortNoSpaceText= cohort + "_" + pheno +str(i),
                     values=gStat, 
                     midpoints=midpoint,
-                    prefix=f"randomisations/{stat}", 
+                    prefix=f".", 
                     contig=contig,
                     colour="dodgerblue",
                     ymin=0,
