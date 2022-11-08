@@ -7,36 +7,34 @@ plan(tweak(multisession, workers = 20))
 # Load all of the H12 tables
 h12.filenames <- list.files('H12_outputs', '*.tsv', full.names = T)
 
-study.pops <- c('Avrankou.coluzzii.Delta',
-                'Baguida.gambiae.Delta',
-                'Baguida.gambiae.PM',
-                'Korle-Bu.coluzzii.Delta',
-                'Korle-Bu.coluzzii.PM',
-                'Madina.gambiae.Delta',
-                'Madina.gambiae.PM',
-                'Obuasi.gambiae.Delta',
-                'Obuasi.gambiae.PM')
+study.pops <- setNames(nm = c('Avrankou.coluzzii.Delta',
+                              'Baguida.gambiae.Delta',
+                              'Baguida.gambiae.PM',
+                              'Korle-Bu.coluzzii.Delta',
+                              'Korle-Bu.coluzzii.PM',
+                              'Madina.gambiae.Delta',
+                              'Madina.gambiae.PM',
+                              'Obuasi.gambiae.Delta',
+                              'Obuasi.gambiae.PM'))
 
 # Get the randomisation ids. 
-randomisation.ids <- unique(stri_extract_first_regex(h12.filenames, '\\d{4}(?=\\.)')) %>%
-                     .[!is.na(.)]
-names(randomisation.ids) <- paste('r', randomisation.ids, sep = '')
+randomisation.ids <- readLines(h12.filenames[1], n = 1) %>%
+                     {strsplit(., '\t')[[1]]} %>%
+                     grep('r\\d{4}', ., value = T)
 
 # A function that looks for positive peaks by identifying windows more extreme than twice the 
 # 99% centile:
-find.peaks <- function(values, centile = 0.99, multiplier = 2){
+find.peaks <- function(values, centile = 0.95, multiplier = 3){
 	thresh <- quantile(values, centile) * multiplier
 	values > thresh
 }
 
 # A function to load and combine all data for a given randomisation id
-load.and.combine.data <- function(rand.id, pop, find.peaks = F, print.id = F){
-	if (print.id)
-		cat('\t', rand.id, '\n', sep = '')
+load.and.combine.data <- function(pop, find.peaks = T, calculate.P.values = T){
 	
-	alive.filenames <- grep(paste(pop, '[_.]alive', rand.id, '\\.', sep = ''), h12.filenames, value = T) %>%
+	alive.filenames <- grep(paste(pop, '\\.alive', sep = ''), h12.filenames, value = T) %>%
 	                   setNames(., stri_extract_first_regex(., '[23LRX]+(?=\\.tsv)'))
-	dead.filenames <- grep(paste(pop, '[_.]dead', rand.id, '\\.', sep = ''), h12.filenames, value = T) %>%
+	dead.filenames <- grep(paste(pop, '\\.dead', '\\.', sep = ''), h12.filenames, value = T) %>%
 	                  setNames(., stri_extract_first_regex(., '[23LRX]+(?=\\.tsv)'))
 	
 	if (any(names(dead.filenames) != names(alive.filenames)))
@@ -45,56 +43,57 @@ load.and.combine.data <- function(rand.id, pop, find.peaks = F, print.id = F){
 	alive.data <- names(alive.filenames) %>%
 	              lapply(function(chrom){ 
 	                  fread(alive.filenames[chrom], sep = '\t') %>%
-	                  .[, .(chromosome = ..chrom, midpoint = midpoint, H12 = h12)]
+	                  .[, chromosome := ..chrom] %>%
+					  setnames('h12', 'H12') %>%
+					  setcolorder(c('chromosome', 'startpoint', 'endpoint', 'midpoint'))
 				  }) %>%
 				  rbindlist()
 	dead.data <- names(dead.filenames) %>%
-	              lapply(function(chrom){ 
-	                  fread(dead.filenames[chrom], sep = '\t') %>%
-	                  .[, .(chromosome = ..chrom, midpoint = midpoint, H12 = h12)]
-				  }) %>%
-				  rbindlist()
+	             lapply(function(chrom){ 
+	                 fread(dead.filenames[chrom], sep = '\t') %>%
+	                 .[, chromosome := ..chrom] %>%
+					 setnames('h12', 'H12') %>%
+					 setcolorder(c('chromosome', 'startpoint', 'endpoint', 'midpoint'))
+				 }) %>%
+				 rbindlist()
 	# Check that the midpoints are identical
 	if (!identical(alive.data$midpoint, dead.data$midpoint))
 		stop('Window positions do no match between alive and dead samples')
-	diff.data <- alive.data[, .(chromosome = chromosome, 
-	                            midpoint = midpoint, 
-	                            H12.difference = H12 - ..dead.data[, H12])
-	]
-	
-	output <- list(alive = alive.data, dead = dead.data, diff = diff.data)
+	diff.data <- cbind(alive.data[, .(chromosome, startpoint, endpoint, midpoint)],
+	                   alive.data[, c('H12', ..randomisation.ids)] - dead.data[, c('H12', ..randomisation.ids)]
+	)
 	
 	# Look for peaks in the diff data
-	if (find.peaks)
-		output$diff[, is.peak := find.peaks(H12.difference)]
+	if (find.peaks){
+		diff.data[, is.peak := find.peaks(H12)]
+		setcolorder(diff.data, c('chromosome', 'startpoint', 'endpoint', 'midpoint', 'H12', 'is.peak'))
+	}
 	
+	if (calculate.P.values){
+		if(find.peaks){
+			diff.data[is.peak == T, pval := apply(.SD - H12, 
+			                                      1, 
+			                                      function(x) sum(x > 0)/length(x)
+			                                ), 
+			                                .SDcols = randomisation.ids
+			] 
+		}
+		else {
+			diff.data[, pval := apply(.SD - H12, 
+			                          1, 
+			                          function(x) sum(x > 0)/length(x)
+			                    ), 
+			                    .SDcols = randomisation.ids
+			] 
+		}
+	}
+	
+	output <- list(alive = alive.data, dead = dead.data, diff = diff.data)
 	output
 }
 
-h12.tables <- list()
-for (pop in study.pops){
-	cat('Subtracting dead from alive H12 data for', pop, '\n')
-	cat('\tTrue data\n')
-	h12.tables[[pop]] <- load.and.combine.data('', pop = pop, find.peaks = T)
-	cat('\tRandomised data\n')
-	# Load the randomised data sets
-	for (r in names(randomisation.ids)){
-		this.randomisation <- load.and.combine.data(randomisation.ids[r], pop = pop, print.id = T)
-		# The midpoints need to be the same as in the true data. 
-		if (!identical(this.randomisation$diff$midpoint, h12.tables[[pop]]$diff$midpoint))
-			stop('Window positions different between true data and randomisations')
-		h12.tables[[pop]]$alive[, c(r) := ..this.randomisation$alive[, H12]]
-		h12.tables[[pop]]$dead[, c(r) := ..this.randomisation$dead[, H12]]
-		h12.tables[[pop]]$diff[, c(r) := ..this.randomisation$diff[, H12.difference]]
-	}
-	cat('\tCalculating p-value of peaks based on randomised data.\n')
-	h12.tables[[pop]]$diff[is.peak == T, pval := apply(.SD - H12.difference, 
-	                                                   1, 
-	                                                   function(x) sum(x > 0)/length(x)
-	                                             ), 
-	                                     .SDcols = names(randomisation.ids)
-	] 
-}
+cat('Loading data\n')
+h12.tables <- lapply(study.pops, function(pop) {cat(pop, '\n'); load.and.combine.data(pop)})
 
 # Write a function to add transparency to a colour
 add.transparency <- function(col, prop.alpha){
@@ -190,8 +189,8 @@ plot.h12.diff <- function(h12.table,
 	                             length(randomisation.ids),
 	                             num.randomisations)
 	# This odd way of getting a sequence is to make sure we get the right outcome if num.randomisations == 0
-	r.columns <- names(randomisation.ids)[seq(1, num.randomisations, length.out = num.randomisations)]
-	h12.columns <- c('H12.difference', r.columns)
+	r.columns <- randomisation.ids[seq(1, num.randomisations, length.out = num.randomisations)]
+	h12.columns <- c('H12', r.columns)
 	max.y <- max(c(max(h12.table[, ..h12.columns]), 0.05))
 	min.y <- min(h12.table[, ..h12.columns])
 	# Create the empty plot.
@@ -202,7 +201,7 @@ plot.h12.diff <- function(h12.table,
 	# Add randomised data
 	sapply(r.columns, function(x) h12.table[, lines(genome.pos, get(x), col = colours['randomisations'], lwd = 0.4), by = chromosome])
 	# Add true data
-	h12.table[, lines(genome.pos, H12.difference, col = colours['h12'], lwd = 1.2), by = chromosome]
+	h12.table[, lines(genome.pos, H12, col = colours['h12'], lwd = 1.2), by = chromosome]
 	# Add y axis
 	h12.step.size <- ifelse(max.y > 0.2, 0.1, 0.05)
 	axis(2, at = seq(0, max.y, h12.step.size))
@@ -212,7 +211,7 @@ plot.h12.diff <- function(h12.table,
 		p.thresh <- c(p.thresh, -1)
 	p.colours <- c('orchid3', 'green', 'blue')
 	filter.pass <- h12.table[[filter.name]]
-	h12.table[filter.pass, points(genome.pos, H12.difference, 
+	h12.table[filter.pass, points(genome.pos, H12, 
 	                              pch = 21,
 	                              bg = p.colours[(pval < p.thresh[1]) + (pval < p.thresh[2]) + 1], 
 	                              col = colours['randomisations'], 
@@ -235,6 +234,6 @@ for (pop in names(h12.tables))
 	              p.thresh = p.threshold,
 	              plot.title = pop)
 
-save.image('h12_filtered_windows.Rdata')
+saveRDS(h12.tables, 'h12_filtered_windows.RDS')
 
 

@@ -55,13 +55,13 @@ alive_dead_dict = {}
 alive_dead_dict['alive'] = random.query(f"phenotype == 'alive' & population == @cohort")['specimen']
 alive_dead_dict['dead']  = random.query(f"phenotype == 'dead' & population == @cohort")['specimen']
 h12_df_dict = {}
-for pheno in ['alive']:
+for pheno in ['alive', 'dead']:
 
     subsample_ht = ht[:, np.isin(hap_ids, alive_dead_dict[pheno])]
     print(f"--------- Running H12 on {cohort} {pheno} | Chromosome {contig} ----------")
     h1, h12, h123, h2_h1 = allel.moving_garud_h(subsample_ht, size=window_size)
     h12_df_dict[pheno] = pd.DataFrame({'startpoint': startpoints, 
-                                       'endpoints': endpoints, 
+                                       'endpoint': endpoints, 
                                        'midpoint':midpoints, 
                                        'h12':np.round(h12, 3)})
 
@@ -73,7 +73,7 @@ for i in np.arange(1, num_randomisations+1):
     alive_dead_dict['alive'] = random.query(f"r{i} == 'alive' & population == @cohort")['specimen']
     alive_dead_dict['dead']  = random.query(f"r{i} == 'dead' & population == @cohort")['specimen']
 
-    for pheno in ['alive']:
+    for pheno in ['alive', 'dead']:
 
         subsample_ht = ht[:, np.isin(hap_ids, alive_dead_dict[pheno])]
         print(f"--------- Running H12 on {cohort} {pheno} randomisation {i} | Chromosome {contig} ----------")
@@ -81,12 +81,12 @@ for i in np.arange(1, num_randomisations+1):
         randomised_h12_dict[pheno][f"r{i}"] = np.round(h12, 3)
 
 randomised_h12_df_alive = pd.DataFrame(randomised_h12_dict['alive'])
-#randomised_h12_df_dead = pd.DataFrame(randomised_h12_dict['dead'])
+randomised_h12_df_dead = pd.DataFrame(randomised_h12_dict['dead'])
 h12_df_alive = pd.concat([h12_df_dict['alive'], randomised_h12_df_alive], axis = 1)
-#h12_df_dead = pd.concat([h12_df_dict['dead'], randomised_h12_df_dead], axis = 1)
+h12_df_dead = pd.concat([h12_df_dict['dead'], randomised_h12_df_dead], axis = 1)
 
 h12_df_alive.to_csv(f"H12_outputs/H12_{cohort}.alive.{contig}.tsv", sep="\t", index = False)
-#h12_df_dead.to_csv(f"H12_outputs/H12_{cohort}.dead.{contig}.tsv", sep="\t", index = False)
+h12_df_dead.to_csv(f"H12_outputs/H12_{cohort}.dead.{contig}.tsv", sep="\t", index = False)
 
 
 

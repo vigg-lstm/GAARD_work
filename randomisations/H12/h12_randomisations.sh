@@ -12,7 +12,7 @@ pops=(
 	Obuasi.gambiae.PM
 )
 
-for chrom in 2L #2R 3L 3R X
+for chrom in 2L 2R 3L 3R X
 do
 	for pop in ${pops[@]}
 	do
