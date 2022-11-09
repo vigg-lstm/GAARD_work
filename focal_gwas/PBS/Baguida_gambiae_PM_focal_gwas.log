@@ -1,0 +1,91 @@
+Loading required package: Matrix
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:Matrix’:
+
+    expand, unname
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+Attaching package: ‘ape’
+
+The following object is masked from ‘package:Biostrings’:
+
+    complement
+
+Arguments:
+Baguida_gambiae_PM
+
+
+Loading SNP data from ~/data/ML/GAARD_SNP/Baguida_gambiae_PM/csvs/filtered_SNPs.csv.
+           used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells  3840841 205.2    7241577  386.8   4849954  259.1
+Vcells 93101839 710.4  787835518 6010.8 982814650 7498.3
+Loading phenotype data from ../../data/combined/sample_phenotypes.csv.
+Warning messages:
+1: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+2: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+3: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+4: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+5: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+6: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+7: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+Running ../extract_zarr_region.py at 14:49 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1253-VO-TG-DJOGBENOU-VMF00052
+	chrom = X
+	region = 4455821-4507054
+	output_fn = Baguida_gambiae_PM/X:4481600_allele_counts.csv
+	sample_names = WA-0782,WA-0783,WA-0784,WA-0785,WA-0786,WA-0789,WA-0790,WA-0792,WA-0795,WA-0796,WA-0797,WA-0798,WA-0799,WA-0800,WA-0801,WA-0802,WA-0803,WA-0804,WA-0808,WA-0811,WA-0812,WA-0814,WA-0815,WA-0816,WA-0817,WA-0818,WA-0819,WA-0820,WA-0821,WA-0822,WA-0823,WA-0824,WA-0825,WA-0826,WA-0830,WA-0831,WA-0833,WA-0834,WA-0838,WA-0840,WA-0842,WA-0844,WA-0847,WA-0848,WA-0849,WA-0850,WA-0852,WA-0853,WA-0854,WA-0855,WA-0857,WA-0858,WA-0860,WA-0861,WA-0863,WA-0864,WA-0865,WA-0868,WA-0869,WA-0871,WA-0872,WA-0873,WA-0874,WA-0875,WA-0877
+
+Running snpEff on significant SNPs, using command /usr/bin/java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Baguida_gambiae_PM/temp.vcf > Baguida_gambiae_PM/focal_windows.vcf .
+X:4481600.null device 
+                    1 

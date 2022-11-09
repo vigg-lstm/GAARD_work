@@ -1,0 +1,337 @@
+Loading required package: Matrix
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:Matrix’:
+
+    expand, unname
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+Attaching package: ‘ape’
+
+The following object is masked from ‘package:Biostrings’:
+
+    complement
+
+Arguments:
+Madina_gambiae_PM
+Ace1
+
+
+Loading SNP data from ~/data/ML/GAARD_SNP/Madina_gambiae_PM/csvs/filtered_SNPs.csv.
+            used  (Mb) gc trigger   (Mb)   max used    (Mb)
+Ncells   3842090 205.2    7241582  386.8    7104797   379.5
+Vcells 119954456 915.2 1252788026 9558.1 1561543034 11913.7
+Loading phenotype data from ../../data/combined/sample_phenotypes.csv.
+There were 50 or more warnings (use warnings() to see the first 50)
+Running ../extract_zarr_region.py at 15:01 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2L
+	region = 13786936-13833654
+	output_fn = Madina_gambiae_PM/2L:13810050_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:01 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2L
+	region = 13813729-13856135
+	output_fn = Madina_gambiae_PM/2L:13835438_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:01 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2L
+	region = 13836136-13881495
+	output_fn = Madina_gambiae_PM/2L:13857697_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:01 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 2892692-2926451
+	output_fn = Madina_gambiae_PM/2R:2909619_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:01 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 2906473-2941690
+	output_fn = Madina_gambiae_PM/2R:2924284_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:01 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 2921701-2954137
+	output_fn = Madina_gambiae_PM/2R:2937977_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:01 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 2934145-2970990
+	output_fn = Madina_gambiae_PM/2R:2952746_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 2950995-2982784
+	output_fn = Madina_gambiae_PM/2R:2966523_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 3005651-3039723
+	output_fn = Madina_gambiae_PM/2R:3022442_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 3019725-3050945
+	output_fn = Madina_gambiae_PM/2R:3035126_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 3030949-3068511
+	output_fn = Madina_gambiae_PM/2R:3048496_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 3048524-3084666
+	output_fn = Madina_gambiae_PM/2R:3066659_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 3064693-3100604
+	output_fn = Madina_gambiae_PM/2R:3082612_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 3080625-3116474
+	output_fn = Madina_gambiae_PM/2R:3098810_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 3L
+	region = 11825579-11866184
+	output_fn = Madina_gambiae_PM/3L:11845057_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 3L
+	region = 8337269-8420375
+	output_fn = Madina_gambiae_PM/3L:8379569_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 3R
+	region = 42341694-42395208
+	output_fn = Madina_gambiae_PM/3R:42366567_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:02 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = X
+	region = 10913456-10946210
+	output_fn = Madina_gambiae_PM/X:10930275_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:03 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = X
+	region = 10940485-10976897
+	output_fn = Madina_gambiae_PM/X:10958263_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:03 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = X
+	region = 14474862-14518400
+	output_fn = Madina_gambiae_PM/X:14496426_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running ../extract_zarr_region.py at 15:03 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = X
+	region = 14498401-14543917
+	output_fn = Madina_gambiae_PM/X:14521612_allele_counts.csv
+	sample_names = WA-0442,WA-0444,WA-0451,WA-0452,WA-0455,WA-0457,WA-0458,WA-0459,WA-0460,WA-0463,WA-0464,WA-0466,WA-0468,WA-0472,WA-0473,WA-0474,WA-0477,WA-0479,WA-0480,WA-0483,WA-0484,WA-0485,WA-0486,WA-0487,WA-0488,WA-0489,WA-0492,WA-0498,WA-0503,WA-0506,WA-0510,WA-0515,WA-0517,WA-0518,WA-0519,WA-0521,WA-0523,WA-0524,WA-0525,WA-0526,WA-0528,WA-0529,WA-0530,WA-0531,WA-0532,WA-0533,WA-0534,WA-0537,WA-0540,WA-0550,WA-0563,WA-0572,WA-0573,WA-0575,WA-0576,WA-0578,WA-0579,WA-0580,WA-0581,WA-0583,WA-0585,WA-0586,WA-0587,WA-0589,WA-0592
+
+Running snpEff on significant SNPs, using command /usr/bin/java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Madina_gambiae_PM/temp.vcf > Madina_gambiae_PM/focal_windows.vcf .
+2L:13810050.null device 2L:13835438.null device 2L:13857697.null device 
+                      1                       1                       1 
+ 2R:2909619.null device  2R:2924284.null device  2R:2937977.null device 
+                      1                       1                       1 
+ 2R:2952746.null device  2R:2966523.null device  2R:3022442.null device 
+                      1                       1                       1 
+ 2R:3035126.null device  2R:3048496.null device  2R:3066659.null device 
+                      1                       1                       1 
+ 2R:3082612.null device  2R:3098810.null device 3L:11845057.null device 
+                      1                       1                       1 
+ 3L:8379569.null device 3R:42366567.null device  X:10930275.null device 
+                      1                       1                       1 
+ X:10958263.null device  X:14496426.null device  X:14521612.null device 
+                      1                       1                       1 
