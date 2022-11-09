@@ -42,7 +42,7 @@ snp.table <- snp.tables[[study.pop]][[1]][, .(Chrom, Pos)]
 rm(snp.tables)
 
 # Load the results of Fst-based window selection
-load('../randomisations/Fst/fst_filtered_windows.Rdata')
+load('../../randomisations/Fst/fst_filtered_windows.Rdata')
 
 filtered.table <- filtered.tables[[study.pop]]
 rm(filtered.tables)
@@ -105,12 +105,12 @@ focal.window.ranges <- mapply(get.window.start.end,
                        setkey(name)
 
 # Load the sib groups information
-sib.groups <- fread('../NGSrelate/full_relatedness/sib_group_table.csv', sep = '\t')
+sib.groups <- fread('../../NGSrelate/full_relatedness/sib_group_table.csv', sep = '\t')
 sib.groups[, pop := paste(location, species, insecticide, sep = '_')]
 sibs.to.remove <- sib.groups[keep == F & pop == study.pop, sample.name]
 
 # Identify males
-meta <- fread('../data/combined/all_samples.samples.meta.csv')
+meta <- fread('../../data/combined/all_samples.samples.meta.csv')
 males <- meta[sex_call == 'M', partner_sample_id]
 
 # We now need to load the SNP data including non-accessible sites. 
@@ -157,7 +157,7 @@ rm(all.snps)
 gc()
 
 # Load phenotype data
-phenotype.filename <- '../data/combined/sample_phenotypes.csv'
+phenotype.filename <- '../../data/combined/sample_phenotypes.csv'
 cat('Loading phenotype data from ', phenotype.filename, '.\n', sep = '')
 # The object sample.names already excludes dicarded sibs, so applying here makes the phenotypes
 # match the samples from the snp table, as well as their order. 
@@ -191,7 +191,7 @@ p.thresh <- 0.01
 sig.snps <- significance.test[logregP < p.thresh, ]
 
 sample.names.string <- paste(sample.names, collapse = ',')
-study.id.table <- fread('../data/study_ids.csv', key = 'population')
+study.id.table <- fread('../../data/study_ids.csv', key = 'population')
 study.id <- study.id.table[study.pop, study_id]
 
 get.allele.counts <- function(window.name, region.border.size = 10000){
