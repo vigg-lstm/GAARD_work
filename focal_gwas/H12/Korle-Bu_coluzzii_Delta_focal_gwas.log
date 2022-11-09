@@ -1,0 +1,126 @@
+Loading required package: Matrix
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:Matrix’:
+
+    expand, unname
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+Attaching package: ‘ape’
+
+The following object is masked from ‘package:Biostrings’:
+
+    complement
+
+Arguments:
+Korle-Bu_coluzzii_Delta
+
+
+Loading SNP data from ~/data/ML/GAARD_SNP/Korle-Bu_coluzzii_Delta/csvs/filtered_SNPs.csv.
+            used   (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells   3841090  205.2    7242414   386.8    4849954   259.1
+Vcells 215136292 1641.4 2071089465 15801.2 2585094795 19722.8
+Loading phenotype data from ../../data/combined/sample_phenotypes.csv.
+Warning messages:
+1: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+2: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+3: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+4: glm.fit: fitted probabilities numerically 0 or 1 occurred 
+Running ../extract_zarr_region.py at 13:24 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 28518584-28570184
+	output_fn = Korle-Bu_coluzzii_Delta/2R:28546290_allele_counts.csv
+	sample_names = WA-0878,WA-0879,WA-0880,WA-0881,WA-0882,WA-0883,WA-0884,WA-0885,WA-0886,WA-0887,WA-0890,WA-0891,WA-0892,WA-0893,WA-0894,WA-0895,WA-0896,WA-0897,WA-0898,WA-0899,WA-0900,WA-0901,WA-0902,WA-0903,WA-0904,WA-0905,WA-0906,WA-0907,WA-0908,WA-0909,WA-0910,WA-0912,WA-0913,WA-0914,WA-0915,WA-0916,WA-0918,WA-0919,WA-0920,WA-0922,WA-0923,WA-0924,WA-0925,WA-0926,WA-0928,WA-0929,WA-0930,WA-0931,WA-0932,WA-0933,WA-0934,WA-0935,WA-0936,WA-0938,WA-0939,WA-0940,WA-0941,WA-0943,WA-0944,WA-0945,WA-0946,WA-0947,WA-0949,WA-0950,WA-0951,WA-0952,WA-0953,WA-0954,WA-0955,WA-0957,WA-0958,WA-0959,WA-0960,WA-0961,WA-0962,WA-0963,WA-0964,WA-0965,WA-0968,WA-0969,WA-0970,WA-0971,WA-0972,WA-0973,WA-0974,WA-0975,WA-0976,WA-0977,WA-0979,WA-0980,WA-0981,WA-0982,WA-0985,WA-0986,WA-0987,WA-0988,WA-0991,WA-0993,WA-0994,WA-0995,WA-0996,WA-0997,WA-0998,WA-0999,WA-1000,WA-1001,WA-1002,WA-1003,WA-1004,WA-1005,WA-1006,WA-1007,WA-1009,WA-1010,WA-1011,WA-1012,WA-1015,WA-1017,WA-1018,WA-1019,WA-1020,WA-1021,WA-1022,WA-1023,WA-1024,WA-1025,WA-1026,WA-1027,WA-1028,WA-1029,WA-1030,WA-1031,WA-1032,WA-1033,WA-1034,WA-1035,WA-1036,WA-1037,WA-1039,WA-1041,WA-1042,WA-1043
+
+Running ../extract_zarr_region.py at 13:24 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 2R
+	region = 54036940-54091927
+	output_fn = Korle-Bu_coluzzii_Delta/2R:54064272_allele_counts.csv
+	sample_names = WA-0878,WA-0879,WA-0880,WA-0881,WA-0882,WA-0883,WA-0884,WA-0885,WA-0886,WA-0887,WA-0890,WA-0891,WA-0892,WA-0893,WA-0894,WA-0895,WA-0896,WA-0897,WA-0898,WA-0899,WA-0900,WA-0901,WA-0902,WA-0903,WA-0904,WA-0905,WA-0906,WA-0907,WA-0908,WA-0909,WA-0910,WA-0912,WA-0913,WA-0914,WA-0915,WA-0916,WA-0918,WA-0919,WA-0920,WA-0922,WA-0923,WA-0924,WA-0925,WA-0926,WA-0928,WA-0929,WA-0930,WA-0931,WA-0932,WA-0933,WA-0934,WA-0935,WA-0936,WA-0938,WA-0939,WA-0940,WA-0941,WA-0943,WA-0944,WA-0945,WA-0946,WA-0947,WA-0949,WA-0950,WA-0951,WA-0952,WA-0953,WA-0954,WA-0955,WA-0957,WA-0958,WA-0959,WA-0960,WA-0961,WA-0962,WA-0963,WA-0964,WA-0965,WA-0968,WA-0969,WA-0970,WA-0971,WA-0972,WA-0973,WA-0974,WA-0975,WA-0976,WA-0977,WA-0979,WA-0980,WA-0981,WA-0982,WA-0985,WA-0986,WA-0987,WA-0988,WA-0991,WA-0993,WA-0994,WA-0995,WA-0996,WA-0997,WA-0998,WA-0999,WA-1000,WA-1001,WA-1002,WA-1003,WA-1004,WA-1005,WA-1006,WA-1007,WA-1009,WA-1010,WA-1011,WA-1012,WA-1015,WA-1017,WA-1018,WA-1019,WA-1020,WA-1021,WA-1022,WA-1023,WA-1024,WA-1025,WA-1026,WA-1027,WA-1028,WA-1029,WA-1030,WA-1031,WA-1032,WA-1033,WA-1034,WA-1035,WA-1036,WA-1037,WA-1039,WA-1041,WA-1042,WA-1043
+
+Running ../extract_zarr_region.py at 13:24 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = 3R
+	region = 4012725-4048678
+	output_fn = Korle-Bu_coluzzii_Delta/3R:4030785_allele_counts.csv
+	sample_names = WA-0878,WA-0879,WA-0880,WA-0881,WA-0882,WA-0883,WA-0884,WA-0885,WA-0886,WA-0887,WA-0890,WA-0891,WA-0892,WA-0893,WA-0894,WA-0895,WA-0896,WA-0897,WA-0898,WA-0899,WA-0900,WA-0901,WA-0902,WA-0903,WA-0904,WA-0905,WA-0906,WA-0907,WA-0908,WA-0909,WA-0910,WA-0912,WA-0913,WA-0914,WA-0915,WA-0916,WA-0918,WA-0919,WA-0920,WA-0922,WA-0923,WA-0924,WA-0925,WA-0926,WA-0928,WA-0929,WA-0930,WA-0931,WA-0932,WA-0933,WA-0934,WA-0935,WA-0936,WA-0938,WA-0939,WA-0940,WA-0941,WA-0943,WA-0944,WA-0945,WA-0946,WA-0947,WA-0949,WA-0950,WA-0951,WA-0952,WA-0953,WA-0954,WA-0955,WA-0957,WA-0958,WA-0959,WA-0960,WA-0961,WA-0962,WA-0963,WA-0964,WA-0965,WA-0968,WA-0969,WA-0970,WA-0971,WA-0972,WA-0973,WA-0974,WA-0975,WA-0976,WA-0977,WA-0979,WA-0980,WA-0981,WA-0982,WA-0985,WA-0986,WA-0987,WA-0988,WA-0991,WA-0993,WA-0994,WA-0995,WA-0996,WA-0997,WA-0998,WA-0999,WA-1000,WA-1001,WA-1002,WA-1003,WA-1004,WA-1005,WA-1006,WA-1007,WA-1009,WA-1010,WA-1011,WA-1012,WA-1015,WA-1017,WA-1018,WA-1019,WA-1020,WA-1021,WA-1022,WA-1023,WA-1024,WA-1025,WA-1026,WA-1027,WA-1028,WA-1029,WA-1030,WA-1031,WA-1032,WA-1033,WA-1034,WA-1035,WA-1036,WA-1037,WA-1039,WA-1041,WA-1042,WA-1043
+
+Running ../extract_zarr_region.py at 13:25 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1244-VO-GH-YAWSON-VMF00051
+	chrom = X
+	region = 15621261-15697083
+	output_fn = Korle-Bu_coluzzii_Delta/X:15661082_allele_counts.csv
+	sample_names = WA-0878,WA-0879,WA-0880,WA-0881,WA-0882,WA-0883,WA-0884,WA-0885,WA-0886,WA-0887,WA-0890,WA-0891,WA-0892,WA-0893,WA-0894,WA-0895,WA-0896,WA-0897,WA-0898,WA-0899,WA-0900,WA-0901,WA-0902,WA-0903,WA-0904,WA-0905,WA-0906,WA-0907,WA-0908,WA-0909,WA-0910,WA-0912,WA-0913,WA-0914,WA-0915,WA-0916,WA-0918,WA-0919,WA-0920,WA-0922,WA-0923,WA-0924,WA-0925,WA-0926,WA-0928,WA-0929,WA-0930,WA-0931,WA-0932,WA-0933,WA-0934,WA-0935,WA-0936,WA-0938,WA-0939,WA-0940,WA-0941,WA-0943,WA-0944,WA-0945,WA-0946,WA-0947,WA-0949,WA-0950,WA-0951,WA-0952,WA-0953,WA-0954,WA-0955,WA-0957,WA-0958,WA-0959,WA-0960,WA-0961,WA-0962,WA-0963,WA-0964,WA-0965,WA-0968,WA-0969,WA-0970,WA-0971,WA-0972,WA-0973,WA-0974,WA-0975,WA-0976,WA-0977,WA-0979,WA-0980,WA-0981,WA-0982,WA-0985,WA-0986,WA-0987,WA-0988,WA-0991,WA-0993,WA-0994,WA-0995,WA-0996,WA-0997,WA-0998,WA-0999,WA-1000,WA-1001,WA-1002,WA-1003,WA-1004,WA-1005,WA-1006,WA-1007,WA-1009,WA-1010,WA-1011,WA-1012,WA-1015,WA-1017,WA-1018,WA-1019,WA-1020,WA-1021,WA-1022,WA-1023,WA-1024,WA-1025,WA-1026,WA-1027,WA-1028,WA-1029,WA-1030,WA-1031,WA-1032,WA-1033,WA-1034,WA-1035,WA-1036,WA-1037,WA-1039,WA-1041,WA-1042,WA-1043
+
+Running snpEff on significant SNPs, using command /usr/bin/java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Korle-Bu_coluzzii_Delta/temp.vcf > Korle-Bu_coluzzii_Delta/focal_windows.vcf .
+2R:28546290.null device 2R:54064272.null device  3R:4030785.null device 
+                      1                       1                       1 
+ X:15661082.null device 
+                      1 

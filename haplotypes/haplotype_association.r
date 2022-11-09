@@ -29,7 +29,7 @@ logreg.test <- function(genotype, phenotype){
 window.ranges <- lapply(
 	setNames(nm = study.pops), 
 	function(pop) 
-		fread(paste('../focal_gwas', pop, 'focal_window_ranges.csv', sep = '/'))
+		fread(paste('../focal_gwas/Fst', pop, 'focal_window_ranges.csv', sep = '/'))
 )
 
 sig.test.list <- list()
