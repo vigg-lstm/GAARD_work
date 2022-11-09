@@ -311,10 +311,11 @@ plot.focal.window <- function(window.name, filename, sig.snps.only = T, true.pos
 	# Create the layout
 	layout(lmat, heights = lhei)
     par(mar = c(0, 3, 1, 1), xpd = NA, mgp = c(2, 0.6, 0), tcl = -0.3, ...)
-	if (true.pos){
+	if (nrow(these.snps) == 0){
 		plot(
-			these.snps$Pos,
-			-log10(these.snps$logregP), 
+			0,
+			0, 
+			type = 'n',
 			bty = 'n', 
 			xlim = c(start.pos, end.pos),
 			xlab = '', ylab = '-log(P)', xaxt = 'n', 
@@ -322,22 +323,40 @@ plot.focal.window <- function(window.name, filename, sig.snps.only = T, true.pos
 			pch = snp.pch, main = window.name
 		)
 		abline(v = c(focal.window.ranges[window.name, startpoint], 
-		             focal.window.ranges[window.name, endpoint]), 
-		       col = lighten.col('grey60', 1, 0.5),
+					 focal.window.ranges[window.name, endpoint]), 
+			   col = lighten.col('grey60', 1, 0.5),
 			   xpd = F
 		)
 	}
 	else {
-		plot(
-			-log10(these.snps$logregP), 
-			bty = 'n', 
-			xlab = '', ylab = '-log(P)', xaxt = 'n', 
-			cex = 0.7, col = snp.colours,
-			pch = snp.pch, main = window.name
-		)
-		abline.1 <- min(which(these.snps$In.window)) - 0.5
-		abline.2 <- max(which(these.snps$In.window)) + 0.5
-		abline(v = c(abline.1, abline.2), col = lighten.col('grey60', 1, 0.5), xpd = F)
+		if (true.pos){
+			plot(
+				these.snps$Pos,
+				-log10(these.snps$logregP), 
+				bty = 'n', 
+				xlim = c(start.pos, end.pos),
+				xlab = '', ylab = '-log(P)', xaxt = 'n', 
+				cex = 0.9, col = 'grey50', bg = snp.colours, 
+				pch = snp.pch, main = window.name
+			)
+			abline(v = c(focal.window.ranges[window.name, startpoint], 
+						 focal.window.ranges[window.name, endpoint]), 
+				   col = lighten.col('grey60', 1, 0.5),
+				   xpd = F
+			)
+		}
+		else {
+			plot(
+				-log10(these.snps$logregP), 
+				bty = 'n', 
+				xlab = '', ylab = '-log(P)', xaxt = 'n', 
+				cex = 0.7, col = snp.colours,
+				pch = snp.pch, main = window.name
+			)
+			abline.1 <- min(which(these.snps$In.window)) - 0.5
+			abline.2 <- max(which(these.snps$In.window)) + 0.5
+			abline(v = c(abline.1, abline.2), col = lighten.col('grey60', 1, 0.5), xpd = F)
+		}
 	}
 	coords.1 <- par('usr')	
 	xrange.1 <- coords.1[2] - coords.1[1]
