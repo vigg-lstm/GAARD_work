@@ -1,0 +1,210 @@
+Loading required package: Matrix
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:Matrix’:
+
+    expand, unname
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+Attaching package: ‘ape’
+
+The following object is masked from ‘package:Biostrings’:
+
+    complement
+
+Arguments:
+Avrankou_coluzzii_Delta
+
+
+Loading SNP data from ~/data/ML/GAARD_SNP/Avrankou_coluzzii_Delta/csvs/filtered_SNPs.csv.
+            used  (Mb) gc trigger    (Mb)   max used    (Mb)
+Ncells   3841258 205.2    7242414   386.8    5336424   285.0
+Vcells 128257660 978.6 1336356938 10195.6 1658596637 12654.1
+Loading phenotype data from ../../data/combined/sample_phenotypes.csv.
+There were 44 warnings (use warnings() to see them)
+Running ../extract_zarr_region.py at 13:14 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 2L
+	region = 3604396-3652578
+	output_fn = Avrankou_coluzzii_Delta/2L:3627850_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:14 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 2L
+	region = 39316950-39356416
+	output_fn = Avrankou_coluzzii_Delta/2L:39336219_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:14 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 2L
+	region = 39999071-40040289
+	output_fn = Avrankou_coluzzii_Delta/2L:40020139_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:14 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 2R
+	region = 55785600-55839283
+	output_fn = Avrankou_coluzzii_Delta/2R:55812794_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:14 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 3R
+	region = 46507199-46558857
+	output_fn = Avrankou_coluzzii_Delta/3R:46530542_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:14 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 3R
+	region = 46569229-46642305
+	output_fn = Avrankou_coluzzii_Delta/3R:46606399_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:14 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 3R
+	region = 46678199-46717472
+	output_fn = Avrankou_coluzzii_Delta/3R:46697535_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:15 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 3R
+	region = 46756988-46826604
+	output_fn = Avrankou_coluzzii_Delta/3R:46784988_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:15 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 3R
+	region = 46806609-46856413
+	output_fn = Avrankou_coluzzii_Delta/3R:46831369_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:15 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 3R
+	region = 46836419-46875901
+	output_fn = Avrankou_coluzzii_Delta/3R:46856221_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running ../extract_zarr_region.py at 13:15 on 09/11/2022 using machine neptune
+
+
+Script was run using the following arguments:
+
+	zarr_folder = /home/elucas/scratch/VObs_GAARD
+	study_id = 1237-VO-BJ-DJOGBENOU-VMF00050
+	chrom = 3R
+	region = 48476712-48528101
+	output_fn = Avrankou_coluzzii_Delta/3R:48501462_allele_counts.csv
+	sample_names = WA-1044,WA-1045,WA-1046,WA-1047,WA-1048,WA-1050,WA-1054,WA-1055,WA-1056,WA-1057,WA-1058,WA-1060,WA-1061,WA-1063,WA-1064,WA-1065,WA-1066,WA-1067,WA-1069,WA-1070,WA-1071,WA-1072,WA-1073,WA-1075,WA-1076,WA-1077,WA-1078,WA-1079,WA-1080,WA-1082,WA-1084,WA-1086,WA-1087,WA-1088,WA-1090,WA-1091,WA-1093,WA-1094,WA-1095,WA-1097,WA-1099,WA-1100,WA-1102,WA-1103,WA-1104,WA-1105,WA-1106,WA-1107,WA-1110,WA-1112,WA-1113,WA-1114,WA-1115,WA-1116,WA-1117,WA-1118,WA-1119,WA-1120,WA-1121,WA-1122,WA-1123,WA-1124,WA-1125,WA-1126,WA-1129,WA-1130,WA-1132,WA-1133,WA-1134,WA-1136,WA-1137,WA-1138,WA-1139,WA-1140,WA-1141,WA-1142,WA-1143,WA-1144,WA-1145
+
+Running snpEff on significant SNPs, using command /usr/bin/java -jar ~/software/snpEff/snpEff.jar eff Anopheles_gambiae -noStats Avrankou_coluzzii_Delta/temp.vcf > Avrankou_coluzzii_Delta/focal_windows.vcf .
+ 2L:3627850.null device 2L:39336219.null device 2L:40020139.null device 
+                      1                       1                       1 
+2R:55812794.null device 3R:46530542.null device 3R:46606399.null device 
+                      1                       1                       1 
+3R:46697535.null device 3R:46784988.null device 3R:46831369.null device 
+                      1                       1                       1 
+3R:46856221.null device 3R:48501462.null device 
+                      1                       1 

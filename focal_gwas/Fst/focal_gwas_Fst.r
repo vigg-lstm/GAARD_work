@@ -200,7 +200,7 @@ get.allele.counts <- function(window.name, region.border.size = 10000){
 	window.end <- min(chrom.sizes[chrom], focal.window.ranges[window.name, end] + region.border.size)
 	window.range <- paste(window.start, window.end, sep = '-')
 	allele.counts.filename <- paste(study.pop, '/', window.name, '_allele_counts.csv', sep = '')
-	system(paste('python extract_zarr_region.py ~/scratch/VObs_GAARD',
+	system(paste('python ../extract_zarr_region.py ~/scratch/VObs_GAARD',
 	                     study.id,
 	                     chrom,
 	                     window.range, 

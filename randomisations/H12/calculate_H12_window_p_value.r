@@ -22,8 +22,8 @@ randomisation.ids <- readLines(h12.filenames[1], n = 1) %>%
                      {strsplit(., '\t')[[1]]} %>%
                      grep('r\\d{4}', ., value = T)
 
-# A function that looks for positive peaks by identifying windows more extreme than twice the 
-# 99% centile:
+# A function that looks for positive peaks by identifying windows more extreme than thrice the 
+# 95% centile:
 find.peaks <- function(values, centile = 0.95, multiplier = 3){
 	thresh <- quantile(values, centile) * multiplier
 	values > thresh
