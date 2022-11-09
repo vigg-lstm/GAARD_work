@@ -40,7 +40,7 @@ for pop in populations:
 	window_code = [re.sub('.*_([23]?[LRX]):', r'\1_', w) for w in pop_windows]
 	# Getting the right overview file is a bit complicated since they were named by the middle SNP
 	# rather than the edges. We need to set up a few objects to deal with this.
-	overview_files = np.array([x for x in os.listdir(f'../focal_gwas/{pop}') if re.search('.png$', x)])
+	overview_files = np.array([x for x in os.listdir(f'../focal_gwas/Fst/{pop}') if re.search('.png$', x)])
 	overview_file_chrom = [re.findall('^[23]?[LRX]', x)[0] for x in overview_files]
 	overview_file_window_num = [int(re.findall(r'(?<=_)\d+', x)[0]) for x in overview_files]
 
@@ -59,7 +59,7 @@ for pop in populations:
 		                               (np.array(overview_file_window_num) > start) &
 		                               (np.array(overview_file_window_num) < stop)
 		][0]
-		f.write(f'![{pop_windows[i]}_overview](../focal_gwas/{pop}/{overview_file})\n\n&nbsp;\n\n')
+		f.write(f'![{pop_windows[i]}_overview](../focal_gwas/Fst/{pop}/{overview_file})\n\n&nbsp;\n\n')
 
 		f.write(f'![{pop_windows[i]}_dendrogram]({pop_windows_link[i]}_dendrogram.png)\n\n&nbsp;\n\n')
 		f.write(f'![{pop_windows[i]}_haplotypes]({pop_windows_link[i]}.png)\n\n&nbsp;\n\n')

@@ -25,7 +25,7 @@ ___
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_2R:45413683-45433265_overview](../focal_gwas/Avrankou_coluzzii_Delta/2R_45423603.png)
+![Avrankou_coluzzii_Delta_2R:45413683-45433265_overview](../focal_gwas/Fst/Avrankou_coluzzii_Delta/2R_45423603.png)
 
 &nbsp;
 
@@ -41,7 +41,7 @@ ___
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_X:8745589-8778998_overview](../focal_gwas/Avrankou_coluzzii_Delta/X_8769262.png)
+![Avrankou_coluzzii_Delta_X:8745589-8778998_overview](../focal_gwas/Fst/Avrankou_coluzzii_Delta/X_8769262.png)
 
 &nbsp;
 
@@ -78,7 +78,7 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_Delta_2R:33967209-33981960_overview](../focal_gwas/Baguida_gambiae_Delta/2R_33973881.png)
+![Baguida_gambiae_Delta_2R:33967209-33981960_overview](../focal_gwas/Fst/Baguida_gambiae_Delta/2R_33973881.png)
 
 &nbsp;
 
@@ -104,7 +104,7 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_Delta_3L:3059554-3112922_overview](../focal_gwas/Baguida_gambiae_Delta/3L_3090681.png)
+![Baguida_gambiae_Delta_3L:3059554-3112922_overview](../focal_gwas/Fst/Baguida_gambiae_Delta/3L_3090681.png)
 
 &nbsp;
 
@@ -156,7 +156,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/2R_28159882.png)
+![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/2R_28159882.png)
 
 &nbsp;
 
@@ -212,7 +212,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/2R_39689465.png)
+![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/2R_39689465.png)
 
 &nbsp;
 
@@ -248,7 +248,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/3R_50997716.png)
+![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/3R_50997716.png)
 
 &nbsp;
 
@@ -294,7 +294,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14653714-14668824_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_14662155.png)
+![Korle-Bu_coluzzii_Delta_X:14653714-14668824_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_14662155.png)
 
 &nbsp;
 
@@ -340,7 +340,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14668824-14684264_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_14677313.png)
+![Korle-Bu_coluzzii_Delta_X:14668824-14684264_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_14677313.png)
 
 &nbsp;
 
@@ -386,7 +386,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15670884-15702974_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_15687842.png)
+![Korle-Bu_coluzzii_Delta_X:15670884-15702974_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_15687842.png)
 
 &nbsp;
 
@@ -432,7 +432,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15702974-15756306_overview](../focal_gwas/Korle-Bu_coluzzii_Delta/X_15724340.png)
+![Korle-Bu_coluzzii_Delta_X:15702974-15756306_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_15724340.png)
 
 &nbsp;
 
@@ -489,7 +489,7 @@ ___
 
 &nbsp;
 
-![Madina_gambiae_Delta_2R:28401363-28416200_overview](../focal_gwas/Madina_gambiae_Delta/2R_28407985.png)
+![Madina_gambiae_Delta_2R:28401363-28416200_overview](../focal_gwas/Fst/Madina_gambiae_Delta/2R_28407985.png)
 
 &nbsp;
 
@@ -515,7 +515,7 @@ ___
 
 &nbsp;
 
-![Madina_gambiae_Delta_2R:28454838-28474602_overview](../focal_gwas/Madina_gambiae_Delta/2R_28463684.png)
+![Madina_gambiae_Delta_2R:28454838-28474602_overview](../focal_gwas/Fst/Madina_gambiae_Delta/2R_28463684.png)
 
 &nbsp;
 
@@ -577,7 +577,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28250033-28262588_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28255780.png)
+![Obuasi_gambiae_Delta_2R:28250033-28262588_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28255780.png)
 
 &nbsp;
 
@@ -613,7 +613,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28262588-28274893_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28269041.png)
+![Obuasi_gambiae_Delta_2R:28262588-28274893_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28269041.png)
 
 &nbsp;
 
@@ -649,7 +649,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28274893-28289873_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28282250.png)
+![Obuasi_gambiae_Delta_2R:28274893-28289873_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28282250.png)
 
 &nbsp;
 
@@ -685,7 +685,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28289873-28306606_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28297547.png)
+![Obuasi_gambiae_Delta_2R:28289873-28306606_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28297547.png)
 
 &nbsp;
 
@@ -721,7 +721,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28306605-28322681_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28316079.png)
+![Obuasi_gambiae_Delta_2R:28306605-28322681_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28316079.png)
 
 &nbsp;
 
@@ -757,7 +757,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28322681-28337951_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28330119.png)
+![Obuasi_gambiae_Delta_2R:28322681-28337951_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28330119.png)
 
 &nbsp;
 
@@ -803,7 +803,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28337951-28354693_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28346583.png)
+![Obuasi_gambiae_Delta_2R:28337951-28354693_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28346583.png)
 
 &nbsp;
 
@@ -849,7 +849,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28354692-28369784_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28361892.png)
+![Obuasi_gambiae_Delta_2R:28354692-28369784_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28361892.png)
 
 &nbsp;
 
@@ -895,7 +895,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28369784-28391434_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28380959.png)
+![Obuasi_gambiae_Delta_2R:28369784-28391434_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28380959.png)
 
 &nbsp;
 
@@ -941,7 +941,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28391433-28405240_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28398912.png)
+![Obuasi_gambiae_Delta_2R:28391433-28405240_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28398912.png)
 
 &nbsp;
 
@@ -987,7 +987,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28405239-28421116_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28412096.png)
+![Obuasi_gambiae_Delta_2R:28405239-28421116_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28412096.png)
 
 &nbsp;
 
@@ -1033,7 +1033,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28421116-28439220_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28429901.png)
+![Obuasi_gambiae_Delta_2R:28421116-28439220_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28429901.png)
 
 &nbsp;
 
@@ -1079,7 +1079,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28439219-28456407_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28446753.png)
+![Obuasi_gambiae_Delta_2R:28439219-28456407_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28446753.png)
 
 &nbsp;
 
@@ -1125,7 +1125,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28456407-28475225_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28464581.png)
+![Obuasi_gambiae_Delta_2R:28456407-28475225_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28464581.png)
 
 &nbsp;
 
@@ -1171,7 +1171,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28475225-28496115_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28485258.png)
+![Obuasi_gambiae_Delta_2R:28475225-28496115_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28485258.png)
 
 &nbsp;
 
@@ -1207,7 +1207,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28496114-28515482_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28506349.png)
+![Obuasi_gambiae_Delta_2R:28496114-28515482_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28506349.png)
 
 &nbsp;
 
@@ -1243,7 +1243,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28515481-28531112_overview](../focal_gwas/Obuasi_gambiae_Delta/2R_28523201.png)
+![Obuasi_gambiae_Delta_2R:28515481-28531112_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28523201.png)
 
 &nbsp;
 
@@ -1293,7 +1293,7 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:15411876-15495650_overview](../focal_gwas/Baguida_gambiae_PM/X_15456029.png)
+![Baguida_gambiae_PM_X:15411876-15495650_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_15456029.png)
 
 &nbsp;
 
@@ -1339,7 +1339,7 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9165646-9222299_overview](../focal_gwas/Baguida_gambiae_PM/X_9200360.png)
+![Baguida_gambiae_PM_X:9165646-9222299_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_9200360.png)
 
 &nbsp;
 
@@ -1375,7 +1375,7 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9222298-9273975_overview](../focal_gwas/Baguida_gambiae_PM/X_9251312.png)
+![Baguida_gambiae_PM_X:9222298-9273975_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_9251312.png)
 
 &nbsp;
 
@@ -1411,7 +1411,7 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9273975-9317640_overview](../focal_gwas/Baguida_gambiae_PM/X_9298059.png)
+![Baguida_gambiae_PM_X:9273975-9317640_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_9298059.png)
 
 &nbsp;
 
@@ -1447,7 +1447,7 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9317639-9346605_overview](../focal_gwas/Baguida_gambiae_PM/X_9329513.png)
+![Baguida_gambiae_PM_X:9317639-9346605_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_9329513.png)
 
 &nbsp;
 
@@ -1498,7 +1498,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:38097626-38111826_overview](../focal_gwas/Korle-Bu_coluzzii_PM/2R_38104953.png)
+![Korle-Bu_coluzzii_PM_2R:38097626-38111826_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/2R_38104953.png)
 
 &nbsp;
 
@@ -1514,7 +1514,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:54371673-54397846_overview](../focal_gwas/Korle-Bu_coluzzii_PM/2R_54385556.png)
+![Korle-Bu_coluzzii_PM_2R:54371673-54397846_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/2R_54385556.png)
 
 &nbsp;
 
@@ -1540,7 +1540,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28482794-28505651_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28493447.png)
+![Korle-Bu_coluzzii_PM_3R:28482794-28505651_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28493447.png)
 
 &nbsp;
 
@@ -1586,7 +1586,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28505651-28533744_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28521760.png)
+![Korle-Bu_coluzzii_PM_3R:28505651-28533744_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28521760.png)
 
 &nbsp;
 
@@ -1632,7 +1632,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28563392-28595112_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_28578544.png)
+![Korle-Bu_coluzzii_PM_3R:28563392-28595112_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28578544.png)
 
 &nbsp;
 
@@ -1678,7 +1678,7 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:2929236-2946500_overview](../focal_gwas/Korle-Bu_coluzzii_PM/3R_2938559.png)
+![Korle-Bu_coluzzii_PM_3R:2929236-2946500_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_2938559.png)
 
 &nbsp;
 
@@ -1714,7 +1714,7 @@ ___
 
 &nbsp;
 
-![Madina_gambiae_PM_2R:54255612-54278008_overview](../focal_gwas/Madina_gambiae_PM/2R_54265236.png)
+![Madina_gambiae_PM_2R:54255612-54278008_overview](../focal_gwas/Fst/Madina_gambiae_PM/2R_54265236.png)
 
 &nbsp;
 
@@ -1770,7 +1770,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_2R:3474360-3509400_overview](../focal_gwas/Obuasi_gambiae_PM/2R_3488994.png)
+![Obuasi_gambiae_PM_2R:3474360-3509400_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/2R_3488994.png)
 
 &nbsp;
 
@@ -1796,7 +1796,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30477135-30487616_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30482533.png)
+![Obuasi_gambiae_PM_3L:30477135-30487616_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30482533.png)
 
 &nbsp;
 
@@ -1822,7 +1822,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30487615-30497759_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30491765.png)
+![Obuasi_gambiae_PM_3L:30487615-30497759_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30491765.png)
 
 &nbsp;
 
@@ -1848,7 +1848,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30497758-30506894_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30502058.png)
+![Obuasi_gambiae_PM_3L:30497758-30506894_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30502058.png)
 
 &nbsp;
 
@@ -1874,7 +1874,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30506893-30516797_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30511765.png)
+![Obuasi_gambiae_PM_3L:30506893-30516797_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30511765.png)
 
 &nbsp;
 
@@ -1900,7 +1900,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30534828-30545854_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30540639.png)
+![Obuasi_gambiae_PM_3L:30534828-30545854_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30540639.png)
 
 &nbsp;
 
@@ -1926,7 +1926,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30554459-30562573_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30558236.png)
+![Obuasi_gambiae_PM_3L:30554459-30562573_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30558236.png)
 
 &nbsp;
 
@@ -1952,7 +1952,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30562572-30578511_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30568108.png)
+![Obuasi_gambiae_PM_3L:30562572-30578511_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30568108.png)
 
 &nbsp;
 
@@ -1978,7 +1978,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30578511-30587941_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30583473.png)
+![Obuasi_gambiae_PM_3L:30578511-30587941_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30583473.png)
 
 &nbsp;
 
@@ -2004,7 +2004,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30587941-30597762_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30592869.png)
+![Obuasi_gambiae_PM_3L:30587941-30597762_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30592869.png)
 
 &nbsp;
 
@@ -2030,7 +2030,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30597761-30607138_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30603305.png)
+![Obuasi_gambiae_PM_3L:30597761-30607138_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30603305.png)
 
 &nbsp;
 
@@ -2056,7 +2056,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30607137-30617085_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30611538.png)
+![Obuasi_gambiae_PM_3L:30607137-30617085_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30611538.png)
 
 &nbsp;
 
@@ -2082,7 +2082,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30617085-30624950_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30621123.png)
+![Obuasi_gambiae_PM_3L:30617085-30624950_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30621123.png)
 
 &nbsp;
 
@@ -2108,7 +2108,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30624949-30635698_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30631421.png)
+![Obuasi_gambiae_PM_3L:30624949-30635698_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30631421.png)
 
 &nbsp;
 
@@ -2134,7 +2134,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30635698-30646602_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30641999.png)
+![Obuasi_gambiae_PM_3L:30635698-30646602_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30641999.png)
 
 &nbsp;
 
@@ -2160,7 +2160,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30646601-30657763_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30652383.png)
+![Obuasi_gambiae_PM_3L:30646601-30657763_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30652383.png)
 
 &nbsp;
 
@@ -2186,7 +2186,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30657762-30667355_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30662542.png)
+![Obuasi_gambiae_PM_3L:30657762-30667355_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30662542.png)
 
 &nbsp;
 
@@ -2212,7 +2212,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30667355-30678119_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30671665.png)
+![Obuasi_gambiae_PM_3L:30667355-30678119_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30671665.png)
 
 &nbsp;
 
@@ -2238,7 +2238,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30678119-30687769_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30683494.png)
+![Obuasi_gambiae_PM_3L:30678119-30687769_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30683494.png)
 
 &nbsp;
 
@@ -2264,7 +2264,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30687769-30697180_overview](../focal_gwas/Obuasi_gambiae_PM/3L_30692063.png)
+![Obuasi_gambiae_PM_3L:30687769-30697180_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30692063.png)
 
 &nbsp;
 
@@ -2290,7 +2290,7 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3R:48454456-48494640_overview](../focal_gwas/Obuasi_gambiae_PM/3R_48484269.png)
+![Obuasi_gambiae_PM_3R:48454456-48494640_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3R_48484269.png)
 
 &nbsp;
 
