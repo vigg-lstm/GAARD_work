@@ -243,7 +243,7 @@ implicated.genes.2 <- lapply(study.pops,
 
 fwrite(implicated.genes, 'full_implicated_genes_table.csv', sep = '\t')
 for (pop in study.pops)
-	fwrite(implicated.genes.2[[pop]], paste('implicated_genes_table', pop, '.csv', sep = '') , sep = '\t')
+	fwrite(implicated.genes.2[[pop]], paste('implicated_genes_table_', pop, '.csv', sep = '') , sep = '\t')
 
 
 # Now we want to plot a figure that summarises the genomic regions implicated by each method. 
