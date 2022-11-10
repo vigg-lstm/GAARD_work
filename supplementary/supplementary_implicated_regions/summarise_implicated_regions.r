@@ -249,9 +249,11 @@ for (pop in study.pops)
 # Now we want to plot a figure that summarises the genomic regions implicated by each method. 
 chrom.sizes <- c('2R' = 61545105, '2L' = 49364325, '3R' = 53200684, '3L' = 41963435, 'X' = 24393108)
 
+source('../../shared_functions/R_plotting.r')
+
 plot.regions.on.chromosome <- function(regions, 
 	                                   chrom.sizes, gaps = 5e6,
-	                                   gene.cex = 0.9, gene.col = 'grey20',
+	                                   show.chrom.names = F,
 	                                   chrom.col = NULL, chrom.cex = 1.4,
 	                                   chrom.offset = 0, rect.col = 'blue'){
 	ce <- cumsum(chrom.sizes + c(0, 0, gaps, 0, gaps))
@@ -276,22 +278,24 @@ plot.regions.on.chromosome <- function(regions,
 	
 	# Draw the outline of the chromosomes
 	chrom.col <- if (!is.null(chrom.col)) chrom.col else c('2R' = 'black', '2L' = 'black', '3R' = 'black', '3L' = 'black', 'X' = 'black')
-	chrom.y <- -4.5 - chrom.offset
+	chrom.y <- -2.5 - chrom.offset
 	lines(c(ce['2R'], ce['2R'] - gaps/2, cs['2R'], cs['2R'], ce['2R'] - gaps/2, ce['2R']), 
 		  c(-0.2, -1, -1, 1, 1, 0.2), lwd = 2, col = chrom.col['2R'])
-	text((cs['2R'] + ce['2R'])/2, chrom.y, '2R', adj = 0.5, xpd = NA, cex = chrom.cex)
 	lines(c(cs['2L'], cs['2L'] + gaps/2, ce['2L'], ce['2L'], cs['2L'] + gaps/2, cs['2L']), 
 		  c(0.2, 1, 1, -1, -1, -0.2), lwd = 2, col = chrom.col['2L'])
-	text((cs['2L'] + ce['2L'])/2, chrom.y, '2L', adj = 0.5, xpd = NA, cex = chrom.cex)
 	lines(c(ce['3R'], ce['3R'] - gaps/2, cs['3R'], cs['3R'], ce['3R'] - gaps/2, ce['3R']), 
 		  c(-0.2, -1, -1, 1, 1, 0.2), lwd = 2, col = chrom.col['3R'])
-	text((cs['3R'] + ce['3R'])/2, chrom.y, '3R', adj = 0.5, xpd = NA, cex = chrom.cex)
 	lines(c(cs['3L'], cs['3L'] + gaps/2, ce['3L'], ce['3L'], cs['3L'] + gaps/2, cs['3L']), 
 		  c(0.2, 1, 1, -1, -1, -0.2), lwd = 2, col = chrom.col['3L'])
-	text((cs['3L'] + ce['3L'])/2, chrom.y, '3L', adj = 0.5, xpd = NA, cex = chrom.cex)
 	lines(c(cs['X'], cs['X'], ce['X'] - gaps/2, ce['X'], ce['X'], ce['X'] - gaps/2, cs['X']), 
 		  c(-1, 1, 1, 0.2, -0.2, -1, -1), lwd = 2, col = chrom.col['X'])
-	text((cs['X'] + ce['X'])/2, chrom.y, 'X', adj = 0.5, xpd = NA, cex = chrom.cex)
+	if (show.chrom.names){
+		text((cs['2R'] + ce['2R'])/2, chrom.y, '2R', adj = 0.5, xpd = NA, cex = chrom.cex)
+		text((cs['2L'] + ce['2L'])/2, chrom.y, '2L', adj = 0.5, xpd = NA, cex = chrom.cex)
+		text((cs['3R'] + ce['3R'])/2, chrom.y, '3R', adj = 0.5, xpd = NA, cex = chrom.cex)
+		text((cs['3L'] + ce['3L'])/2, chrom.y, '3L', adj = 0.5, xpd = NA, cex = chrom.cex)
+		text((cs['X'] + ce['X'])/2, chrom.y, 'X', adj = 0.5, xpd = NA, cex = chrom.cex)
+	}
 }
 
 plot.implicated.regions <- function(gwas.regions,
@@ -299,19 +303,22 @@ plot.implicated.regions <- function(gwas.regions,
                                     h12.regions,
                                     pbs.regions,
 	                                title = NULL){
-	par(mfrow = c(4,1), mar = c(0.7,1,2.2,1))
+	par(mfrow = c(5,1), mar = c(0,1,2,1))
 	if (!is.null(title))
-		par(oma = c(0,0,3,0))
-	plot.regions.on.chromosome(gwas.regions, chrom.sizes, rect.col = 'purple')
+		par(oma = c(2,0,3,0))
+	else
+		par(oma = c(2,0,0,0))
+	plot.regions.on.chromosome(gwas.regions, chrom.sizes, rect.col = 'purple', chrom.cex = 0)
 	mtext('GWAS', line = 0.7, col = 'purple', font = 2)
-	plot.regions.on.chromosome(fst.regions, chrom.sizes, rect.col = 'orange')
-	mtext('Fst', line = 0.7, col = 'orange', font = 2)
-	plot.regions.on.chromosome(h12.regions, chrom.sizes, rect.col = 'darkgreen')
+	plot.regions.on.chromosome(fst.regions, chrom.sizes, rect.col = 'orangered3', chrom.cex = 0)
+	mtext('Fst', line = 0.7, col = 'orangered3', font = 2)
+	plot.regions.on.chromosome(h12.regions, chrom.sizes, rect.col = 'darkgreen', chrom.cex = 0)
 	mtext('H12', line = 0.7, col = 'darkgreen', font = 2)
-	plot.regions.on.chromosome(pbs.regions, chrom.sizes, rect.col = 'blue')
+	plot.regions.on.chromosome(pbs.regions, chrom.sizes, rect.col = 'blue', chrom.cex = 0)
 	mtext('PBS', line = 0.7, col = 'blue', font = 2)
+	add.chromosomes(chrom.sizes, gaps = 5e6)
 	if (!is.null(title))
-		mtext(title, outer = T, line = 1, font = 2, cex = 1.8)
+		mtext(title, outer = T, line = 1, font = 2, cex = 1.5)
 }
 
 # For the GWAS, we need to create a table of region extents
@@ -338,7 +345,7 @@ gwas.regions <- lapply(gwas.snp.clumps, get.clump.regions)
 
 for (pop in study.pops){
 	filename <- paste(pop, 'implicated_regions.svg', sep = '_')
-	svg(filename, width = 7, height = 4)
+	svg(filename, width = 9, height = 4.5)
 	plot.implicated.regions(gwas.regions[[pop]], 
 							fst.regions[[pop]],
 							h12.regions[[gsub('_', '.', pop)]],
