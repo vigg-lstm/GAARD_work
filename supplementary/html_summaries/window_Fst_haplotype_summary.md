@@ -14,7 +14,7 @@ ___
 
 ## Avrankou\_*coluzzii*\_Delta
 
-![Avrankou_coluzzii_Delta_peak_filter](../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png)
+![Avrankou_coluzzii_Delta_peak_filter](../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png)
 
 &nbsp;
 
@@ -25,15 +25,15 @@ ___
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_2R:45413683-45433265_overview](../focal_gwas/Fst/Avrankou_coluzzii_Delta/2R_45423603.png)
+![Avrankou_coluzzii_Delta_2R:45413683-45433265_overview](../../focal_gwas/Fst/Avrankou_coluzzii_Delta/2R_45423603.png)
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_2R:45413683-45433265_dendrogram](Avrankou_coluzzii_Delta_2R%3A45413683-45433265_dendrogram.png)
+![Avrankou_coluzzii_Delta_2R:45413683-45433265_dendrogram](../../haplotypes/Avrankou_coluzzii_Delta_2R%3A45413683-45433265_dendrogram.png)
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_2R:45413683-45433265_haplotypes](Avrankou_coluzzii_Delta_2R%3A45413683-45433265.png)
+![Avrankou_coluzzii_Delta_2R:45413683-45433265_haplotypes](../../haplotypes/Avrankou_coluzzii_Delta_2R%3A45413683-45433265.png)
 
 &nbsp;
 
@@ -41,15 +41,15 @@ ___
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_X:8745589-8778998_overview](../focal_gwas/Fst/Avrankou_coluzzii_Delta/X_8769262.png)
+![Avrankou_coluzzii_Delta_X:8745589-8778998_overview](../../focal_gwas/Fst/Avrankou_coluzzii_Delta/X_8769262.png)
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_X:8745589-8778998_dendrogram](Avrankou_coluzzii_Delta_X%3A8745589-8778998_dendrogram.png)
+![Avrankou_coluzzii_Delta_X:8745589-8778998_dendrogram](../../haplotypes/Avrankou_coluzzii_Delta_X%3A8745589-8778998_dendrogram.png)
 
 &nbsp;
 
-![Avrankou_coluzzii_Delta_X:8745589-8778998_haplotypes](Avrankou_coluzzii_Delta_X%3A8745589-8778998.png)
+![Avrankou_coluzzii_Delta_X:8745589-8778998_haplotypes](../../haplotypes/Avrankou_coluzzii_Delta_X%3A8745589-8778998.png)
 
 &nbsp;
 
@@ -67,7 +67,7 @@ ___
 
 ## Baguida\_*gambiae*\_Delta
 
-![Baguida_gambiae_Delta_peak_filter](../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png)
+![Baguida_gambiae_Delta_peak_filter](../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png)
 
 &nbsp;
 
@@ -78,15 +78,15 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_Delta_2R:33967209-33981960_overview](../focal_gwas/Fst/Baguida_gambiae_Delta/2R_33973881.png)
+![Baguida_gambiae_Delta_2R:33967209-33981960_overview](../../focal_gwas/Fst/Baguida_gambiae_Delta/2R_33973881.png)
 
 &nbsp;
 
-![Baguida_gambiae_Delta_2R:33967209-33981960_dendrogram](Baguida_gambiae_Delta_2R%3A33967209-33981960_dendrogram.png)
+![Baguida_gambiae_Delta_2R:33967209-33981960_dendrogram](../../haplotypes/Baguida_gambiae_Delta_2R%3A33967209-33981960_dendrogram.png)
 
 &nbsp;
 
-![Baguida_gambiae_Delta_2R:33967209-33981960_haplotypes](Baguida_gambiae_Delta_2R%3A33967209-33981960.png)
+![Baguida_gambiae_Delta_2R:33967209-33981960_haplotypes](../../haplotypes/Baguida_gambiae_Delta_2R%3A33967209-33981960.png)
 
 &nbsp;
 
@@ -104,15 +104,15 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_Delta_3L:3059554-3112922_overview](../focal_gwas/Fst/Baguida_gambiae_Delta/3L_3090681.png)
+![Baguida_gambiae_Delta_3L:3059554-3112922_overview](../../focal_gwas/Fst/Baguida_gambiae_Delta/3L_3090681.png)
 
 &nbsp;
 
-![Baguida_gambiae_Delta_3L:3059554-3112922_dendrogram](Baguida_gambiae_Delta_3L%3A3059554-3112922_dendrogram.png)
+![Baguida_gambiae_Delta_3L:3059554-3112922_dendrogram](../../haplotypes/Baguida_gambiae_Delta_3L%3A3059554-3112922_dendrogram.png)
 
 &nbsp;
 
-![Baguida_gambiae_Delta_3L:3059554-3112922_haplotypes](Baguida_gambiae_Delta_3L%3A3059554-3112922.png)
+![Baguida_gambiae_Delta_3L:3059554-3112922_haplotypes](../../haplotypes/Baguida_gambiae_Delta_3L%3A3059554-3112922.png)
 
 &nbsp;
 
@@ -140,7 +140,7 @@ ___
 
 ## Korle-Bu\_*coluzzii*\_Delta
 
-![Korle-Bu_coluzzii_Delta_peak_filter](../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png)
+![Korle-Bu_coluzzii_Delta_peak_filter](../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png)
 
 &nbsp;
 
@@ -156,15 +156,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/2R_28159882.png)
+![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/2R_28159882.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_dendrogram](Korle-Bu_coluzzii_Delta_2R%3A28145243-28168331_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_dendrogram](../../haplotypes/Korle-Bu_coluzzii_Delta_2R%3A28145243-28168331_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_haplotypes](Korle-Bu_coluzzii_Delta_2R%3A28145243-28168331.png)
+![Korle-Bu_coluzzii_Delta_2R:28145243-28168331_haplotypes](../../haplotypes/Korle-Bu_coluzzii_Delta_2R%3A28145243-28168331.png)
 
 &nbsp;
 
@@ -212,15 +212,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/2R_39689465.png)
+![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/2R_39689465.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_dendrogram](Korle-Bu_coluzzii_Delta_2R%3A39682306-39698081_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_dendrogram](../../haplotypes/Korle-Bu_coluzzii_Delta_2R%3A39682306-39698081_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_haplotypes](Korle-Bu_coluzzii_Delta_2R%3A39682306-39698081.png)
+![Korle-Bu_coluzzii_Delta_2R:39682306-39698081_haplotypes](../../haplotypes/Korle-Bu_coluzzii_Delta_2R%3A39682306-39698081.png)
 
 &nbsp;
 
@@ -248,15 +248,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/3R_50997716.png)
+![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/3R_50997716.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_dendrogram](Korle-Bu_coluzzii_Delta_3R%3A50971406-51021318_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_dendrogram](../../haplotypes/Korle-Bu_coluzzii_Delta_3R%3A50971406-51021318_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_haplotypes](Korle-Bu_coluzzii_Delta_3R%3A50971406-51021318.png)
+![Korle-Bu_coluzzii_Delta_3R:50971406-51021318_haplotypes](../../haplotypes/Korle-Bu_coluzzii_Delta_3R%3A50971406-51021318.png)
 
 &nbsp;
 
@@ -294,15 +294,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14653714-14668824_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_14662155.png)
+![Korle-Bu_coluzzii_Delta_X:14653714-14668824_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_14662155.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14653714-14668824_dendrogram](Korle-Bu_coluzzii_Delta_X%3A14653714-14668824_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_X:14653714-14668824_dendrogram](../../haplotypes/Korle-Bu_coluzzii_Delta_X%3A14653714-14668824_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14653714-14668824_haplotypes](Korle-Bu_coluzzii_Delta_X%3A14653714-14668824.png)
+![Korle-Bu_coluzzii_Delta_X:14653714-14668824_haplotypes](../../haplotypes/Korle-Bu_coluzzii_Delta_X%3A14653714-14668824.png)
 
 &nbsp;
 
@@ -340,15 +340,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14668824-14684264_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_14677313.png)
+![Korle-Bu_coluzzii_Delta_X:14668824-14684264_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_14677313.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14668824-14684264_dendrogram](Korle-Bu_coluzzii_Delta_X%3A14668824-14684264_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_X:14668824-14684264_dendrogram](../../haplotypes/Korle-Bu_coluzzii_Delta_X%3A14668824-14684264_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:14668824-14684264_haplotypes](Korle-Bu_coluzzii_Delta_X%3A14668824-14684264.png)
+![Korle-Bu_coluzzii_Delta_X:14668824-14684264_haplotypes](../../haplotypes/Korle-Bu_coluzzii_Delta_X%3A14668824-14684264.png)
 
 &nbsp;
 
@@ -386,15 +386,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15670884-15702974_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_15687842.png)
+![Korle-Bu_coluzzii_Delta_X:15670884-15702974_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_15687842.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15670884-15702974_dendrogram](Korle-Bu_coluzzii_Delta_X%3A15670884-15702974_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_X:15670884-15702974_dendrogram](../../haplotypes/Korle-Bu_coluzzii_Delta_X%3A15670884-15702974_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15670884-15702974_haplotypes](Korle-Bu_coluzzii_Delta_X%3A15670884-15702974.png)
+![Korle-Bu_coluzzii_Delta_X:15670884-15702974_haplotypes](../../haplotypes/Korle-Bu_coluzzii_Delta_X%3A15670884-15702974.png)
 
 &nbsp;
 
@@ -432,15 +432,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15702974-15756306_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_15724340.png)
+![Korle-Bu_coluzzii_Delta_X:15702974-15756306_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_Delta/X_15724340.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15702974-15756306_dendrogram](Korle-Bu_coluzzii_Delta_X%3A15702974-15756306_dendrogram.png)
+![Korle-Bu_coluzzii_Delta_X:15702974-15756306_dendrogram](../../haplotypes/Korle-Bu_coluzzii_Delta_X%3A15702974-15756306_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_Delta_X:15702974-15756306_haplotypes](Korle-Bu_coluzzii_Delta_X%3A15702974-15756306.png)
+![Korle-Bu_coluzzii_Delta_X:15702974-15756306_haplotypes](../../haplotypes/Korle-Bu_coluzzii_Delta_X%3A15702974-15756306.png)
 
 &nbsp;
 
@@ -478,7 +478,7 @@ ___
 
 ## Madina\_*gambiae*\_Delta
 
-![Madina_gambiae_Delta_peak_filter](../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png)
+![Madina_gambiae_Delta_peak_filter](../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png)
 
 &nbsp;
 
@@ -489,15 +489,15 @@ ___
 
 &nbsp;
 
-![Madina_gambiae_Delta_2R:28401363-28416200_overview](../focal_gwas/Fst/Madina_gambiae_Delta/2R_28407985.png)
+![Madina_gambiae_Delta_2R:28401363-28416200_overview](../../focal_gwas/Fst/Madina_gambiae_Delta/2R_28407985.png)
 
 &nbsp;
 
-![Madina_gambiae_Delta_2R:28401363-28416200_dendrogram](Madina_gambiae_Delta_2R%3A28401363-28416200_dendrogram.png)
+![Madina_gambiae_Delta_2R:28401363-28416200_dendrogram](../../haplotypes/Madina_gambiae_Delta_2R%3A28401363-28416200_dendrogram.png)
 
 &nbsp;
 
-![Madina_gambiae_Delta_2R:28401363-28416200_haplotypes](Madina_gambiae_Delta_2R%3A28401363-28416200.png)
+![Madina_gambiae_Delta_2R:28401363-28416200_haplotypes](../../haplotypes/Madina_gambiae_Delta_2R%3A28401363-28416200.png)
 
 &nbsp;
 
@@ -515,15 +515,15 @@ ___
 
 &nbsp;
 
-![Madina_gambiae_Delta_2R:28454838-28474602_overview](../focal_gwas/Fst/Madina_gambiae_Delta/2R_28463684.png)
+![Madina_gambiae_Delta_2R:28454838-28474602_overview](../../focal_gwas/Fst/Madina_gambiae_Delta/2R_28463684.png)
 
 &nbsp;
 
-![Madina_gambiae_Delta_2R:28454838-28474602_dendrogram](Madina_gambiae_Delta_2R%3A28454838-28474602_dendrogram.png)
+![Madina_gambiae_Delta_2R:28454838-28474602_dendrogram](../../haplotypes/Madina_gambiae_Delta_2R%3A28454838-28474602_dendrogram.png)
 
 &nbsp;
 
-![Madina_gambiae_Delta_2R:28454838-28474602_haplotypes](Madina_gambiae_Delta_2R%3A28454838-28474602.png)
+![Madina_gambiae_Delta_2R:28454838-28474602_haplotypes](../../haplotypes/Madina_gambiae_Delta_2R%3A28454838-28474602.png)
 
 &nbsp;
 
@@ -551,7 +551,7 @@ ___
 
 ## Obuasi\_*gambiae*\_Delta
 
-![Obuasi_gambiae_Delta_peak_filter](../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png)
+![Obuasi_gambiae_Delta_peak_filter](../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png)
 
 &nbsp;
 
@@ -577,15 +577,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28250033-28262588_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28255780.png)
+![Obuasi_gambiae_Delta_2R:28250033-28262588_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28255780.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28250033-28262588_dendrogram](Obuasi_gambiae_Delta_2R%3A28250033-28262588_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28250033-28262588_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28250033-28262588_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28250033-28262588_haplotypes](Obuasi_gambiae_Delta_2R%3A28250033-28262588.png)
+![Obuasi_gambiae_Delta_2R:28250033-28262588_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28250033-28262588.png)
 
 &nbsp;
 
@@ -613,15 +613,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28262588-28274893_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28269041.png)
+![Obuasi_gambiae_Delta_2R:28262588-28274893_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28269041.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28262588-28274893_dendrogram](Obuasi_gambiae_Delta_2R%3A28262588-28274893_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28262588-28274893_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28262588-28274893_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28262588-28274893_haplotypes](Obuasi_gambiae_Delta_2R%3A28262588-28274893.png)
+![Obuasi_gambiae_Delta_2R:28262588-28274893_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28262588-28274893.png)
 
 &nbsp;
 
@@ -649,15 +649,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28274893-28289873_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28282250.png)
+![Obuasi_gambiae_Delta_2R:28274893-28289873_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28282250.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28274893-28289873_dendrogram](Obuasi_gambiae_Delta_2R%3A28274893-28289873_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28274893-28289873_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28274893-28289873_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28274893-28289873_haplotypes](Obuasi_gambiae_Delta_2R%3A28274893-28289873.png)
+![Obuasi_gambiae_Delta_2R:28274893-28289873_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28274893-28289873.png)
 
 &nbsp;
 
@@ -685,15 +685,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28289873-28306606_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28297547.png)
+![Obuasi_gambiae_Delta_2R:28289873-28306606_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28297547.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28289873-28306606_dendrogram](Obuasi_gambiae_Delta_2R%3A28289873-28306606_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28289873-28306606_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28289873-28306606_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28289873-28306606_haplotypes](Obuasi_gambiae_Delta_2R%3A28289873-28306606.png)
+![Obuasi_gambiae_Delta_2R:28289873-28306606_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28289873-28306606.png)
 
 &nbsp;
 
@@ -721,15 +721,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28306605-28322681_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28316079.png)
+![Obuasi_gambiae_Delta_2R:28306605-28322681_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28316079.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28306605-28322681_dendrogram](Obuasi_gambiae_Delta_2R%3A28306605-28322681_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28306605-28322681_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28306605-28322681_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28306605-28322681_haplotypes](Obuasi_gambiae_Delta_2R%3A28306605-28322681.png)
+![Obuasi_gambiae_Delta_2R:28306605-28322681_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28306605-28322681.png)
 
 &nbsp;
 
@@ -757,15 +757,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28322681-28337951_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28330119.png)
+![Obuasi_gambiae_Delta_2R:28322681-28337951_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28330119.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28322681-28337951_dendrogram](Obuasi_gambiae_Delta_2R%3A28322681-28337951_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28322681-28337951_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28322681-28337951_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28322681-28337951_haplotypes](Obuasi_gambiae_Delta_2R%3A28322681-28337951.png)
+![Obuasi_gambiae_Delta_2R:28322681-28337951_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28322681-28337951.png)
 
 &nbsp;
 
@@ -803,15 +803,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28337951-28354693_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28346583.png)
+![Obuasi_gambiae_Delta_2R:28337951-28354693_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28346583.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28337951-28354693_dendrogram](Obuasi_gambiae_Delta_2R%3A28337951-28354693_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28337951-28354693_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28337951-28354693_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28337951-28354693_haplotypes](Obuasi_gambiae_Delta_2R%3A28337951-28354693.png)
+![Obuasi_gambiae_Delta_2R:28337951-28354693_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28337951-28354693.png)
 
 &nbsp;
 
@@ -849,15 +849,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28354692-28369784_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28361892.png)
+![Obuasi_gambiae_Delta_2R:28354692-28369784_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28361892.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28354692-28369784_dendrogram](Obuasi_gambiae_Delta_2R%3A28354692-28369784_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28354692-28369784_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28354692-28369784_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28354692-28369784_haplotypes](Obuasi_gambiae_Delta_2R%3A28354692-28369784.png)
+![Obuasi_gambiae_Delta_2R:28354692-28369784_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28354692-28369784.png)
 
 &nbsp;
 
@@ -895,15 +895,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28369784-28391434_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28380959.png)
+![Obuasi_gambiae_Delta_2R:28369784-28391434_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28380959.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28369784-28391434_dendrogram](Obuasi_gambiae_Delta_2R%3A28369784-28391434_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28369784-28391434_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28369784-28391434_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28369784-28391434_haplotypes](Obuasi_gambiae_Delta_2R%3A28369784-28391434.png)
+![Obuasi_gambiae_Delta_2R:28369784-28391434_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28369784-28391434.png)
 
 &nbsp;
 
@@ -941,15 +941,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28391433-28405240_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28398912.png)
+![Obuasi_gambiae_Delta_2R:28391433-28405240_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28398912.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28391433-28405240_dendrogram](Obuasi_gambiae_Delta_2R%3A28391433-28405240_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28391433-28405240_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28391433-28405240_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28391433-28405240_haplotypes](Obuasi_gambiae_Delta_2R%3A28391433-28405240.png)
+![Obuasi_gambiae_Delta_2R:28391433-28405240_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28391433-28405240.png)
 
 &nbsp;
 
@@ -987,15 +987,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28405239-28421116_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28412096.png)
+![Obuasi_gambiae_Delta_2R:28405239-28421116_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28412096.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28405239-28421116_dendrogram](Obuasi_gambiae_Delta_2R%3A28405239-28421116_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28405239-28421116_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28405239-28421116_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28405239-28421116_haplotypes](Obuasi_gambiae_Delta_2R%3A28405239-28421116.png)
+![Obuasi_gambiae_Delta_2R:28405239-28421116_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28405239-28421116.png)
 
 &nbsp;
 
@@ -1033,15 +1033,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28421116-28439220_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28429901.png)
+![Obuasi_gambiae_Delta_2R:28421116-28439220_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28429901.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28421116-28439220_dendrogram](Obuasi_gambiae_Delta_2R%3A28421116-28439220_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28421116-28439220_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28421116-28439220_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28421116-28439220_haplotypes](Obuasi_gambiae_Delta_2R%3A28421116-28439220.png)
+![Obuasi_gambiae_Delta_2R:28421116-28439220_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28421116-28439220.png)
 
 &nbsp;
 
@@ -1079,15 +1079,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28439219-28456407_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28446753.png)
+![Obuasi_gambiae_Delta_2R:28439219-28456407_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28446753.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28439219-28456407_dendrogram](Obuasi_gambiae_Delta_2R%3A28439219-28456407_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28439219-28456407_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28439219-28456407_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28439219-28456407_haplotypes](Obuasi_gambiae_Delta_2R%3A28439219-28456407.png)
+![Obuasi_gambiae_Delta_2R:28439219-28456407_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28439219-28456407.png)
 
 &nbsp;
 
@@ -1125,15 +1125,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28456407-28475225_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28464581.png)
+![Obuasi_gambiae_Delta_2R:28456407-28475225_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28464581.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28456407-28475225_dendrogram](Obuasi_gambiae_Delta_2R%3A28456407-28475225_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28456407-28475225_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28456407-28475225_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28456407-28475225_haplotypes](Obuasi_gambiae_Delta_2R%3A28456407-28475225.png)
+![Obuasi_gambiae_Delta_2R:28456407-28475225_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28456407-28475225.png)
 
 &nbsp;
 
@@ -1171,15 +1171,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28475225-28496115_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28485258.png)
+![Obuasi_gambiae_Delta_2R:28475225-28496115_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28485258.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28475225-28496115_dendrogram](Obuasi_gambiae_Delta_2R%3A28475225-28496115_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28475225-28496115_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28475225-28496115_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28475225-28496115_haplotypes](Obuasi_gambiae_Delta_2R%3A28475225-28496115.png)
+![Obuasi_gambiae_Delta_2R:28475225-28496115_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28475225-28496115.png)
 
 &nbsp;
 
@@ -1207,15 +1207,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28496114-28515482_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28506349.png)
+![Obuasi_gambiae_Delta_2R:28496114-28515482_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28506349.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28496114-28515482_dendrogram](Obuasi_gambiae_Delta_2R%3A28496114-28515482_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28496114-28515482_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28496114-28515482_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28496114-28515482_haplotypes](Obuasi_gambiae_Delta_2R%3A28496114-28515482.png)
+![Obuasi_gambiae_Delta_2R:28496114-28515482_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28496114-28515482.png)
 
 &nbsp;
 
@@ -1243,15 +1243,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28515481-28531112_overview](../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28523201.png)
+![Obuasi_gambiae_Delta_2R:28515481-28531112_overview](../../focal_gwas/Fst/Obuasi_gambiae_Delta/2R_28523201.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28515481-28531112_dendrogram](Obuasi_gambiae_Delta_2R%3A28515481-28531112_dendrogram.png)
+![Obuasi_gambiae_Delta_2R:28515481-28531112_dendrogram](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28515481-28531112_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_Delta_2R:28515481-28531112_haplotypes](Obuasi_gambiae_Delta_2R%3A28515481-28531112.png)
+![Obuasi_gambiae_Delta_2R:28515481-28531112_haplotypes](../../haplotypes/Obuasi_gambiae_Delta_2R%3A28515481-28531112.png)
 
 &nbsp;
 
@@ -1279,7 +1279,7 @@ ___
 
 ## Baguida\_*gambiae*\_PM
 
-![Baguida_gambiae_PM_peak_filter](../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png)
+![Baguida_gambiae_PM_peak_filter](../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png)
 
 &nbsp;
 
@@ -1293,15 +1293,15 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:15411876-15495650_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_15456029.png)
+![Baguida_gambiae_PM_X:15411876-15495650_overview](../../focal_gwas/Fst/Baguida_gambiae_PM/X_15456029.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:15411876-15495650_dendrogram](Baguida_gambiae_PM_X%3A15411876-15495650_dendrogram.png)
+![Baguida_gambiae_PM_X:15411876-15495650_dendrogram](../../haplotypes/Baguida_gambiae_PM_X%3A15411876-15495650_dendrogram.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:15411876-15495650_haplotypes](Baguida_gambiae_PM_X%3A15411876-15495650.png)
+![Baguida_gambiae_PM_X:15411876-15495650_haplotypes](../../haplotypes/Baguida_gambiae_PM_X%3A15411876-15495650.png)
 
 &nbsp;
 
@@ -1339,15 +1339,15 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9165646-9222299_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_9200360.png)
+![Baguida_gambiae_PM_X:9165646-9222299_overview](../../focal_gwas/Fst/Baguida_gambiae_PM/X_9200360.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9165646-9222299_dendrogram](Baguida_gambiae_PM_X%3A9165646-9222299_dendrogram.png)
+![Baguida_gambiae_PM_X:9165646-9222299_dendrogram](../../haplotypes/Baguida_gambiae_PM_X%3A9165646-9222299_dendrogram.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9165646-9222299_haplotypes](Baguida_gambiae_PM_X%3A9165646-9222299.png)
+![Baguida_gambiae_PM_X:9165646-9222299_haplotypes](../../haplotypes/Baguida_gambiae_PM_X%3A9165646-9222299.png)
 
 &nbsp;
 
@@ -1375,15 +1375,15 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9222298-9273975_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_9251312.png)
+![Baguida_gambiae_PM_X:9222298-9273975_overview](../../focal_gwas/Fst/Baguida_gambiae_PM/X_9251312.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9222298-9273975_dendrogram](Baguida_gambiae_PM_X%3A9222298-9273975_dendrogram.png)
+![Baguida_gambiae_PM_X:9222298-9273975_dendrogram](../../haplotypes/Baguida_gambiae_PM_X%3A9222298-9273975_dendrogram.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9222298-9273975_haplotypes](Baguida_gambiae_PM_X%3A9222298-9273975.png)
+![Baguida_gambiae_PM_X:9222298-9273975_haplotypes](../../haplotypes/Baguida_gambiae_PM_X%3A9222298-9273975.png)
 
 &nbsp;
 
@@ -1411,15 +1411,15 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9273975-9317640_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_9298059.png)
+![Baguida_gambiae_PM_X:9273975-9317640_overview](../../focal_gwas/Fst/Baguida_gambiae_PM/X_9298059.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9273975-9317640_dendrogram](Baguida_gambiae_PM_X%3A9273975-9317640_dendrogram.png)
+![Baguida_gambiae_PM_X:9273975-9317640_dendrogram](../../haplotypes/Baguida_gambiae_PM_X%3A9273975-9317640_dendrogram.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9273975-9317640_haplotypes](Baguida_gambiae_PM_X%3A9273975-9317640.png)
+![Baguida_gambiae_PM_X:9273975-9317640_haplotypes](../../haplotypes/Baguida_gambiae_PM_X%3A9273975-9317640.png)
 
 &nbsp;
 
@@ -1447,15 +1447,15 @@ ___
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9317639-9346605_overview](../focal_gwas/Fst/Baguida_gambiae_PM/X_9329513.png)
+![Baguida_gambiae_PM_X:9317639-9346605_overview](../../focal_gwas/Fst/Baguida_gambiae_PM/X_9329513.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9317639-9346605_dendrogram](Baguida_gambiae_PM_X%3A9317639-9346605_dendrogram.png)
+![Baguida_gambiae_PM_X:9317639-9346605_dendrogram](../../haplotypes/Baguida_gambiae_PM_X%3A9317639-9346605_dendrogram.png)
 
 &nbsp;
 
-![Baguida_gambiae_PM_X:9317639-9346605_haplotypes](Baguida_gambiae_PM_X%3A9317639-9346605.png)
+![Baguida_gambiae_PM_X:9317639-9346605_haplotypes](../../haplotypes/Baguida_gambiae_PM_X%3A9317639-9346605.png)
 
 &nbsp;
 
@@ -1483,7 +1483,7 @@ ___
 
 ## Korle-Bu\_*coluzzii*\_PM
 
-![Korle-Bu_coluzzii_PM_peak_filter](../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png)
+![Korle-Bu_coluzzii_PM_peak_filter](../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png)
 
 &nbsp;
 
@@ -1498,15 +1498,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:38097626-38111826_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/2R_38104953.png)
+![Korle-Bu_coluzzii_PM_2R:38097626-38111826_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_PM/2R_38104953.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:38097626-38111826_dendrogram](Korle-Bu_coluzzii_PM_2R%3A38097626-38111826_dendrogram.png)
+![Korle-Bu_coluzzii_PM_2R:38097626-38111826_dendrogram](../../haplotypes/Korle-Bu_coluzzii_PM_2R%3A38097626-38111826_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:38097626-38111826_haplotypes](Korle-Bu_coluzzii_PM_2R%3A38097626-38111826.png)
+![Korle-Bu_coluzzii_PM_2R:38097626-38111826_haplotypes](../../haplotypes/Korle-Bu_coluzzii_PM_2R%3A38097626-38111826.png)
 
 &nbsp;
 
@@ -1514,15 +1514,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:54371673-54397846_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/2R_54385556.png)
+![Korle-Bu_coluzzii_PM_2R:54371673-54397846_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_PM/2R_54385556.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:54371673-54397846_dendrogram](Korle-Bu_coluzzii_PM_2R%3A54371673-54397846_dendrogram.png)
+![Korle-Bu_coluzzii_PM_2R:54371673-54397846_dendrogram](../../haplotypes/Korle-Bu_coluzzii_PM_2R%3A54371673-54397846_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_2R:54371673-54397846_haplotypes](Korle-Bu_coluzzii_PM_2R%3A54371673-54397846.png)
+![Korle-Bu_coluzzii_PM_2R:54371673-54397846_haplotypes](../../haplotypes/Korle-Bu_coluzzii_PM_2R%3A54371673-54397846.png)
 
 &nbsp;
 
@@ -1540,15 +1540,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28482794-28505651_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28493447.png)
+![Korle-Bu_coluzzii_PM_3R:28482794-28505651_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28493447.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28482794-28505651_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28482794-28505651_dendrogram.png)
+![Korle-Bu_coluzzii_PM_3R:28482794-28505651_dendrogram](../../haplotypes/Korle-Bu_coluzzii_PM_3R%3A28482794-28505651_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28482794-28505651_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28482794-28505651.png)
+![Korle-Bu_coluzzii_PM_3R:28482794-28505651_haplotypes](../../haplotypes/Korle-Bu_coluzzii_PM_3R%3A28482794-28505651.png)
 
 &nbsp;
 
@@ -1586,15 +1586,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28505651-28533744_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28521760.png)
+![Korle-Bu_coluzzii_PM_3R:28505651-28533744_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28521760.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28505651-28533744_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28505651-28533744_dendrogram.png)
+![Korle-Bu_coluzzii_PM_3R:28505651-28533744_dendrogram](../../haplotypes/Korle-Bu_coluzzii_PM_3R%3A28505651-28533744_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28505651-28533744_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28505651-28533744.png)
+![Korle-Bu_coluzzii_PM_3R:28505651-28533744_haplotypes](../../haplotypes/Korle-Bu_coluzzii_PM_3R%3A28505651-28533744.png)
 
 &nbsp;
 
@@ -1632,15 +1632,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28563392-28595112_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28578544.png)
+![Korle-Bu_coluzzii_PM_3R:28563392-28595112_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_28578544.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28563392-28595112_dendrogram](Korle-Bu_coluzzii_PM_3R%3A28563392-28595112_dendrogram.png)
+![Korle-Bu_coluzzii_PM_3R:28563392-28595112_dendrogram](../../haplotypes/Korle-Bu_coluzzii_PM_3R%3A28563392-28595112_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:28563392-28595112_haplotypes](Korle-Bu_coluzzii_PM_3R%3A28563392-28595112.png)
+![Korle-Bu_coluzzii_PM_3R:28563392-28595112_haplotypes](../../haplotypes/Korle-Bu_coluzzii_PM_3R%3A28563392-28595112.png)
 
 &nbsp;
 
@@ -1678,15 +1678,15 @@ ___
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:2929236-2946500_overview](../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_2938559.png)
+![Korle-Bu_coluzzii_PM_3R:2929236-2946500_overview](../../focal_gwas/Fst/Korle-Bu_coluzzii_PM/3R_2938559.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:2929236-2946500_dendrogram](Korle-Bu_coluzzii_PM_3R%3A2929236-2946500_dendrogram.png)
+![Korle-Bu_coluzzii_PM_3R:2929236-2946500_dendrogram](../../haplotypes/Korle-Bu_coluzzii_PM_3R%3A2929236-2946500_dendrogram.png)
 
 &nbsp;
 
-![Korle-Bu_coluzzii_PM_3R:2929236-2946500_haplotypes](Korle-Bu_coluzzii_PM_3R%3A2929236-2946500.png)
+![Korle-Bu_coluzzii_PM_3R:2929236-2946500_haplotypes](../../haplotypes/Korle-Bu_coluzzii_PM_3R%3A2929236-2946500.png)
 
 &nbsp;
 
@@ -1704,7 +1704,7 @@ ___
 
 ## Madina\_*gambiae*\_PM
 
-![Madina_gambiae_PM_peak_filter](../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png)
+![Madina_gambiae_PM_peak_filter](../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png)
 
 &nbsp;
 
@@ -1714,15 +1714,15 @@ ___
 
 &nbsp;
 
-![Madina_gambiae_PM_2R:54255612-54278008_overview](../focal_gwas/Fst/Madina_gambiae_PM/2R_54265236.png)
+![Madina_gambiae_PM_2R:54255612-54278008_overview](../../focal_gwas/Fst/Madina_gambiae_PM/2R_54265236.png)
 
 &nbsp;
 
-![Madina_gambiae_PM_2R:54255612-54278008_dendrogram](Madina_gambiae_PM_2R%3A54255612-54278008_dendrogram.png)
+![Madina_gambiae_PM_2R:54255612-54278008_dendrogram](../../haplotypes/Madina_gambiae_PM_2R%3A54255612-54278008_dendrogram.png)
 
 &nbsp;
 
-![Madina_gambiae_PM_2R:54255612-54278008_haplotypes](Madina_gambiae_PM_2R%3A54255612-54278008.png)
+![Madina_gambiae_PM_2R:54255612-54278008_haplotypes](../../haplotypes/Madina_gambiae_PM_2R%3A54255612-54278008.png)
 
 &nbsp;
 
@@ -1740,7 +1740,7 @@ ___
 
 ## Obuasi\_*gambiae*\_PM
 
-![Obuasi_gambiae_PM_peak_filter](../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png)
+![Obuasi_gambiae_PM_peak_filter](../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png)
 
 &nbsp;
 
@@ -1770,15 +1770,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_2R:3474360-3509400_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/2R_3488994.png)
+![Obuasi_gambiae_PM_2R:3474360-3509400_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/2R_3488994.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_2R:3474360-3509400_dendrogram](Obuasi_gambiae_PM_2R%3A3474360-3509400_dendrogram.png)
+![Obuasi_gambiae_PM_2R:3474360-3509400_dendrogram](../../haplotypes/Obuasi_gambiae_PM_2R%3A3474360-3509400_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_2R:3474360-3509400_haplotypes](Obuasi_gambiae_PM_2R%3A3474360-3509400.png)
+![Obuasi_gambiae_PM_2R:3474360-3509400_haplotypes](../../haplotypes/Obuasi_gambiae_PM_2R%3A3474360-3509400.png)
 
 &nbsp;
 
@@ -1796,15 +1796,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30477135-30487616_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30482533.png)
+![Obuasi_gambiae_PM_3L:30477135-30487616_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30482533.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30477135-30487616_dendrogram](Obuasi_gambiae_PM_3L%3A30477135-30487616_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30477135-30487616_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30477135-30487616_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30477135-30487616_haplotypes](Obuasi_gambiae_PM_3L%3A30477135-30487616.png)
+![Obuasi_gambiae_PM_3L:30477135-30487616_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30477135-30487616.png)
 
 &nbsp;
 
@@ -1822,15 +1822,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30487615-30497759_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30491765.png)
+![Obuasi_gambiae_PM_3L:30487615-30497759_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30491765.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30487615-30497759_dendrogram](Obuasi_gambiae_PM_3L%3A30487615-30497759_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30487615-30497759_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30487615-30497759_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30487615-30497759_haplotypes](Obuasi_gambiae_PM_3L%3A30487615-30497759.png)
+![Obuasi_gambiae_PM_3L:30487615-30497759_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30487615-30497759.png)
 
 &nbsp;
 
@@ -1848,15 +1848,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30497758-30506894_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30502058.png)
+![Obuasi_gambiae_PM_3L:30497758-30506894_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30502058.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30497758-30506894_dendrogram](Obuasi_gambiae_PM_3L%3A30497758-30506894_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30497758-30506894_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30497758-30506894_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30497758-30506894_haplotypes](Obuasi_gambiae_PM_3L%3A30497758-30506894.png)
+![Obuasi_gambiae_PM_3L:30497758-30506894_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30497758-30506894.png)
 
 &nbsp;
 
@@ -1874,15 +1874,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30506893-30516797_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30511765.png)
+![Obuasi_gambiae_PM_3L:30506893-30516797_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30511765.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30506893-30516797_dendrogram](Obuasi_gambiae_PM_3L%3A30506893-30516797_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30506893-30516797_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30506893-30516797_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30506893-30516797_haplotypes](Obuasi_gambiae_PM_3L%3A30506893-30516797.png)
+![Obuasi_gambiae_PM_3L:30506893-30516797_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30506893-30516797.png)
 
 &nbsp;
 
@@ -1900,15 +1900,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30534828-30545854_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30540639.png)
+![Obuasi_gambiae_PM_3L:30534828-30545854_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30540639.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30534828-30545854_dendrogram](Obuasi_gambiae_PM_3L%3A30534828-30545854_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30534828-30545854_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30534828-30545854_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30534828-30545854_haplotypes](Obuasi_gambiae_PM_3L%3A30534828-30545854.png)
+![Obuasi_gambiae_PM_3L:30534828-30545854_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30534828-30545854.png)
 
 &nbsp;
 
@@ -1926,15 +1926,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30554459-30562573_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30558236.png)
+![Obuasi_gambiae_PM_3L:30554459-30562573_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30558236.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30554459-30562573_dendrogram](Obuasi_gambiae_PM_3L%3A30554459-30562573_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30554459-30562573_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30554459-30562573_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30554459-30562573_haplotypes](Obuasi_gambiae_PM_3L%3A30554459-30562573.png)
+![Obuasi_gambiae_PM_3L:30554459-30562573_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30554459-30562573.png)
 
 &nbsp;
 
@@ -1952,15 +1952,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30562572-30578511_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30568108.png)
+![Obuasi_gambiae_PM_3L:30562572-30578511_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30568108.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30562572-30578511_dendrogram](Obuasi_gambiae_PM_3L%3A30562572-30578511_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30562572-30578511_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30562572-30578511_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30562572-30578511_haplotypes](Obuasi_gambiae_PM_3L%3A30562572-30578511.png)
+![Obuasi_gambiae_PM_3L:30562572-30578511_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30562572-30578511.png)
 
 &nbsp;
 
@@ -1978,15 +1978,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30578511-30587941_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30583473.png)
+![Obuasi_gambiae_PM_3L:30578511-30587941_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30583473.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30578511-30587941_dendrogram](Obuasi_gambiae_PM_3L%3A30578511-30587941_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30578511-30587941_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30578511-30587941_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30578511-30587941_haplotypes](Obuasi_gambiae_PM_3L%3A30578511-30587941.png)
+![Obuasi_gambiae_PM_3L:30578511-30587941_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30578511-30587941.png)
 
 &nbsp;
 
@@ -2004,15 +2004,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30587941-30597762_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30592869.png)
+![Obuasi_gambiae_PM_3L:30587941-30597762_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30592869.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30587941-30597762_dendrogram](Obuasi_gambiae_PM_3L%3A30587941-30597762_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30587941-30597762_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30587941-30597762_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30587941-30597762_haplotypes](Obuasi_gambiae_PM_3L%3A30587941-30597762.png)
+![Obuasi_gambiae_PM_3L:30587941-30597762_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30587941-30597762.png)
 
 &nbsp;
 
@@ -2030,15 +2030,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30597761-30607138_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30603305.png)
+![Obuasi_gambiae_PM_3L:30597761-30607138_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30603305.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30597761-30607138_dendrogram](Obuasi_gambiae_PM_3L%3A30597761-30607138_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30597761-30607138_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30597761-30607138_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30597761-30607138_haplotypes](Obuasi_gambiae_PM_3L%3A30597761-30607138.png)
+![Obuasi_gambiae_PM_3L:30597761-30607138_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30597761-30607138.png)
 
 &nbsp;
 
@@ -2056,15 +2056,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30607137-30617085_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30611538.png)
+![Obuasi_gambiae_PM_3L:30607137-30617085_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30611538.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30607137-30617085_dendrogram](Obuasi_gambiae_PM_3L%3A30607137-30617085_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30607137-30617085_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30607137-30617085_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30607137-30617085_haplotypes](Obuasi_gambiae_PM_3L%3A30607137-30617085.png)
+![Obuasi_gambiae_PM_3L:30607137-30617085_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30607137-30617085.png)
 
 &nbsp;
 
@@ -2082,15 +2082,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30617085-30624950_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30621123.png)
+![Obuasi_gambiae_PM_3L:30617085-30624950_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30621123.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30617085-30624950_dendrogram](Obuasi_gambiae_PM_3L%3A30617085-30624950_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30617085-30624950_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30617085-30624950_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30617085-30624950_haplotypes](Obuasi_gambiae_PM_3L%3A30617085-30624950.png)
+![Obuasi_gambiae_PM_3L:30617085-30624950_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30617085-30624950.png)
 
 &nbsp;
 
@@ -2108,15 +2108,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30624949-30635698_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30631421.png)
+![Obuasi_gambiae_PM_3L:30624949-30635698_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30631421.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30624949-30635698_dendrogram](Obuasi_gambiae_PM_3L%3A30624949-30635698_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30624949-30635698_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30624949-30635698_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30624949-30635698_haplotypes](Obuasi_gambiae_PM_3L%3A30624949-30635698.png)
+![Obuasi_gambiae_PM_3L:30624949-30635698_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30624949-30635698.png)
 
 &nbsp;
 
@@ -2134,15 +2134,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30635698-30646602_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30641999.png)
+![Obuasi_gambiae_PM_3L:30635698-30646602_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30641999.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30635698-30646602_dendrogram](Obuasi_gambiae_PM_3L%3A30635698-30646602_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30635698-30646602_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30635698-30646602_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30635698-30646602_haplotypes](Obuasi_gambiae_PM_3L%3A30635698-30646602.png)
+![Obuasi_gambiae_PM_3L:30635698-30646602_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30635698-30646602.png)
 
 &nbsp;
 
@@ -2160,15 +2160,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30646601-30657763_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30652383.png)
+![Obuasi_gambiae_PM_3L:30646601-30657763_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30652383.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30646601-30657763_dendrogram](Obuasi_gambiae_PM_3L%3A30646601-30657763_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30646601-30657763_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30646601-30657763_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30646601-30657763_haplotypes](Obuasi_gambiae_PM_3L%3A30646601-30657763.png)
+![Obuasi_gambiae_PM_3L:30646601-30657763_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30646601-30657763.png)
 
 &nbsp;
 
@@ -2186,15 +2186,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30657762-30667355_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30662542.png)
+![Obuasi_gambiae_PM_3L:30657762-30667355_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30662542.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30657762-30667355_dendrogram](Obuasi_gambiae_PM_3L%3A30657762-30667355_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30657762-30667355_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30657762-30667355_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30657762-30667355_haplotypes](Obuasi_gambiae_PM_3L%3A30657762-30667355.png)
+![Obuasi_gambiae_PM_3L:30657762-30667355_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30657762-30667355.png)
 
 &nbsp;
 
@@ -2212,15 +2212,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30667355-30678119_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30671665.png)
+![Obuasi_gambiae_PM_3L:30667355-30678119_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30671665.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30667355-30678119_dendrogram](Obuasi_gambiae_PM_3L%3A30667355-30678119_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30667355-30678119_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30667355-30678119_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30667355-30678119_haplotypes](Obuasi_gambiae_PM_3L%3A30667355-30678119.png)
+![Obuasi_gambiae_PM_3L:30667355-30678119_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30667355-30678119.png)
 
 &nbsp;
 
@@ -2238,15 +2238,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30678119-30687769_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30683494.png)
+![Obuasi_gambiae_PM_3L:30678119-30687769_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30683494.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30678119-30687769_dendrogram](Obuasi_gambiae_PM_3L%3A30678119-30687769_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30678119-30687769_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30678119-30687769_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30678119-30687769_haplotypes](Obuasi_gambiae_PM_3L%3A30678119-30687769.png)
+![Obuasi_gambiae_PM_3L:30678119-30687769_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30678119-30687769.png)
 
 &nbsp;
 
@@ -2264,15 +2264,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30687769-30697180_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30692063.png)
+![Obuasi_gambiae_PM_3L:30687769-30697180_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3L_30692063.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30687769-30697180_dendrogram](Obuasi_gambiae_PM_3L%3A30687769-30697180_dendrogram.png)
+![Obuasi_gambiae_PM_3L:30687769-30697180_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3L%3A30687769-30697180_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3L:30687769-30697180_haplotypes](Obuasi_gambiae_PM_3L%3A30687769-30697180.png)
+![Obuasi_gambiae_PM_3L:30687769-30697180_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3L%3A30687769-30697180.png)
 
 &nbsp;
 
@@ -2290,15 +2290,15 @@ ___
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3R:48454456-48494640_overview](../focal_gwas/Fst/Obuasi_gambiae_PM/3R_48484269.png)
+![Obuasi_gambiae_PM_3R:48454456-48494640_overview](../../focal_gwas/Fst/Obuasi_gambiae_PM/3R_48484269.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3R:48454456-48494640_dendrogram](Obuasi_gambiae_PM_3R%3A48454456-48494640_dendrogram.png)
+![Obuasi_gambiae_PM_3R:48454456-48494640_dendrogram](../../haplotypes/Obuasi_gambiae_PM_3R%3A48454456-48494640_dendrogram.png)
 
 &nbsp;
 
-![Obuasi_gambiae_PM_3R:48454456-48494640_haplotypes](Obuasi_gambiae_PM_3R%3A48454456-48494640.png)
+![Obuasi_gambiae_PM_3R:48454456-48494640_haplotypes](../../haplotypes/Obuasi_gambiae_PM_3R%3A48454456-48494640.png)
 
 &nbsp;
 

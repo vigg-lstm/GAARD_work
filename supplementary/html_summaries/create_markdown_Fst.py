@@ -15,11 +15,11 @@ populations = ['Avrankou_coluzzii_Delta',
 
 populations_italics = {p: re.sub('_(.+)_', r'\_*\1*\_', p) for p in populations}
 
-all_files = os.listdir()
+all_files = os.listdir('../../haplotypes')
 
 all_windows = np.unique([re.findall('^[^.]+(?=.vcf)', x)[0] for x in all_files if '.vcf' in x])
 
-output_file = 'window_haplotype_summary.md'
+output_file = 'window_Fst_haplotype_summary.md'
 
 f = open(output_file, 'w')
 
@@ -32,7 +32,7 @@ f.write('\n___\n\n')
 
 for pop in populations:
 	f.write(f'## {populations_italics[pop]}\n\n')
-	f.write(f'![{pop}_peak_filter](../randomisations/Fst/{pop}_peak_filter_plot.png)\n\n&nbsp;\n\n')
+	f.write(f'![{pop}_peak_filter](../../randomisations/Fst/{pop}_peak_filter_plot.png)\n\n&nbsp;\n\n')
 
 	pop_windows = [w for w in all_windows if re.search(pop, w)]
 	pop_windows_link = [re.sub(':', '%3A', w) for w in pop_windows]
@@ -40,7 +40,7 @@ for pop in populations:
 	window_code = [re.sub('.*_([23]?[LRX]):', r'\1_', w) for w in pop_windows]
 	# Getting the right overview file is a bit complicated since they were named by the middle SNP
 	# rather than the edges. We need to set up a few objects to deal with this.
-	overview_files = np.array([x for x in os.listdir(f'../focal_gwas/Fst/{pop}') if re.search('.png$', x)])
+	overview_files = np.array([x for x in os.listdir(f'../../focal_gwas/Fst/{pop}') if re.search('.png$', x)])
 	overview_file_chrom = [re.findall('^[23]?[LRX]', x)[0] for x in overview_files]
 	overview_file_window_num = [int(re.findall(r'(?<=_)\d+', x)[0]) for x in overview_files]
 
@@ -59,11 +59,11 @@ for pop in populations:
 		                               (np.array(overview_file_window_num) > start) &
 		                               (np.array(overview_file_window_num) < stop)
 		][0]
-		f.write(f'![{pop_windows[i]}_overview](../focal_gwas/Fst/{pop}/{overview_file})\n\n&nbsp;\n\n')
+		f.write(f'![{pop_windows[i]}_overview](../../focal_gwas/Fst/{pop}/{overview_file})\n\n&nbsp;\n\n')
 
-		f.write(f'![{pop_windows[i]}_dendrogram]({pop_windows_link[i]}_dendrogram.png)\n\n&nbsp;\n\n')
-		f.write(f'![{pop_windows[i]}_haplotypes]({pop_windows_link[i]}.png)\n\n&nbsp;\n\n')
-		haps = pd.read_csv(f'{pop_windows[i]}.csv', sep = '\t')
+		f.write(f'![{pop_windows[i]}_dendrogram](../../haplotypes/{pop_windows_link[i]}_dendrogram.png)\n\n&nbsp;\n\n')
+		f.write(f'![{pop_windows[i]}_haplotypes](../../haplotypes/{pop_windows_link[i]}.png)\n\n&nbsp;\n\n')
+		haps = pd.read_csv(f'../../haplotypes/{pop_windows[i]}.csv', sep = '\t')
 		all_clusters = [re.findall('cluster_\d+', x)[0] for x in haps.columns if re.search('cluster', x)]
 		for c in all_clusters:
 			contable = pd.crosstab(haps.phenotype, haps[c])
