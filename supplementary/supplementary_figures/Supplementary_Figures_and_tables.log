@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  11 NOV 2022 10:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  11 NOV 2022 10:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -827,13 +827,17 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 Package rerunfilecheck Info: File `Supplementary_Figures_and_tables.out' has no
 t changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 7810 strings out of 483183
- 133566 string characters out of 5966293
+ 7809 strings out of 483183
+ 133551 string characters out of 5966293
  379534 words of memory out of 5000000
- 22660 multiletter control sequences out of 15000+600000
+ 22659 multiletter control sequences out of 15000+600000
  539719 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,7n,42p,1036b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -847,7 +851,7 @@ k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-Output written on Supplementary_Figures_and_tables.pdf (7 pages, 22293933 bytes
+Output written on Supplementary_Figures_and_tables.pdf (7 pages, 22293903 bytes
 ).
 PDF statistics:
  468 PDF objects out of 1000 (max. 8388607)
