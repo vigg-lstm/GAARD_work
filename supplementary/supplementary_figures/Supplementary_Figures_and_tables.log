@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  10 NOV 2022 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  11 NOV 2022 10:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -696,52 +696,144 @@ g (PNG copy)> <../../randomisations/PBS/Madina.gambiae.PM_peak_filter_plot.png
 (PNG copy)> <../../randomisations/PBS/Obuasi.gambiae.Delta_peak_filter_plot.png
  (PNG copy)> <../../randomisations/PBS/Obuasi.gambiae.PM_peak_filter_plot.png (
 PNG copy)>]
+<../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_regions
+.pdf, id=135, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_re
+gions.pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_reg
+ions.pdf>
+Package pdftex.def Info: ../supplementary_implicated_regions/Avrankou_coluzzii_
+Delta_implicated_regions.pdf  used on input line 130.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+<../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regions.p
+df, id=137, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regi
+ons.pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regio
+ns.pdf>
+Package pdftex.def Info: ../supplementary_implicated_regions/Baguida_gambiae_De
+lta_implicated_regions.pdf  used on input line 132.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+<../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions.pdf,
+ id=139, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions
+.pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions.
+pdf>
+Package pdftex.def Info: ../supplementary_implicated_regions/Baguida_gambiae_PM
+_implicated_regions.pdf  used on input line 133.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+<../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_implicated_regions
+.pdf, id=141, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_implicated_re
+gions.pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_implicated_reg
+ions.pdf>
+Package pdftex.def Info: ../supplementary_implicated_regions/Korle-Bu_coluzzii_
+Delta_implicated_regions.pdf  used on input line 135.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+<../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_regions.pd
+f, id=143, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_regio
+ns.pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_region
+s.pdf>
+Package pdftex.def Info: ../supplementary_implicated_regions/Korle-Bu_coluzzii_
+PM_implicated_regions.pdf  used on input line 136.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+<../supplementary_implicated_regions/Madina_gambiae_Delta_implicated_regions.pd
+f, id=145, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Madina_gambiae_Delta_implicated_regio
+ns.pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Madina_gambiae_Delta_implicated_region
+s.pdf>
+Package pdftex.def Info: ../supplementary_implicated_regions/Madina_gambiae_Del
+ta_implicated_regions.pdf  used on input line 138.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+<../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.pdf, 
+id=147, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.
+pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.p
+df>
+Package pdftex.def Info: ../supplementary_implicated_regions/Madina_gambiae_PM_
+implicated_regions.pdf  used on input line 139.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+<../supplementary_implicated_regions/Obuasi_gambiae_Delta_implicated_regions.pd
+f, id=149, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Obuasi_gambiae_Delta_implicated_regio
+ns.pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Obuasi_gambiae_Delta_implicated_region
+s.pdf>
+Package pdftex.def Info: ../supplementary_implicated_regions/Obuasi_gambiae_Del
+ta_implicated_regions.pdf  used on input line 141.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+<../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.pdf, 
+id=151, 650.43pt x 325.215pt>
+File: ../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.
+pdf Graphic file (type pdf)
+<use ../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.p
+df>
+Package pdftex.def Info: ../supplementary_implicated_regions/Obuasi_gambiae_PM_
+implicated_regions.pdf  used on input line 142.
+(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_regi
+ons.pdf> <../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_
+regions.pdf> <../supplementary_implicated_regions/Baguida_gambiae_PM_implicated
+_regions.pdf> <../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_impl
+icated_regions.pdf> <../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_i
+mplicated_regions.pdf> <../supplementary_implicated_regions/Madina_gambiae_Delt
+a_implicated_regions.pdf> <../supplementary_implicated_regions/Madina_gambiae_P
+M_implicated_regions.pdf> <../supplementary_implicated_regions/Obuasi_gambiae_D
+elta_implicated_regions.pdf> <../supplementary_implicated_regions/Obuasi_gambia
+e_PM_implicated_regions.pdf>]
 <../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png, id
-=135, 1084.05pt x 361.35pt>
+=222, 1084.05pt x 361.35pt>
 File: ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.pn
 g Graphic file (type png)
 <use ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png
 >
 Package pdftex.def Info: ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_hapl
-otype_clustering.png  used on input line 131.
+otype_clustering.png  used on input line 150.
 (pdftex.def)             Requested size: 483.69684pt x 161.23306pt.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 131--132
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 150--151
 [][] 
  []
 
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-32.
+51.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
- [6
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
+ [7
+
 
 
 
 
 
  <../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
 
 (./Supplementary_Figures_and_tables.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
 Package rerunfilecheck Info: File `Supplementary_Figures_and_tables.out' has no
 t changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 7751 strings out of 483183
- 129163 string characters out of 5966293
- 378994 words of memory out of 5000000
- 22613 multiletter control sequences out of 15000+600000
+ 7810 strings out of 483183
+ 133566 string characters out of 5966293
+ 379534 words of memory out of 5000000
+ 22660 multiletter control sequences out of 15000+600000
  539719 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,7n,42p,1036b,579s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -755,11 +847,11 @@ k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-Output written on Supplementary_Figures_and_tables.pdf (6 pages, 22237942 bytes
+Output written on Supplementary_Figures_and_tables.pdf (7 pages, 22293933 bytes
 ).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 364 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 15 named destinations out of 1000 (max. 500000)
+ 463 words of extra memory for PDF output out of 10000 (max. 10000000)
 
