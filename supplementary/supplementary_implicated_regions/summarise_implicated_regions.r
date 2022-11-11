@@ -344,8 +344,8 @@ get.clump.regions <- function(clump.table){
 gwas.regions <- lapply(gwas.snp.clumps, get.clump.regions)
 
 for (pop in study.pops){
-	filename <- paste(pop, 'implicated_regions.svg', sep = '_')
-	svg(filename, width = 9, height = 4.5)
+	filename <- paste(pop, 'implicated_regions.pdf', sep = '_')
+	pdf(filename, width = 9, height = 4.5)
 	plot.implicated.regions(gwas.regions[[pop]], 
 							fst.regions[[pop]],
 							h12.regions[[gsub('_', '.', pop)]],
@@ -353,4 +353,5 @@ for (pop in study.pops){
 							sub('_', ' ', pop))
 	dev.off()
 }
+
 
