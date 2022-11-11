@@ -205,8 +205,14 @@
 </symbol>
 </g>
 </defs>
-<g id="surface867">
+<g id="surface26">
 <rect x="0" y="0" width="648" height="324" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(62.745098%,12.54902%,94.117647%);fill-opacity:1;" d="M 235.980469 58.773438 L 238.453125 58.773438 L 238.453125 50.15625 L 235.980469 50.15625 Z M 235.980469 58.773438 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(62.745098%,12.54902%,94.117647%);fill-opacity:1;" d="M 243.417969 58.773438 L 245.890625 58.773438 L 245.890625 50.15625 L 243.417969 50.15625 Z M 243.417969 58.773438 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(62.745098%,12.54902%,94.117647%);fill-opacity:1;" d="M 275.796875 58.773438 L 278.269531 58.773438 L 278.269531 50.15625 L 275.796875 50.15625 Z M 275.796875 58.773438 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(62.745098%,12.54902%,94.117647%);fill-opacity:1;" d="M 276.042969 58.773438 L 278.515625 58.773438 L 278.515625 50.15625 L 276.042969 50.15625 Z M 276.042969 58.773438 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(62.745098%,12.54902%,94.117647%);fill-opacity:1;" d="M 276.207031 58.773438 L 278.679688 58.773438 L 278.679688 50.15625 L 276.207031 50.15625 Z M 276.207031 58.773438 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(62.745098%,12.54902%,94.117647%);fill-opacity:1;" d="M 519.820312 58.773438 L 522.292969 58.773438 L 522.292969 50.15625 L 519.820312 50.15625 Z M 519.820312 58.773438 "/>
 <path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 178.839844 55.324219 L 172.65625 58.773438 L 26.617188 58.773438 L 26.617188 50.15625 L 172.65625 50.15625 L 178.839844 53.601562 "/>
 <path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 178.839844 53.601562 L 185.023438 50.15625 L 300.9375 50.15625 L 300.9375 58.773438 L 185.023438 58.773438 L 178.839844 55.324219 "/>
 <path style="fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 444.890625 55.324219 L 438.707031 58.773438 L 313.304688 58.773438 L 313.304688 50.15625 L 438.707031 50.15625 L 444.890625 53.601562 "/>
