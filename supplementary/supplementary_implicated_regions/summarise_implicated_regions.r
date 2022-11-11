@@ -57,7 +57,9 @@ genes.gff[, gene.name := str_extract(attributes, '(?<=Name=)[^;]+') %>%
 	                     str_to_title]
 genes.gff[, full.gene.name := ifelse(is.na(gene.name), gene.id, paste(gene.name, ' (', gene.id, ')', sep = ''))]
 
-# First, the global GWAS:
+# First, the global GWAS. Here we are loading the results of the SNP clumps (at least 10 SNPs in a
+# window are in the top 1000 SNPs for the dataset), excluding 2La and Ace1 (which was done manually)
+# and annotated by SNPeff. 
 load.gwas.snp.clumps <- function(pop){
 	fn <- paste('~/data/ML/GAARD_SNP', 
 	            pop,
@@ -109,9 +111,9 @@ implicated.genes.gwas.2 <- lapply(study.pops,
                                   .[, GWAS := GWAS > 0]
                              }
                       ) 
-# I think we will end up using the second, but let's roll with both for now. 
 
-# Next, the Fst. The results in the haplpotypes folder are derived from the significan Fst regions
+# Next, the Fst. The results in the haplpotypes folder are derived from the significant Fst regions.
+# These have had Ace1 and 2La filtered out if they contained too many hits. 
 fst.regions <- fread('../../haplotypes/haplotype_significance_tests.csv') %>%
                      .[, population := factor(population, levels = ..study.pops)] %>%
                      .[, c('chrom', 'start', 'end') := tstrsplit(window, ':|-')] %>%
@@ -120,6 +122,9 @@ fst.regions <- fread('../../haplotypes/haplotype_significance_tests.csv') %>%
                      unique() %>%
 					 split(by = 'population')
 
+# For two populations, with massive Ace1 signals, we have removed them from the haplotype analysis
+# because there would have been too many haplotypes to analyse. We therefore add them explicitly 
+# here so that they are present in the "implicated regions" results. 
 fst.regions.extra <- fread('../../haplotypes/Ace1_haplotypes/haplotype_significance_tests_ace1.csv') %>%
                      .[, population := factor(population, levels = ..study.pops)] %>%
                      .[, c('chrom', 'start', 'end') := tstrsplit(window, ':|-')] %>%
@@ -156,8 +161,7 @@ h12.regions.fn <- '../../randomisations/H12/h12_filtered_windows.RDS'
 h12.regions <- readRDS(h12.regions.fn) %>%
                lapply(function(D) D$diff[is.peak == T & pval < h12.p.thresh, 
                                          .(chrom = chromosome, pos = midpoint, start = startpoint, end = endpoint)]
-               ) %>%
-               lapply(filter.2La)
+               )
 
 implicated.genes.h12 <- lapply(study.pops, 
                                function(pop) {
@@ -184,8 +188,9 @@ pbs.regions.fn <- '../../randomisations/PBS/pbs_filtered_windows.RDS'
 pbs.regions <- readRDS(pbs.regions.fn) %>%
                lapply(function(D) D[is.peak == T & pval < pbs.p.thresh, 
                                     .(chrom = chromosome, pos = midpoint, start = startpoint, end = endpoint)]
-               ) %>%
-               lapply(filter.2La)
+               )
+
+pbs.regions[['Korle-Bu.coluzzii.PM']] <- filter.2La(pbs.regions[['Korle-Bu.coluzzii.PM']])
 
 implicated.genes.pbs <- lapply(study.pops, 
                                function(pop) {
@@ -321,27 +326,13 @@ plot.implicated.regions <- function(gwas.regions,
 		mtext(title, outer = T, line = 1, font = 2, cex = 1.5)
 }
 
-# For the GWAS, we need to create a table of region extents
-get.clump.regions <- function(clump.table){
-	if (is.null(clump.table)){
-		output.table <- data.table(chrom = character(),
-		                           start = numeric(),
-		                           end = numeric())
-	}
-	else {
-		output.table <- clump.table[, c('chrom', 'snp.pos') := tstrsplit(ID, ':')] %>%
-		                .[, .(chrom = sub(':.*', '', .BY[[1]]), 
-			                  start = min(as.numeric(snp.pos)),
-			                  end = max(as.numeric(snp.pos))
-			                ),
-			                by = 'approx.pos'
-		                ] %>%
-		                .[, approx.pos := NULL]
-	}
-	output.table
-}
-
-gwas.regions <- lapply(gwas.snp.clumps, get.clump.regions)
+# For the GWAS, we need a table of region extents. These are not filtered for Ace1, unlike the 
+# gene-wise data we loaded earlier. 
+gwas.regions <- fread('~/data/ML/GAARD_SNP/summary_figures/classical_analysis_snp_clump_regions.csv') %>%
+               .[order(chrom, start)] %>%
+			   .[, pos := (start + end)/2] %>%
+	           split(by = 'sample.set')
+gwas.regions[['Avrankou_coluzzii_Delta']] <- filter.2La(gwas.regions[['Avrankou_coluzzii_Delta']])
 
 for (pop in study.pops){
 	filename <- paste(pop, 'implicated_regions.pdf', sep = '_')
