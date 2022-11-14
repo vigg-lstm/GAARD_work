@@ -258,9 +258,10 @@ source('../../shared_functions/R_plotting.r')
 
 plot.regions.on.chromosome <- function(regions, 
 	                                   chrom.sizes, gaps = 5e6,
-	                                   show.chrom.names = F,
+	                                   show.chrom.names = F, label.cex = 0.9,
 	                                   chrom.col = NULL, chrom.cex = 1.4,
 	                                   chrom.offset = 0, rect.col = 'blue'){
+	regions <- copy(regions)
 	ce <- cumsum(chrom.sizes + c(0, 0, gaps, 0, gaps))
 	cs <- ce - chrom.sizes
 	plot(c(cs[1], ce[5]), c(-6.5,1.3), xlim = c(cs[1] + gaps/2, ce[5] - gaps/2), type = 'n', bty = 'n', xaxt = 'n', yaxt = 'n', xlab = '', ylab = '')
@@ -301,6 +302,12 @@ plot.regions.on.chromosome <- function(regions,
 		text((cs['3L'] + ce['3L'])/2, chrom.y, '3L', adj = 0.5, xpd = NA, cex = chrom.cex)
 		text((cs['X'] + ce['X'])/2, chrom.y, 'X', adj = 0.5, xpd = NA, cex = chrom.cex)
 	}
+	# Add any required labels
+	if (!is.null(regions$label))
+		regions[, text(genome.end-1e6, 1.5, label, col = rect.col, srt = 35, xpd = NA, adj = 0, cex = label.cex, font = 2)]
+	# Add any required labels
+	if (!is.null(regions$label.below))
+		regions[, text(genome.end-1e6, -1.7, label.below, col = rect.col, srt = 35, xpd = NA, adj = 1, cex = label.cex, font = 2)]
 }
 
 plot.implicated.regions <- function(gwas.regions,
@@ -308,7 +315,7 @@ plot.implicated.regions <- function(gwas.regions,
                                     h12.regions,
                                     pbs.regions,
 	                                title = NULL){
-	par(mfrow = c(5,1), mar = c(0,1,2,1))
+	par(mfrow = c(5,1), mar = c(0,0.5,2,1.1))
 	if (!is.null(title))
 		par(oma = c(2,0,3,0))
 	else
@@ -333,6 +340,68 @@ gwas.regions <- fread('~/data/ML/GAARD_SNP/summary_figures/classical_analysis_sn
 			   .[, pos := (start + end)/2] %>%
 	           split(by = 'sample.set')
 gwas.regions[['Avrankou_coluzzii_Delta']] <- filter.2La(gwas.regions[['Avrankou_coluzzii_Delta']])
+
+# Manually add some labels to the regions
+gwas.regions[['Baguida_gambiae_Delta']][chrom == '3R' & start == 10050000, label := 'TEP2/14/15']
+gwas.regions[['Korle-Bu_coluzzii_Delta']][chrom == '3L' & start == 11350000, label := 'TEP1 (+150Kb)']
+gwas.regions[['Korle-Bu_coluzzii_Delta']][chrom == '2R' & start == 60650000, label := 'Cyp306a1']
+gwas.regions[['Korle-Bu_coluzzii_Delta']][chrom == '2R' & start == 39650000, label := 'Coe22933']
+gwas.regions[['Obuasi_gambiae_Delta']][chrom == '2R' & start == 28450000, label := 'Cyp6aa1']
+gwas.regions[['Baguida_gambiae_PM']][chrom == '2R' & start == 20950000, label := 'Cyp4k2']
+gwas.regions[['Baguida_gambiae_PM']][chrom == '3R' & start == 4250000, label.below := 'Cyp12f1-4']
+gwas.regions[['Baguida_gambiae_PM']][chrom == 'X' & start == 1350000, label := 'Cyp4h19/24']
+gwas.regions[['Korle-Bu_coluzzii_PM']][chrom == '2R' & start == 3350000, label := 'Ace1']
+gwas.regions[['Madina_gambiae_PM']][chrom == '2R' & start == 3350000, label := 'Ace1']
+gwas.regions[['Obuasi_gambiae_PM']][chrom == '2L' & start == 11150000, label := 'Gr26 / Gr27']
+gwas.regions[['Obuasi_gambiae_PM']][chrom == '2L' & start == 37150000, label.below := '\nCoeae2g-6g\n(-30Kb)']
+gwas.regions[['Obuasi_gambiae_PM']][chrom == '2R' & start == 3450000, label := 'Ace1']
+gwas.regions[['Obuasi_gambiae_PM']][chrom == '3L' & start == 11150000, label := 'TEP1']
+gwas.regions[['Obuasi_gambiae_PM']][chrom == '3L' & start == 30650000, label := 'Gprmthl7']
+#
+fst.regions[['Avrankou_coluzzii_Delta']][chrom == 'X' & start == 8745589, label := 'Cpr (-1Kb)']
+fst.regions[['Korle-Bu_coluzzii_Delta']][chrom == 'X' & start == 15670884, label := 'Cyp9k1\n(-500Kb / +400Kb)\n']
+fst.regions[['Korle-Bu_coluzzii_Delta']][chrom == '2R' & start == 39682306, label := 'Coe22933']
+fst.regions[['Madina_gambiae_Delta']][chrom == '2R' & start == 28454838, label := 'Cyp6aa1 (-6Kb)']
+fst.regions[['Baguida_gambiae_PM']][chrom == 'X' & start == 15411876, label := 'Cyp9k1 (+200Kb)']
+fst.regions[['Korle-Bu_coluzzii_PM']][chrom == '2R' & start == 3532732, label := 'Ace1']
+fst.regions[['Korle-Bu_coluzzii_PM']][chrom == '3R' & start == 28563392, label := 'Gste2 (-2.5Kb)']
+fst.regions[['Madina_gambiae_PM']][chrom == '2R' & start == 3348679, label := 'Ace1']
+fst.regions[['Obuasi_gambiae_Delta']][chrom == '2R' & start == 28405239, label := 'Cyp6aa1']
+fst.regions[['Obuasi_gambiae_PM']][chrom == '2R' & start == 3474360, label := 'Ace1']
+fst.regions[['Obuasi_gambiae_PM']][chrom == '3R' & start == 48454456, label := 'Nicot. acetylch.\nrecep., beta-2 subu.\n']
+#
+h12.regions[['Korle-Bu.coluzzii.Delta']][chrom == '2R' & start == 28528584, label := 'Cyp6aa1 (-50Kb)']
+h12.regions[['Korle-Bu.coluzzii.Delta']][chrom == 'X' & start == 15631261, label := 'Cyp9k1 (+400Kb)']
+h12.regions[['Korle-Bu.coluzzii.PM']][chrom == '2R' & start == 3622405, label := 'Ace1']
+h12.regions[['Korle-Bu.coluzzii.PM']][chrom == 'X' & start == 15584658, label := 'Cyp9k1 (+400Kb)']
+h12.regions[['Madina.gambiae.Delta']][chrom == 'X' & start == 14215545, label := 'Cyp9k1 (-1Mb)']
+h12.regions[['Madina.gambiae.PM']][chrom == '2R' & start == 3344869, label := 'Ace1']
+h12.regions[['Madina.gambiae.PM']][chrom == '3R' & start == 28577704, label := 'Gste2']
+h12.regions[['Obuasi.gambiae.Delta']][chrom == 'X' & start == 15915654, label := 'Cyp9k1 (+700Kb)']
+h12.regions[['Obuasi.gambiae.PM']][chrom == '2R' & start == 3660497, label := 'Ace1']
+h12.regions[['Obuasi.gambiae.PM']][chrom == '3L' & start == 11372619, label := 'TEP1 (+150Kb)']
+h12.regions[['Obuasi.gambiae.PM']][chrom == 'X' & start == 13994510, label := 'Cyp9k1 (-1.2Mb)']
+#
+pbs.regions[['Avrankou.coluzzii.Delta']][chrom == '2R' & start == 36518909, label := 'Cyp6ag1/2 (+200Kb)']
+pbs.regions[['Avrankou.coluzzii.Delta']][chrom == 'X' & start == 16335224, label := 'Cyp9k1 (+1Mb)']
+pbs.regions[['Korle-Bu.coluzzii.Delta']][chrom == '2R' & start == 24518326, label.below := '\nNADH dehyd. 1 beta \n subc.2 (-100Kb)']
+pbs.regions[['Korle-Bu.coluzzii.Delta']][chrom == '2R' & start == 24841839, label := 'Or38 / Or39']
+pbs.regions[['Korle-Bu.coluzzii.Delta']][chrom == 'X' & start == 15685316, label := 'Cyp9k1 (+400Kb)']
+pbs.regions[['Korle-Bu.coluzzii.PM']][chrom == '2R' & start == 3615525, label := 'Ace1']
+pbs.regions[['Korle-Bu.coluzzii.PM']][chrom == '3R' & start == 28549380, label := 'Gste2']
+pbs.regions[['Madina.gambiae.Delta']][chrom == '2R' & start == 24628101, label.below := '\nNADH dehyd. 1 beta \n subc.2 (+7Kb)']
+pbs.regions[['Madina.gambiae.Delta']][chrom == '2R' & start == 28445043, label := 'Cyp6aa1']
+pbs.regions[['Madina.gambiae.Delta']][chrom == '3L' & start == 10973136, label.below := 'TEP4']
+pbs.regions[['Madina.gambiae.Delta']][chrom == '3L' & start == 13910487, label := 'Cyp6aj1 (-1.5Kb)']
+pbs.regions[['Madina.gambiae.Delta']][chrom == 'X' & start == 14348794, label := 'Cyp9k1 (-900Kb)']
+pbs.regions[['Madina.gambiae.PM']][chrom == '2R' & start == 3171836, label := 'Ace1']
+pbs.regions[['Madina.gambiae.PM']][chrom == 'X' & start == 14508401, label := 'Cyp9k1 (-700Kb)']
+pbs.regions[['Obuasi.gambiae.Delta']][chrom == '2R' & start == 28444742, label := 'Cyp6aa1']
+pbs.regions[['Obuasi.gambiae.Delta']][chrom == '3R' & start == 6898779, label := 'Cyp6m2']
+pbs.regions[['Obuasi.gambiae.PM']][chrom == '2R' & start == 3668339, label := 'Ace1']
+pbs.regions[['Obuasi.gambiae.PM']][chrom == '3L' & start == 39825372, label := 'Cyp9j5']
+pbs.regions[['Obuasi.gambiae.PM']][chrom == '3R' & start == 48498682, label := 'Nicot. acetylch.\nrecep., beta-2 subu.\n']
+pbs.regions[['Obuasi.gambiae.PM']][chrom == 'X' & start == 14354519, label := 'Cyp9k1 (-500Kb)']
 
 for (pop in study.pops){
 	filename <- paste(pop, 'implicated_regions.pdf', sep = '_')
