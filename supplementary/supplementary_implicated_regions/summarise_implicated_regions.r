@@ -410,7 +410,7 @@ for (pop in study.pops){
 							fst.regions[[pop]],
 							h12.regions[[gsub('_', '.', pop)]],
 							pbs.regions[[gsub('_', '.', pop)]],
-							sub('_', ' ', pop))
+							gsub('_', ' ', pop))
 	dev.off()
 }
 
