@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  11 NOV 2022 10:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  14 NOV 2022 21:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -704,7 +704,7 @@ gions.pdf Graphic file (type pdf)
 ions.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Avrankou_coluzzii_
 Delta_implicated_regions.pdf  used on input line 130.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regions.p
 df, id=137, 650.43pt x 325.215pt>
 File: ../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regi
@@ -713,7 +713,7 @@ ons.pdf Graphic file (type pdf)
 ns.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Baguida_gambiae_De
 lta_implicated_regions.pdf  used on input line 132.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions.pdf,
  id=139, 650.43pt x 325.215pt>
 File: ../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions
@@ -722,7 +722,12 @@ File: ../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions
 pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Baguida_gambiae_PM
 _implicated_regions.pdf  used on input line 133.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
+
+Overfull \hbox (8.30055pt too wide) in paragraph at lines 132--134
+[] []  [] 
+ []
+
 <../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_implicated_regions
 .pdf, id=141, 650.43pt x 325.215pt>
 File: ../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_implicated_re
@@ -731,7 +736,7 @@ gions.pdf Graphic file (type pdf)
 ions.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Korle-Bu_coluzzii_
 Delta_implicated_regions.pdf  used on input line 135.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_regions.pd
 f, id=143, 650.43pt x 325.215pt>
 File: ../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_regio
@@ -740,7 +745,12 @@ ns.pdf Graphic file (type pdf)
 s.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Korle-Bu_coluzzii_
 PM_implicated_regions.pdf  used on input line 136.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
+
+Overfull \hbox (8.30055pt too wide) in paragraph at lines 135--137
+[] []  [] 
+ []
+
 <../supplementary_implicated_regions/Madina_gambiae_Delta_implicated_regions.pd
 f, id=145, 650.43pt x 325.215pt>
 File: ../supplementary_implicated_regions/Madina_gambiae_Delta_implicated_regio
@@ -749,7 +759,7 @@ ns.pdf Graphic file (type pdf)
 s.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Madina_gambiae_Del
 ta_implicated_regions.pdf  used on input line 138.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.pdf, 
 id=147, 650.43pt x 325.215pt>
 File: ../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.
@@ -758,7 +768,12 @@ pdf Graphic file (type pdf)
 df>
 Package pdftex.def Info: ../supplementary_implicated_regions/Madina_gambiae_PM_
 implicated_regions.pdf  used on input line 139.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
+
+Overfull \hbox (8.30055pt too wide) in paragraph at lines 138--140
+[] []  [] 
+ []
+
 <../supplementary_implicated_regions/Obuasi_gambiae_Delta_implicated_regions.pd
 f, id=149, 650.43pt x 325.215pt>
 File: ../supplementary_implicated_regions/Obuasi_gambiae_Delta_implicated_regio
@@ -767,7 +782,7 @@ ns.pdf Graphic file (type pdf)
 s.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Obuasi_gambiae_Del
 ta_implicated_regions.pdf  used on input line 141.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.pdf, 
 id=151, 650.43pt x 325.215pt>
 File: ../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.
@@ -776,7 +791,14 @@ pdf Graphic file (type pdf)
 df>
 Package pdftex.def Info: ../supplementary_implicated_regions/Obuasi_gambiae_PM_
 implicated_regions.pdf  used on input line 142.
-(pdftex.def)             Requested size: 224.7766pt x 112.38786pt.
+(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
+
+Overfull \hbox (8.30055pt too wide) in paragraph at lines 141--143
+[] []  [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 22.90257pt on input line 145.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -836,7 +858,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
 Here is how much of TeX's memory you used:
  7809 strings out of 483183
  133551 string characters out of 5966293
- 379534 words of memory out of 5000000
+ 379463 words of memory out of 5000000
  22659 multiletter control sequences out of 15000+600000
  539719 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -851,10 +873,10 @@ k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-Output written on Supplementary_Figures_and_tables.pdf (7 pages, 22293903 bytes
+Output written on Supplementary_Figures_and_tables.pdf (7 pages, 22295681 bytes
 ).
 PDF statistics:
- 468 PDF objects out of 1000 (max. 8388607)
+ 469 PDF objects out of 1000 (max. 8388607)
  167 compressed objects within 2 object streams
  15 named destinations out of 1000 (max. 500000)
  463 words of extra memory for PDF output out of 10000 (max. 10000000)
