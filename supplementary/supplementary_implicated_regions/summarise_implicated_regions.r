@@ -374,7 +374,7 @@ h12.regions[['Korle-Bu.coluzzii.Delta']][chrom == '2R' & start == 28528584, labe
 h12.regions[['Korle-Bu.coluzzii.Delta']][chrom == 'X' & start == 15631261, label := 'Cyp9k1 (+400Kb)']
 h12.regions[['Korle-Bu.coluzzii.PM']][chrom == '2R' & start == 3622405, label := 'Ace1']
 h12.regions[['Korle-Bu.coluzzii.PM']][chrom == 'X' & start == 15584658, label := 'Cyp9k1 (+400Kb)']
-h12.regions[['Madina.gambiae.Delta']][chrom == 'X' & start == 14215545, label := 'Cyp9k1 (-1Mb)']
+h12.regions[['Madina.gambiae.Delta']][chrom == 'X' & start == 14207167, label := 'Cyp9k1 (-1Mb)']
 h12.regions[['Madina.gambiae.PM']][chrom == '2R' & start == 3344869, label := 'Ace1']
 h12.regions[['Madina.gambiae.PM']][chrom == '3R' & start == 28577704, label := 'Gste2']
 h12.regions[['Obuasi.gambiae.Delta']][chrom == 'X' & start == 15915654, label := 'Cyp9k1 (+700Kb)']
