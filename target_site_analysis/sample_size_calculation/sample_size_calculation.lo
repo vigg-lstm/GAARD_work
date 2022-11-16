@@ -1,0 +1,194 @@
+Loading required package: future
+Sample size 100 
+	Simulating 1 significant SNPs
+	Simulating 3 significant SNPs
+	Simulating 10 significant SNPs
+	Simulating 30 significant SNPs
+	Simulating 100 significant SNPs
+Sample size 200 
+	Simulating 1 significant SNPs
+	Simulating 3 significant SNPs
+	Simulating 10 significant SNPs
+	Simulating 30 significant SNPs
+	Simulating 100 significant SNPs
+Sample size 300 
+	Simulating 1 significant SNPs
+	Simulating 3 significant SNPs
+	Simulating 10 significant SNPs
+	Simulating 30 significant SNPs
+	Simulating 100 significant SNPs
+Sample size 500 
+	Simulating 1 significant SNPs
+	Simulating 3 significant SNPs
+	Simulating 10 significant SNPs
+	Simulating 30 significant SNPs
+	Simulating 100 significant SNPs
+Sample size 750 
+	Simulating 1 significant SNPs
+	Simulating 3 significant SNPs
+	Simulating 10 significant SNPs
+	Simulating 30 significant SNPs
+	Simulating 100 significant SNPs
+There were 50 or more warnings (use warnings() to see the first 50)
+Summary of statistical power:
+
+$S100
+$S100$N1
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:            0.002              0.004       0.07142857          0.1333333
+       fpr.Vgsc   fpr.Cyp4j5
+1: 3.714286e-09 3.714286e-09
+
+$S100$N3
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:                0                  0                0                  0
+       fpr.Vgsc   fpr.Cyp4j5
+1: 7.714286e-09 7.714286e-09
+
+$S100$N10
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:            0.001             0.0012        0.1923077          0.2222222
+   fpr.Vgsc fpr.Cyp4j5
+1:    6e-09      6e-09
+
+$S100$N30
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:     0.0002666667             0.0016         0.173913          0.5454545
+       fpr.Vgsc   fpr.Cyp4j5
+1: 5.428571e-09 5.714286e-09
+
+$S100$N100
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:            4e-04            0.00154        0.4651163          0.7196262
+       fpr.Vgsc   fpr.Cyp4j5
+1: 6.571429e-09 8.571429e-09
+
+
+$S200
+$S200$N1
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:            0.006               0.03              0.1          0.3658537
+       fpr.Vgsc   fpr.Cyp4j5
+1: 7.714286e-09 7.428571e-09
+
+$S200$N3
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:       0.01466667         0.03466667        0.4888889          0.6842105
+       fpr.Vgsc   fpr.Cyp4j5
+1: 6.571429e-09 6.857143e-09
+
+$S200$N10
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:           0.0144             0.0474        0.7128713          0.8618182
+       fpr.Vgsc   fpr.Cyp4j5
+1: 8.285714e-09 1.085714e-08
+
+$S200$N30
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:       0.01653333             0.0544        0.8435374          0.9107143
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.314286e-08 2.285714e-08
+
+$S200$N100
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:          0.02916            0.09796        0.9204545          0.9415609
+   fpr.Vgsc   fpr.Cyp4j5
+1:  3.6e-08 8.685714e-08
+
+
+$S300
+$S300$N1
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:            0.084              0.184        0.6666667                0.8
+   fpr.Vgsc   fpr.Cyp4j5
+1:    6e-09 6.571429e-09
+
+$S300$N3
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:       0.07733333               0.19        0.8111888          0.8769231
+       fpr.Vgsc   fpr.Cyp4j5
+1: 7.714286e-09 1.142857e-08
+
+$S300$N10
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:           0.1146             0.2512         0.899529          0.9296817
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.828571e-08 2.714286e-08
+
+$S300$N30
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:        0.1405333          0.2999333        0.9306843          0.9392484
+       fpr.Vgsc   fpr.Cyp4j5
+1: 4.485714e-08 8.314286e-08
+
+$S300$N100
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:          0.24492            0.43006        0.9470998          0.9490665
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.954286e-07 3.297143e-07
+
+
+$S500
+$S500$N1
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:             0.46              0.604        0.8812261          0.8934911
+       fpr.Vgsc   fpr.Cyp4j5
+1: 8.857143e-09 1.028571e-08
+
+$S500$N3
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:        0.4786667              0.616        0.9123253          0.9148515
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.971429e-08 2.457143e-08
+
+$S500$N10
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:           0.5388             0.6688        0.9436077          0.9422372
+   fpr.Vgsc   fpr.Cyp4j5
+1:  4.6e-08 5.857143e-08
+
+$S500$N30
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:           0.5906             0.6844        0.9477907          0.9477474
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.394286e-07 1.617143e-07
+
+$S500$N100
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:          0.67408            0.75154        0.9511232          0.9512442
+       fpr.Vgsc   fpr.Cyp4j5
+1: 4.948571e-07 5.502857e-07
+
+
+$S750
+$S750$N1
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:              0.7              0.734        0.8816121          0.8864734
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.342857e-08 1.342857e-08
+
+$S750$N3
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:        0.7006667              0.714        0.9598174          0.9596774
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.257143e-08 1.285714e-08
+
+$S750$N10
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:           0.7254             0.7402        0.9403682          0.9412513
+       fpr.Vgsc fpr.Cyp4j5
+1: 6.571429e-08    6.6e-08
+
+$S750$N30
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:        0.7298667          0.7370667        0.9487002          0.9485244
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.691429e-07 1.714286e-07
+
+$S750$N100
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:          0.81652            0.82144         0.952321          0.9524825
+   fpr.Vgsc   fpr.Cyp4j5
+1: 5.84e-07 5.854286e-07
+
+
