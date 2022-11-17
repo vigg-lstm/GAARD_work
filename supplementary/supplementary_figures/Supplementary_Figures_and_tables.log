@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  17 NOV 2022 09:43
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  15 NOV 2022 11:56
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  17 NOV 2022 09:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -285,7 +281,11 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count192
 \l__pdf_internal_box=\box47
 )
-(./Supplementary_Figures_and_tables.aux)
+(./Supplementary_Figures_and_tables.aux
+
+LaTeX Warning: Label `FigS2' multiply defined.
+
+)
 \openout1 = `Supplementary_Figures_and_tables.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -304,8 +304,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count193
 \scratchdimen=\dimen158
@@ -429,7 +428,6 @@ lysis/Cyp6aap_diagnostic_read_CNVs.png (PNG copy)> <../../CNV_analysis/Cyp6mz_d
 iagnostic_read_CNVs.png (PNG copy)> <../../CNV_analysis/Gste_diagnostic_read_CN
 Vs.png (PNG copy)> <../../CNV_analysis/Cyp9k1_diagnostic_read_CNVs.png (PNG cop
 y)>]
-<<<<<<< HEAD
 <../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png, id
 =37, 1084.05pt x 361.35pt>
 File: ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.pn
@@ -459,171 +457,98 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  <../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png>]
 <../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_regions
 .pdf, id=51, 650.43pt x 325.215pt>
-=======
-<../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_regions
-.pdf, id=37, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_re
 gions.pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_reg
 ions.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Avrankou_coluzzii_
-<<<<<<< HEAD
 Delta_implicated_regions.pdf  used on input line 79.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regions.p
 df, id=53, 650.43pt x 325.215pt>
-=======
-Delta_implicated_regions.pdf  used on input line 70.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-<../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regions.p
-df, id=39, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regi
 ons.pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_regio
 ns.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Baguida_gambiae_De
-<<<<<<< HEAD
 lta_implicated_regions.pdf  used on input line 81.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions.pdf,
  id=55, 650.43pt x 325.215pt>
-=======
-lta_implicated_regions.pdf  used on input line 72.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-<../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions.pdf,
- id=41, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions
 .pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Baguida_gambiae_PM_implicated_regions.
 pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Baguida_gambiae_PM
-<<<<<<< HEAD
 _implicated_regions.pdf  used on input line 82.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 
 Overfull \hbox (8.30055pt too wide) in paragraph at lines 81--83
-=======
-_implicated_regions.pdf  used on input line 73.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-
-Overfull \hbox (8.30055pt too wide) in paragraph at lines 72--74
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 [] []  [] 
  []
 
 <../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_implicated_regions
-<<<<<<< HEAD
 .pdf, id=57, 650.43pt x 325.215pt>
-=======
-.pdf, id=43, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_implicated_re
 gions.pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_implicated_reg
 ions.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Korle-Bu_coluzzii_
-<<<<<<< HEAD
 Delta_implicated_regions.pdf  used on input line 84.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_regions.pd
 f, id=59, 650.43pt x 325.215pt>
-=======
-Delta_implicated_regions.pdf  used on input line 75.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-<../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_regions.pd
-f, id=45, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_regio
 ns.pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Korle-Bu_coluzzii_PM_implicated_region
 s.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Korle-Bu_coluzzii_
-<<<<<<< HEAD
 PM_implicated_regions.pdf  used on input line 85.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 
 Overfull \hbox (8.30055pt too wide) in paragraph at lines 84--86
-=======
-PM_implicated_regions.pdf  used on input line 76.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-
-Overfull \hbox (8.30055pt too wide) in paragraph at lines 75--77
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 [] []  [] 
  []
 
 <../supplementary_implicated_regions/Madina_gambiae_Delta_implicated_regions.pd
-<<<<<<< HEAD
 f, id=61, 650.43pt x 325.215pt>
-=======
-f, id=47, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Madina_gambiae_Delta_implicated_regio
 ns.pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Madina_gambiae_Delta_implicated_region
 s.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Madina_gambiae_Del
-<<<<<<< HEAD
 ta_implicated_regions.pdf  used on input line 87.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.pdf, 
 id=63, 650.43pt x 325.215pt>
-=======
-ta_implicated_regions.pdf  used on input line 78.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-<../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.pdf, 
-id=49, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.
 pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Madina_gambiae_PM_implicated_regions.p
 df>
 Package pdftex.def Info: ../supplementary_implicated_regions/Madina_gambiae_PM_
-<<<<<<< HEAD
 implicated_regions.pdf  used on input line 88.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 
 Overfull \hbox (8.30055pt too wide) in paragraph at lines 87--89
-=======
-implicated_regions.pdf  used on input line 79.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-
-Overfull \hbox (8.30055pt too wide) in paragraph at lines 78--80
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 [] []  [] 
  []
 
 <../supplementary_implicated_regions/Obuasi_gambiae_Delta_implicated_regions.pd
-<<<<<<< HEAD
 f, id=65, 650.43pt x 325.215pt>
-=======
-f, id=51, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Obuasi_gambiae_Delta_implicated_regio
 ns.pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Obuasi_gambiae_Delta_implicated_region
 s.pdf>
 Package pdftex.def Info: ../supplementary_implicated_regions/Obuasi_gambiae_Del
-<<<<<<< HEAD
 ta_implicated_regions.pdf  used on input line 90.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 <../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.pdf, 
 id=67, 650.43pt x 325.215pt>
-=======
-ta_implicated_regions.pdf  used on input line 81.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-<../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.pdf, 
-id=53, 650.43pt x 325.215pt>
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 File: ../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.
 pdf Graphic file (type pdf)
 <use ../supplementary_implicated_regions/Obuasi_gambiae_PM_implicated_regions.p
 df>
 Package pdftex.def Info: ../supplementary_implicated_regions/Obuasi_gambiae_PM_
-<<<<<<< HEAD
 implicated_regions.pdf  used on input line 91.
 (pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
 
@@ -633,30 +558,11 @@ Overfull \hbox (8.30055pt too wide) in paragraph at lines 90--92
 
 
 LaTeX Warning: Float too large for page by 22.90257pt on input line 94.
-=======
-implicated_regions.pdf  used on input line 82.
-(pdftex.def)             Requested size: 239.00298pt x 119.49895pt.
-
-Overfull \hbox (8.30055pt too wide) in paragraph at lines 81--83
-[] []  [] 
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 83.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 83.
-
-LaTeX Warning: Float too large for page by 22.90257pt on input line 85.
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<<<<<<< HEAD
 [4 <../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_regi
-=======
-[3 <../supplementary_implicated_regions/Avrankou_coluzzii_Delta_implicated_regi
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 ons.pdf> <../supplementary_implicated_regions/Baguida_gambiae_Delta_implicated_
 regions.pdf> <../supplementary_implicated_regions/Baguida_gambiae_PM_implicated
 _regions.pdf> <../supplementary_implicated_regions/Korle-Bu_coluzzii_Delta_impl
@@ -666,150 +572,86 @@ a_implicated_regions.pdf> <../supplementary_implicated_regions/Madina_gambiae_P
 M_implicated_regions.pdf> <../supplementary_implicated_regions/Obuasi_gambiae_D
 elta_implicated_regions.pdf> <../supplementary_implicated_regions/Obuasi_gambia
 e_PM_implicated_regions.pdf>]
-<<<<<<< HEAD
 <../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png, id=139,
-=======
-<../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png, id=125,
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
  469.755pt x 252.945pt>
 File: ../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png Gra
 phic file (type png)
 <use ../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_
-<<<<<<< HEAD
 filter_plot.png  used on input line 98.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png, id=141, 4
-=======
-filter_plot.png  used on input line 89.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png, id=127, 4
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 69.755pt x 252.945pt>
 File: ../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png Graph
 ic file (type png)
 <use ../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Baguida_gambiae_Delta_peak_fi
-<<<<<<< HEAD
 lter_plot.png  used on input line 100.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png, id=143, 469.
-=======
-lter_plot.png  used on input line 91.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png, id=129, 469.
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 755pt x 252.945pt>
 File: ../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png Graphic 
 file (type png)
 <use ../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Baguida_gambiae_PM_peak_filte
-<<<<<<< HEAD
 r_plot.png  used on input line 101.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png, id=145,
-=======
-r_plot.png  used on input line 92.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png, id=131,
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
  469.755pt x 252.945pt>
 File: ../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png Gra
 phic file (type png)
 <use ../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_
-<<<<<<< HEAD
 filter_plot.png  used on input line 103.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png, id=147, 46
-=======
-filter_plot.png  used on input line 94.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png, id=133, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Korle-Bu_coluzzii_PM_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 104.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png, id=149, 46
-=======
-ter_plot.png  used on input line 95.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png, id=135, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/Fst/Madina_gambiae_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Madina_gambiae_Delta_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 106.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png, id=151, 469.7
-=======
-ter_plot.png  used on input line 97.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png, id=137, 469.7
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 55pt x 252.945pt>
 File: ../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png Graphic f
 ile (type png)
 <use ../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Madina_gambiae_PM_peak_filter
-<<<<<<< HEAD
 _plot.png  used on input line 107.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png, id=153, 46
-=======
-_plot.png  used on input line 98.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png, id=139, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Obuasi_gambiae_Delta_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 109.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png, id=155, 469.7
-=======
-ter_plot.png  used on input line 100.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png, id=141, 469.7
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 55pt x 252.945pt>
 File: ../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png Graphic f
 ile (type png)
 <use ../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter
-<<<<<<< HEAD
 _plot.png  used on input line 110.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 
 
 LaTeX Warning: Float too large for page by 18.57767pt on input line 113.
-=======
-_plot.png  used on input line 101.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-
-
-LaTeX Warning: Float too large for page by 18.57767pt on input line 104.
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<<<<<<< HEAD
 [5 <../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png (PNG 
-=======
-[4 <../../randomisations/Fst/Avrankou_coluzzii_Delta_peak_filter_plot.png (PNG 
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 copy)> <../../randomisations/Fst/Baguida_gambiae_Delta_peak_filter_plot.png (PN
 G copy)> <../../randomisations/Fst/Baguida_gambiae_PM_peak_filter_plot.png (PNG
  copy)> <../../randomisations/Fst/Korle-Bu_coluzzii_Delta_peak_filter_plot.png 
@@ -819,150 +661,86 @@ g (PNG copy)> <../../randomisations/Fst/Madina_gambiae_PM_peak_filter_plot.png
 (PNG copy)> <../../randomisations/Fst/Obuasi_gambiae_Delta_peak_filter_plot.png
  (PNG copy)> <../../randomisations/Fst/Obuasi_gambiae_PM_peak_filter_plot.png (
 PNG copy)>]
-<<<<<<< HEAD
 <../../randomisations/H12/Avrankou.coluzzii.Delta_peak_filter_plot.png, id=171,
-=======
-<../../randomisations/H12/Avrankou.coluzzii.Delta_peak_filter_plot.png, id=157,
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
  469.755pt x 252.945pt>
 File: ../../randomisations/H12/Avrankou.coluzzii.Delta_peak_filter_plot.png Gra
 phic file (type png)
 <use ../../randomisations/H12/Avrankou.coluzzii.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Avrankou.coluzzii.Delta_peak_
-<<<<<<< HEAD
 filter_plot.png  used on input line 118.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/H12/Baguida.gambiae.Delta_peak_filter_plot.png, id=173, 4
-=======
-filter_plot.png  used on input line 109.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/H12/Baguida.gambiae.Delta_peak_filter_plot.png, id=159, 4
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 69.755pt x 252.945pt>
 File: ../../randomisations/H12/Baguida.gambiae.Delta_peak_filter_plot.png Graph
 ic file (type png)
 <use ../../randomisations/H12/Baguida.gambiae.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Baguida.gambiae.Delta_peak_fi
-<<<<<<< HEAD
 lter_plot.png  used on input line 120.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/H12/Baguida.gambiae.PM_peak_filter_plot.png, id=175, 469.
-=======
-lter_plot.png  used on input line 111.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/H12/Baguida.gambiae.PM_peak_filter_plot.png, id=161, 469.
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 755pt x 252.945pt>
 File: ../../randomisations/H12/Baguida.gambiae.PM_peak_filter_plot.png Graphic 
 file (type png)
 <use ../../randomisations/H12/Baguida.gambiae.PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Baguida.gambiae.PM_peak_filte
-<<<<<<< HEAD
 r_plot.png  used on input line 121.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/H12/Korle-Bu.coluzzii.Delta_peak_filter_plot.png, id=177,
-=======
-r_plot.png  used on input line 112.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/H12/Korle-Bu.coluzzii.Delta_peak_filter_plot.png, id=163,
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
  469.755pt x 252.945pt>
 File: ../../randomisations/H12/Korle-Bu.coluzzii.Delta_peak_filter_plot.png Gra
 phic file (type png)
 <use ../../randomisations/H12/Korle-Bu.coluzzii.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Korle-Bu.coluzzii.Delta_peak_
-<<<<<<< HEAD
 filter_plot.png  used on input line 123.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/H12/Korle-Bu.coluzzii.PM_peak_filter_plot.png, id=179, 46
-=======
-filter_plot.png  used on input line 114.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/H12/Korle-Bu.coluzzii.PM_peak_filter_plot.png, id=165, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/H12/Korle-Bu.coluzzii.PM_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/H12/Korle-Bu.coluzzii.PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Korle-Bu.coluzzii.PM_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 124.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/H12/Madina.gambiae.Delta_peak_filter_plot.png, id=181, 46
-=======
-ter_plot.png  used on input line 115.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/H12/Madina.gambiae.Delta_peak_filter_plot.png, id=167, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/H12/Madina.gambiae.Delta_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/H12/Madina.gambiae.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Madina.gambiae.Delta_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 126.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/H12/Madina.gambiae.PM_peak_filter_plot.png, id=183, 469.7
-=======
-ter_plot.png  used on input line 117.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/H12/Madina.gambiae.PM_peak_filter_plot.png, id=169, 469.7
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 55pt x 252.945pt>
 File: ../../randomisations/H12/Madina.gambiae.PM_peak_filter_plot.png Graphic f
 ile (type png)
 <use ../../randomisations/H12/Madina.gambiae.PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Madina.gambiae.PM_peak_filter
-<<<<<<< HEAD
 _plot.png  used on input line 127.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/H12/Obuasi.gambiae.Delta_peak_filter_plot.png, id=185, 46
-=======
-_plot.png  used on input line 118.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/H12/Obuasi.gambiae.Delta_peak_filter_plot.png, id=171, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/H12/Obuasi.gambiae.Delta_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/H12/Obuasi.gambiae.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Obuasi.gambiae.Delta_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 129.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/H12/Obuasi.gambiae.PM_peak_filter_plot.png, id=187, 469.7
-=======
-ter_plot.png  used on input line 120.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/H12/Obuasi.gambiae.PM_peak_filter_plot.png, id=173, 469.7
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 55pt x 252.945pt>
 File: ../../randomisations/H12/Obuasi.gambiae.PM_peak_filter_plot.png Graphic f
 ile (type png)
 <use ../../randomisations/H12/Obuasi.gambiae.PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/H12/Obuasi.gambiae.PM_peak_filter
-<<<<<<< HEAD
 _plot.png  used on input line 130.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 
 
 LaTeX Warning: Float too large for page by 18.57767pt on input line 133.
-=======
-_plot.png  used on input line 121.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-
-
-LaTeX Warning: Float too large for page by 18.57767pt on input line 124.
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<<<<<<< HEAD
 [6 <../../randomisations/H12/Avrankou.coluzzii.Delta_peak_filter_plot.png (PNG 
-=======
-[5 <../../randomisations/H12/Avrankou.coluzzii.Delta_peak_filter_plot.png (PNG 
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 copy)> <../../randomisations/H12/Baguida.gambiae.Delta_peak_filter_plot.png (PN
 G copy)> <../../randomisations/H12/Baguida.gambiae.PM_peak_filter_plot.png (PNG
  copy)> <../../randomisations/H12/Korle-Bu.coluzzii.Delta_peak_filter_plot.png 
@@ -972,151 +750,87 @@ g (PNG copy)> <../../randomisations/H12/Madina.gambiae.PM_peak_filter_plot.png
 (PNG copy)> <../../randomisations/H12/Obuasi.gambiae.Delta_peak_filter_plot.png
  (PNG copy)> <../../randomisations/H12/Obuasi.gambiae.PM_peak_filter_plot.png (
 PNG copy)>]
-<<<<<<< HEAD
 <../../randomisations/PBS/Avrankou.coluzzii.Delta_peak_filter_plot.png, id=204,
-=======
-<../../randomisations/PBS/Avrankou.coluzzii.Delta_peak_filter_plot.png, id=189,
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
  469.755pt x 252.945pt>
 File: ../../randomisations/PBS/Avrankou.coluzzii.Delta_peak_filter_plot.png Gra
 phic file (type png)
 <use ../../randomisations/PBS/Avrankou.coluzzii.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Avrankou.coluzzii.Delta_peak_
-<<<<<<< HEAD
 filter_plot.png  used on input line 138.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/PBS/Baguida.gambiae.Delta_peak_filter_plot.png, id=206, 4
-=======
-filter_plot.png  used on input line 129.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/PBS/Baguida.gambiae.Delta_peak_filter_plot.png, id=191, 4
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 69.755pt x 252.945pt>
 File: ../../randomisations/PBS/Baguida.gambiae.Delta_peak_filter_plot.png Graph
 ic file (type png)
 <use ../../randomisations/PBS/Baguida.gambiae.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Baguida.gambiae.Delta_peak_fi
-<<<<<<< HEAD
 lter_plot.png  used on input line 140.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/PBS/Baguida.gambiae.PM_peak_filter_plot.png, id=208, 469.
-=======
-lter_plot.png  used on input line 131.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/PBS/Baguida.gambiae.PM_peak_filter_plot.png, id=193, 469.
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 755pt x 252.945pt>
 File: ../../randomisations/PBS/Baguida.gambiae.PM_peak_filter_plot.png Graphic 
 file (type png)
 <use ../../randomisations/PBS/Baguida.gambiae.PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Baguida.gambiae.PM_peak_filte
-<<<<<<< HEAD
 r_plot.png  used on input line 141.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/PBS/Korle-Bu.coluzzii.Delta_peak_filter_plot.png, id=210,
-=======
-r_plot.png  used on input line 132.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/PBS/Korle-Bu.coluzzii.Delta_peak_filter_plot.png, id=195,
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
  469.755pt x 252.945pt>
 File: ../../randomisations/PBS/Korle-Bu.coluzzii.Delta_peak_filter_plot.png Gra
 phic file (type png)
 <use ../../randomisations/PBS/Korle-Bu.coluzzii.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Korle-Bu.coluzzii.Delta_peak_
-<<<<<<< HEAD
 filter_plot.png  used on input line 143.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/PBS/Korle-Bu.coluzzii.PM_peak_filter_plot.png, id=212, 46
-=======
-filter_plot.png  used on input line 134.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/PBS/Korle-Bu.coluzzii.PM_peak_filter_plot.png, id=197, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/PBS/Korle-Bu.coluzzii.PM_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/PBS/Korle-Bu.coluzzii.PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Korle-Bu.coluzzii.PM_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 144.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/PBS/Madina.gambiae.Delta_peak_filter_plot.png, id=214, 46
-=======
-ter_plot.png  used on input line 135.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/PBS/Madina.gambiae.Delta_peak_filter_plot.png, id=199, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/PBS/Madina.gambiae.Delta_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/PBS/Madina.gambiae.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Madina.gambiae.Delta_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 146.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/PBS/Madina.gambiae.PM_peak_filter_plot.png, id=216, 469.7
-=======
-ter_plot.png  used on input line 137.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/PBS/Madina.gambiae.PM_peak_filter_plot.png, id=201, 469.7
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 55pt x 252.945pt>
 File: ../../randomisations/PBS/Madina.gambiae.PM_peak_filter_plot.png Graphic f
 ile (type png)
 <use ../../randomisations/PBS/Madina.gambiae.PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Madina.gambiae.PM_peak_filter
-<<<<<<< HEAD
 _plot.png  used on input line 147.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/PBS/Obuasi.gambiae.Delta_peak_filter_plot.png, id=218, 46
-=======
-_plot.png  used on input line 138.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/PBS/Obuasi.gambiae.Delta_peak_filter_plot.png, id=203, 46
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 9.755pt x 252.945pt>
 File: ../../randomisations/PBS/Obuasi.gambiae.Delta_peak_filter_plot.png Graphi
 c file (type png)
 <use ../../randomisations/PBS/Obuasi.gambiae.Delta_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Obuasi.gambiae.Delta_peak_fil
-<<<<<<< HEAD
 ter_plot.png  used on input line 149.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 <../../randomisations/PBS/Obuasi.gambiae.PM_peak_filter_plot.png, id=220, 469.7
-=======
-ter_plot.png  used on input line 140.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-<../../randomisations/PBS/Obuasi.gambiae.PM_peak_filter_plot.png, id=205, 469.7
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 55pt x 252.945pt>
 File: ../../randomisations/PBS/Obuasi.gambiae.PM_peak_filter_plot.png Graphic f
 ile (type png)
 <use ../../randomisations/PBS/Obuasi.gambiae.PM_peak_filter_plot.png>
 Package pdftex.def Info: ../../randomisations/PBS/Obuasi.gambiae.PM_peak_filter
-<<<<<<< HEAD
 _plot.png  used on input line 150.
 (pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
 
 
 LaTeX Warning: Float too large for page by 6.57767pt on input line 153.
-=======
-_plot.png  used on input line 141.
-(pdftex.def)             Requested size: 224.7766pt x 121.03397pt.
-
-
-LaTeX Warning: Float too large for page by 6.57767pt on input line 144.
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<<<<<<< HEAD
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
 [7 <../../randomisations/PBS/Avrankou.coluzzii.Delta_peak_filter_plot.png (PNG 
-=======
-[6 <../../randomisations/PBS/Avrankou.coluzzii.Delta_peak_filter_plot.png (PNG 
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 copy)> <../../randomisations/PBS/Baguida.gambiae.Delta_peak_filter_plot.png (PN
 G copy)> <../../randomisations/PBS/Baguida.gambiae.PM_peak_filter_plot.png (PNG
  copy)> <../../randomisations/PBS/Korle-Bu.coluzzii.Delta_peak_filter_plot.png 
@@ -1126,65 +840,24 @@ g (PNG copy)> <../../randomisations/PBS/Madina.gambiae.PM_peak_filter_plot.png
 (PNG copy)> <../../randomisations/PBS/Obuasi.gambiae.Delta_peak_filter_plot.png
  (PNG copy)> <../../randomisations/PBS/Obuasi.gambiae.PM_peak_filter_plot.png (
 PNG copy)>]
-<<<<<<< HEAD
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
  (./Supplementary_Figures_and_tables.aux)
-=======
-<../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png, id
-=222, 1084.05pt x 361.35pt>
-File: ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.pn
-g Graphic file (type png)
-<use ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png
->
-Package pdftex.def Info: ../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_hapl
-otype_clustering.png  used on input line 149.
-(pdftex.def)             Requested size: 483.69684pt x 161.23306pt.
-
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 149--150
-[][] 
- []
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-50.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
- [7
-
-
-
-
-
-
- <../../CNV_analysis/Cyp9k1_Dup10_haplotypes/Cyp9k1_haplotype_clustering.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
-
-(./Supplementary_Figures_and_tables.aux)
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
 Package rerunfilecheck Info: File `Supplementary_Figures_and_tables.out' has no
 t changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-<<<<<<< HEAD
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-=======
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
  ) 
 Here is how much of TeX's memory you used:
- 7809 strings out of 483183
- 133551 string characters out of 5966293
-<<<<<<< HEAD
- 380681 words of memory out of 5000000
-=======
- 379681 words of memory out of 5000000
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
- 22659 multiletter control sequences out of 15000+600000
+ 7808 strings out of 483183
+ 133544 string characters out of 5966293
+ 380093 words of memory out of 5000000
+ 22658 multiletter control sequences out of 15000+600000
  539719 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,7n,42p,1036b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1198,11 +871,7 @@ k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-<<<<<<< HEAD
 Output written on Supplementary_Figures_and_tables.pdf (7 pages, 22295481 bytes
-=======
-Output written on Supplementary_Figures_and_tables.pdf (7 pages, 22295437 bytes
->>>>>>> e0831dc12dd62cafe257f097cab7b5461038889d
 ).
 PDF statistics:
  469 PDF objects out of 1000 (max. 8388607)
