@@ -23,7 +23,30 @@ output_file = 'window_Fst_haplotype_summary.md'
 
 f = open(output_file, 'w')
 
-f.write('# GAARD windows of interest\n\n')
+f.write('# F<sub>ST</sub> windows of interest\n\n')
+
+f.write(
+'For each sample set, we first provide a summary plot of F<sub>ST</sub> bewteen '\
+'resistant and susceptible samples across the genome, with F<sub>ST</sub> shown '\
+'in red and the results of the 200 randomisations shown behind in grey. Windows '\
+'identified as peaks are highlighted by points, colour-coded by whether they are '\
+'significantly higher than expected based on the simulations (green) or not (purple). '\
+'For each significant window (green points), we then provide four additional '\
+'figures. The first shows the significant (*P* < 0.01) SNPs found in the region '\
+'of that window, and their -log10(Pvalue) of association with phenotype. Red points '\
+'indicate non-synonymous SNPs, blue points indicate all other SNPs. Point shape '\
+'indicates whether the mutant allele at that SNP is associated with increased '\
+'(circle) or decreased (triangle) resistance. Dark points in the centre of the plot '\
+'show SNPs within the significant window, light points on the sides show SNPs in '\
+'region 10,000 bp either side of the window. The second plot shows the hierarchical '\
+'cluster of haplotypes in the window, with brackets indicating large haplotype '\
+'clusters. The third plot shows, each haplotype cluster, indicating the number of '\
+'haplotypes comprising the cluster (n), the *P* value of association of the cluster '\
+'with resistance phenotype, and the SNPs that differentiate that cluster from other '\
+'haplotypes in the region, colour-coded by type (red = non-synonymous, yellow = '\
+'synonymous, blue = non-coding). The final figure shows the contingency tables of '\
+'phenotype association for each haplotype cluster. \n\n'
+)
 
 for pop in populations:
 	f.write(f'[{populations_italics[pop]}](#{pop.lower()})  \n')
