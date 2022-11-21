@@ -39,8 +39,15 @@ f.write(
 'the sides show SNPs in the region 10,000 bp either side of the window. \n\n'
 )
 
+f.write('[Legend](#Plot_legend)  \n')
 for pop in populations:
 	f.write(f'[{populations_italics[pop]}](#{pop.lower()})  \n')
+
+f.write('\n___\n\n')
+
+f.write('## Plot legend\n\n')
+f.write('<a id="Plot_legend">\n\n')
+f.write('![legend](./H12_example.svg)\n\n')
 
 f.write('\n___\n\n')
 
