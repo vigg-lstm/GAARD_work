@@ -21,7 +21,7 @@ ___
 
 ## Avrankou\_*coluzzii*\_Delta
 
-![Avrankou_coluzzii_Delta_top_snps](../../../ML/GAARD_SNP/summary_figures/Avrankou_coluzzii_Delta_top_snps_summary_plot.png)
+![Avrankou_coluzzii_Delta_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Avrankou_coluzzii_Delta_top_snps_summary_plot.png)
 
 
 &nbsp;
@@ -30,7 +30,7 @@ ___
 
 ## Baguida\_*gambiae*\_Delta
 
-![Baguida_gambiae_Delta_top_snps](../../../ML/GAARD_SNP/summary_figures/Baguida_gambiae_Delta_top_snps_summary_plot.png)
+![Baguida_gambiae_Delta_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Baguida_gambiae_Delta_top_snps_summary_plot.png)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ ___
 
 ## Korle-Bu\_*coluzzii*\_Delta
 
-![Korle-Bu_coluzzii_Delta_top_snps](../../../ML/GAARD_SNP/summary_figures/Korle-Bu_coluzzii_Delta_top_snps_summary_plot.png)
+![Korle-Bu_coluzzii_Delta_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Korle-Bu_coluzzii_Delta_top_snps_summary_plot.png)
 
 &nbsp;
 
@@ -46,7 +46,7 @@ ___
 
 ## Madina\_*gambiae*\_Delta
 
-![Madina_gambiae_Delta_top_snps](../../../ML/GAARD_SNP/summary_figures/Madina_gambiae_Delta_top_snps_summary_plot.png)
+![Madina_gambiae_Delta_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Madina_gambiae_Delta_top_snps_summary_plot.png)
 
 &nbsp;
 
@@ -54,7 +54,7 @@ ___
 
 ## Obuasi\_*gambiae*\_Delta
 
-![Obuasi_gambiae_Delta_top_snps](../../../ML/GAARD_SNP/summary_figures/Obuasi_gambiae_Delta_top_snps_summary_plot.png)
+![Obuasi_gambiae_Delta_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Obuasi_gambiae_Delta_top_snps_summary_plot.png)
 
 &nbsp;
 
@@ -62,7 +62,7 @@ ___
 
 ## Baguida\_*gambiae*\_PM
 
-![Baguida_gambiae_PM_top_snps](../../../ML/GAARD_SNP/summary_figures/Baguida_gambiae_PM_top_snps_summary_plot.png)
+![Baguida_gambiae_PM_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Baguida_gambiae_PM_top_snps_summary_plot.png)
 
 &nbsp;
 ___
@@ -70,7 +70,7 @@ ___
 
 ## Korle-Bu\_*coluzzii*\_PM
 
-![Korle-Bu_coluzzii_PM_top_snps](../../../ML/GAARD_SNP/summary_figures/Korle-Bu_coluzzii_PM_top_snps_summary_plot.png)
+![Korle-Bu_coluzzii_PM_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Korle-Bu_coluzzii_PM_top_snps_summary_plot.png)
 
 &nbsp;
 
@@ -78,7 +78,7 @@ ___
 
 ## Madina\_*gambiae*\_PM
 
-![Madina_gambiae_PM_top_snps](../../../ML/GAARD_SNP/summary_figures/Madina_gambiae_PM_top_snps_summary_plot.png)
+![Madina_gambiae_PM_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Madina_gambiae_PM_top_snps_summary_plot.png)
 
 &nbsp;
 
@@ -86,7 +86,7 @@ ___
 
 ## Obuasi\_*gambiae*\_PM
 
-![Obuasi_gambiae_PM_top_snps](../../../ML/GAARD_SNP/summary_figures/Obuasi_gambiae_PM_top_snps_summary_plot.png)
+![Obuasi_gambiae_PM_top_snps](/home/elucas/data/ML/GAARD_SNP/summary_figures/Obuasi_gambiae_PM_top_snps_summary_plot.png)
 
 &nbsp;
 
