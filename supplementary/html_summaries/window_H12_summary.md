@@ -2,6 +2,7 @@
 
 For each sample set, we first provide a summary plot of the difference in H<sub>12</sub> (H<sub>12</sub> in susceptible samples subtracted from that in resistant samples) across the genome, with H<sub>12</sub> shown in green and the results of the 200 randomisations shown behind in grey. Windows identified as peaks are highlighted by points, colour-coded by whether they are significantly higher than expected based on the simulations (green) or not (purple). For each significant  window (green points), we then provide its own plot showing the significant (*P* < 0.01) SNPs found in the region of that window, and their -log10(Pvalue) of association with phenotype. Red points indicate non-synonymous SNPs, blue points indicate all other SNPs. Point shape indicates whether the mutant allele at that SNP is associated with increased (circle) or decreased (triangle) resistance. Dark points in the centre of the plot show SNPs within the significant window, light points on the sides show SNPs in the region 10,000 bp either side of the window. 
 
+[Legend](#Plot_legend)  
 [Avrankou\_*coluzzii*\_Delta](#avrankou_coluzzii_delta)  
 [Baguida\_*gambiae*\_Delta](#baguida_gambiae_delta)  
 [Korle-Bu\_*coluzzii*\_Delta](#korle-bu_coluzzii_delta)  
@@ -11,6 +12,15 @@ For each sample set, we first provide a summary plot of the difference in H<sub>
 [Korle-Bu\_*coluzzii*\_PM](#korle-bu_coluzzii_pm)  
 [Madina\_*gambiae*\_PM](#madina_gambiae_pm)  
 [Obuasi\_*gambiae*\_PM](#obuasi_gambiae_pm)  
+
+___
+
+## Plot legend
+
+<a id="Plot_legend">
+
+![legend](./H12_example.svg)
+
 
 ___
 
