@@ -1,6 +1,7 @@
 library(rgdal)
 library(plotrix)
 library(rgeos)
+library(raster)
 library(data.table)
 library(magrittr)
 
@@ -59,12 +60,16 @@ plot.collection.sites <- function(sites, palette){
 	]
 }
 
-#pdf('collection_sites.pdf', width = 7, height = 4)
-#plot.collection.sites(sites, pal)
-#dev.off()
-
 png('collection_sites.png', width = 7, height = 4, units = 'in', res = 300)
 plot.collection.sites(sites, pal)
+scalebar(d = 200, # distance in km
+         xy = c(1.9,4.5),
+         type = "bar", 
+         divs = 2, 
+         below = "km", 
+         lonlat = TRUE,
+         label = c(0,100,200), 
+         adj=c(0, -1), 
+         lwd = 2)
 dev.off()
-
 
