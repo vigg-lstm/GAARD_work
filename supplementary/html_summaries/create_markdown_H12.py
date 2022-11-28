@@ -24,9 +24,9 @@ f = open(output_file, 'w')
 f.write('# H12 windows of interest\n\n')
 
 f.write(
-'For each sample set, we first provide a summary plot of the difference in '\
-'H<sub>12</sub> (H<sub>12</sub> in susceptible samples subtracted from that in '\
-'resistant samples) across the genome, with H<sub>12</sub> shown in green and the '\
+'For each sample set, we first provide a summary plot of $\Delta$H<sub>12</sub> '\
+'(H<sub>12</sub> in susceptible samples subtracted from that in resistant samples) '\
+' across the genome, with $\Delta$H<sub>12</sub> shown in green and the '\
 'results of the 200 randomisations shown behind in grey. Windows identified as peaks '\
 'are highlighted by points, colour-coded by whether they are significantly higher '\
 'than expected based on the simulations (green) or not (purple). For each significant '\
