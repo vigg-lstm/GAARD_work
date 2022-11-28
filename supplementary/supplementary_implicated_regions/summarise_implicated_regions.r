@@ -404,8 +404,8 @@ pbs.regions[['Obuasi.gambiae.PM']][chrom == '3R' & start == 48498682, label := '
 pbs.regions[['Obuasi.gambiae.PM']][chrom == 'X' & start == 14354519, label := 'Cyp9k1 (-500Kb)']
 
 for (pop in study.pops){
-	filename <- paste(pop, 'implicated_regions.pdf', sep = '_')
-	pdf(filename, width = 9, height = 4.5)
+	filename <- paste(pop, 'implicated_regions.png', sep = '_')
+	png(filename, width = 9, height = 4.5, units = 'in', res = 300)
 	plot.implicated.regions(gwas.regions[[pop]], 
 							fst.regions[[pop]],
 							h12.regions[[gsub('_', '.', pop)]],
