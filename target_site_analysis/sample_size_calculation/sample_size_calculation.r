@@ -82,7 +82,7 @@ simulate.statistical.testing <- function(n, sample.size, snps.in.genome, genotyp
 }
 
 num.snps.in.genome <- 7000000
-sample.sizes <- c(100, 200, 300, 500, 750)
+sample.sizes <- c(100, 200, 300, 500, 750, 1000)
 num.sig.snps.to.model <- c(1, 3, 10, 30, 100)
 num.iterations <- 500
 
@@ -125,6 +125,6 @@ cat('Summary of statistical power:\n\n')
 
 print(simulation.summary)
 
-save.image('sample_size_estimation.Rdata')
+save.image('sample_size_calculation.Rdata')
 
 
