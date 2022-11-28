@@ -323,9 +323,9 @@ plot.implicated.regions <- function(gwas.regions,
 	plot.regions.on.chromosome(gwas.regions, chrom.sizes, rect.col = 'purple', chrom.cex = 0)
 	mtext('GWAS', line = 0.7, col = 'purple', font = 2)
 	plot.regions.on.chromosome(fst.regions, chrom.sizes, rect.col = 'orangered3', chrom.cex = 0)
-	mtext('Fst', line = 0.7, col = 'orangered3', font = 2)
+	mtext(expression(F[ST]), line = 0.7, col = 'orangered3', font = 2)
 	plot.regions.on.chromosome(h12.regions, chrom.sizes, rect.col = 'darkgreen', chrom.cex = 0)
-	mtext('H12', line = 0.7, col = 'darkgreen', font = 2)
+	mtext(expression(paste(Delta, 'H'[12])), line = 0.7, col = 'darkgreen', font = 2)
 	plot.regions.on.chromosome(pbs.regions, chrom.sizes, rect.col = 'blue', chrom.cex = 0)
 	mtext('PBS', line = 0.7, col = 'blue', font = 2)
 	add.chromosomes(chrom.sizes, gaps = 5e6)
@@ -404,8 +404,8 @@ pbs.regions[['Obuasi.gambiae.PM']][chrom == '3R' & start == 48498682, label := '
 pbs.regions[['Obuasi.gambiae.PM']][chrom == 'X' & start == 14354519, label := 'Cyp9k1 (-500Kb)']
 
 for (pop in study.pops){
-	filename <- paste(pop, 'implicated_regions.pdf', sep = '_')
-	pdf(filename, width = 9, height = 4.5)
+	filename <- paste(pop, 'implicated_regions.png', sep = '_')
+	png(filename, width = 9, height = 4.5, units = 'in', res = 300)
 	plot.implicated.regions(gwas.regions[[pop]], 
 							fst.regions[[pop]],
 							h12.regions[[gsub('_', '.', pop)]],
