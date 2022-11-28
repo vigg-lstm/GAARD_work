@@ -210,7 +210,7 @@ plot.hap.cluster <- function(snp.table, sig.test, filename, remove.background.sn
 	     yaxt = 'n', ylab = '', 
 	     cex.lab = 0.8, cex.axis = 0.6
 	)
-	axis(1, seq(5000*round(start.pos/5000), 5000*round(end.pos)/5000, 5000))
+	axis(1, seq(5000*round(start.pos/5000), 5000*round(end.pos)/5000, 5000), cex.axis = 0.6)
 	if (!missing(filename))
 		dev.off()
 }
