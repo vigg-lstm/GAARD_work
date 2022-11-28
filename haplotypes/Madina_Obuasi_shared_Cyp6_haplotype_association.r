@@ -103,7 +103,7 @@ lighten.col <- function(color, lightness, alpha = alpha){
 # A function to plot the haplotype clusters. The remove.background.snps argument controls whether SNPs
 # where the alt alleles is not significantly more frequent in the cluster than in non-cluster haplotypes
 # are removed from the plot or simply plotted in a lighter colour. 
-plot.hap.cluster <- function(snp.table, sig.test, filename, point.cex, remove.background.snps = T, add = F){
+plot.hap.cluster <- function(snp.table, sig.test, filename, remove.background.snps = T, add = F){
 	chrom <- unique(snp.table$Chrom)
 	start.pos <- min(snp.table$Pos)
 	end.pos <- max(snp.table$Pos)
@@ -204,11 +204,17 @@ plot.hap.cluster <- function(snp.table, sig.test, filename, point.cex, remove.ba
 	text(label.x, y.pos - 0.04, paste('p =', format(cluster.p, digits = 2, scientific = -2)), adj = 1, col = p.col, cex = 0.6)
 	text(label.x, y.pos - 0.04, arrow.code, adj = 0, cex = 0.8)
 	
-	plot(c(start.pos, end.pos), c(0,0), type = 'n', bty = 'n', xlab = paste('Position on', chrom), yaxt = 'n', ylab = '', cex.lab = 0.8, cex.axis = 0.6)
+	plot(c(start.pos, end.pos), c(0,0), 
+	     type = 'n', bty = 'n', 
+	     xaxt = 'n', xlab = paste('Position on', chrom), 
+	     yaxt = 'n', ylab = '', 
+	     cex.lab = 0.8, cex.axis = 0.6
+	)
+	axis(1, seq(5000*round(start.pos/5000), 5000*round(end.pos)/5000, 5000), cex.axis = 0.6)
 	if (!missing(filename))
 		dev.off()
 }
 
-plot.hap.cluster(snp.table, sig.test, 'Madina_Obuasi_shared_Cyp6_haplotype.svg', point.cex = 0.8)
+plot.hap.cluster(snp.table, sig.test, 'Madina_Obuasi_shared_Cyp6_haplotype.svg')
 
 
