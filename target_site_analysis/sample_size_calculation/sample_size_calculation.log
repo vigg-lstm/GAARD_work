@@ -29,6 +29,12 @@ Sample size 750
 	Simulating 10 significant SNPs
 	Simulating 30 significant SNPs
 	Simulating 100 significant SNPs
+Sample size 1000 
+	Simulating 1 significant SNPs
+	Simulating 3 significant SNPs
+	Simulating 10 significant SNPs
+	Simulating 30 significant SNPs
+	Simulating 100 significant SNPs
 There were 50 or more warnings (use warnings() to see the first 50)
 Summary of statistical power:
 
@@ -190,5 +196,37 @@ $S750$N100
 1:          0.81652            0.82144         0.952321          0.9524825
    fpr.Vgsc   fpr.Cyp4j5
 1: 5.84e-07 5.854286e-07
+
+
+$S1000
+$S1000$N1
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:            0.702              0.704        0.8908629          0.8911392
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.228571e-08 1.228571e-08
+
+$S1000$N3
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:              0.7                0.7        0.9391771          0.9391771
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.942857e-08 1.942857e-08
+
+$S1000$N10
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:           0.7238              0.724         0.944662            0.94443
+       fpr.Vgsc   fpr.Cyp4j5
+1: 6.057143e-08 6.085714e-08
+
+$S1000$N30
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:        0.7079333              0.708        0.9521205          0.9521248
+       fpr.Vgsc   fpr.Cyp4j5
+1: 1.525714e-07 1.525714e-07
+
+$S1000$N100
+   sensitivity.Vgsc sensitivity.Cyp4j5 specificity.Vgsc specificity.Cyp4j5
+1:          0.82994               0.83        0.9522903          0.9522935
+   fpr.Vgsc fpr.Cyp4j5
+1: 5.94e-07   5.94e-07
 
 
