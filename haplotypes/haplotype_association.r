@@ -114,55 +114,7 @@ snp.tables <- lapply(setNames(nm = sig.tests$pop.window), load.snps)
 gff.path <- '~/data/ML/GAARD_SNP/data/Anopheles-gambiae-PEST_BASEFEATURES_AgamP4.9.gff3'
 gff <- as.data.table(read.gff(gff.path, GFF3 = T))
 
-draw.gene.model <- function(start.pos, end.pos, gene.positions, exon.positions, include.gene.names = T, y = 0, text.cex = 0.5, gene.thickness.fraction = 15){
-	lwd = 2
-	lines(c(start.pos, end.pos), c(y, y), lwd = lwd, col = 'grey20')
-	if (nrow(gene.positions) > 0){
-		gene.positions <- gene.positions[order(start)]
-		gr <- par('usr')
-		gene.thickness <- (gr[4] - gr[3])/gene.thickness.fraction
-		# Draw the genes
-		v.adj = ifelse(gene.positions$strand == '+', 0, -gene.thickness)
-		rect(
-			gene.positions[,start], 
-			y + v.adj, 
-			gene.positions[,end], 
-			y + gene.thickness + v.adj, 
-			col = 'grey95',
-			border = 'black',
-			lwd = lwd,
-			xpd = F
-		)
-		# Draw the exons
-		exon.v.adj = ifelse(exon.positions$strand == '+', 0, -gene.thickness)
-		rect(
-			exon.positions[,start], 
-			y + exon.v.adj, 
-			exon.positions[,end], 
-			y + gene.thickness + exon.v.adj, 
-			col = 'black',
-			border = NA,
-			xpd = F
-		)
-		# Label the genes
-		if (include.gene.names){
-			text(
-				apply(gene.positions[,.(start, end)], 1, mean), 
-				y - 1.6*gene.thickness, 
-				gene.positions$gene.name, 
-				adj = 1, 
-				srt = 45,
-				cex = text.cex
-			)
-		}
-	}
-}
-
-# A function to lighten the tone of the colour
-lighten.col <- function(color, lightness, alpha = alpha){
-	col.rgb <- col2rgb(color)/255
-	rgb(t(1-(1-col.rgb)*lightness), alpha = alpha)
-}
+source('../shared_functions/R_plotting.r')
 
 # A function to plot the haplotype clusters. The remove.background.snps argument controls whether SNPs
 # where the alt alleles is not significantly more frequent in the cluster than in non-cluster haplotypes
