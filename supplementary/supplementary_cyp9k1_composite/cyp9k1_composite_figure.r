@@ -105,7 +105,7 @@ composite.plot <- function(pop, filename = NULL){
 	pbs.table <- pbs[[pop]]
 	if (!is.null(filename)){
 		file.width = 6.5
-		file.height = 4
+		file.height = 3.5
 		if (grepl('\\.eps', filename))
 			postscript(filename, width = file.width, height = file.height, horizontal = F, onefile = FALSE, paper = "special")
 		else if (grepl('\\.png', filename))
