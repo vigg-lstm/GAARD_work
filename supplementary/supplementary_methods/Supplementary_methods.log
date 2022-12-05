@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  26 AUG 2022 21:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.2)  5 DEC 2022 16:31
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **Supplementary_methods.tex
 (./Supplementary_methods.tex
@@ -47,124 +48,181 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
-(/usr/share/texlive/texmf-dist/tex/latex/))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@tempdima=\dimen140
+\caption@indent=\dimen141
+\caption@parindent=\dimen142
+\caption@hangindent=\dimen143
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count175
+\c@continuedfloat=\count176
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count177
+\c@subtable=\count178
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen144
+\ar@mcellbox=\box45
+\extrarowheight=\dimen145
+\NC@list=\toks15
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box46
+)
+\TX@col@width=\dimen146
+\TX@old@table=\dimen147
+\TX@old@col=\dimen148
+\TX@target=\dimen149
+\TX@delta=\dimen150
+\TX@cols=\count179
+\TX@ftn=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)))
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty))
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count180
+\Gm@cntv=\count181
+\c@Gm@tempcnt=\count182
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks19
+)
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)))
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks20
+\minrowclearance=\skip51
+)
+\rownum=\count183
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
-(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
-(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def)
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def)
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx))
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx)
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg)
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 
-Package biblatex Warning: 'firstinits' option is deprecated.
-(biblatex)                Please use 'giveninits' instead.
-
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-
-Package biblatex Warning: Conflicting options.
-(biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 55.
-
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def)
-(./Supplementary_methods.aux)
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
-(./Supplementary_methods.out) (./Supplementary_methods.out)
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx)
-(./Supplementary_methods.bbl) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.
-map}] (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd)
-Overfull \hbox (108.46213pt too wide) in paragraph at lines 88--89
- [] 
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen159
+\Hy@linkcounter=\count184
+\Hy@pagecounter=\count185
 
-Overfull \hbox (50.64592pt too wide) in paragraph at lines 100--101
-[][] 
-
-Overfull \hbox (50.64592pt too wide) in paragraph at lines 104--105
-[][] 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <../../NGSrelate/divergence_along_chromosome/genetic_difference_across_genom
-e.png>] [3 <../../NGSrelate/full_relatedness/king_histograms.png (PNG copy)> <.
-./../NGSrelate/full_relatedness/king_histograms_karyotype.png (PNG copy)>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 113.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 113.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 113.
-
-[4 <./figures/Fst_example_histogram_annotated.pdf>]
-Overfull \hbox (14.51091pt too wide) in paragraph at lines 139--140
- [] 
-[5 <./figures/plate_layouts_annotated.pdf>] [6] (./Supplementary_methods.aux) )
-(see the transcript file for additional information) </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/eric/.texlive2019/t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy7.pfb>
-Output written on Supplementary_methods.pdf (6 pages, 367213 bytes).
-Transcript written on Supplementary_methods.log.
-s/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count185
-\pdfmajorversion=\count186
+\Hy@SavedSpaceFactor=\count186
+\pdfmajorversion=\count187
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -172,14 +230,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count187
+\c@Hy@tempcnt=\count188
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen155
+\XeTeXLinkMargin=\dimen160
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -188,9 +246,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count188
-\Field@Width=\dimen156
-\Fld@charsize=\dimen157
+\Fld@menulength=\count189
+\Field@Width=\dimen161
+\Fld@charsize=\dimen162
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -204,9 +262,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count189
-\c@Item=\count190
-\c@Hfootnote=\count191
+\Hy@abspage=\count190
+\c@Item=\count191
+\c@Hfootnote=\count192
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -217,8 +275,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count192
-\c@bookmark@seq@number=\count193
+\Fld@listcount=\count193
+\c@bookmark@seq@number=\count194
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -231,18 +289,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 14.
+Package hyperref Info: Option `colorlinks' set `true' on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count194
+\etb@tempcnta=\count195
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count195
+\lrq@indent=\count196
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -250,47 +308,47 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count196
-\c@listtotal=\count197
-\c@listcount=\count198
-\c@liststart=\count199
-\c@liststop=\count266
-\c@citecount=\count267
-\c@citetotal=\count268
-\c@multicitecount=\count269
-\c@multicitetotal=\count270
-\c@instcount=\count271
-\c@maxnames=\count272
-\c@minnames=\count273
-\c@maxitems=\count274
-\c@minitems=\count275
-\c@citecounter=\count276
-\c@maxcitecounter=\count277
-\c@savedcitecounter=\count278
-\c@uniquelist=\count279
-\c@uniquename=\count280
-\c@refsection=\count281
-\c@refsegment=\count282
-\c@maxextratitle=\count283
-\c@maxextratitleyear=\count284
-\c@maxextraname=\count285
-\c@maxextradate=\count286
-\c@maxextraalpha=\count287
-\c@abbrvpenalty=\count288
-\c@highnamepenalty=\count289
-\c@lownamepenalty=\count290
-\c@maxparens=\count291
-\c@parenlevel=\count292
-\blx@tempcnta=\count293
-\blx@tempcntb=\count294
-\blx@tempcntc=\count295
-\blx@maxsection=\count296
-\blx@maxsegment@0=\count297
-\blx@notetype=\count298
-\blx@parenlevel@text=\count299
-\blx@parenlevel@foot=\count300
-\blx@sectionciteorder@0=\count301
-\blx@entrysetcounter=\count302
+\c@tabx@nest=\count197
+\c@listtotal=\count198
+\c@listcount=\count199
+\c@liststart=\count266
+\c@liststop=\count267
+\c@citecount=\count268
+\c@citetotal=\count269
+\c@multicitecount=\count270
+\c@multicitetotal=\count271
+\c@instcount=\count272
+\c@maxnames=\count273
+\c@minnames=\count274
+\c@maxitems=\count275
+\c@minitems=\count276
+\c@citecounter=\count277
+\c@maxcitecounter=\count278
+\c@savedcitecounter=\count279
+\c@uniquelist=\count280
+\c@uniquename=\count281
+\c@refsection=\count282
+\c@refsegment=\count283
+\c@maxextratitle=\count284
+\c@maxextratitleyear=\count285
+\c@maxextraname=\count286
+\c@maxextradate=\count287
+\c@maxextraalpha=\count288
+\c@abbrvpenalty=\count289
+\c@highnamepenalty=\count290
+\c@lownamepenalty=\count291
+\c@maxparens=\count292
+\c@parenlevel=\count293
+\blx@tempcnta=\count294
+\blx@tempcntb=\count295
+\blx@tempcntc=\count296
+\blx@maxsection=\count297
+\blx@maxsegment@0=\count298
+\blx@notetype=\count299
+\blx@parenlevel@text=\count300
+\blx@parenlevel@foot=\count301
+\blx@sectionciteorder@0=\count302
+\blx@entrysetcounter=\count303
 \labelnumberwidth=\skip53
 \labelalphawidth=\skip54
 \biblabelsep=\skip55
@@ -302,9 +360,9 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language3
-\c@mincomprange=\count303
-\c@maxcomprange=\count304
-\c@mincompwidth=\count305
+\c@mincomprange=\count304
+\c@maxcomprange=\count305
+\c@mincompwidth=\count306
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -315,74 +373,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count306
-\c@savedafterword=\count307
-\c@annotator=\count308
-\c@savedannotator=\count309
-\c@author=\count310
-\c@savedauthor=\count311
-\c@bookauthor=\count312
-\c@savedbookauthor=\count313
-\c@commentator=\count314
-\c@savedcommentator=\count315
-\c@editor=\count316
-\c@savededitor=\count317
-\c@editora=\count318
-\c@savededitora=\count319
-\c@editorb=\count320
-\c@savededitorb=\count321
-\c@editorc=\count322
-\c@savededitorc=\count323
-\c@foreword=\count324
-\c@savedforeword=\count325
-\c@holder=\count326
-\c@savedholder=\count327
-\c@introduction=\count328
-\c@savedintroduction=\count329
-\c@namea=\count330
-\c@savednamea=\count331
-\c@nameb=\count332
-\c@savednameb=\count333
-\c@namec=\count334
-\c@savednamec=\count335
-\c@translator=\count336
-\c@savedtranslator=\count337
-\c@shortauthor=\count338
-\c@savedshortauthor=\count339
-\c@shorteditor=\count340
-\c@savedshorteditor=\count341
-\c@labelname=\count342
-\c@savedlabelname=\count343
-\c@institution=\count344
-\c@savedinstitution=\count345
-\c@lista=\count346
-\c@savedlista=\count347
-\c@listb=\count348
-\c@savedlistb=\count349
-\c@listc=\count350
-\c@savedlistc=\count351
-\c@listd=\count352
-\c@savedlistd=\count353
-\c@liste=\count354
-\c@savedliste=\count355
-\c@listf=\count356
-\c@savedlistf=\count357
-\c@location=\count358
-\c@savedlocation=\count359
-\c@organization=\count360
-\c@savedorganization=\count361
-\c@origlocation=\count362
-\c@savedoriglocation=\count363
-\c@origpublisher=\count364
-\c@savedorigpublisher=\count365
-\c@publisher=\count366
-\c@savedpublisher=\count367
-\c@language=\count368
-\c@savedlanguage=\count369
-\c@origlanguage=\count370
-\c@savedoriglanguage=\count371
-\c@pageref=\count372
-\c@savedpageref=\count373
+\c@afterword=\count307
+\c@savedafterword=\count308
+\c@annotator=\count309
+\c@savedannotator=\count310
+\c@author=\count311
+\c@savedauthor=\count312
+\c@bookauthor=\count313
+\c@savedbookauthor=\count314
+\c@commentator=\count315
+\c@savedcommentator=\count316
+\c@editor=\count317
+\c@savededitor=\count318
+\c@editora=\count319
+\c@savededitora=\count320
+\c@editorb=\count321
+\c@savededitorb=\count322
+\c@editorc=\count323
+\c@savededitorc=\count324
+\c@foreword=\count325
+\c@savedforeword=\count326
+\c@holder=\count327
+\c@savedholder=\count328
+\c@introduction=\count329
+\c@savedintroduction=\count330
+\c@namea=\count331
+\c@savednamea=\count332
+\c@nameb=\count333
+\c@savednameb=\count334
+\c@namec=\count335
+\c@savednamec=\count336
+\c@translator=\count337
+\c@savedtranslator=\count338
+\c@shortauthor=\count339
+\c@savedshortauthor=\count340
+\c@shorteditor=\count341
+\c@savedshorteditor=\count342
+\c@labelname=\count343
+\c@savedlabelname=\count344
+\c@institution=\count345
+\c@savedinstitution=\count346
+\c@lista=\count347
+\c@savedlista=\count348
+\c@listb=\count349
+\c@savedlistb=\count350
+\c@listc=\count351
+\c@savedlistc=\count352
+\c@listd=\count353
+\c@savedlistd=\count354
+\c@liste=\count355
+\c@savedliste=\count356
+\c@listf=\count357
+\c@savedlistf=\count358
+\c@location=\count359
+\c@savedlocation=\count360
+\c@organization=\count361
+\c@savedorganization=\count362
+\c@origlocation=\count363
+\c@savedoriglocation=\count364
+\c@origpublisher=\count365
+\c@savedorigpublisher=\count366
+\c@publisher=\count367
+\c@savedpublisher=\count368
+\c@language=\count369
+\c@savedlanguage=\count370
+\c@origlanguage=\count371
+\c@savedoriglanguage=\count372
+\c@pageref=\count373
+\c@savedpageref=\count374
 \shorthandwidth=\skip61
 \shortjournalwidth=\skip62
 \shortserieswidth=\skip63
@@ -408,19 +466,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count374
-\c@textcitetotal=\count375
-\c@textcitemaxnames=\count376
-\c@biburlbigbreakpenalty=\count377
-\c@biburlbreakpenalty=\count378
-\c@biburlnumpenalty=\count379
-\c@biburlucpenalty=\count380
-\c@biburllcpenalty=\count381
+\c@textcitecount=\count375
+\c@textcitetotal=\count376
+\c@textcitemaxnames=\count377
+\c@biburlbigbreakpenalty=\count378
+\c@biburlbreakpenalty=\count379
+\c@biburlnumpenalty=\count380
+\c@biburlucpenalty=\count381
+\c@biburllcpenalty=\count382
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count382
+\c@smartand=\count383
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -432,8 +490,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count383
-\c@bbx:relatedtotal=\count384
+\c@bbx:relatedcount=\count384
+\c@bbx:relatedtotal=\count385
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -459,52 +517,52 @@ Package biblatex Warning: 'firstinits' option is deprecated.
 (biblatex)                Please use 'giveninits' instead.
 
 )
-\@quotelevel=\count385
-\@quotereset=\count386
+\@quotelevel=\count386
+\@quotereset=\count387
 
 
 Package biblatex Warning: Conflicting options.
 (biblatex)                '<namepart>inits' conflicts with 'uniquename=full'.
-(biblatex)                Setting 'uniquename=init' on input line 55.
+(biblatex)                Setting 'uniquename=init' on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count387
+\l__kernel_color_stack_int=\count388
 \l__pdf_internal_box=\box47
 )
 (./Supplementary_methods.aux)
 \openout1 = `Supplementary_methods.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count388
-\scratchdimen=\dimen158
+\scratchcounter=\count389
+\scratchdimen=\dimen163
 \scratchbox=\box48
-\nofMPsegments=\count389
-\nofMParguments=\count390
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count391
-\MPscratchDim=\dimen159
-\MPnumerator=\count392
-\makeMPintoPDFobject=\count393
-\everyMPtoPDFconversion=\toks21
+\nofMPsegments=\count390
+\nofMParguments=\count391
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count392
+\MPscratchDim=\dimen164
+\MPnumerator=\count393
+\makeMPintoPDFobject=\count394
+\everyMPtoPDFconversion=\toks22
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -545,7 +603,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring ON on input line 55.
+Package hyperref Info: Link coloring ON on input line 57.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -555,11 +613,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count394
+\c@section@level=\count395
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
-LaTeX Info: Redefining \nameref on input line 55.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
 
 (./Supplementary_methods.out) (./Supplementary_methods.out)
 \@outlinefile=\write4
@@ -580,158 +638,196 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Supplementary_methods.bbl' found.
 
 (./Supplementary_methods.bbl)
-Package biblatex Info: Reference section=0 on input line 55.
-Package biblatex Info: Reference segment=0 on input line 55.
+Package biblatex Info: Reference section=0 on input line 57.
+Package biblatex Info: Reference segment=0 on input line 57.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 84.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 84.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 84.
+<figures/bioassay_design.png, id=33, 421.575pt x 176.8206pt>
+File: figures/bioassay_design.png Graphic file (type png)
+<use figures/bioassay_design.png>
+Package pdftex.def Info: figures/bioassay_design.png  used on input line 88.
+(pdftex.def)             Requested size: 469.75499pt x 197.03131pt.
+
+Overfull \hbox (14.51091pt too wide) in paragraph at lines 88--89
+ [] 
+ []
+
+<figures/bioassay_results.png, id=37, 1244.4894pt x 411.939pt>
+File: figures/bioassay_results.png Graphic file (type png)
+<use figures/bioassay_results.png>
+Package pdftex.def Info: figures/bioassay_results.png  used on input line 96.
+(pdftex.def)             Requested size: 469.75499pt x 155.49501pt.
+
+Overfull \hbox (14.51091pt too wide) in paragraph at lines 96--97
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 109.
+[2
+
+ <./figures/bioassay_design.png>] [3 <./figures/bioassay_results.png>]
+[4]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+39.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 82.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 82.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 82.
 <../../NGSrelate/divergence_along_chromosome/genetic_difference_across_genome.p
-ng, id=30, 1156.32pt x 433.62pt>
+ng, id=82, 1156.32pt x 433.62pt>
 File: ../../NGSrelate/divergence_along_chromosome/genetic_difference_across_gen
 ome.png Graphic file (type png)
 <use ../../NGSrelate/divergence_along_chromosome/genetic_difference_across_geno
 me.png>
 Package pdftex.def Info: ../../NGSrelate/divergence_along_chromosome/genetic_di
-fference_across_genome.png  used on input line 88.
+fference_across_genome.png  used on input line 145.
 (pdftex.def)             Requested size: 563.7062pt x 211.39055pt.
 
-Overfull \hbox (108.46213pt too wide) in paragraph at lines 88--89
+Overfull \hbox (108.46213pt too wide) in paragraph at lines 145--146
  [] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 91.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 91.
-<../../NGSrelate/full_relatedness/king_histograms.png, id=33, 433.62pt x 158.99
+(Font)              <7> on input line 148.
+<../../NGSrelate/full_relatedness/king_histograms.png, id=85, 433.62pt x 158.99
 4pt>
 File: ../../NGSrelate/full_relatedness/king_histograms.png Graphic file (type p
 ng)
 <use ../../NGSrelate/full_relatedness/king_histograms.png>
 Package pdftex.def Info: ../../NGSrelate/full_relatedness/king_histograms.png  
-used on input line 100.
+used on input line 157.
 (pdftex.def)             Requested size: 505.89pt x 185.50305pt.
 
-Overfull \hbox (50.64592pt too wide) in paragraph at lines 100--101
+Overfull \hbox (50.64592pt too wide) in paragraph at lines 157--158
 [][] 
  []
 
-<../../NGSrelate/full_relatedness/king_histograms_karyotype.png, id=35, 433.62p
+<../../NGSrelate/full_relatedness/king_histograms_karyotype.png, id=87, 433.62p
 t x 158.994pt>
 File: ../../NGSrelate/full_relatedness/king_histograms_karyotype.png Graphic fi
 le (type png)
 <use ../../NGSrelate/full_relatedness/king_histograms_karyotype.png>
 Package pdftex.def Info: ../../NGSrelate/full_relatedness/king_histograms_karyo
-type.png  used on input line 104.
+type.png  used on input line 161.
 (pdftex.def)             Requested size: 505.89pt x 185.50305pt.
 
-Overfull \hbox (50.64592pt too wide) in paragraph at lines 104--105
+Overfull \hbox (50.64592pt too wide) in paragraph at lines 161--162
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2
+[5
 
  <../../NGSrelate/divergence_along_chromosome/genetic_difference_across_genome.
-png>] [3 <../../NGSrelate/full_relatedness/king_histograms.png (PNG copy)> <../
+png>] [6 <../../NGSrelate/full_relatedness/king_histograms.png (PNG copy)> <../
 ../NGSrelate/full_relatedness/king_histograms_karyotype.png (PNG copy)>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 113.
+(Font)              <14.4> on input line 170.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 113.
+(hyperref)                removing `\mathsurround' on input line 170.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 113.
+(hyperref)                removing `\z@' on input line 170.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 113.
+(hyperref)                removing `subscript' on input line 170.
 
-<figures/Fst_example_histogram_annotated.pdf, id=68, 361.35pt x 361.35pt>
+<figures/Fst_example_histogram_annotated.pdf, id=112, 361.35pt x 361.35pt>
 File: figures/Fst_example_histogram_annotated.pdf Graphic file (type pdf)
 <use figures/Fst_example_histogram_annotated.pdf>
 Package pdftex.def Info: figures/Fst_example_histogram_annotated.pdf  used on i
-nput line 122.
+nput line 179.
 (pdftex.def)             Requested size: 325.215pt x 325.21751pt.
-[4
+[7
 
  <./figures/Fst_example_histogram_annotated.pdf>]
-<figures/plate_layouts_annotated.pdf, id=226, 578.16pt x 433.62pt>
+<figures/plate_layouts_annotated.pdf, id=271, 578.16pt x 433.62pt>
 File: figures/plate_layouts_annotated.pdf Graphic file (type pdf)
 <use figures/plate_layouts_annotated.pdf>
 Package pdftex.def Info: figures/plate_layouts_annotated.pdf  used on input lin
-e 139.
+e 196.
 (pdftex.def)             Requested size: 469.75499pt x 352.31538pt.
 
-Overfull \hbox (14.51091pt too wide) in paragraph at lines 139--140
+Overfull \hbox (14.51091pt too wide) in paragraph at lines 196--197
  [] 
  []
 
-[5
+[8
 
  <./figures/plate_layouts_annotated.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
- [6
+Overfull \hbox (15.3708pt too wide) in paragraph at lines 209--209
+\T1/cmr/m/n/12 within spe-ci-a-tion is-lands of \T1/cmr/m/it/12 Anophe-les gam-
+biae \T1/cmr/m/n/12 molec-u-lar forms. \T1/cmr/m/it/12 Malaria jour-nal \T1/cmr
+/m/n/12 7(1):163. 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
+[9
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
  (./Supplementary_methods.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `Supplementary_methods.out' has not changed.
-(rerunfilecheck)             Checksum: 728AEAAFB8FBDC60B1AEB6CEC2AB6D69;196.
+(rerunfilecheck)             Checksum: 9739C3BF14F2E6CE4D28432E870D58CD;269.
 Package logreq Info: Writing requests to 'Supplementary_methods.run.xml'.
 \openout1 = `Supplementary_methods.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
  ) 
 Here is how much of TeX's memory you used:
- 14712 strings out of 483183
- 255690 string characters out of 5966293
- 905257 words of memory out of 5000000
- 29523 multiletter control sequences out of 15000+600000
- 547622 words of font info for 52 fonts, out of 8000000 for 9000
+ 14801 strings out of 483183
+ 257069 string characters out of 5966293
+ 924024 words of memory out of 5000000
+ 29595 multiletter control sequences out of 15000+600000
+ 549856 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,10n,51p,1515b,1400s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,51p,1903b,1400s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1440.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600p
-k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0600.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0600.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600p
+k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600p
-k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
 k> </home/eric/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Supplementary_methods.pdf (6 pages, 367213 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Supplementary_methods.pdf (9 pages, 492278 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 19 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 290 compressed objects within 3 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

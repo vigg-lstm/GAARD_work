@@ -4,6 +4,7 @@
 \usepackage[small]{caption}
 \usepackage{subcaption}
 \captionsetup[subfigure]{labelformat=simple, font={bf,small}, skip=1pt, margin=-0.7cm, singlelinecheck=false, margin={3pt,3pt}}
+\usepackage{tabularx}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{setspace}
@@ -48,6 +49,7 @@
 
 \renewcommand{\figurename}{\textbf{Fig.}}
 \renewcommand{\thefigure}{\textbf{M\arabic{figure}}}
+\renewcommand{\tablename}{\textbf{Table}}
 \renewcommand{\thetable}{\textbf{M\arabic{table}}}
 
 \renewcommand{\thesubsection}{\arabic{subsection}}
@@ -77,9 +79,64 @@
 
 \clearpage
 
+\subsection{Sample collection and phenotyping}
+
+Mosquitoes were collected in 2017 from six locations in West Africa (Benin: Avrankou [6.550, 2.667], Côte d’Ivoire: Aboisso [5.467, -3.200], Ghana: Madina [5.683, -0.166], Korle-Bu [5.537, -0.240] and Obuasi [6.200, -1.683]; Togo: Baguida [6.161, 1.314]). Larvae were collected by dipping from multiple habitats, pooled, and raised to adults in the laboratory. Non-blood-fed adult females were separated and at 3-5 days old bioassayed using WHO tubes in replicates of ~25 with either deltamethrin or pirimiphos methyl (PM) papers. Initially, to determine appropriate doses to produce well-separated phenotypic groups, which eliminated those of intermediate phenotype (Fig. \ref{FigM1}), 1-2 replicate tubes were run (for 60 min, with mortality assessed 24h later) at a range of concentrations reflecting X-fold the standard WHO diagnostic dose of 0.05\% for deltamethrin (0.5X, 1X, 2X, 5X and 10X) and of 0.25\% for PM (0.5X, 1X, 2X). From these preliminary data appropriate ``lower'' and ``higher'' doses (Fig. \ref{FigM1}) were determined to achieve the desired phenotypic separation. Our initial plan to use different concentrations with a fixed (60 min) time was followed in all cases with the exception of Obuasi and Baguida phenotyped for PM, for which survivorship with 1X papers at 60 min was very low ($\leq 2\%$, indicating susceptibility according to the WHO criterion). In these cases we obtained separated phenotypic groups by using a single concentration (0.5X) but varying exposure times. Bioassay doses used are shown in Table M1, and results from bioassays in Fig. \ref{FigM2}. Note that with the exception of PM phenotypes in the two sites above, all populations tested conform to WHO defined resistance (Fig. \ref{FigM2}, Table M1), and in most cases for deltamethrin resistance would be classified as substantial (<90\% at $geq$ 5X).
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics*[width = 6.5in]{figures/bioassay_design.png}
+	\end{center}
+	\caption{\footnotesize Schematic diagram illustrating the bioassay strategy to obtain well-separated susceptible and resistant phenotypic groups for whole genome sequencing. Our initial target was to use a lower dose resulting in ~20\% mortality, and a higher dose resulting in ~80\% mortality with N=100 samples preserved from each. Though this level of separation was seldom feasible, good separation was generally achieved (see Fig. \ref{FigM2}).}
+	\label{FigM1}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics*[width = 6.5in]{figures/bioassay_results.png}
+	\end{center}
+	\caption{\footnotesize Mean bioassay mortalities (with 95\% binomial confidence intervals) of \textit{An. gambiae} s.l. for the lower and higher doses obtained for each insecticide in the different West African sites sampled. Doses used for each site are shown in Table M1, with details of the sibling species composition within each phenotype group in each site.}
+	\label{FigM2}
+\end{figure}
+
+\vskip 1cm
+
+\setlength{\tabcolsep}{0.5em}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[htbp]
+	\caption{\footnotesize Bioassays to segregate females defined as susceptible (dead at lower dose) from resistant (alive at higher dose). All bioassays were performed on \textit{An. gambiae} s.l. with subsequent molecular identification of species within the tested samples as shown. Numbers highlighted in bold show the groups chosen for sequencing. Final numbers for each sample set, after QC filtering of sequencing data, are shown in Table 1 (main text). Delta = deltmethrin; PM = pirimiphos-methyl.}
+	\tiny
+\begin{tabular}{|l|l|l|c|c|c|c|c|c|c|c|c|c|}
+\hline
+        &  &  & \multicolumn{ 2}{c|}{Lower dose} & \multicolumn{ 2}{c|}{Higher dose} & \multicolumn{ 2}{c|}{} & \multicolumn{ 2}{c|}{} & \multicolumn{ 2}{c|}{} \\
+        &  &  & \multicolumn{ 2}{c|}{details} & \multicolumn{ 2}{c|}{details} & \multicolumn{ 2}{c|}{\textit{An. gambiae s.l.}} & \multicolumn{ 2}{c|}{\textit{An. gambiae}} & \multicolumn{ 2}{c|}{\textit{An. coluzzii}} \\ \hline
+		\textbf{Country} & \textbf{Site} & \textbf{Insec-} & \textbf{Conc.} & \textbf{Time}  & \textbf{Conc.} & \textbf{Time}  & \textbf{Dead} & \textbf{Alive} & \textbf{Dead} & \textbf{Alive} & \textbf{Dead} & \textbf{Alive} \\ 
+		&      & \textbf{ticide} &       & \textbf{(min)} &       & \textbf{(min)} & \textbf{N}    & \textbf{N}     & \textbf{N}    & \textbf{N}     & \textbf{N}    & \textbf{N} \\ \hline
+Benin & Avrankou & Delta & 0.5X & 60 & 2X & 60 & 58 & 50 & 1 & 1 & 49 & 57 \\ 
+      &          &       &      &    &    &    &    &    &   &   &    &    \\ \hline
+Ghana & Korle-Bu & Delta & 0.5X & 60 & 5X & 60 & 58 & 43 & 0 & 0 & 43 & 58 \\ 
+ & Korle-Bu & PM & 0.5X & 60 & 1X & 60 & 46 & 68 & 0 & 0 & 68 & 46 \\ 
+ & Madina & Delta & 1X & 60 & 10X & 60 & 47 & 141 & 76 & 45 & 65 & 2 \\ 
+ & Madina & PM & 0.5X & 60 & 1X & 60 & 52 & 91 & 63 & 43 & 28 & 9 \\ 
+ & Obuasi & Delta & 2X & 60 & 5X & 60 & 68 & 112 & 111 & 68 & 1 & 0 \\ 
+ & Obuasi & PM & 0.5X & \multicolumn{1}{l|}{15, 30} & 0.5X & \multicolumn{1}{l|}{45, 60} & 71 & 69 & 69 & 71 & 0 & 0 \\ 
+ & & & & & & \multicolumn{1}{l|}{75, 90} & & & & & 0 & 0 \\ 
+      &          &       &      &    &    &    &    &    &   &   &    &    \\ \hline
+Ivory Coast  & Aboisso & PM & 0.5X & 60 & 1X & 60 & 83 & 64 & 13 & 75 & 51 & 8 \\ 
+      &          &       &      &    &    &    &    &    &   &   &    &    \\ \hline
+Togo & Baguida & Delta & 2X & 60 & 10X & 60 & 82 & 57 & 56 & 81 & 1 & 1 \\ 
+ & Baguida & PM & 0.5X & 45 & 0.5X & 90 & 59 & 50 & 44 & 58 & 6 & 1 \\ \hline
+\end{tabular}
+\label{TabM1}
+\end{table}
+
+DNA was extracted from samples within each phenotype group using nexttec kits (Biotechnologie GmbH) according to manufacturer’s instructions. Species identity of samples was determined using either of two methods designed to discriminate between \textit{An. gambiae}, \textit{An. coluzzii} and \textit{An. arabiensis}: a PCR of species-specific SINE insertion polymorphisms as described in \cite{San08}, and a high-resolution melt curve analysis \cite{Cha18}. Results are shown in Table M1. In most cases, samples were dominated by a single species, meaning that bioassay results for the majority species will closely reflect those for \textit{An. gambiae} s.l. (Fig. \ref{FigM2}). In two sites (Madina and Aboisso) \textit{An. gambiae} and \textit{An. coluzzii} were both present in the collections in substantial proportions and in each case \textit{An. gambiae} were over-represented relative to \textit{An. coluzzii} in resistant compared to susceptible groups (Madina, deltamethrin odds ratio = 19.2; PM odds ratio = 2.1; Aboisso, PM odds ratio = 36.8). This indicates that bioassay mortalities will be overestimated for \textit{An. gambiae} in each case, compared to the results for \textit{An. gambiae} s.l., this will apply to both the lower and higher doses. Therefore, pronounced phenotypic segregation between susceptible and resistant groups should still remain, though potentially quantitatively different from the \textit{An. gambiae} s.l. data shown in Fig. \ref{FigM2}.
+
+\clearpage
+
 \subsection{Choice of kinship treshold}
 
-We calculated pairwise kinship between all samples using the KING statistic \parencite{Man10} implemented in NGSRelate \parencite{Kor15} using SNP data across the whole genome. Whole genome SNPs were used because the recombination rate on such a small genome can lead to large disparity in kinship values between chromosomes (Fig. \ref{FigM1}). Results indicated a slight positive bias in kinship, with the mode of the distribution slightly above 0 (Fig. \ref{FigM2}). Because of this positive bias in kinship values, we sought to empirically establish the most parsimonious threshold to identify full siblings in our data, instead of the threshold of 0.177 suggested in the manual (\url{https://www.kingrelatedness.com/manual.shtml}). For all possible threshhold between 0.15 and 0.35, in increments of 0.005, we identified all full siblings and counted the proportion of full sib groups that contained inconsistencies (where siblings of siblings were not themselves classed as siblings). The script to carry out this analysis is available at . We chose the threshold 0.195 as that which produced the smallest proportion of inconsistent sib groups. 
+We calculated pairwise kinship between all samples using the KING statistic \parencite{Man10} implemented in NGSRelate \parencite{Kor15} using SNP data across the whole genome. Whole genome SNPs were used because the recombination rate on such a small genome can lead to large disparity in kinship values between chromosomes (Fig. \ref{FigM3}). Results indicated a slight positive bias in kinship, with the mode of the distribution slightly above 0 (Fig. \ref{FigM4}). Because of this positive bias in kinship values, we sought to empirically establish the most parsimonious threshold to identify full siblings in our data, instead of the threshold of 0.177 suggested in the manual (\url{https://www.kingrelatedness.com/manual.shtml}). For all possible threshhold between 0.15 and 0.35, in increments of 0.005, we identified all full siblings and counted the proportion of full sib groups that contained inconsistencies (where siblings of siblings were not themselves classed as siblings). The script to carry out this analysis is available at . We chose the threshold 0.195 as that which produced the smallest proportion of inconsistent sib groups. 
 
 \begin{figure}[h]
 	\hspace*{-2cm}
@@ -89,7 +146,7 @@ We calculated pairwise kinship between all samples using the KING statistic \par
 		\end{center}
 	\end{minipage}
 	\caption{\footnotesize Genetic difference (calculated as the mean proportion of nucleotide differences across all sites) between a single pair of siblings (WA-0997 and WA-1288, both \textit{An. coluzzii} from Korle-Bu in Ghana) across the genome. Aside from the centromeres, the values of genetic difference occupy one of three states: 0 (genetically identical, where the two individuals inherited the same allele from both their mother and their father, for example the start of Chromosome 2L), around 0.007 (intermediate: where the two individuals inherited the same allele from one of their parents, but not the other, for example the middle of chromosome 2L) and around 0.014 (low: where the two individuals inherited different alleles from both their mother and their father, for example the end of chromosome 2L). These states are invariant over large stretches of the genome (eg: the whole of chromosome 3L is identical between these two individuals) due to the recombination rate per site per generation (usually assumed to be $10{-8}$ for modelling purposes) relative to the size of a chromosome (on the order of $5 x 10^{-7}$). Thus, a single chromosome can give an inaccurate picture of relatedness (using chromosome 3L for this pair would make them appear to be clones).}
-	\label{FigM1}
+	\label{FigM3}
 \end{figure}
 
 \begin{figure}[h]
@@ -105,14 +162,14 @@ We calculated pairwise kinship between all samples using the KING statistic \par
 		\end{subfigure}
 	\end{minipage}
 	\caption{\footnotesize Histograms of kinship values (KING scores, expected score between full sibs = 0.25, expected score between unrelated individuals = 0) across all sample pairs. \textbf{a} Left: Coloured by species (blue = gambiae, red = coluzzii, magenta = cross-species pair). Middle and right: stacked and coloured by whether the pair is of individuals from the same (light colours) or different (dark colours) sampling locations. \textbf{b} Stacked and coloured by whether the pair is of individuals with the same (light) or different (dark) 2La karyotype. The three modes of the distribution correspond to the 2La karyotype of the pair, with the right hand mode consisting of pairs of 2La heterozygotes (shared heterozygote genotype produces the largest relatedness values), the main central mode consisting of pairs with the same homozygous karyotype (in dark) or where one individual is heterozygous and the other homozygous (in light), and the left hand mode consisting of pairs with opposite homozygous karyotypes.}
-	\label{FigM2}
+	\label{FigM4}
 \end{figure}
 
 \clearpage
 
 \subsection{\fst\ outlier analysis}
 
-We calculcated \fst\ between phenotype classes (dead / alive after exposure to insecticides) in windows of 1000 SNPs across the genome, and wanted to identify peaks in the data. We used the fact that true \fst\ peaks in these data should only be positive, meaning that the left hand side of the distribution should be largely unaffected by the number of peaks in the data. We therefore used the left hand part of the \fst\ distribution to determine what the limits of the right hand part would typically look like in the absence of peaks, and identified outliers as positive windows beyond these limits. To do this, we took the difference between the smallest \fst\ value and the mode of the distribution, and considered an outlier to be any value more than three times this distance away from the mode (Fig. \ref{FigM3}).
+We calculcated \fst\ between phenotype classes (dead / alive after exposure to insecticides) in windows of 1000 SNPs across the genome, and wanted to identify peaks in the data. We used the fact that true \fst\ peaks in these data should only be positive, meaning that the left hand side of the distribution should be largely unaffected by the number of peaks in the data. We therefore used the left hand part of the \fst\ distribution to determine what the limits of the right hand part would typically look like in the absence of peaks, and identified outliers as positive windows beyond these limits. To do this, we took the difference between the smallest \fst\ value and the mode of the distribution, and considered an outlier to be any value more than three times this distance away from the mode (Fig. \ref{FigM5}).
 
 
 \begin{figure}[h]
@@ -123,14 +180,14 @@ We calculcated \fst\ between phenotype classes (dead / alive after exposure to i
 		\end{center}
 	\end{minipage}
 	\caption{\footnotesize Historgram of \fst\ values between phenotype groups in\textit{An. gambiae} from Obuasi exposed to deltamethrin (top) and zoomed in on at the origin of the Y axis to show small outlier peaks (bottom). We first identified the mode of the distribution (red point) and then calculated its distance from the minimum of the distribution (solid red line). We then conservatively took three times this distance to the right of the mode (dashed red line) as our threshold. Any windows with \fst\ values larger than this (in blue) were considered outliers and thus provisional windows of interest.}
-	\label{FigM3}
+	\label{FigM5}
 \end{figure}
 
 \clearpage
 
 \subsection{Removal of \textit{Asaia} contamination}
 
-In an original pass of the GWAS analysis, we found SNPs significantly correlated with phenotype, but which showed strong allelic imbalance and, in some cases, heterozygote excess. Looking into these SNPs, we found that they were the result of mis-alignment of non-\textit{Anopheles} reads. Assembling and BLASTing the reads in question indicated that they likely originated from \textit{Asaia} / \textit{Acetobacter} bacteria. There are two possible explanations for this. The first is that of a metagenomic association with resistance. The second is of sample contamination differentially affecting the two phenotypes. We investigated this possibility by examining the distribution of the levels of \textit{Asaia} reads with respect to the position of the sample on the plates in which DNA was stored. Fig. \ref{FigM4} shows that \textit{Asaia} reads are non-randomly distributed across plates, indicating that they are likely to be the result of contamination, but creating the appearance of correlation with phenotype.
+In an original pass of the GWAS analysis, we found SNPs significantly correlated with phenotype, but which showed strong allelic imbalance and, in some cases, heterozygote excess. Looking into these SNPs, we found that they were the result of mis-alignment of non-\textit{Anopheles} reads. Assembling and BLASTing the reads in question indicated that they likely originated from \textit{Asaia} / \textit{Acetobacter} bacteria. There are two possible explanations for this. The first is that of a metagenomic association with resistance. The second is of sample contamination differentially affecting the two phenotypes. We investigated this possibility by examining the distribution of the levels of \textit{Asaia} reads with respect to the position of the sample on the plates in which DNA was stored. Fig. \ref{FigM6} shows that \textit{Asaia} reads are non-randomly distributed across plates, indicating that they are likely to be the result of contamination, but creating the appearance of correlation with phenotype.
 
 \begin{figure}[h]
 	\hspace*{-0.5cm}
@@ -140,7 +197,7 @@ In an original pass of the GWAS analysis, we found SNPs significantly correlated
 		\end{center}
 	\end{minipage}
 	\caption{\footnotesize Layout of levels of \textit{Asaia} reads across DNA storage plates for deltamethrin-exposed samples from Korle-Bu. Size of circle indicates normalised number of Asaia reads. Colour indicates phenotype of sample (blue = alive, red = dead). Crosses indicate wells not used for sequencing. Diagonal line on top left plate separates wells with broadly less \textit{Asaia} signal on the left and more signal on the right. }
-	\label{FigM4}
+	\label{FigM6}
 \end{figure}
 
 To control for this in the GWAS, we used Bracken \parencite{Lu17} to estimate the amount of \textit{Asaia} signal in each sample, and then calculated the correlation between \textit{Asaia} levels and each SNP in the analysis. SNPs that were correlated with \textit{Asaia} (uncorrected \textit{P} < 0.05) were removed from the GWAS. 
