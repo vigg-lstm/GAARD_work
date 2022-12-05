@@ -1,8 +1,7 @@
-# Write a function to add transparency to a colour
-add.transparency <- function(col, prop.alpha){
-	rgb.val <- col2rgb(col)
-	new.rgb <- rgb(rgb.val[1], rgb.val[2], rgb.val[3], max = 255, alpha = (1 - prop.alpha) * 255)
-	new.rgb
+# A function to lighten the tone of the colour
+lighten.col <- function(color, lightness, alpha = alpha){
+	col.rgb <- col2rgb(color)/255
+	rgb(t(1-(1-col.rgb)*lightness), alpha = alpha)
 }
 
 # Write a function to draw the chromosomes on an existing plotting device
@@ -70,4 +69,47 @@ add.chromosomes <- function(gaps, chrom.sizes, gene.cex = 0.9, gene.col = 'grey2
 	text((cs['X'] + ce['X'])/2, chrom.y, 'X', adj = 0.5, xpd = NA, cex = chrom.cex)
 }
 
+
+draw.gene.model <- function(start.pos, end.pos, gene.positions, exon.positions, include.gene.names = T, y = 0, text.cex = 0.5, gene.thickness.fraction = 15, lwd = 2){
+	lines(c(start.pos, end.pos), c(y, y), lwd = lwd, col = 'grey20')
+	if (nrow(gene.positions) > 0){
+		gene.positions <- gene.positions[order(start)]
+		gr <- par('usr')
+		gene.thickness <- (gr[4] - gr[3])/gene.thickness.fraction
+		# Draw the genes
+		v.adj = ifelse(gene.positions$strand == '+', 0, -gene.thickness)
+		rect(
+			gene.positions[,start], 
+			y + v.adj, 
+			gene.positions[,end], 
+			y + gene.thickness + v.adj, 
+			col = 'grey95',
+			border = 'black',
+			lwd = lwd,
+			xpd = F
+		)
+		# Draw the exons
+		exon.v.adj = ifelse(exon.positions$strand == '+', 0, -gene.thickness)
+		rect(
+			exon.positions[,start], 
+			y + exon.v.adj, 
+			exon.positions[,end], 
+			y + gene.thickness + exon.v.adj, 
+			col = 'black',
+			border = NA,
+			xpd = F
+		)
+		# Label the genes
+		if (include.gene.names){
+			text(
+				apply(gene.positions[,.(start, end)], 1, mean), 
+				y - 1.6*gene.thickness, 
+				gene.positions$gene.name, 
+				adj = 1, 
+				srt = 45,
+				cex = text.cex
+			)
+		}
+	}
+}
 
