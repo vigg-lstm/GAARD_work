@@ -70,8 +70,7 @@ add.chromosomes <- function(gaps, chrom.sizes, gene.cex = 0.9, gene.col = 'grey2
 }
 
 
-draw.gene.model <- function(start.pos, end.pos, gene.positions, exon.positions, include.gene.names = T, y = 0, text.cex = 0.5, gene.thickness.fraction = 15){
-	lwd = 2
+draw.gene.model <- function(start.pos, end.pos, gene.positions, exon.positions, include.gene.names = T, y = 0, text.cex = 0.5, gene.thickness.fraction = 15, lwd = 2){
 	lines(c(start.pos, end.pos), c(y, y), lwd = lwd, col = 'grey20')
 	if (nrow(gene.positions) > 0){
 		gene.positions <- gene.positions[order(start)]
