@@ -126,7 +126,7 @@ composite.plot <- function(pop, filename = NULL){
 	     c(min.plot.y, max.y), 
 	     type = 'n', bty = 'n', 
 	     xaxt = 'n', yaxt = 'n', xlab = '', ylab = '', 
-	     main = pop, cex.main = 1.5
+	     main = pop, cex.main = 1.1
 	)
 	
 	max.fst <- max(c(max(fst.table$Fst, na.rm = T), 0.05))
