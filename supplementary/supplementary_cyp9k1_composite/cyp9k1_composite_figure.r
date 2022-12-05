@@ -114,7 +114,7 @@ composite.plot <- function(pop, filename = NULL){
 			tiff(filename, width = file.width, height = file.height, units = 'in', res = 300)
 	}
 	
-	par(mar = c(0,7,1.5,4), mgp = c(2, 0.7, 0), family = 'Arial', xpd = NA) 
+	par(mar = c(0,5,1.5,4), mgp = c(1.2, 0.25, 0), family = 'Arial', xpd = NA, tcl = -0.2, cex.axis = 0.7) 
 	colours <- c(pbs = 'royalblue1',
 	             fst = 'orangered3', 
 	             h12 = 'limegreen')
@@ -166,7 +166,7 @@ composite.plot <- function(pop, filename = NULL){
 	     col = colours['fst'], col.axis = colours['fst'], 
 	     col.ticks = colours['fst'], lwd = 1.5
 	)
-	mtext(expression(F[ST]) , 2, 2, cex = 0.8, col = colours['fst'], font = 2)
+	mtext(expression(F[ST]), 2, 0.9, cex = 0.8, col = colours['fst'], font = 2)
 	#
 	h12.step.size <- ifelse(max.h12 > 0.2, 0.1, 0.05)
 	axis(4, at = seq(0, max.y, max.y * h12.step.size/max.h12), 
@@ -174,27 +174,27 @@ composite.plot <- function(pop, filename = NULL){
 	     col = colours['h12'], col.axis = colours['h12'], 
 	     col.ticks = colours['h12'], lwd = 1.5
 	)
-	mtext(expression(paste(Delta, 'H'[12])), 4, 2, cex = 0.8, col = colours['h12'], font = 2)
+	mtext(expression(paste(Delta, 'H'[12])), 4, 1.1, cex = 0.8, col = colours['h12'], font = 2)
 	#
 	pbs.step.size <- ifelse(max.pbs > 0.2, 0.1, 0.05)
 	axis(2, at = seq(0, max.y, max.y * pbs.step.size/max.pbs), 
 	     labels = as.character(seq(0, max.pbs, pbs.step.size)), 
 	     col = colours['pbs'], col.axis = colours['pbs'], 
-	     col.ticks = colours['pbs'], line = 4, lwd = 1.5
+	     col.ticks = colours['pbs'], line = 2.5, lwd = 1.5
 	)
-	mtext('PBS', 2, 6, cex = 0.8, col = colours['pbs'], font = 2)
+	mtext('PBS', 2, 3.4, cex = 0.8, col = colours['pbs'], font = 2)
 	
 	draw.gene.model(
 		cyp9k1.region[1], cyp9k1.region[2], 
 		gene.gff, exon.gff, include.gene.names = F,
-		y = bead.coords, gene.thickness.fraction = 100
+		y = bead.coords, gene.thickness.fraction = 100, lwd = 1.5
 	)
 	# Now just draw the genes of interest again to get the name labels
 	genes.to.label <- c('AGAP000818', 'AGAP000877', 'AGAP000849')
 	draw.gene.model(
 		cyp9k1.region[1], cyp9k1.region[2], 
 		gene.gff[gene.id %in% genes.to.label], exon.gff[numeric(), ], 
-		text.cex = 0.5, y = bead.coords, gene.thickness.fraction = 100
+		text.cex = 0.5, y = bead.coords, gene.thickness.fraction = 100, lwd = 1.5
 	)
 	if (!is.null(filename))
 		dev.off()
