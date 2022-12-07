@@ -112,6 +112,13 @@ implicated.genes.gwas.2 <- lapply(study.pops,
                              }
                       ) 
 
+# We also need a table of region extents. These are not filtered for Ace1, unlike the gene-wise data. 
+gwas.regions <- fread('~/data/ML/GAARD_SNP/summary_figures/classical_analysis_snp_clump_regions.csv') %>%
+               .[order(chrom, start)] %>%
+			   .[, pos := (start + end)/2] %>%
+	           split(by = 'sample.set')
+gwas.regions[['Avrankou_coluzzii_Delta']] <- filter.2La(gwas.regions[['Avrankou_coluzzii_Delta']])
+
 # Next, the Fst. The results in the haplpotypes folder are derived from the significant Fst regions.
 # These have had Ace1 and 2La filtered out if they contained too many hits. 
 fst.regions <- fread('../../haplotypes/haplotype_significance_tests.csv') %>%
@@ -250,6 +257,23 @@ fwrite(implicated.genes, 'full_implicated_genes_table.csv', sep = '\t')
 for (pop in study.pops)
 	fwrite(implicated.genes.2[[pop]], paste('implicated_genes_table_', pop, '.csv', sep = '') , sep = '\t')
 
+# Now create combined tables for the regions
+gwas.combined.regions <- rbindlist(gwas.regions)[, pos := NULL]
+fst.combined.regions <- rbindlist(fst.regions) %>%
+                        setnames('population', 'sample.set')
+h12.combined.regions <- names(h12.regions) %>%
+                        lapply(function(pop) copy(h12.regions[[pop]])[, sample.set := ..pop]) %>%
+                        rbindlist() %>%
+                        .[, .(sample.set, chrom, start, end)]
+pbs.combined.regions <- names(pbs.regions) %>%
+                        lapply(function(pop) copy(pbs.regions[[pop]])[, sample.set := ..pop]) %>%
+                        rbindlist() %>%
+                        .[, .(sample.set, chrom, start, end)]
+# Save those tables to file
+fwrite(gwas.combined.regions, 'implicated_regions_table_gwas.csv')
+fwrite(fst.combined.regions, 'implicated_regions_table_fst.csv')
+fwrite(h12.combined.regions, 'implicated_regions_table_h12.csv')
+fwrite(pbs.combined.regions, 'implicated_regions_table_pbs.csv')
 
 # Now we want to plot a figure that summarises the genomic regions implicated by each method. 
 chrom.sizes <- c('2R' = 61545105, '2L' = 49364325, '3R' = 53200684, '3L' = 41963435, 'X' = 24393108)
@@ -332,14 +356,6 @@ plot.implicated.regions <- function(gwas.regions,
 	if (!is.null(title))
 		mtext(title, outer = T, line = 1, font = 2, cex = 1.5)
 }
-
-# For the GWAS, we need a table of region extents. These are not filtered for Ace1, unlike the 
-# gene-wise data we loaded earlier. 
-gwas.regions <- fread('~/data/ML/GAARD_SNP/summary_figures/classical_analysis_snp_clump_regions.csv') %>%
-               .[order(chrom, start)] %>%
-			   .[, pos := (start + end)/2] %>%
-	           split(by = 'sample.set')
-gwas.regions[['Avrankou_coluzzii_Delta']] <- filter.2La(gwas.regions[['Avrankou_coluzzii_Delta']])
 
 # Manually add some labels to the regions
 gwas.regions[['Baguida_gambiae_Delta']][chrom == '3R' & start == 10050000, label := 'TEP2/14/15']
