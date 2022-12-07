@@ -1,0 +1,9 @@
+
+
+The SNPs 28480993 & 28480994 on the Madina-Obuasi Cyp6aa1 deltamethrin-associated haplotype are each non-synonymous on their own, bu they are on the same codon and their combination leads to a different amino acid. Also, 28480994 doesn't exist without 28480993. Here are the codon changes:
+
+wt codon    : UCC -> Ser
+mutant 993  : UUC -> Phe    (this occurs only on non-cluster haplotypes)
+mutant 994  : ACC -> Thr    (this SNP doesn't exist without 993, so this amino acid change doesn't occur)
+double      : AUC -> Ile    (this is the codong found in the deltamethrin-associated haplotype, and also on some non-cluster haplotypes)
+
