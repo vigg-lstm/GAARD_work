@@ -93,10 +93,20 @@ plot.table <- function(freq.table, species.colours = c(coluzzii = 'coral3', gamb
 png('target_snp_frequencies.png', width = 4, height = 1.2, units = 'in', res = 300)
 par(family = 'Arial')
 plot.table(snp.freq.flipped, 
-         text.cell.cex = 0.35,
-         pop.cex = 0.3,
-         snp.cex = 0.3,
-         mai = c(0,0.1,0.22,0)
+           text.cell.cex = 0.35,
+           pop.cex = 0.3,
+           snp.cex = 0.3,
+           mai = c(0,0.1,0.22,0)
+)
+dev.off()
+
+# And now as a pdf for the journal
+pdf('target_snp_frequencies.pdf', width = 4, height = 1.3)
+plot.table(snp.freq.flipped, 
+           text.cell.cex = 0.35,
+           pop.cex = 0.3,
+           snp.cex = 0.3,
+           mai = c(0,0.12,0.25,0)
 )
 dev.off()
 
