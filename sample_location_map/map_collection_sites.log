@@ -1,25 +1,17 @@
 Loading required package: sp
-Please note that rgdal will be retired by the end of 2023,
-plan transition to sf/stars/terra functions using GDAL and PROJ
-at your earliest convenience.
-
-rgdal: version: 1.5-28, (SVN revision 1158)
+rgdal: version: 1.5-23, (SVN revision 1121)
 Geospatial Data Abstraction Library extensions to R successfully loaded
-Loaded GDAL runtime: GDAL 3.4.1, released 2021/12/27
-Path to GDAL shared files: /home/eric/miniconda3/envs/gaard/share/gdal
+Loaded GDAL runtime: GDAL 3.0.4, released 2020/01/28
+Path to GDAL shared files: /usr/share/gdal
 GDAL binary built with GEOS: TRUE 
-Loaded PROJ runtime: Rel. 8.2.1, January 1st, 2022, [PJ_VERSION: 821]
-Path to PROJ shared files: /home/eric/miniconda3/envs/gaard/share/proj
-PROJ CDN enabled: TRUE
-Linking to sp version:1.4-6
+Loaded PROJ runtime: Rel. 6.3.1, February 10th, 2020, [PJ_VERSION: 631]
+Path to PROJ shared files: /usr/share/proj
+Linking to sp version:1.4-5
 To mute warnings of possible GDAL/OSR exportToProj4() degradation,
-use options("rgdal_show_exportToProj4_warnings"="none") before loading sp or rgdal.
-rgeos version: 0.5-9, (SVN revision 684)
- GEOS runtime version: 3.10.2-CAPI-1.16.0 
- Please note that rgeos will be retired by the end of 2023,
-plan transition to sf functions using GEOS at your earliest convenience.
- GEOS using OverlayNG
- Linking to sp version: 1.4-6 
+use options("rgdal_show_exportToProj4_warnings"="none") before loading rgdal.
+rgeos version: 0.5-5, (SVN revision 640)
+ GEOS runtime version: 3.8.0-CAPI-1.13.1 
+ Linking to sp version: 1.4-5 
  Polygon checking: TRUE 
 
 
@@ -40,6 +32,7 @@ OGR data source with driver: ESRI Shapefile
 Source: "/Data/Liverpool/GAARD_repo/GAARD_work/sample_location_map/Africa_SHP", layer: "Africa"
 with 762 features
 It has 3 fields
-Empty data.table (0 rows and 1 cols): location
+null device 
+          1 
 null device 
           1 
