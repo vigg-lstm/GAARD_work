@@ -342,6 +342,16 @@ contable(detox.genes,
 )
 dev.off()
 
+# And a pdf version for the journal
+pdf('detox_gene_modal_CNVs.pdf', width = 4.5, height = 1.3)
+contable(detox.genes, 
+         text.cell.cex = 0.35,
+         pop.cex = 0.35,
+         gene.cex = 0.35,
+         mai = c(0,0.13,0.18,0)
+)
+dev.off()
+
 png('Ace1_diagnostic_read_CNVs.png', width = 2, height = 1.5, units = 'in', res = 300)
 par(family = 'Arial')
 contable(Dup.clusters$Ace1, 
