@@ -1,0 +1,1 @@
+This folder contains scripts that cannot be run within this repo since they require very large data files. They were run on the scientific computing servers of LSTM, and were used to create data that was then used in the analysis of this repo. 
