@@ -39,7 +39,7 @@ known.Dups <- Dup.names[!grepl('Dup0', Dup.names)]
 sample.names <- target.CNV.table$sample.id
 good.var.sample.names <- target.CNV.table[High.var.sample == F]$sample.id
 # The "Any" category is where any of the known CNVs are present
-Dups.any <- c('Ace1_Any', 'Cyp6aap_Any', 'Cyp6mz_Any', 'Gstue_Any', 'Cyp9k1_Any')
+Dups.any <- c('Coeaexf_Any', 'Coeaexg_Any', 'Ace1_Any', 'Cyp6aap_Any', 'Cyp6mz_Any', 'Gstue_Any', 'Cyp9k1_Any')
 for (D in Dups.any){
 	this.region <- sub('_Any', '', D)
 	these.cnvs <- known.Dups[grepl(this.region, known.Dups)]
@@ -117,7 +117,9 @@ population.modal.CNVs <- aggregate(modal.CNV.table[, -c('sample.id')],
                                    function(x) sum(x) / length(x)
 )
 
-detox.genes <- c('Ace1',
+detox.genes <- c(paste('Coeae', 1:2, 'f', sep = ''),
+                 paste('Coeae', c(2,3,5), 'g', sep = ''),
+                 'Ace1',
                  paste('Cyp6aa', 1:2, sep = ''),
                  paste('Cyp6p', 1:5, sep = ''),
                  paste('Cyp6m', 2:4, sep = ''),
@@ -127,6 +129,8 @@ detox.genes <- c('Ace1',
 
 # Get the names of the detox genes
 gene.table <- fread('Ag1000G_CNV_data/gene_annotation_fullgenetable.csv', key = 'Gene_stable_ID', check.names = T)
+# Coeae1f is absent from the gff, so add it manually
+gene.table['AGAP006227', Gene.name := 'COEAE1F']
 detox.gene.conversion <- gene.table[Gene.name %in% toupper(detox.genes), 
                                     .(Gene.id = Gene_stable_ID, Gene.name = str_to_title(Gene.name))]
 
@@ -255,7 +259,7 @@ modal.contable <- function(genes, shrink = T, include.plot = T, add.sample.size 
 				genes[i] <- gene.table[Gene.name == gene.name, Gene_stable_ID]
 			}
 			else
-				stop('Could not find the requested gene in gene.table.')
+				stop(paste('Could not find the requested gene (', gene, ') in gene.table.', sep = ''))
 		}
 	}
 	population <- droplevels(interaction(cnvs.by.population[, c('location', 'species')]))
@@ -349,6 +353,16 @@ contable(detox.genes,
          pop.cex = 0.35,
          gene.cex = 0.35,
          mai = c(0,0.13,0.18,0)
+)
+dev.off()
+
+png('Coeae_diagnostic_read_CNVs.png', width = 4, height = 1.5, units = 'in', res = 300)
+par(family = 'Arial')
+contable(c(Dup.clusters$Coeaexf, Dup.clusters$Coeaexg), 
+         text.cell.cex = 0.35,
+         pop.cex = 0.35,
+         dup.cex = 0.35,
+         mai = c(0,0.21,0.3,0.18)
 )
 dev.off()
 
@@ -621,9 +635,6 @@ glm.up <- function(input.table, list.of.markers = markers, rescolumn = 'phenotyp
 	list('invariable.markers' = invariable.markers, 'correlated.markers' = correlated.markers, 'sig.alone' = individual.markers, 'final.model' = final.model, 'final.sig' = final.model.sig)
 }
 
-genes.to.model <- c('Ace1', 'Cyp6aa1', 'Cyp6z1', 'Cyp6z2', 'Cyp6z3', 'Cyp6p3','Gste2', 'Cyp9k1')
-
-
 # Let's test things using copy number in each population independently
 cat('\n\t#######################')
 cat('\n\t# Copy number testing #')
@@ -661,6 +672,8 @@ for (insecticide in c('Delta', 'PM')){
 # PM significant in KB, Madina and Obuasi, but not in Baguida, despite variation in copy number. In fact, copy
 # number overall is quite high in Baguida, and yet there were appreciable numbers of dead with high copy number
 # (eg: 6). Exposure wasn't even that high (0.5x and changing exposure time). 
+
+genes.to.model <- c('Coeae1f', 'Coeae2g', 'Ace1', 'Cyp6aa1', 'Cyp6z1', 'Cyp6z2', 'Cyp6z3', 'Cyp6p3','Gste2', 'Cyp9k1')
 
 # Let's try a glm that includes population as a random factor. 
 pm.table <- as.data.frame(modal.copy.number[insecticide == 'PM'])

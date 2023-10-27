@@ -3,6 +3,26 @@
 #  £ Breakpoint determined approximately from coverage changes.  
 #  $ Range of CNV extends further than focal region.
 Chrom	Region	Allele	Start	End
+2L	Coeaexf	Coeaexf_Dup1	28542694	28551034
+2L	Coeaexf	Coeaexf_Dup2	28535653	28571586
+2L	Coeaexf	Coeaexf_Dup3	28533512	28550548
+2L	Coeaexf	Coeaexf_Dup4	28533499	28557804
+2L	Coeaexf	Coeaexf_Dup5	28541709	28554102
+2L	Coeaexf	Coeaexf_Dup6	28548424	28552841
+2L	Coeaexf	Coeaexf_Dup7	28546647	28552722
+2L	Coeaexf	Coeaexf_Dup8	28547443	28551065
+2L	Coeaexg	Coeaexg_Dup1	37282078	37295500£
+2L	Coeaexg	Coeaexg_Dup2	37294010	37299365
+2L	Coeaexg	Coeaexg_Dup3	37287080	37294293
+2L	Coeaexg	Coeaexg_Dup4	37287238	37292693
+2L	Coeaexg	Coeaexg_Dup5	37288799	37295800*
+2L	Coeaexg	Coeaexg_Dup6	37181750*	37297456
+2L	Coeaexg	Coeaexg_Dup7	37287418	37291351
+2L	Coeaexg	Coeaexg_Dup8	37283315	37293011
+2L	Coeaexg	Coeaexg_Dup9	37291783	37292795
+2L	Coeaexg	Coeaexg_Dup10	37277043	37285375
+2L	Coeaexg	Coeaexg_Dup11	37292285	37298734
+2L	Coeaexg	Coeaexg_Dup12	37282330	37284900*
 2R	Ace1	Ace1_Dup1	3436926	3639836
 2R	Ace1	Ace1_Dup2	3447950*	3518900*
 2R	Ace1	Ace1_Del1	3501850*	3599050*
@@ -40,6 +60,13 @@ Chrom	Region	Allele	Start	End
 2R	Cyp6aa/Cyp6p	Cyp6aap_Dup28	28477710	28496953
 2R	Cyp6aa/Cyp6p	Cyp6aap_Dup29	28494017	28496505
 2R	Cyp6aa/Cyp6p	Cyp6aap_Dup30	28478987	28485033
+2R	Cyp6aa/Cyp6p	Cyp6aap_Dup31	28480476	28492867
+2R	Cyp6aa/Cyp6p	Cyp6aap_Dup32	28485349	28494719
+2R	Cyp6aa/Cyp6p	Cyp6aap_Dup33	28479842	28549886
+2R	Cyp6aa/Cyp6p	Cyp6aap_Dup34	28480284	28483348
+2R	Cyp6aa/Cyp6p	Cyp6aap_Dup35	28472668	28504018
+2R	Cyp6aa/Cyp6p	Cyp6aap_Dup36	28475403	28572600*
+2R	Cyp6aa/Cyp6p	Cyp6aap_Dup37	28477192	28489472
 3R	Cyp6m/Cyp6z	Cyp6mz_Dupm1	6927942	6930500£
 3R	Cyp6m/Cyp6z	Cyp6mz_Dupm2	6933100*	6935200*
 3R	Cyp6m/Cyp6z	Cyp6mz_Dupm3	6929600*	6932800*

@@ -18,6 +18,8 @@ null device
           1 
 null device 
           1 
+null device 
+          1 
 
 	#######################
 	# Copy number testing #
@@ -88,7 +90,7 @@ $final.sig
 
 	Modal copy number test for Baguida_Delta:
 
-Analysing genes with CNV at >= 10% freq (Ace1, Cyp9k1).
+Analysing genes with CNV at >= 10% freq (Ace1, Coeae1f, Coeae2f, Cyp9k1).
 
 Using the following string to control for confounding factors: 
 
@@ -122,9 +124,11 @@ $correlated.markers
 character(0)
 
 $sig.alone
-               P pseudo.R2
-Ace1   0.3953833        NA
-Cyp9k1 0.7607804        NA
+                P pseudo.R2
+Ace1    0.3953833        NA
+Coeae1f 0.5477154        NA
+Coeae2f 0.5477154        NA
+Cyp9k1  0.7607804        NA
 
 $final.model
 
@@ -145,7 +149,7 @@ $final.sig
 
 	Modal copy number test for Korle-Bu_Delta:
 
-Analysing genes with CNV at >= 10% freq (Ace1, Cyp6aa1, Cyp6aa2, Cyp6p3, Cyp9k1, Gste1, Gste2, Gste3, Gste7).
+Analysing genes with CNV at >= 10% freq (Ace1, Coeae2g, Coeae3g, Coeae5g, Cyp6aa1, Cyp6aa2, Cyp6p3, Cyp9k1, Gste1, Gste2, Gste3, Gste7).
 
 Using the following string to control for confounding factors: 
 
@@ -186,6 +190,9 @@ character(0)
 $sig.alone
                  P pseudo.R2
 Ace1    0.53502553        NA
+Coeae2g 0.89634826        NA
+Coeae3g 0.92139338        NA
+Coeae5g 0.87831554        NA
 Cyp6aa1 0.01414258        NA
 Cyp6aa2 0.01414258        NA
 Cyp6p3  0.40097185        NA
@@ -277,7 +284,7 @@ $final.sig
 
 	Modal copy number test for Obuasi_Delta:
 
-Analysing genes with CNV at >= 10% freq (Ace1, Cyp6z1, Cyp6z2, Cyp6z3, Cyp9k1).
+Analysing genes with CNV at >= 10% freq (Ace1, Coeae1f, Coeae2f, Cyp6z1, Cyp6z2, Cyp6z3, Cyp9k1).
 
 Using the following string to control for confounding factors: 
 
@@ -311,12 +318,14 @@ $correlated.markers
 character(0)
 
 $sig.alone
-               P pseudo.R2
-Ace1   0.9776156        NA
-Cyp6z1 0.6737610        NA
-Cyp6z2 0.7807122        NA
-Cyp6z3 0.6737610        NA
-Cyp9k1 0.8812562        NA
+                P pseudo.R2
+Ace1    0.9776156        NA
+Coeae1f 0.3296885        NA
+Coeae2f 0.3054845        NA
+Cyp6z1  0.6737610        NA
+Cyp6z2  0.7807122        NA
+Cyp6z3  0.6737610        NA
+Cyp9k1  0.8812562        NA
 
 $final.model
 
@@ -337,7 +346,7 @@ $final.sig
 
 	Modal copy number test for Baguida_PM:
 
-Analysing genes with CNV at >= 10% freq (Ace1, Cyp9k1).
+Analysing genes with CNV at >= 10% freq (Ace1, Coeae1f, Coeae2f, Cyp9k1).
 
 Using the following string to control for confounding factors: 
 
@@ -371,9 +380,11 @@ $correlated.markers
 character(0)
 
 $sig.alone
-               P pseudo.R2
-Ace1   0.8218438        NA
-Cyp9k1 0.3300181        NA
+                 P pseudo.R2
+Ace1    0.82184376        NA
+Coeae1f 0.07733222        NA
+Coeae2f 0.07733222        NA
+Cyp9k1  0.33001806        NA
 
 $final.model
 
@@ -394,7 +405,7 @@ $final.sig
 
 	Modal copy number test for Korle-Bu_PM:
 
-Analysing genes with CNV at >= 10% freq (Ace1, Cyp6aa1, Cyp6aa2, Cyp6p3, Cyp9k1, Gste1, Gste2, Gste3, Gste7).
+Analysing genes with CNV at >= 10% freq (Ace1, Coeae2g, Coeae3g, Coeae5g, Cyp6aa1, Cyp6aa2, Cyp6p3, Cyp9k1, Gste1, Gste2, Gste3, Gste7).
 
 Using the following string to control for confounding factors: 
 
@@ -408,22 +419,27 @@ Building model: glm(phenotype ~ 1 , data = test.table, family = binomial)
 	Adding marker Ace1 as the lowest significant marker (P = 6.148141e-10).
 
 Building model: glm(phenotype ~ Ace1, data = test.table, family = binomial) 
+	Adding marker Coeae2g as the lowest significant marker (P = 0.01535164).
+
+Building model: glm(phenotype ~ Ace1 + Coeae2g, data = test.table, family = binomial) 
 	No further markers are significant, keeping final model:
 
-Call:  glm(formula = phenotype ~ Ace1, family = binomial, data = test.table)
+Call:  glm(formula = phenotype ~ Ace1 + Coeae2g, family = binomial, 
+    data = test.table)
 
 Coefficients:
-(Intercept)         Ace1  
-      2.423       -1.254  
+(Intercept)         Ace1      Coeae2g  
+     4.4528      -1.3477      -0.5829  
 
-Degrees of Freedom: 81 Total (i.e. Null);  80 Residual
+Degrees of Freedom: 81 Total (i.e. Null);  79 Residual
 Null Deviance:	    112.5 
-Residual Deviance: 74.18 	AIC: 78.18
-Final model contained 1 parameters: Ace1.
+Residual Deviance: 68.3 	AIC: 74.3
+Final model contained 2 parameters: Ace1,Coeae2g.
 
 
-                P deviance
-Ace1 6.148141e-10 38.27384
+                   P  deviance
+Ace1    2.511446e-10 40.021798
+Coeae2g 1.535164e-02  5.875658
 $invariable.markers
 character(0)
 
@@ -433,6 +449,9 @@ character(0)
 $sig.alone
                    P pseudo.R2
 Ace1    6.148141e-10        NA
+Coeae2g 4.218671e-02        NA
+Coeae3g 5.552097e-02        NA
+Coeae5g 5.552097e-02        NA
 Cyp6aa1 2.166542e-01        NA
 Cyp6aa2 4.068033e-01        NA
 Cyp6p3  9.404487e-01        NA
@@ -444,19 +463,21 @@ Gste7   2.881826e-01        NA
 
 $final.model
 
-Call:  glm(formula = phenotype ~ Ace1, family = binomial, data = test.table)
+Call:  glm(formula = phenotype ~ Ace1 + Coeae2g, family = binomial, 
+    data = test.table)
 
 Coefficients:
-(Intercept)         Ace1  
-      2.423       -1.254  
+(Intercept)         Ace1      Coeae2g  
+     4.4528      -1.3477      -0.5829  
 
-Degrees of Freedom: 81 Total (i.e. Null);  80 Residual
+Degrees of Freedom: 81 Total (i.e. Null);  79 Residual
 Null Deviance:	    112.5 
-Residual Deviance: 74.18 	AIC: 78.18
+Residual Deviance: 68.3 	AIC: 74.3
 
 $final.sig
-                P deviance
-Ace1 6.148141e-10 38.27384
+                   P  deviance
+Ace1    2.511446e-10 40.021798
+Coeae2g 1.535164e-02  5.875658
 
 
 	Modal copy number test for Madina_PM:
@@ -525,7 +546,7 @@ Ace1 8.18523e-07 24.31376
 
 	Modal copy number test for Obuasi_PM:
 
-Analysing genes with CNV at >= 10% freq (Ace1, Cyp9k1).
+Analysing genes with CNV at >= 10% freq (Ace1, Coeae1f, Coeae2f, Cyp9k1).
 
 Using the following string to control for confounding factors: 
 
@@ -539,22 +560,29 @@ Building model: glm(phenotype ~ 1 , data = test.table, family = binomial)
 	Adding marker Ace1 as the lowest significant marker (P = 3.682177e-06).
 
 Building model: glm(phenotype ~ Ace1, data = test.table, family = binomial) 
+	Adding marker Coeae1f as the lowest significant marker (P = 0.03429963).
+
+Building model: glm(phenotype ~ Ace1 + Coeae1f, data = test.table, family = binomial) 
+	Could not calculate p-value for marker Coeae2f.
+
 	No further markers are significant, keeping final model:
 
-Call:  glm(formula = phenotype ~ Ace1, family = binomial, data = test.table)
+Call:  glm(formula = phenotype ~ Ace1 + Coeae1f, family = binomial, 
+    data = test.table)
 
 Coefficients:
-(Intercept)         Ace1  
-      3.835       -0.882  
+(Intercept)         Ace1      Coeae1f  
+     4.2506      -0.9281      -0.5662  
 
-Degrees of Freedom: 88 Total (i.e. Null);  87 Residual
+Degrees of Freedom: 88 Total (i.e. Null);  86 Residual
 Null Deviance:	    120.1 
-Residual Deviance: 98.69 	AIC: 102.7
-Final model contained 1 parameters: Ace1.
+Residual Deviance: 94.21 	AIC: 100.2
+Final model contained 2 parameters: Ace1,Coeae1f.
 
 
-                P deviance
-Ace1 3.682177e-06 21.42356
+                   P  deviance
+Ace1    1.610827e-06 23.010933
+Coeae1f 3.429963e-02  4.479706
 $invariable.markers
 character(0)
 
@@ -562,25 +590,29 @@ $correlated.markers
 character(0)
 
 $sig.alone
-                  P pseudo.R2
-Ace1   3.682177e-06        NA
-Cyp9k1 7.669854e-01        NA
+                   P pseudo.R2
+Ace1    3.682177e-06        NA
+Coeae1f 8.900169e-02        NA
+Coeae2f 8.900169e-02        NA
+Cyp9k1  7.669854e-01        NA
 
 $final.model
 
-Call:  glm(formula = phenotype ~ Ace1, family = binomial, data = test.table)
+Call:  glm(formula = phenotype ~ Ace1 + Coeae1f, family = binomial, 
+    data = test.table)
 
 Coefficients:
-(Intercept)         Ace1  
-      3.835       -0.882  
+(Intercept)         Ace1      Coeae1f  
+     4.2506      -0.9281      -0.5662  
 
-Degrees of Freedom: 88 Total (i.e. Null);  87 Residual
+Degrees of Freedom: 88 Total (i.e. Null);  86 Residual
 Null Deviance:	    120.1 
-Residual Deviance: 98.69 	AIC: 102.7
+Residual Deviance: 94.21 	AIC: 100.2
 
 $final.sig
-                P deviance
-Ace1 3.682177e-06 21.42356
+                   P  deviance
+Ace1    1.610827e-06 23.010933
+Coeae1f 3.429963e-02  4.479706
 
 
 
@@ -597,29 +629,37 @@ Building model: glmmTMB(phenotype ~ 1  + (1|location), data = pm.table, family =
 	Adding marker Ace1 as the lowest significant marker (P = 1.332916e-16).
 
 Building model: glmmTMB(phenotype ~ Ace1 + (1|location), data = pm.table, family = binomial) 
+	Adding marker Coeae1f as the lowest significant marker (P = 0.002946814).
+
+Building model: glmmTMB(phenotype ~ Ace1 + Coeae1f + (1|location), data = pm.table, family = binomial) 
+	Adding marker Coeae2g as the lowest significant marker (P = 0.0185631).
+
+Building model: glmmTMB(phenotype ~ Ace1 + Coeae1f + Coeae2g + (1|location), data = pm.table, family = binomial) 
 	No further markers are significant, keeping final model:
-Formula:          phenotype ~ Ace1 + (1 | location)
+Formula:          phenotype ~ Ace1 + Coeae1f + Coeae2g + (1 | location)
 Data: pm.table
       AIC       BIC    logLik  df.resid 
- 350.2941  361.4941 -172.1471       306 
+ 339.9118  358.5785 -164.9559       304 
 Random-effects (co)variances:
 
 Conditional model:
  Groups   Name        Std.Dev.
- location (Intercept) 1.243   
+ location (Intercept) 1.36    
 
 Number of obs: 309 / Conditional model: location, 5
 
 Fixed Effects:
 
 Conditional model:
-(Intercept)         Ace1  
-     2.2673      -0.8058  
-Final model contained 1 parameters: Ace1.
+(Intercept)         Ace1      Coeae1f      Coeae2g  
+     2.8575      -0.8648      -0.5864      -0.4529  
+Final model contained 3 parameters: Ace1,Coeae1f,Coeae2g.
 
 
-                P deviance
-Ace1 1.332916e-16       NA
+                   P deviance
+Ace1    3.327738e-18       NA
+Coeae1f 2.879415e-03       NA
+Coeae2g 1.856310e-02       NA
 $invariable.markers
 character(0)
 
@@ -627,32 +667,42 @@ $correlated.markers
 character(0)
 
 $sig.alone
-                  P pseudo.R2
-Ace1   1.332916e-16        NA
-Cyp9k1 7.308683e-01        NA
+                   P pseudo.R2
+Coeae1f 2.029608e-02        NA
+Coeae2g 2.485536e-01        NA
+Ace1    1.332916e-16        NA
+Cyp6aa1 2.790672e-01        NA
+Cyp6z1  6.052902e-01        NA
+Cyp6z2  6.643962e-01        NA
+Cyp6z3  4.519689e-01        NA
+Cyp6p3  6.465032e-01        NA
+Gste2   9.338280e-01        NA
+Cyp9k1  7.308683e-01        NA
 
 $final.model
-Formula:          phenotype ~ Ace1 + (1 | location)
+Formula:          phenotype ~ Ace1 + Coeae1f + Coeae2g + (1 | location)
 Data: pm.table
       AIC       BIC    logLik  df.resid 
- 350.2941  361.4941 -172.1471       306 
+ 339.9118  358.5785 -164.9559       304 
 Random-effects (co)variances:
 
 Conditional model:
  Groups   Name        Std.Dev.
- location (Intercept) 1.243   
+ location (Intercept) 1.36    
 
 Number of obs: 309 / Conditional model: location, 5
 
 Fixed Effects:
 
 Conditional model:
-(Intercept)         Ace1  
-     2.2673      -0.8058  
+(Intercept)         Ace1      Coeae1f      Coeae2g  
+     2.8575      -0.8648      -0.5864      -0.4529  
 
 $final.sig
-                P deviance
-Ace1 1.332916e-16       NA
+                   P deviance
+Ace1    3.327738e-18       NA
+Coeae1f 2.879415e-03       NA
+Coeae2g 1.856310e-02       NA
 
 
 
@@ -666,29 +716,32 @@ Analysing markers independently.
 Running commentary on model optimisation:
 
 Building model: glmmTMB(phenotype ~ 1  + (1|location), data = delta.table, family = binomial) 
+	Adding marker Cyp6aa1 as the lowest significant marker (P = 0.003262693).
+
+Building model: glmmTMB(phenotype ~ Cyp6aa1 + (1|location), data = delta.table, family = binomial) 
 	No further markers are significant, keeping final model:
-Formula:          phenotype ~ 1 + (1 | location)
+Formula:          phenotype ~ Cyp6aa1 + (1 | location)
 Data: delta.table
       AIC       BIC    logLik  df.resid 
- 581.6078  589.7166 -288.8039       424 
+ 574.9534  587.1167 -284.4767       423 
 Random-effects (co)variances:
 
 Conditional model:
  Groups   Name        Std.Dev.
- location (Intercept) 0.4384  
+ location (Intercept) 0.4486  
 
 Number of obs: 426 / Conditional model: location, 5
 
 Fixed Effects:
 
 Conditional model:
-(Intercept)  
-     -0.123  
-Final model was the null model.
+(Intercept)      Cyp6aa1  
+    0.05665     -0.65561  
+Final model contained 1 parameters: Cyp6aa1.
 
 
-   P deviance
-1 NA       NA
+                  P deviance
+Cyp6aa1 0.003262693       NA
 $invariable.markers
 character(0)
 
@@ -696,32 +749,40 @@ $correlated.markers
 character(0)
 
 $sig.alone
-               P pseudo.R2
-Ace1   0.9577268        NA
-Cyp9k1 0.5433029        NA
+                  P pseudo.R2
+Coeae1f 0.300763550        NA
+Coeae2g 0.212448775        NA
+Ace1    0.957726806        NA
+Cyp6aa1 0.003262693        NA
+Cyp6z1  0.589246920        NA
+Cyp6z2  0.912224379        NA
+Cyp6z3  0.297058590        NA
+Cyp6p3  0.402736962        NA
+Gste2   0.955794740        NA
+Cyp9k1  0.543302935        NA
 
 $final.model
-Formula:          phenotype ~ 1 + (1 | location)
+Formula:          phenotype ~ Cyp6aa1 + (1 | location)
 Data: delta.table
       AIC       BIC    logLik  df.resid 
- 581.6078  589.7166 -288.8039       424 
+ 574.9534  587.1167 -284.4767       423 
 Random-effects (co)variances:
 
 Conditional model:
  Groups   Name        Std.Dev.
- location (Intercept) 0.4384  
+ location (Intercept) 0.4486  
 
 Number of obs: 426 / Conditional model: location, 5
 
 Fixed Effects:
 
 Conditional model:
-(Intercept)  
-     -0.123  
+(Intercept)      Cyp6aa1  
+    0.05665     -0.65561  
 
 $final.sig
-   P deviance
-1 NA       NA
+                  P deviance
+Cyp6aa1 0.003262693       NA
 
 
 
