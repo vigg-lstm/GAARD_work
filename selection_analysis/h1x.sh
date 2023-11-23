@@ -16,7 +16,7 @@ do
 	do
 		for j in $(seq $(($i+1)) $(($numpops-1)))
 		do
-			python H1x.py ${pops[$i]} ${pops[$j]} $chrom 2000 &
+			python H1x.py ${pops[$i]} ${pops[$j]} $chrom 2000
 		done
 	done
 	wait

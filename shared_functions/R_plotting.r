@@ -17,10 +17,13 @@ add.chromosomes <- function(gaps, chrom.sizes, gene.cex = 0.9, gene.col = 'grey2
 	rdl.region.mean <- cs['2L'] + mean(c(25363652, 25434556))
 	points(rdl.region.mean, 0, pch = 19, cex = point.cex, col = point.col)
 	text(rdl.region.mean, -1.7, 'Rdl', srt = 45, adj = 1.1, xpd = NA, cex = gene.cex, col = gene.col, font = 2)
-	# show the Carboxylesterase region
-	coeae.region.mean <- cs['2L'] + mean(c(28548433, 28550748))
-	points(coeae.region.mean, 0, pch = 19, cex = point.cex, col = point.col)
-	text(coeae.region.mean, -1.7, 'Coeae2f', srt = 45, adj = 1.1, xpd = NA, cex = gene.cex, col = gene.col, font = 2)
+	# show the Carboxylesterase regions
+	coeaef.region.mean <- cs['2L'] + mean(c(28548433, 28550748))
+	points(coeaef.region.mean, 0, pch = 19, cex = point.cex, col = point.col)
+	text(coeaef.region.mean, -1.7, 'Coeae2f', srt = 45, adj = 1.1, xpd = NA, cex = gene.cex, col = gene.col, font = 2)
+	coeaef.region.mean <- cs['2L'] + mean(c(37292956, 37295276))
+	points(coeaef.region.mean, 0, pch = 19, cex = point.cex, col = point.col)
+	text(coeaef.region.mean, -1.7, 'Coeae6g', srt = 45, adj = 1.1, xpd = NA, cex = gene.cex, col = gene.col, font = 2)
 	# show the Ace1 gene region
 	ace1.region.mean <- cs['2R'] + mean(c(3484107, 3495790))
 	points(ace1.region.mean, 0, pch = 19, cex = point.cex, col = point.col)

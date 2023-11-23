@@ -1,0 +1,23 @@
+Loading H12 data
+Avrankou 
+Aboisso 
+Baguida 
+Korle-Bu 
+Madina 
+Obuasi 
+Loading data
+[1] "Avrankou" "Aboisso" 
+[1] "Avrankou" "Baguida" 
+[1] "Avrankou" "Korle-Bu"
+[1] "Avrankou" "Madina"  
+[1] "Avrankou" "Obuasi"  
+[1] "Aboisso" "Baguida"
+[1] "Aboisso"  "Korle-Bu"
+[1] "Aboisso" "Madina" 
+[1] "Aboisso" "Obuasi" 
+[1] "Baguida"  "Korle-Bu"
+[1] "Baguida" "Madina" 
+[1] "Baguida" "Obuasi" 
+[1] "Korle-Bu" "Madina"  
+[1] "Korle-Bu" "Obuasi"  
+[1] "Madina" "Obuasi"

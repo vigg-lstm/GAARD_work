@@ -16,7 +16,7 @@ window_size = int(window_size)
 ag3 = malariagen_data.Ag3(pre=True)
 metadata = ag3.sample_metadata("3.2")
 metadata = metadata.query("sex_call == 'F'")
-sibs = pd.read_csv("../../NGSrelate/full_relatedness/sib_group_table.csv", sep="\t")
+sibs = pd.read_csv("../NGSrelate/full_relatedness/sib_group_table.csv", sep="\t")
 exclude = sibs.query("keep == False")['sample.name']
 
 metadata = metadata.query("partner_sample_id not in @exclude").reset_index(drop=True)
@@ -30,7 +30,7 @@ cohort_ids = metadata['partner_sample_id'].to_list()
 
 pos, h12 = ag3.h12_gwss(
     contig=contig,
-    analysis="arab",
+    analysis="gamb_colu",
     window_size=window_size,
     sample_sets="3.2",
     sample_query=f"partner_sample_id in {cohort_ids}"
