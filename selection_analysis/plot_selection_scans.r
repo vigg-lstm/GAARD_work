@@ -167,7 +167,7 @@ plot.h1x <- function(h1x.table,
 	# Get vectors of start and end points for each chromosome (ie: cumulative sizes + gaps)
 	ce <- cumsum(chrom.sizes + c(0, 0, gaps, 0, gaps))
 	cs <- ce - chrom.sizes
-	layout(matrix(c(rep(1,4),rep(2,1)), nrow = 5, ncol = 1))
+	layout(matrix(c(rep(1,7),rep(2,3)), nrow = 10, ncol = 1))
 	par(mar = c(0,4,1,2), mgp = c(2, 0.7, 0), family = 'Arial', xpd = NA) 
 	max.y <- max(c(max(h1x.table[, ..h1x.column]), 0.05))
 	min.y <- min(h1x.table[, ..h1x.column])
@@ -187,7 +187,7 @@ plot.h1x <- function(h1x.table,
 	
 	# Now plot all chromosomes with, the position of each of the four detox gene regions and Ace1
 	par(mar = c(1,4,0,2), mgp = c(2, 0.7, 0)) 
-	add.chromosomes(chrom.sizes, gaps = gaps, gene.cex = 0.7, point.cex = 1, chrom.offset = -1.2, chrom.cex = 1.2)
+	add.chromosomes(chrom.sizes, gaps = gaps, gene.cex = 0.6, point.cex = 0.6, chrom.offset = 0, chrom.cex = 0.8)
 	
 	if (!missing(filename))
 		dev.off()
